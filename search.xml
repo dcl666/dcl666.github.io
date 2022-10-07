@@ -1,21 +1,419 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/10/05/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>SDM232 Project1——Sweeper disassembly and modeling</title>
+    <url>/2022/10/07/%E6%89%AB%E5%9C%B0%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E6%A8%A1/</url>
+    <content><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  This project is not difficult, the main content is to disassemble the sweeping robot, understand and identify the mechanical structure of the content, briefly analyze its assembly structure, and propose possible improvement solutions. After that, we use Solidworks software to model the whole thing, just try to fit with the real thing.</p>
+<p>  On the whole, iRobot Roomba 960 is 9.3cm high, 34.5cm wide, only 7s power-on time and 66dB maximum noise. Compared with other types of sweeping robot, it is a good product.</p>
+<img title="" src="https://s2.loli.net/2022/10/07/CNX1KAG3zrdZihn.jpg" alt="img" width="265" data-align="center">
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a><strong>Procedure:</strong></h2><ul>
+<li><p>Analysis by using</p>
+<p>The RVC has two fundamental functions, cleaning the floor and self-navigation. The cleaning function is supported by the moving module, power module, sweeping and vacuuming module, and the controlling module. The self-navigation function is supported by power module, sensing module, and the controlling module.</p>
+</li>
+<li><p>Disassembly</p>
+<p>The RVC can be disassembled as the following parts: the shell, two electrical wheels, a swivel caster, a rubbish container, a battery, a roller brush, a sweep brush, the circuit board, a camera, and lots of sensors.</p>
+</li>
+<li><p>Re-analysis</p>
+<p>We identified all functional modules of the robot and describe how they are assembled in one piece (order, mating, fastening methods…). For each functional module, we identified its essential mechanical parts and how they are assembled.</p>
+</li>
+</ul>
+<p>(a) We used Solidworks TreeHouse to represent the assembly tree, and</p>
+<p>generated the bill of materials (BOM) excel files.</p>
+<p>(b) We described the form and function of each mechanical component in the</p>
+<p>BOM as well.</p>
+<ul>
+<li>Create 3D model</li>
+</ul>
+<p> We used Solidworks to create a 3D assembly model (simple enough to ignore time consuming details but clear enough for understanding its functionality) for the RVC to demonstrate its mechanical working principles.</p>
+<h2 id="Solidworks-model"><a href="#Solidworks-model" class="headerlink" title="Solidworks model:"></a><strong>Solidworks model:</strong></h2><img title="" src="https://s2.loli.net/2022/10/07/AerXc1EzDJURlPt.png" alt="img" data-align="center" width="329">
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<img title="" src="https://s2.loli.net/2022/10/07/btjNGCUza7WEH8s.png" alt="img" width="313" data-align="center">
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="Appendix-Problems-and-solutions-for-improvement"><a href="#Appendix-Problems-and-solutions-for-improvement" class="headerlink" title="Appendix: Problems and solutions for improvement"></a><strong>Appendix: Problems and solutions for improvement</strong></h2><p>  In the process of consulting information, it is found that the sweeping robot often faces a problem, that is, the scattered hair in the home will be entangled in the fan leaves, making the machine unable to operate, so how to improve it?</p>
+<ol>
+<li><p>When the fan blade is not in use, the machine can be equipped with a comb that can be moved in parallel to comb down the hair wrapped on the fan blade.</p>
+</li>
+<li><p>It is suggested to modify the installation mode of the fan blade. Now the fan blade is connected to the machine body by a long screw, and the screw that have to be removed by tools can be replaced by the nail that can be manually twisted down. This can reduce the difficulty of removing hair on the fan blade and improve the user experience.</p>
+</li>
+</ol>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a><strong>Reference:</strong></h2><p>[1] Huang Chenghong. IRobot 961 VS Dyson 360:Assessment and Evaluation of High-end sweeping robot [J]. Consumer Report,2017(05):63-66 </p>
 ]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>扫地机器人</tag>
+        <tag>Solidworks</tag>
+        <tag>机械结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM232 Project2——Stapler disassembly and motion simulation</title>
+    <url>/2022/10/07/%E8%AE%A2%E4%B9%A6%E6%9C%BA/</url>
+    <content><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a><strong>Introduction:</strong></h2><p>  This project’s main content is to disassemble the stapler, understand and identify the mechanical structure of the content, briefly analyze its assembly structure. After that, we use Solidworks software to model the whole thing, then use Solidworks motion to stimulate the motion of pressing the staple and analyze the forces in this motion.</p>
+<h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a>Procedure:</h2><ul>
+<li>Modeling process<br>First of all, we need to consider the issue of size. We uniformly adopt the actual size to reduce the error, and the parts that need to be matched must be exactly the same as the relevant size. The second is to draw a sketch by observing the structure, and then modeling. The most important thing is to coordinate the various parts into a stapler, which can show the basic structure and function of the stapler and produce the correct visual effect. Finally, beautify appropriately to make the whole look more like a stapler.</li>
+<li>Later improvement after initial completion<br>Different from the last assembly, as long as the matching relationship is complete and correct, and the dimensions are basically the same, there is no problem with the structure and the task is completed. But this time we are going to do a motion analysis. During the analysis, a lot of mold-through situations appeared, which caused some structures to fail to reach the correct position. In order to solve this problem, the original sketch and model can only be modified slowly, and the initial position must be determined in order to make the interference disappear. After this, we learned how to use a new tool called Interfere Check in Solidworks.</li>
+<li>Motion<br>We used Solidworks motion to stimulate the motion of pressing the staple and analyze the forces in this motion. In this step, we meet several problems.<br>(1) The stapler often moves in a way that is out of our intention.<br>Solution: The initial status was not correct which results in wrong moving direction.<br>(2) The stapler cannot clamp. So that we cannot calculate the clamping force.<br>Solution: The pressing force was not big enough. The k of the spring was incorrect. We readjusted the data many times.<br>(3) The magnitude of the force and the parameters of the spring<br>Solution: The position of the external force needs to be confirmed, and the force must meet the conditions that can be pressed down. The spring is added between the bottom surface and the upper rod, and it also needs to be satisfied to allow force to press it down.</li>
+</ul>
+<h2 id="Results"><a href="#Results" class="headerlink" title="Results:"></a>Results:</h2><p>  The connecting rod structure can save effort, which the connecting rod structure can save effort——Input 20N, output 120N, efficiency is 500%.</p>
+<p><img src="https://s2.loli.net/2022/10/07/9GBASRQjXLtNeiw.png" alt="img"></p>
+<h2 id="Solidworks-model"><a href="#Solidworks-model" class="headerlink" title="Solidworks model:"></a>Solidworks model:</h2><img title="" src="https://s2.loli.net/2022/10/07/17d8Wg6wLKXIyeu.png" alt="img" width="416" data-align="center">
+]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>Solidworks</tag>
+        <tag>机械结构</tag>
+        <tag>订书机</tag>
+        <tag>运动仿真</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM232 Project3——Linkage Design</title>
+    <url>/2022/10/07/%E8%BF%9E%E6%9D%86/</url>
+    <content><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  The project is to design a giftware to put on top of a cup using linkage and Stirling engine. The Stirling engine is to provide power source for the product. We need to design a linkage mechanism to be driven by either a crank-rocker or a crank-slider four-bar mechanism.</p>
+<h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a><strong>Procedure:</strong></h2><ul>
+<li><p>Research</p>
+<p>We first researched on some basic linkage mechanisms. In this process, we found an interesting linkage structure called Peaucellier-Lipkin linkage. </p>
+<img src="https://s2.loli.net/2022/10/07/sHpn5wiDlyME4ZT.png" title="" alt="img" data-align="center">
+
+<p>When we start to design our own mechanism, the first thing we need to do is calculate the position the hinges and the length of each rods: It is composed of two groups of rods, one group is composed of 4 short rods of the same length to form a rhombus with a variable shape, and the other group is composed of two long rods of equal length. Determine the specific size according to the ratio of the found video and enlarge it as a whole after a unified transformation. Regarding the structure of the connecting part, it needs to be calculated according to the actual size and the error of 3D printing. At the same time, it also needs to be compared and optimized continuously.</p>
+</li>
+<li><p>Mathematical model and calculation:</p>
+<p>Here we refer to the principle of Peaucellier Lipkin linkage. Here, we will briefly introduce the principle of Peaucellier Lipkin linkage:)</p>
+<img title="" src="https://s2.loli.net/2022/10/07/1SYJg6lBQoUTHNe.jpg" alt="img" data-align="center">
+
+<p>$$<br>forΔANE \sim ΔABM \</p>
+</li>
+</ul>
+<p>then\ AB&#x2F;AN &#x3D; BM&#x2F;EN&#x3D;AM&#x2F;AE \<br>then\ AN&#x3D;AB * AE&#x2F;AM \<br>connect\ C\ and\ D \<br>then\ CD\ intersect\ at\ F \<br>then\ we\ have: AE&#x3D;AF+FE \<br>AB&#x3D;AF-FB&#x3D;AF-FE \<br>AN&#x3D;(AF+FE)·(AF-FE)&#x2F;AM&#x3D;(AF^2-FE^2)&#x2F;AM</p>
+<p>  $$</p>
+<p>  Obviously, length of AN is a constant. In our model, in order to make the whole toy use better, the connecting rod of OB part is improved.</p>
+<p>  <img src="https://s2.loli.net/2022/10/07/7xBFQ2yaZpiel3f.png" alt="img"></p>
+<ul>
+<li><p>Creat 3D model</p>
+<p>We use solidworks to build our first prototype model. Figures below show a side view of the slide throughout the installation and a side view of the connecting rod of the whole device.</p>
+<p><img src="https://s2.loli.net/2022/10/07/fvhQBLuN78y5mKk.png" alt="img"></p>
+<p><img src="https://s2.loli.net/2022/10/07/2IQtvdCmwNAuPbL.png" alt="img"></p>
+</li>
+<li><p>Fabrication:<br>We used a laser cutter and an acrylic sheet to make the first prototype of our design. And, of course, the ball in the mechanism we used a steel ball of the right size. </p>
+</li>
+<li><p>Assembly and testing:<br>In our assembly process, we install the linkage mechanism by four different kinds of rods. They have suitable length and in the suitable place which we have calculated. Then we connect the end of the linkage mechanism to elevator and slide section (all the details are in the installation instruction of flapping-wing mechanism section).<br>The linkage mechanism we test from Geogebra as follows:</p>
+<p><img src="https://s2.loli.net/2022/10/07/GFEk5HZwSKxz9fc.png" alt="img"></p>
+</li>
+</ul>
+<h2 id="Discussion-and-Conclusion"><a href="#Discussion-and-Conclusion" class="headerlink" title="Discussion and Conclusion"></a><strong>Discussion and Conclusion</strong></h2><p>  In our flapping-wing mechanism, the driven end of the linkage is to reciprocate in a straight vertical line. We use this mechanism to control the rolling of the ball, including stopping at the bottom of the slide and transporting the ball from the bottom of the slide to the top of the slide. In this process, all the power and energy come from the Stirling mechanism connected to the active end of the linkage. he connecting rods use energy generated by thermal collisions in the Stirling mechanism to transport and intercept the balls to the lowest end.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a><strong>Reference:</strong></h2><p>[1] <a href="http://www.ams.org/publicoutreach/feature-column/fcarc-linkages4">http://www.ams.org/publicoutreach/feature-column/fcarc-linkages4</a><br>[2] <a href="http://blog.sina.com.cn/s/blog_5cd354c30102x3d6.html">http://blog.sina.com.cn/s/blog_5cd354c30102x3d6.html</a><br>[3] <a href="https://www.bilibili.com/video/av100081539/">https://www.bilibili.com/video/av100081539/</a></p>
+]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>Solidworks</tag>
+        <tag>机械结构</tag>
+        <tag>连杆</tag>
+        <tag>GGB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM232 Project4——Linkage and cam</title>
+    <url>/2022/10/07/%E8%BF%9E%E6%9D%86%E4%B8%8E%E9%BD%BF%E8%BD%AE/</url>
+    <content><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  This project is to use GGB and Mech Designer to combine linkage and cam, then use Solidworks to produce a 3D model and use Solidworks motion to stimulate the motion.</p>
+<p>  At the designing stage of our linkage-cam, our group decided to use the knowledge we acquired to design a useful linkage-cam for our final project- the companion robot. We settled on the idea of a mechanical structure that can pour pills into a box in order to make up a prescription.</p>
+<h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a><strong>Procedure:</strong></h2><ul>
+<li><p>Geogebra</p>
+<p>The pouring linkage-cam requires two main functions. The first function is making the platform which holds the pills incline so that the pills can fall into the box. This is essentially a 2-positon synthesis which can be realized by linkages.</p>
+<img title="" src="https://s2.loli.net/2022/10/07/1LBapr89coJ4klO.png" alt="img" width="296" data-align="center">
+
+<p><img src="https://s2.loli.net/2022/10/07/1IzcwuFDKV9rRTW.png" alt="img"></p>
+</li>
+<li><p>Mech Designer:</p>
+<p>The second function is controlling the pouring speed. To ensure the sufficiency of fill-up and pour-down time, we used cams to control the speed of rotation and leave some dwells.</p>
+<img title="" src="https://s2.loli.net/2022/10/07/ZNumy39hjvdzW5t.png" alt="a3.PNG" width="459" data-align="center">
+</li>
+<li><p>Solidworks</p>
+<p>After generating the curve of our cam according to our motion timing requirements, we made a 3D model of tin Solidworks.</p>
+<p>(1) Input the trajectory of the cam which we generated in Mech Designer into Solidworks. (The trajectory transferred into Solidworks is generated according to 1000 points in Mech Designer).</p>
+<p>(2) Draw the 3D model of the cam according to the trajectory we just input.</p>
+<p>(3) Draw the four-bar-linkage according to the statistics (width, length, thickness) in GeoGebra model and Mech Design model.</p>
+<p>(4) Calculate and draw two bars to control the position relation between the driving bar of the linkage and the cam according to the position relation needed. Link two bars with the two edges of the driving bar of the linkage to form a triangle. Because the lengths of 3 sides of triangle are fixed. The position relation between the cam (vertex) and driving bar (opposite side of the vertex) is fixed. </p>
+<p>Detail of the two bars: One bar has a small cylinder hump on one edge which can fit into the trajectory so that the driving bar of the linkage can move along with the rotation of the cam.</p>
+<p>(5) Calculate and draw two bars to control the position relation between the static bar of the linkage and the cam. Link two bars with the two edges of the static bar of the linkage to form a triangle. Because the lengths of 3 sides of triangle are fixed. The center of the cam is now fixed. The cam can only rotate around the center axis of the cam.</p>
+<p>(6) Set the static bar of the four-bar-linkage as the foundation. Assemble the four-bar-linkage first, then fit the cam on the four-bar-linkage using other bars that are used to control the position relation between the cam and the linkage.</p>
+<p>(7) After assembling the pieces to form a linkage-cam model. Add a motion study on the model. Use a rotation motor to drive the cam and observe its motion.</p>
+<img src="https://s2.loli.net/2022/10/07/ct8XFPYqGv5Hrb9.png" title="" alt="a4.PNG" data-align="center"></li>
+</ul>
+<h2 id="Discussion-and-Conclusion"><a href="#Discussion-and-Conclusion" class="headerlink" title="Discussion and Conclusion"></a><strong>Discussion and Conclusion</strong></h2><p>  In the GeoGebra constructing process, we could not construct the structure following video. The structure we constructed always had more than one driving points. So we turned to others for help, learned a new technique, and solved the problem by adding a new drawing zone.<br>  In MD PRO design process, we rebuilt the four-bar linkages based on the mechanism we designed in GeoGebra. But later when we added a motion controller and the MD PRO automatically generated a 2D cam, we got an odd-shape cam. Different lines overlapped with each other and it hard to make such cam. So we had to rearrange the position of the motion controller and adjust motion timing. Finally, the cam became the irregular circle which can satisfy our needs.</p>
+<p><img src="https://s2.loli.net/2022/10/07/aN8T2JglpkO4s6S.png" alt="a5.PNG"></p>
+<p>  In SOLIDWORKS modeling process, the assembly in the model can move along the path as we designed. But in motion studies, it deviated from the original path and jump to another position. </p>
+<p>  Speculation: The trajectory transferred into Solidworks is generated according to 1000<br>points of the trajectory in Mech Design, insufficient statistics results in lack of precision and a failed motion study.</p>
+]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>机械结构</tag>
+        <tag>连杆</tag>
+        <tag>运动仿真</tag>
+        <tag>齿轮</tag>
+        <tag>GGB</tag>
+        <tag>Mech Designer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM232 Project5——Clock disassembly and modeling</title>
+    <url>/2022/10/07/%E9%97%B9%E9%92%9F/</url>
+    <content><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  After learning about gears, we consolidated knowledge by disassembling the mechanical alarm clock and analyzing its internal gear structure and its transmission law. After that, we use Mech Designer, SolidWorks, KYtools to further analyze and reconstruct the gear structure, and build a 3D model of the gear system with motion examples.</p>
+<h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a><strong>Procedure:</strong></h2><ul>
+<li><p>Clock disassembly</p>
+<p>First, we disassembled clock, and drew a simple diagram to display:</p>
+<p><img src="https://s2.loli.net/2022/10/07/rkmRc6tqebjHdB8.png" alt="a6.PNG"></p>
+<p>The exploded view of the physical object is as follows:</p>
+<img title="" src="https://s2.loli.net/2022/10/07/s2hqyG8oK5dince.png" alt="a7.PNG" width="388" data-align="center">
+
+<img title="" src="https://s2.loli.net/2022/10/07/HaVJw7FIpu5mQg8.png" alt="a8.PNG" width="340" data-align="center">
+
+<p>There are 12 gears and a special balance wheel in the entire gear train of the alarm clock. Front and reverse gears are interconnected by co-axial rotation.</p>
+</li>
+<li><p>Mating relationship of each gear:</p>
+<ul>
+<li><p>Pendulum part</p>
+<img title="" src="https://s2.loli.net/2022/10/07/AgmwJ2PlQ6xoCsX.png" alt="a9.PNG" data-align="inline">
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">1(big)</th>
+<th align="left">1(small)</th>
+<th align="left">2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Teeth number</td>
+<td align="left">18</td>
+<td align="left">6</td>
+<td align="left">40</td>
+</tr>
+<tr>
+<td align="left">Engagement relationship</td>
+<td align="left"></td>
+<td align="left">√</td>
+<td align="left">√</td>
+</tr>
+<tr>
+<td align="left">Transmission ratio</td>
+<td align="left"></td>
+<td align="left">3</td>
+<td align="left">20</td>
+</tr>
+</tbody></table>
+<p>Gear No.2 is driven by the clockwork on the common shaft, which in turn drives gear No.1 to rotate. No. 1 gear in the rotation process to drive the common axis of the ratchet rotation, so that the pendulum constantly swing back and forth, strike the bell, and finally make a sound.</p>
+</li>
+<li><p>Second hand part</p>
+<p><img src="https://s2.loli.net/2022/10/07/XpnbBxYmMQt7zFo.png" alt="a10.PNG"></p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th>3(big)</th>
+<th>3(small)</th>
+<th align="left">4(big)</th>
+<th>4(small)</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Teeth number</td>
+<td>56</td>
+<td>6</td>
+<td align="left">15</td>
+<td>7</td>
+<td>Ratchet</td>
+</tr>
+<tr>
+<td align="left">Engagement relationship</td>
+<td></td>
+<td>√       –</td>
+<td align="left">√</td>
+<td></td>
+<td>–</td>
+</tr>
+<tr>
+<td align="left">Transmission ratio</td>
+<td></td>
+<td>2</td>
+<td align="left"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>Gear No.6 outside the structure drives the No.4(small), then No.4(big) rotate coaxially with the pinion.<br>Gear No.4 drives the No.3(small), then No.3(big) rotate coaxially with the pinion, while No.3 gear controls the movement of the second hand.<br>During the rotation, No.3(big)’s protruding teeth continuously strike the two straight rods at one end of the connecting rod, thus causing it to oscillate. At the same time, the other end of the connecting rod oscillates with the frequency of strikes, and during the oscillation of this end, the straight rod on the No.5 balance is struck by it. During the swing of this end, the straight rod on the balance wheel No.5 is struck by it, and the balance wheel No.5 is thus stressed and keeps swinging.</p>
+</li>
+<li><p>Mainspring part</p>
+<p><img src="https://s2.loli.net/2022/10/07/3Qy4f9SjeWUb8oK.png" alt="a11.PNG"></p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th>6(big)</th>
+<th>6(small)</th>
+<th align="left">7(big)</th>
+<th>7(small)</th>
+<th>8</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Teeth number</td>
+<td>40</td>
+<td>6</td>
+<td align="left">54</td>
+<td>9</td>
+<td>54</td>
+</tr>
+<tr>
+<td align="left">Engagement relationship</td>
+<td></td>
+<td>√</td>
+<td align="left">√</td>
+<td>**</td>
+<td>**</td>
+</tr>
+<tr>
+<td align="left">Transmission ratio</td>
+<td></td>
+<td>2</td>
+<td align="left">18</td>
+<td>1</td>
+<td>6</td>
+</tr>
+</tbody></table>
+<p>Gear No.8 is driven by a co-axial mainspring, which in turn rotates No.7(small)<br>No.7(big) and the gear No.10 outside this structure rotate co-axially with the No.7(small), which in turn drives No. 6(small). No.6(big) rotates co-axially with No. 6(small) and eventually drives the No.4(small) outside the structure.</p>
+</li>
+<li><p>Hour hand&#x2F;minute hand&#x2F;outside time control part</p>
+<p><img src="https://s2.loli.net/2022/10/07/LGAm1QRDzJtBEIs.png" alt="a12.PNG"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>9(big)</th>
+<th>9(small)</th>
+<th>10</th>
+<th>12</th>
+<th>13</th>
+<th>11</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Teeth number</td>
+<td>45</td>
+<td>12</td>
+<td>15</td>
+<td>15</td>
+<td>48</td>
+<td>48</td>
+</tr>
+<tr>
+<td>Engagement relationship</td>
+<td>√      –</td>
+<td>**</td>
+<td>√</td>
+<td>–</td>
+<td>**</td>
+<td>**</td>
+</tr>
+<tr>
+<td>Transmission ratio</td>
+<td>3      3</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+</tbody></table>
+<p>No.10 gear is rotated by the co-axial drive of the No.7 outside the structure, which drives the No.9(big). No.9(small) rotates co-axially with the No.9(big) and drives No.11 and No.13.<br>At the same time, No. 9 also rotates the No. 12. And No.11 controls the time, while No.12 and No.13 control the minute and hour hands, respectively.</p>
+</li>
+</ul>
+</li>
+<li><p>Analysis</p>
+<p><img src="https://s2.loli.net/2022/10/07/2AG63KeHuxc5FIh.png" alt="a13.PNG"></p>
+<p>  According to the above analysis, the second hand part is a separate system from the minute hand and hour hand, and the specific system analysis is as follows:</p>
+<p>(1) Second hand</p>
+<p>  The mainspring provides power to the No.3 gear through a series of gear meshes, and the actual speed of the second hand is controlled by the hairspring and ratchet. The actual speed of the second hand is controlled by the hairspring and the ratchet. By changing the shape of the hairspring, the speed of the second hand can be controlled.</p>
+<p>(2) Minute hand and hour hand<br>  The wheel system of the hour and minute hands consists of gears 9, 10, 12 and 13.</p>
+</li>
+<li><p>Mech Designer gear trajectory drawing</p>
+<p><img src="https://s2.loli.net/2022/10/07/1iPZ9sSUMlXBHTe.png" alt="a14.PNG"></p>
+<p>  After measuring the radius of several of the gears and obtaining the radius of all gear indexing circles according to the basic law of gear motion, then use the formula: number of gears × modulus ÷ 2 &#x3D; axis distance, which can obtain the gear modulus.</p>
+<p>  Based on the obtained modulus values and tooth values, the gears are drawn and the gear relationships are matched to obtain the final gear trajectory diagram. Finally, export the gear trajectory to DXF file.</p>
+</li>
+<li><p>SolidWorks modeling</p>
+<p><img src="https://s2.loli.net/2022/10/07/Y47UqZsXNHBTOzd.png" alt="a15.PNG"></p>
+<p>(1) Model the gear part and the shaft column<br>  Import the DXF file in SW and stretch it as a gear and determine the position of its indexing circle. In addition, to ensure that the initial position meshes without interference, draw the required datum lines on each of the gears to be meshed.<br>Finally, a fixed hole is cut in the center of the gear to match the rotation of the cylinder around the axis.<br>  Create a new column model of the appropriate size to serve as the axis of rotation for the gears.</p>
+<p>(2) Fit the corresponding gears<br>  Import the gear part in the assembly template and fix its rotation axis in the corresponding position. Use the reference line overlap to make sure that there is no interference in the initial meshing state between the meshing gears. Select the indexing circle of the gear to be mated for the gear fit.<br>  The motion algorithm verifies that the completed gears rotate normally without interference and rotation mismatch.</p>
+</li>
+<li><p>KYtool use</p>
+<p>This software has the following features compared to Mech Designer:</p>
+<ul>
+<li><p>Easy to operate, only basic data such as tooth number and module need to be entered, no additional operation is required</p>
+</li>
+<li><p>Individual gears can be generated for more flexibility, and gear trajectories can be exported directly according to requirements</p>
+</li>
+<li><p>The export process has a feature operation, and it is easier to determine the auxiliary line position in the subsequent operation, instead of just one profile in MD</p>
+</li>
+<li><p>The modulus is an international standard value and cannot be set arbitrarily, which is more in line with the actual operation requirements</p>
+</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/10/07/RFfuUwNZGiqmSXg.png" alt="a16.PNG"></p>
+</li>
+</ul>
+<h2 id="Problems-and-solutions"><a href="#Problems-and-solutions" class="headerlink" title="Problems and solutions"></a><strong>Problems and solutions</strong></h2><ul>
+<li><p>Mech Designer</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Determination of gear indexing circle radius</th>
+<th>Unable to generate individual gears</th>
+<th>DXF profile</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Problem</td>
+<td>During the first MD drawing, the modulus was calculated using the rough measurements taken at the beginning, and it was found that the final gears were not able to be produced. After the SW gears finished moving together Interference was generated when the final SW gear finished moving.</td>
+<td>In the internal integral gear system of the alarm clock, some gears have a pair of multiple meshing relationships, and some gears only have a co-axial relationship and no meshing relationship, and there are difficulties in drawing these gears</td>
+<td>After exporting a DXF file it is not possible to change the teeth again wheel track</td>
+</tr>
+<tr>
+<td>Analysis</td>
+<td>After several fits and adjustments the corresponding gears still cannot be fully after several fits and adjustments, the problem is therefore determined to lie in the preliminary gear drawing. The radius of the gear indexing circle corresponds to the number of teeth, and is a relatively fixed value</td>
+<td>MD can only be generated in pairs gears, there is no individual gear generation method. And the straight line that determines the tooth center distance can only be used once.</td>
+<td>Need to convert the trajectory to 2D image before exporting DXF file, the trajectory cannot be changed after conversion.</td>
+</tr>
+<tr>
+<td>Solution</td>
+<td>The radius of the index circle is calculated using the relationship between the ratio of the index circle radius and the ratio of the number of teeth, using the radius of the index circle obtained from certain measurements as the basic quantity, and the corresponding modulus.</td>
+<td>A new line or a new set of gears needs to be drawn again to determine the distance between the teeth</td>
+<td>Backup the file and then convert the 2D image and export the DXF file. If you need to modify, you can do so directly on the backup file.</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>Solidworks</tag>
+        <tag>运动仿真</tag>
+        <tag>齿轮</tag>
+        <tag>Mech Designer</tag>
+        <tag>闹钟</tag>
+        <tag>KYtools</tag>
+      </tags>
   </entry>
 </search>
