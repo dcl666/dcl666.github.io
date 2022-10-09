@@ -1,0 +1,459 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>SDM283 mini project 3 | 段成龙的个人空间</title><meta name="keywords" content="机械结构,运动仿真,大二春季学期,SDM283,Adams,Matlab,机械振动"><meta name="author" content="AllenD"><meta name="copyright" content="AllenD"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="IntroductionIn this project, based on a four wheel racing model, we use Adams to simulate its traveling state on bumpy roads, and change its own shock absorber to achieve the minimum vibration and def">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SDM283 mini project 3">
+<meta property="og:url" content="http://example.com/2022/10/09/SDM283-mini-project-3/index.html">
+<meta property="og:site_name" content="段成龙的个人空间">
+<meta property="og:description" content="IntroductionIn this project, based on a four wheel racing model, we use Adams to simulate its traveling state on bumpy roads, and change its own shock absorber to achieve the minimum vibration and def">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/10/07/oSQcGh8OdwNXsA2.png">
+<meta property="article:published_time" content="2022-10-09T12:25:24.000Z">
+<meta property="article:modified_time" content="2022-10-09T13:49:39.712Z">
+<meta property="article:author" content="AllenD">
+<meta property="article:tag" content="机械结构">
+<meta property="article:tag" content="运动仿真">
+<meta property="article:tag" content="大二春季学期">
+<meta property="article:tag" content="SDM283">
+<meta property="article:tag" content="Adams">
+<meta property="article:tag" content="Matlab">
+<meta property="article:tag" content="机械振动">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/10/07/oSQcGh8OdwNXsA2.png"><link rel="shortcut icon" href="https://s2.loli.net/2022/10/06/Fu6rQOl2PmgAEqI.jpg"><link rel="canonical" href="http://example.com/2022/10/09/SDM283-mini-project-3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":10,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'SDM283 mini project 3',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-09 21:49:39'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">36</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 额外链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/10/07/oSQcGh8OdwNXsA2.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">段成龙的个人空间</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 额外链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">SDM283 mini project 3</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon fas fa-history"></i><span class="post-meta-label">更新于</span><time datetime="2022-10-09T13:49:39.712Z" title="更新于 2022-10-09 21:49:39">2022-10-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%9C%BA%E6%A2%B0/">机械</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>14分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="SDM283 mini project 3"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In this project, based on a four wheel racing model, we use Adams to simulate its traveling state on bumpy roads, and change its own shock absorber to achieve the minimum vibration and deflection of the front beam.</p>
+<p><img src="https://s2.loli.net/2022/10/09/McHynRlPt2f9mi7.png" title="" alt="b1.PNG" data-align="center"></p>
+<h2 id="Simple-Research-on-Automobile-Shock-Absorber"><a href="#Simple-Research-on-Automobile-Shock-Absorber" class="headerlink" title="Simple Research on Automobile Shock Absorber"></a>Simple Research on Automobile Shock Absorber</h2><h3 id="Definition-and-basic-functions"><a href="#Definition-and-basic-functions" class="headerlink" title="Definition and basic functions"></a>Definition and basic functions</h3><p>The shock absorber is one of the important components in the vehicle suspension system, which has an important impact on the vehicle driving safety and comfort.</p>
+<p>There are two basic functions - correcting the transmission from uneven road surface to vehicle by adjusting vehicle body vibration; Quickly attenuate the wheel and axle vibration caused by road impact to provide a safe grip for the vehicle.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/yVXxcjkRlQW8AnD.png" alt="b2.png" width="309" data-align="center"></p>
+<h3 id="Suspension-parameters"><a href="#Suspension-parameters" class="headerlink" title="Suspension parameters"></a>Suspension parameters</h3><p>The main parameters related to the shock absorber are stiffness and damping coefficient, which have a great impact on the vehicle’s ride comfort. A reasonable matching of stiffness and damping coefficient can reduce the transfer function and improve the vehicle’s ride comfort - that is, reduce the free deflection at the end of the beam.</p>
+<h5 id="Damping-coefficient"><a href="#Damping-coefficient" class="headerlink" title="Damping coefficient"></a>Damping coefficient</h5><p>When the stiffness of the front and rear shock absorbers changes, the root mean square value of the total weighted acceleration at the seat changes, and the front damping change has less impact on the vehicle ride comfort than the rear damping. The higher the damping force, the more sporty the car is; the lower the damping force, the better the car’s comfort (definition: low speed level of vibration occurring on the whole vehicle and vehicle parts).</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/ET3AJQlhrMew4jD.png" alt="b3.png" width="352" data-align="center"></p>
+<p>It can be seen from the figure that the amplification coefficient of body acceleration increases with the increase of damping constant in the frequency range between body and wheel resonance frequencies, and the comfort of the vehicle becomes worse.</p>
+<p>There are three important characteristic curves in the research of shock absorber: damping force displacement curve, quasi-static and dynamic damping force velocity curve</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/ZyqtJ6VDxbsCRvP.png" alt="b4.png" width="230" data-align="center"></p>
+<p>The damping coefficient and attenuation coefficient describe the trend of the quasi-static damping force velocity characteristic curve. The damping coefficient affects the slope of the curve, while the attenuation index affects the concave convex trend of the curve.</p>
+<p>Dynamic damping shows the relationship between damping force and piston speed at a certain excitation frequency - the overall trend is to decrease with the increase of excitation frequency.</p>
+<h5 id="Stiffness"><a href="#Stiffness" class="headerlink" title="Stiffness"></a>Stiffness</h5><p>When the front and rear spring stiffness changes, the root mean square value of the total weighted acceleration at the seat has a significant change, and the change of the front spring stiffness has less impact on the vehicle ride comfort than the change of the rear spring stiffness.</p>
+<h2 id="Adams-stimulation"><a href="#Adams-stimulation" class="headerlink" title="Adams stimulation"></a>Adams stimulation</h2><h3 id="Overview-of-simulation-model"><a href="#Overview-of-simulation-model" class="headerlink" title="Overview of simulation model"></a>Overview of simulation model</h3><h5 id="Physical-definition-of-beam"><a href="#Physical-definition-of-beam" class="headerlink" title="Physical definition of beam"></a>Physical definition of beam</h5><p>There are two types of physical definition of beam: rigid and flexible beam.</p>
+<p>For rigid beam, we need to add a fix joint-between the beam and the beam holder:</p>
+<p><img src="https://s2.loli.net/2022/10/09/kdW2i6ot3pqjSzI.png" alt="b5.png"></p>
+<p>For flexible beam, we need to use flex function in Adams to construct it:</p>
+<p><img src="https://s2.loli.net/2022/10/09/gJivlWdx79YSecU.png" alt="b6.png"></p>
+<p>More information about rigid and flexible in stimulation software:</p>
+<p>Most simulation analysis uses rigid components, which will not deform under the force. In reality, it can meet the requirements to treat most components as rigid bodies, because the elastic deformation between parts has little impact on the dynamic characteristics of each part of the mechanism.</p>
+<p>However, it is necessary to consider the deformation of components, which will affect the accuracy results. When it is necessary to study the size and distribution of stress and load output of components, as well as thin-walled components and high-precision instrument components, they should be treated as flexible bodies, so that the calculation results will be more accurate. For flexible body mechanism, deformation plays a decisive role in dynamic influence.</p>
+<h5 id="Wheel-Motion-Mode"><a href="#Wheel-Motion-Mode" class="headerlink" title="Wheel Motion Mode"></a>Wheel Motion Mode</h5><p>The motion part is the synchronous motion of four wheels - the speed remains the same and the size remains the same, which is $720^0/sec$.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/ODjhR6i9noUflKv.png" alt="b7.png" width="390" data-align="center"></p>
+<h5 id="Determination-of-simulation-time"><a href="#Determination-of-simulation-time" class="headerlink" title="Determination of simulation time"></a>Determination of simulation time</h5><p><img title="" src="https://s2.loli.net/2022/10/09/275cKgZ1pXP6zls.png" alt="b8.png" width="497" data-align="center"></p>
+<p>Since the purpose of simulation is to get the deflection of the beam carried by the car on the undulating road, reducing the time spent on the flat road and the time spent on falling can better meet the calculation and simulation requirements.</p>
+<p>After several simulation experiments, 7.25s was selected as the total simulation time. The position of the car is as shown in the figure above - the car left the undulating road and did not start to fall, which is more in line with expectations.</p>
+<h5 id="Overall-operation"><a href="#Overall-operation" class="headerlink" title="Overall operation"></a>Overall operation</h5><p>Stiffness/damping coefficients for shock absorbers of four wheels in Force, with the same initial values - select appropriate values.</p>
+<p>*It is divided into two parts - the former two change at the same time, and the latter two change at the same time</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/z4e62kxh7oLG5Ht.png" alt="b9.png" width="372" data-align="center"></p>
+<p>Stiffness/damping coefficients of shock absorber for beam in Force — select one of the three positions and select the appropriate value</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/7vUBtq8fWg2D5i3.png" alt="b10.png" width="475" data-align="center"></p>
+<h3 id="Specific-simulation-operation-optimization-design"><a href="#Specific-simulation-operation-optimization-design" class="headerlink" title="Specific simulation operation - optimization design"></a>Specific simulation operation - optimization design</h3><p>Use design variable in Adams for parametric modeling, hoping to optimize the design.</p>
+<p>The design variable is used in some scenes of adams, which can make the operation more convenient. For example, some groups of forces have the same size, so that they all reference the same design variable. Just change the value of the design variable, you can change all force sizes.</p>
+<p>In this project, we use design variable for K/C(stiffness and damping coefficient).</p>
+<h5 id="Rigid-beam"><a href="#Rigid-beam" class="headerlink" title="Rigid beam"></a>Rigid beam</h5><p>Use Matlab to substitute K and C according to the assumed value, and select the best answer. It is used to determine the interval, and then the optimal solution of KC is obtained by twice approximation.</p>
+<p>In the optimization of the third question, we reduce the matrix of the flexible body calculated in the second question to 3 × 3. In this way, the whole can be estimated as a rigid body.</p>
+<p>We choose to use the for loop to bring in the values of K and C, store the final result in the array, find the smallest corresponding serial number, and generate it. Since it counts from zero, subtracting 1 is the final answer.</p>
+<p>Let’s assume that all K and C values are the same, with only two variables and two for loops:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/AqCZ8WnDIzBo9KV.jpg" alt="b11.jpg" data-align="center" width="369"></p>
+<p>The value of C is 10 and the value of K is 500. Considering that the K and C values of Beam are relatively small, we add two variables again:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/SzuIXKrtG6JqZ5Y.png" alt="b12.png" data-align="center" width="337"></p>
+<p>$C=10000,K=100000,C_b=50000,K_b=100000$. After determining the approximate value, select adjacent intervals for approximation.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/rfdIFkVoT3CelG7.jpg" alt="b12.jpg" data-align="center" width="462"></p>
+<p>$C=5000,K=500000,C_b=100000,K_b=200000$. After determining the approximate value, select adjacent intervals for approximation.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/MqRpxSTgdUnFC59.png" alt="b13.png" data-align="center" width="452"></p>
+<p>$C=5000,K=500000,C_b=150000,K_b=250000$, and the possible optimal solution can be obtained after two approximations. </p>
+<p>However, there is still something unreasonable: the value of Cb gradually increases, which is not consistent with the actual situation. It is also unreasonable that the relationship between C and K is 100 times different.</p>
+<p>Then use above values in Adams to get result:</p>
+<p><img src="https://s2.loli.net/2022/10/09/aCwVltgOIsLWJry.png" alt="b14.png"></p>
+<p>The red line is the initial C/K, and the blue line is the optimized C/K</p>
+<p>The end Deflection simulation image is:</p>
+<p><img src="https://s2.loli.net/2022/10/09/mNARGXfylCWV3p9.png" alt="b15.png"></p>
+<p>The effect of the position of the shock absorber at the beam on the free end displacement:</p>
+<p><img src="https://s2.loli.net/2022/10/09/LQEPWSe6J4Koi3z.png" alt="b16.png"></p>
+<p>Red is the free end discharge at position 1; Blue refers to the free end discharge at position 2; The pink color is the free end defect of position 3.</p>
+<p>As shown in the figure, when beam 2 is running, the car overturns, so it is decided to remove this position:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/x9OsGcLfk8Z5mB4.png" alt="b17.png" width="458" data-align="center"></p>
+<p><img src="https://s2.loli.net/2022/10/09/tBKOE3iSVQlRfPF.png" alt="b18.png"></p>
+<p>Finally, according to the results, the wheels are all C=50/K=250, and the beam (choose beam1) is C=5/K=100.</p>
+<h5 id="Flexible-beam"><a href="#Flexible-beam" class="headerlink" title="Flexible beam"></a>Flexible beam</h5><p>The basic method is similar to the above, except that a column is added to the X matrix and X_dot matrix:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/8PJVsxveowUE7QL.png" alt="b19.png" width="430" data-align="center"></p>
+<p>$C=10000,K=100000,C_b=50000,K_b=100000$, and the possible optimal solution can be obtained after two approximations.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/PrCQT7BmxWSiHgb.png" alt="b20.png" width="333" data-align="center"></p>
+<p>$C=5000, K=1000000, C_b=100000, K_b=2000000$, get the possible optimal solution after approximation.</p>
+<p>Then use above values in Adams to get result:</p>
+<p><img src="https://s2.loli.net/2022/10/09/nr5kAXLIemlszwb.png" alt="b21.png"></p>
+<p>The red line is the initial C/K, and the blue line is the optimized C/K.</p>
+<p>Finally, combining matlab and Adams, the optimal solution is obtained as follows: the wheels are all C=5/K=250, and the beam (choose beam1) is C=50/K=100</p>
+<p>The end Deflection simulation image is:</p>
+<p><img src="https://s2.loli.net/2022/10/09/UuIzJixmsQrnX5a.png" alt="b22.png"></p>
+<p>The effect of the position of the shock absorber at the beam on the free end displacement:</p>
+<p><img src="https://s2.loli.net/2022/10/09/zx9qjS4ckHaPQD6.png" alt="b23.png"></p>
+<p>The pink color is the free end discharge at position 1; Red is the free end discharge at position 2; Blue is the free end collection of position 3.</p>
+<p>Finally, according to the results, the wheels are all C=5/K=250, and the beam (choose beam1) is C=50/K=100.</p>
+<h3 id="TBD："><a href="#TBD：" class="headerlink" title="TBD："></a>TBD：</h3><p>The basic assumption is that the C/K of the four wheels is the same, but it should be further explored - the wheels can take different C/K values; At the same time, we simply judge the position of the shock absorber at the beam according to the results, without exploring its internal principle and mathematical relationship.</p>
+<h2 id="Matlab-stimulation"><a href="#Matlab-stimulation" class="headerlink" title="Matlab stimulation"></a>Matlab stimulation</h2><p>In the simulation, the damping system of the trolley is simplified as a spring with an elastic coefficient of k and a viscous damper with a viscosity coefficient of v. The damping system of the trolley shall ensure that there is no obvious boundary between passing and failing frequencies. Therefore, there should be a gradual transition in the design of the damping system. In the modeling of the system, the step signal is used to simulate the uneven road surface. If the step response of the trolley damping system presents a relatively large continuous oscillation, a flange on the road (equivalent to the step signal) will cause the trolley to bump.</p>
+<h3 id="Establishment-of-mathematical-model-of-damping-system"><a href="#Establishment-of-mathematical-model-of-damping-system" class="headerlink" title="Establishment of mathematical model of damping system"></a>Establishment of mathematical model of damping system</h3><p><img title="" src="https://s2.loli.net/2022/10/09/6JnFLDZzxmgwKe1.png" alt="b24.png" width="302" data-align="center"></p>
+<p>The model diagram of the damping system of the car can be shown in the above figure: $x (t)$ is the displacement of the wheel when driving relative to the horizontal road surface, and $y (t)$ is the displacement of the car chassis when driving relative to the horizontal road surface. Moreover, when $t=0$, the trolley is in balance on the horizontal road, that is, $x (t)=y (t)=0$. However, when the car moves on the uneven road, there will be $x (t) ≠ 0$, and the balance of the car will be broken.</p>
+<p>Since the force analysis and calculation of the trolley have been carried out previously, the differential equation of the car chassis can be simply expressed as:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/xp6Ma3FwevchzYQ.png" alt="b25.PNG" data-align="center" width="344"></p>
+<p>Among them, m is the mass of the vehicle chassis, k and b are coefficients related to springs and shock absorbers, respectively. Therefore, the transfer function of the system can be expressed as:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/wvUXe4VSs2hPTQo.png" alt="b26.PNG" data-align="center" width="245"></p>
+<p>Among them, $ω_ n=√(k/m)$，$2 ξω_ n=b/m$,  $ω_ n$ is the undamped natural frequency, $ξ$ Is the damping coefficient.</p>
+<h3 id="MATLAB-Simulink-simulation"><a href="#MATLAB-Simulink-simulation" class="headerlink" title="MATLAB Simulink simulation"></a>MATLAB Simulink simulation</h3><p>The overall model is as follows:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/LXJ5D7RGaHu9n14.png" alt="b27.png" width="491" data-align="center"></p>
+<p>For the step module, adjust the final value to 1000 and the step time to 0:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/Yv7IswDujnoCxE6.png" alt="b28.png" width="357" data-align="center"></p>
+<p>In order to make the output image curve more smooth, the original automatic step size is changed to a fixed step size of 0.01:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/WLV724yTlRkhnp8.png" alt="b29.png" width="466" data-align="center"></p>
+<p>As a whole, three to workspace modules are also built to introduce the values in simulink to the workbench for easy image output.</p>
+<h5 id="Analysis-of-simulation-results"><a href="#Analysis-of-simulation-results" class="headerlink" title="Analysis of simulation results"></a>Analysis of simulation results</h5><ol>
+<li><p>Effect of viscosity coefficient on damping characteristics</p>
+<p>From the measured k and m, we get $ω_ n=0.66$, let $ξ$= 0.1:0.1:1. Write a matlab program to call the model file for simulation, and draw the step response curve and bode diagram:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/TeLm5Ezc1OxatBl.png" alt="b30.png" width="346" data-align="center"></p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/FPfMj7pyR5LKgHq.png" alt="b31.png" width="397" data-align="center"></p>
+<p>Through the analysis of the image, it can be concluded that the damping system of the trolley is based on the natural frequency $ω_n$ to control, the value of $ω_n$ becomes larger, the more compressed the functions $h (t)$ and $s (t)$ as t in time, and the higher the oscillation frequency, so that the rise time of the system. If the natural frequency is low, the damping system tends to filter out slower changes, so as to provide a stable driving environment, but this will increase the rise time of the system, and the system will become sluggish.</p>
+<p>As the damping coefficient decreases, the cut-off curve of the system frequency response becomes steeper, and overshoot and oscillation tend to increase, which means that a compromise is found between the starting point and the frequency domain, that is, the system frequency and $ξ$ Is related to the value of. It can be seen from the figure $ξ= 0.4-0.8$, the adjustment time is relatively short, and a relatively stable driving environment can be obtained.</p>
+</li>
+<li><p>Effect of elastic coefficient on damping characteristics</p>
+<p>At this time, instead of using the determined value of $\omega_n$, let $\omega_n = 1:1:10,ξ=0.7 $, compile a matlab program to call the model file for simulation, and draw the step response curve and bode diagram:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/KQdk8TovjFguyI4.png" alt="b32.png" width="402" data-align="center"><img title="" src="https://s2.loli.net/2022/10/09/K1SyTlDJvBm78A3.png" alt="b33.png" width="416" data-align="center"></p>
+<p>It can be seen that the smaller the elastic coefficient is, the more sluggish the system’s response is. However, k is too large, the natural frequency is high, and the filtering in the damping system area changes rapidly, which leads to unstable driving of the car. Then the elastic coefficient can be a compromise value.</p>
+</li>
+</ol>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>[1] 艾小娇,章桐.汽车减震器特征参数的建立与评价[J].上海汽车,2014(04):38-41+51. </p>
+<p>[2] 史广奎,李槟,孟宪民.汽车设计中减震器相对阻尼系数的确定[J].汽车工程,1995(06):367-373+346.</p>
+<p> [3] 王想亭,张瑞乾,赵峻.基于ADAMS的汽车平顺性的仿真分析[J].汽车实用技术,2013(12):8-14. </p>
+<p>[4] 赵锋. 基于MATLAB环境的汽车减震器阻尼特性仿真分析[D].华中科技大学,2007. </p>
+<p>[5] Jugulkar, L. M., Singh, S., &amp; Sawant, S. M. (2016). Analysis of suspension with variable stiffness and variable damping force for automotive applications. Advances in Mechanical Engineering.</p>
+<p> [6] Sun, S, Deng, H, Li, W. Variable stiffness and damping suspension system for train. In: Proceedings of SPIE: active and passive smart structures and integrated systems 2014. Bellingham, WA: SPIE, 2014, pp.1–12.</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">AllenD</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/10/09/SDM283-mini-project-3/">http://example.com/2022/10/09/SDM283-mini-project-3/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">段成龙的个人空间</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%9C%BA%E6%A2%B0%E7%BB%93%E6%9E%84/">机械结构</a><a class="post-meta__tags" href="/tags/%E8%BF%90%E5%8A%A8%E4%BB%BF%E7%9C%9F/">运动仿真</a><a class="post-meta__tags" href="/tags/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F/">大二春季学期</a><a class="post-meta__tags" href="/tags/SDM283/">SDM283</a><a class="post-meta__tags" href="/tags/Adams/">Adams</a><a class="post-meta__tags" href="/tags/Matlab/">Matlab</a><a class="post-meta__tags" href="/tags/%E6%9C%BA%E6%A2%B0%E6%8C%AF%E5%8A%A8/">机械振动</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra633e8852df3aab9c" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/10/09/SDM283-mini-project-2/"><img class="next-cover" src="https://s2.loli.net/2022/10/07/oSQcGh8OdwNXsA2.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">SDM283 mini project 2</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/10/09/SDM283-Mini-project-1/" title="SDM283 mini project 1"><img class="cover" src="https://s2.loli.net/2022/10/07/H7glm4zpSUYqDhy.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-10-09</div><div class="title">SDM283 mini project 1</div></div></a></div><div><a href="/2022/10/09/SDM283-mini-project-2/" title="SDM283 mini project 2"><img class="cover" src="https://s2.loli.net/2022/10/07/oSQcGh8OdwNXsA2.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-10-09</div><div class="title">SDM283 mini project 2</div></div></a></div><div><a href="/2022/10/07/%E8%AE%A2%E4%B9%A6%E6%9C%BA/" title="SDM232 Project2——Stapler disassembly and motion simulation"><img class="cover" src="https://s2.loli.net/2022/10/07/olYuzWbrn8qi4vI.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-10-09</div><div class="title">SDM232 Project2——Stapler disassembly and motion simulation</div></div></a></div><div><a href="/2022/10/07/%E8%BF%9E%E6%9D%86%E4%B8%8E%E9%BD%BF%E8%BD%AE/" title="SDM232 Project4——Linkage and cam"><img class="cover" src="https://s2.loli.net/2022/10/07/oSQcGh8OdwNXsA2.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-10-08</div><div class="title">SDM232 Project4——Linkage and cam</div></div></a></div><div><a href="/2022/10/07/%E6%89%AB%E5%9C%B0%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E6%A8%A1/" title="SDM232 Project1——Sweeper disassembly and modeling"><img class="cover" src="https://s2.loli.net/2022/10/06/gsw2Ani4lz1dpfm.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-10-08</div><div class="title">SDM232 Project1——Sweeper disassembly and modeling</div></div></a></div><div><a href="/2022/10/07/%E8%BF%9E%E6%9D%86/" title="SDM232 Project3——Linkage Design"><img class="cover" src="https://s2.loli.net/2022/10/06/gsw2Ani4lz1dpfm.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-10-09</div><div class="title">SDM232 Project3——Linkage Design</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">AllenD</div><div class="author-info__description">一名普通的大学生，目前大四</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">36</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/dcl666"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="/909161152@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">分享学习与生活，期待大佬们的锐评</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Simple-Research-on-Automobile-Shock-Absorber"><span class="toc-number">2.</span> <span class="toc-text">Simple Research on Automobile Shock Absorber</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Definition-and-basic-functions"><span class="toc-number">2.1.</span> <span class="toc-text">Definition and basic functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Suspension-parameters"><span class="toc-number">2.2.</span> <span class="toc-text">Suspension parameters</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Damping-coefficient"><span class="toc-number">2.2.0.1.</span> <span class="toc-text">Damping coefficient</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Stiffness"><span class="toc-number">2.2.0.2.</span> <span class="toc-text">Stiffness</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Adams-stimulation"><span class="toc-number">3.</span> <span class="toc-text">Adams stimulation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Overview-of-simulation-model"><span class="toc-number">3.1.</span> <span class="toc-text">Overview of simulation model</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Physical-definition-of-beam"><span class="toc-number">3.1.0.1.</span> <span class="toc-text">Physical definition of beam</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Wheel-Motion-Mode"><span class="toc-number">3.1.0.2.</span> <span class="toc-text">Wheel Motion Mode</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Determination-of-simulation-time"><span class="toc-number">3.1.0.3.</span> <span class="toc-text">Determination of simulation time</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Overall-operation"><span class="toc-number">3.1.0.4.</span> <span class="toc-text">Overall operation</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Specific-simulation-operation-optimization-design"><span class="toc-number">3.2.</span> <span class="toc-text">Specific simulation operation - optimization design</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Rigid-beam"><span class="toc-number">3.2.0.1.</span> <span class="toc-text">Rigid beam</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Flexible-beam"><span class="toc-number">3.2.0.2.</span> <span class="toc-text">Flexible beam</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TBD%EF%BC%9A"><span class="toc-number">3.3.</span> <span class="toc-text">TBD：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Matlab-stimulation"><span class="toc-number">4.</span> <span class="toc-text">Matlab stimulation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Establishment-of-mathematical-model-of-damping-system"><span class="toc-number">4.1.</span> <span class="toc-text">Establishment of mathematical model of damping system</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MATLAB-Simulink-simulation"><span class="toc-number">4.2.</span> <span class="toc-text">MATLAB Simulink simulation</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Analysis-of-simulation-results"><span class="toc-number">4.2.0.1.</span> <span class="toc-text">Analysis of simulation results</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reference"><span class="toc-number">5.</span> <span class="toc-text">Reference</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/10/09/SDM283-mini-project-3/" title="SDM283 mini project 3"><img src="https://s2.loli.net/2022/10/07/oSQcGh8OdwNXsA2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SDM283 mini project 3"/></a><div class="content"><a class="title" href="/2022/10/09/SDM283-mini-project-3/" title="SDM283 mini project 3">SDM283 mini project 3</a><time datetime="2022-10-09T12:25:24.000Z" title="发表于 2022-10-09 20:25:24">2022-10-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/09/SDM283-mini-project-2/" title="SDM283 mini project 2"><img src="https://s2.loli.net/2022/10/07/oSQcGh8OdwNXsA2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SDM283 mini project 2"/></a><div class="content"><a class="title" href="/2022/10/09/SDM283-mini-project-2/" title="SDM283 mini project 2">SDM283 mini project 2</a><time datetime="2022-10-09T07:45:18.000Z" title="发表于 2022-10-09 15:45:18">2022-10-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/09/SDM283-Mini-project-1/" title="SDM283 mini project 1"><img src="https://s2.loli.net/2022/10/07/H7glm4zpSUYqDhy.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SDM283 mini project 1"/></a><div class="content"><a class="title" href="/2022/10/09/SDM283-Mini-project-1/" title="SDM283 mini project 1">SDM283 mini project 1</a><time datetime="2022-10-09T02:53:14.000Z" title="发表于 2022-10-09 10:53:14">2022-10-09</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2022/10/07/oSQcGh8OdwNXsA2.png')"><div id="footer-wrap"><div class="copyright">&copy;2022 By AllenD</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog !</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'http://example.com/2022/10/09/SDM283-mini-project-3/'
+    this.page.identifier = '/2022/10/09/SDM283-mini-project-3/'
+    this.page.title = 'SDM283 mini project 3'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+
+  document.getElementById('darkmode').addEventListener('click', () => {
+    setTimeout(() => window.disqusReset(), 200)
+  })
+}
+
+if ('Valine' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script>(function(d, w, c) {
+    w.ChatraID = 'i49fhtRTkG6ta4hov';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

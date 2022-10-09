@@ -1,9 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>SDM283 mini project 1</title>
+    <url>/2022/10/09/SDM283-Mini-project-1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This project focused on analysis of motion patterns of multi-degree-of-freedom robotic arms, as well as simulation of actual motion by motion simulation software(Adams) and simulation of motion trajectories using programming(Matlab).</p>
+<p>Tasks are below:</p>
+<p><img src="https://s2.loli.net/2022/10/09/crk9x4dXLVTbvQa.png" alt="a32.PNG"></p>
+<h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a>Procedure:</h2><h3 id="Initial-model-analysis-part"><a href="#Initial-model-analysis-part" class="headerlink" title="Initial model analysis part"></a>Initial model analysis part</h3><p>Firstly, for the ggb model analysis, the basic motion pattern of RGB460 is obtained:</p>
+<p><img src="https://s2.loli.net/2022/10/09/MVDuU4IaHKoZRXN.png" alt="a33.png"></p>
+<p>The model can be divided into three parallelograms - when the bottom point C is driven by point 0, the FG rod is the main motion rod and points D and D’ do not move (representing the control of up and down motion); when the upper point D is driven by point O, the model moves as a whole with the same relative position (representing the back and forth motion) .<br>These two motions are driven by different joints and are not equivalent (this is to be reflected in the simulation); meanwhile the BO bar is always in the same position; the motion can be controlled by changing the size of the two parallelogram angles on the left side (which can represent variables in matlab, i.e. angle change values).<br>Finally by some fixed values (rod length, angle) and variables can be based on the coordinates of the O point to represent the coordinates of all the remaining points, for the convenience of the subsequent programming.</p>
+<h3 id="Adams-simulation"><a href="#Adams-simulation" class="headerlink" title="Adams simulation"></a>Adams simulation</h3><p>First import the solidworks model into Adams:Here we made the mistake of moving the original model of s, resulting in the A inside not being in the model default coordinates, resulting in a less than standardized answer.</p>
+<img title="" src="https://s2.loli.net/2022/10/09/m3j8Jd9MDOIh46A.png" alt="a34.png" width="265" data-align="center">
+
+<p>First separate each linkage structure, so as to provide easy operation afterwards.</p>
+<p><img src="https://s2.loli.net/2022/10/09/inJgGUM9NWSOpD5.png" title="" alt="a35.png" data-align="center">Then add joints, gravity, load, and motion to achieve the function of movement, you need to combine the model in sw to set the position of joints and motion need to carry the joint.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/IwXngSGBeNti9mK.png" alt="a36.PNG" data-align="center">What is important to note here is that when adding joints, the view needs to be perpendicular to it to ensure that the rotating joints are correct, otherwise the situation will appear as follows.</p>
+<p><img src="https://s2.loli.net/2022/10/09/rvq8ZRKGe4nkgw1.png" title="" alt="a37.png" data-align="center">Next we extract the data (length of the rod) from the Solidworks model. The correct Markers are selected in Adams to determine the coordinates of the key points. This data is then fed into Task1 and Task2. Then set the common rotation angle and rotation speed. The G-point coordinates are measured at the end of the rotation to enable verification of Task1.</p>
+<h5 id="Task1"><a href="#Task1" class="headerlink" title="Task1"></a>Task1</h5><ul>
+<li><p>Motion1</p>
+<img src="https://s2.loli.net/2022/10/09/UjW25BJmXDxkCSd.png" title="" alt="a38.png" data-align="center">
+</li>
+<li><p>Motion2</p>
+<img src="https://s2.loli.net/2022/10/09/eABVPJFDp8Lzqr1.png" title="" alt="a39.png" data-align="center">
+</li>
+<li><p>Motion3</p>
+<img src="https://s2.loli.net/2022/10/09/F7xRO8ea5bQmDM3.png" title="" alt="a40.png" data-align="center">
+</li>
+<li><p>G-point end coordinates</p>
+<img title="" src="https://s2.loli.net/2022/10/09/PTCcVBDvg5GR2Qo.png" alt="a41.png" data-align="center"></li>
+</ul>
+<h5 id="Task2"><a href="#Task2" class="headerlink" title="Task2"></a>Task2</h5><ul>
+<li><p>G-point（XYZ）Translational velocity</p>
+<img title="" src="https://s2.loli.net/2022/10/09/RhfUyOleNgxImWH.png" alt="a42.png" width="254" data-align="center">
+</li>
+<li><p>G-point（XYZ）Angular velocity</p>
+<img title="" src="https://s2.loli.net/2022/10/09/BaCyUFWOSiEkqL1.png" alt="a43.png" width="258" data-align="center"></li>
+</ul>
+<h5 id="Task3"><a href="#Task3" class="headerlink" title="Task3"></a>Task3</h5><p>By adding only a downward load, the torque at the three joints was measured. The following results were obtained:</p>
+<p><img src="https://s2.loli.net/2022/10/09/BAEmj4nrYGKLfSw.png" alt="a44.png"></p>
+<h5 id="Task4"><a href="#Task4" class="headerlink" title="Task4"></a>Task4</h5><img title="" src="https://s2.loli.net/2022/10/09/GWgF82VBui1LzTQ.png" alt="a45.PNG" width="303" data-align="center">
+
+<p>The torque at the three joints was measured. The following results were obtained:</p>
+<p><img src="https://s2.loli.net/2022/10/09/rnZ9FKizUlmdcCV.png" alt="a46.png"></p>
+<h3 id="Math-caculate"><a href="#Math-caculate" class="headerlink" title="Math caculate"></a>Math caculate</h3><h5 id="Task1-1"><a href="#Task1-1" class="headerlink" title="Task1"></a>Task1</h5><p>In Task1, the angle of joint rotation is used as the independent variable. After the RGB460 has been rotated by a certain angle in all three joints, we need to find the coordinates of the end points after the change.<br>First, we measured the angle and the length of the rod in Adams to calculate the coordinates of each joint we need.</p>
+<p><img src="https://s2.loli.net/2022/10/09/4oktmFPZJCd9OAL.png" alt="a55.PNG"></p>
+<p>q is the coordinate of each joint before rotation.<br>For each joint, we can write a $\hatξ$ matrix, and in the order of the three joints, we end up with three $\hatξ$ matrices.<br>In order to calculate the coordinates of each joint after rotation, we need to calculate the rotation matrix R (at this time, R is a 4x4 matrix, and for the purpose of calculation, we have to write the 3x1 matrix of the initial coordinates of the joints as a 4x1 matrix).</p>
+<p>$$<br>R(q,\theta)&#x3D;e^{\hatξ\theta}&#x3D;\begin{bmatrix}e^{\hat\omega\theta} &amp; (I-e^{\hat\omega\theta})q \ 0 &amp; 1\end{bmatrix}<br>$$</p>
+<p>(Rodriguez Formula).</p>
+<p>In this tkas, there are three joints rotated and there exist three angles of rotation, and according to the multiplication of the rotation matrix, we will get:</p>
+<p>$$<br>g_{ab}&#x3D;e^{\hatξ_1\theta_1}*e^{\hatξ_2\theta_2}*e^{\hatξ_3\theta_3}*g_{ab0}<br>$$</p>
+<p>Bringing the three matrices R obtained earlier into the above equation, we can get the representation matrix $g_{ab}$ of the rigid body after rotation. In addition, we have done some other ways to think about solving the problem, but we finally gave up this idea because it would complicate the simple problem. The specific process of this idea is as follows:<br>(a) Determine the origin of the overall linkage coordinate system and the x, y, and z axis directions.<br>(b) Apply the rotation to move the coordinate system to solve the problem, first determine the rotation matrix $R$ according to our rotation process, where </p>
+<p><img src="https://s2.loli.net/2022/10/09/BxHrGjpMAekf18g.png" alt="a57.PNG"></p>
+<p>(c) It is known that the overall coordinate system is not displaced, so </p>
+<p>$$<br>p_{ab}&#x3D;0<br>$$</p>
+<p>(d) So task1 final result is:</p>
+<p>$$<br>g_{ab}&#x3D;\begin{bmatrix}R &amp; p \ 0 &amp; 1\end{bmatrix}<br>$$</p>
+<h5 id="Task2-1"><a href="#Task2-1" class="headerlink" title="Task2"></a>Task2</h5><p>In the calculation of task1, $g_{ab0}$ is converted to $g_{ab}$ by the input angles of rotation of the three joints, and thus the coordinate frame of the rotated rigid body is obtained.<br>In task2, in addition to the angles of rotation of the three joints, the angular velocity corresponding to the rotation of each joint is also input. Since the desired $\hat V_{ab}$ represents the velocity of the rigid body, it can be found by $g_{ab}$ as follows: </p>
+<p>$$<br>\hat V_{ab}&#x3D;\acute g_{ab}*g_{ab}^{-1}&#x3D;\hatξ_1\theta_1+e^{\hatξ_1\theta_1}e^{-\hatξ_1\theta_1}\hatξ_2\acute \theta_2+e^{\hatξ_1\theta_1}e^{-\hatξ_1\theta_1}e^{\hatξ_2\theta_2}e^{-\hatξ_2\theta_2}\hatξ_3\acute \theta_3<br>$$</p>
+<p>Substitute the three matrices obtained in task 1 into the above formula to obtain</p>
+<p>$$<br>\hat V_{ab}<br>$$</p>
+<h5 id="Task3-1"><a href="#Task3-1" class="headerlink" title="Task3"></a>Task3</h5><p><img src="https://s2.loli.net/2022/10/09/iBrRub5tLIjHGAT.png" alt="a56.PNG"></p>
+<h5 id="Task4-1"><a href="#Task4-1" class="headerlink" title="Task4"></a>Task4</h5><p>It has the same principle as task3, but it lacks the load and increases the calculation of kinetic energy; Calculated according to euler lagrange equation: </p>
+<p>$$<br>\frac{d}{dt} (∂L&#x2F;∂θ)- ∂L&#x2F;∂θ<br>$$</p>
+<p><img src="https://s2.loli.net/2022/10/09/JDxdkVW3SKQng6v.png" alt="a47.PNG"></p>
+<p>Then start to derive each item according to the formula</p>
+<p>When deriving theta, separate T and V for derivation – take the derivative of theta1&#x2F;2&#x2F;3 for T and V of three centroids respectively</p>
+<p>Where the centroid coordinate is:</p>
+<p><img src="https://s2.loli.net/2022/10/09/6TdgwLYNnbWOJly.png" alt="a48.PNG"></p>
+<p>For $\acute \theta$ takes derivative, it is only related to T, and V’s derivative of $\acute \theta$ is 0; This is still derivative for $\acute \theta_1,\acute \theta_2,\acute \theta_3$ respectively</p>
+<p><img src="https://s2.loli.net/2022/10/09/aKCtOzQ6Nhq8vBi.png" alt="a49.PNG"></p>
+<p>Add after all calculations.</p>
+<h3 id="Matlab-coding"><a href="#Matlab-coding" class="headerlink" title="Matlab coding"></a>Matlab coding</h3><h5 id="Task1-x2F-Task2"><a href="#Task1-x2F-Task2" class="headerlink" title="Task1&#x2F;Task2"></a>Task1&#x2F;Task2</h5><p>Task 2 applies some functions used in task 1 in MATLAB calculation, so the calculation of the two tasks can be implemented together.</p>
+<p>In these two tasks, some functions are mainly used:</p>
+<img src="https://s2.loli.net/2022/10/09/wvqmZ6Y8WbESV2d.png" title="" alt="a50.png" data-align="center">
+
+<p>First omega_ hat function is used to complete the conversion of omega cross multiplication:</p>
+<img src="https://s2.loli.net/2022/10/09/rEcm19a5dbkVluH.png" title="" alt="a51.png" data-align="center">
+
+<p>Next is xi_hat function, used to calculate $\hat ξ$ :</p>
+<img src="https://s2.loli.net/2022/10/09/BAfFC8WVarg7GEP.png" title="" alt="a52.png" data-align="center">
+
+<p>Substitute these two results into the rotate function to obtain the matrix we need:</p>
+<p><img src="https://s2.loli.net/2022/10/09/XsV3yId8ASgB7R1.png" alt="a53.png"></p>
+<p>After defining these functions, it is only necessary to substitute the relevant parameters of each joint into the formula in the principle analysis to get the results</p>
+<h5 id="Task3-x2F-Task4"><a href="#Task3-x2F-Task4" class="headerlink" title="Task3&#x2F;Task4"></a>Task3&#x2F;Task4</h5><p>In the calculation of task 3 and task 4, several functions used in task1 and task2 are also needed.</p>
+<p>However, because of the need for formulas and calculations, it is necessary to reference a function for changing $\hat ξ$ to $ξ$, in order to change the 4x4 matrix into a 6x1 matrix and substitute it into our formula.</p>
+<img src="https://s2.loli.net/2022/10/09/2qYPCp5H3E1RxFa.png" title="" alt="a54.png" data-align="center">
+
+<p>After we have these functions for calculation, we can use these functions to substitute into the calculation according to the derived formula to get our final result</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In general, this mini project covers the dynamics knowledge points learned in the first five weeks very well, so that we can not only deepen our understanding of knowledge, but also apply it in practice, understand the details that should be paid attention to in specific operations, learn the general method, and lay a foundation for similar structure analysis in the future.</p>
+]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>机械结构</tag>
+        <tag>运动仿真</tag>
+        <tag>大二春季学期</tag>
+        <tag>SDM283</tag>
+        <tag>RGB460</tag>
+        <tag>GGB</tag>
+        <tag>Adams</tag>
+        <tag>Matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>202 Project Final Pre</title>
+    <url>/2022/10/09/202/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Pre-PPT"><a href="#Pre-PPT" class="headerlink" title="Pre PPT"></a>Pre PPT</h2>
+
+	<div class="row">
+    <embed src="https://maipdf.cn/pdf/a91873814118@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h2 id="Pre-Video"><a href="#Pre-Video" class="headerlink" title="Pre Video"></a>Pre Video</h2>
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<iframe src="//player.bilibili.com/player.html?aid=388893698&bvid=BV1Yd4y1i7EV&cid=856526874&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div>
+
+
+<h2 id="Other-Files"><a href="#Other-Files" class="headerlink" title="Other Files"></a>Other Files</h2><p>Model file and Poster:</p>
+<p><a href="https://pan.baidu.com/s/1U8T7CdyEHZlo_V3FWXFznw?pwd=rwjb">https://pan.baidu.com/s/1U8T7CdyEHZlo_V3FWXFznw?pwd=rwjb</a><br>Show page from SDIM：</p>
+<p><a href="https://mp.weixin.qq.com/s/fsX4CVbHuUFMin67sRrlxg">https://mp.weixin.qq.com/s/fsX4CVbHuUFMin67sRrlxg</a></p>
+]]></content>
+      <categories>
+        <category>大项目</category>
+      </categories>
+      <tags>
+        <tag>机械</tag>
+        <tag>电控</tag>
+        <tag>材料</tag>
+        <tag>制造</tag>
+        <tag>设计思维</tag>
+        <tag>大二秋季学期</tag>
+        <tag>Multidisciplinary Project</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工业设计杯</title>
+    <url>/2022/10/09/%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1%E6%9D%AF/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Pre-PPT"><a href="#Pre-PPT" class="headerlink" title="Pre PPT"></a>Pre PPT</h2>
+
+	<div class="row">
+    <embed src="https://maipdf.cn/pdf/a97044835444@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h2 id="Other-Files"><a href="#Other-Files" class="headerlink" title="Other Files"></a>Other Files</h2><p>Model file:</p>
+<p><a href="https://pan.baidu.com/s/1KY9RjtCPA4Otuew12wjZ4A?pwd=no56">https://pan.baidu.com/s/1KY9RjtCPA4Otuew12wjZ4A?pwd=no56</a></p>
+]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>机械</tag>
+        <tag>材料</tag>
+        <tag>大三秋季学期</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM242 Final Report—— Learn from 202 project</title>
+    <url>/2022/10/08/%E7%94%B5%E6%8E%A7-202/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>After a semester of study, knowledge is gained from courses and projects–in our lecture,  what we studied are mainly about concept, function and practical application of op-amp; in our project, what I studied are mainly about MCU、Arduino, focused on motor control.</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>For op-amp, although I did not build an op-amp module from scratch by myself, I have a clear understanding of the most basic principles of op-amp. At the same time, I have studied some integrated op-amp modules and understood the principles. What’s more, because I am in charge of the electronic control part of the project of our group, mainly the control of the motor, so I went to learn the use of MCU and some demo boards, mainly using STM32 and Arduino. In the main text, I will not only talk about knowledge points, I will explain them separately according to the following four points, focusing on the learning process–what I learned、why I learned、how can it do、how I use it.</p>
+<h2 id="Op-amp"><a href="#Op-amp" class="headerlink" title="Op-amp"></a>Op-amp</h2><p>242, which is represented analog circuit system design, there is no doubt that op-amp is the most important part in 242, so it is necessary to know the most basic principles of op-amp–virtual short and virtual break, all op-amp circuits can be solved using these two concepts. No matter the relationship between output and input can be obtained, the principle of op-amp can be fundamentally understood.</p>
+<p>A. virtual short</p>
+<p> It means that when the operational amplifier is in the linear state, the two input terminals can be regarded as equipotential–because the amplifier has a large amplification factor and its own output voltage is limited, the differential mode input voltage is less than 1mV, and the two input terminals are approximately The same potential is equivalent to a short circuit. The greater the magnification, the closer to the same. This feature is called virtual short. Obviously, we can’t treat the two input terminals as short circuits.</p>
+<p>B. virtual break: </p>
+<p>It means that when the operational amplifier is in the linear state, the two input terminals can be regarded as equivalent open circuit–due to the large differential input resistance, the current flowing into the input terminal of the operational amplifier is only 1μA, much smaller than the current of the external circuit at the input terminal. Therefore, the two input terminals can be regarded as open circuits, and the greater the input resistance, the greater the current difference, and the closer to the open circuit. This feature is called virtual break. Obviously, we can’t treat the two input terminals as open circuits.</p>
+<p>C. Example</p>
+<p>Then there is an example about how to use these two concepts to analyze an op-amp circuit, which is the non-inverting amplifier, below is the analysis:<img title="" src="https://s2.loli.net/2022/10/08/QLPIj8YXkzvt6Cu.png" alt="a30.png" width="201" data-align="center">$V_i&#x2F;V_-$are the two input terminals, using the virtual short: $V_i &#x3D; V_-$, using the virtual break: the input resistance of the inverting input terminal is very high, and there is almost no current injection or outflow. Therefore, the current through $R_1&#x2F;R_2$are equal. Set this current as $I$. </p>
+<p>According to Ohm’s law: $I &#x3D; V_{out} &#x2F; (R1+R2)$, $V_i$ is equal to the partial pressure on $R2$, $V_i &#x3D; I * R_2$, finally get $V_{out} &#x3D; V_i * (R_1+R_2) &#x2F; R_2$<br>When studying op-amp circuits, I learned that learning a concept can’t always remember some formulas or terms, but to understand the most fundamental principles, try to use the most basic methods to understand the concept, and go step by step, can’t be content with superficial understanding.</p>
+<h2 id="Motor-control-in-the-project"><a href="#Motor-control-in-the-project" class="headerlink" title="Motor control in the project"></a>Motor control in the project</h2><p>Although for the 242, motor control is not the most important part, it can even be said to be the part of digital circuits, but the learning process is very useful, and it is also for the whole group, so after learning I realized that it is meaningful for 242 study.<br>First of all, at the beginning of the project, I must first determine the control tool to use, or what demo boards to choose–since I wanted to use the robot’s own motor at the beginning, I planned to use the C board(STM32) to develop the control program. Although I need to learn embedded programming, this is also a good learning opportunity, so I started to move forward. I have successfully configured all the programming environment, software and other hardware to be used in accordance with the tutorial and materials, but during the initial practice-the PC cannot recognize the C board and cannot burn the code, which caused the process to stall. I did not find the problem at that time, but when I reused the STM32, I found that it should be caused by an error in the connection line between ST-Link and C board; in fact, there are still several such error correction processes, which made me learn to find more errors in the hardware. At the same time, you should not blindly believe in the tutorials and materials, and make appropriate changes based on the actual situation.<br>After that, I asked the TAs for help, and finally got a useful piece of information-Arduino can be used to achieve such a modular function. After checking the information, I decided to use Arduino–first, the control program is really simple and effective; second, I wanted to try new things and learn more.<br>After deciding to use Arduino, I started to think about and find out the specific control method to be implemented–my goal was to implement different control methods, so that I can reserve a few roads in case which control method has problems or does not meet actual requirements. Finally, I found four control methods–one is wired control, the most stable, through PC and serial port control, as a minimum protection scheme; the other three are infrared, WIFI, Bluetooth–infrared has requirements for external conditions and control specifications, WIFI needs to be connected to my mobile phone hotspot and is realized by APP at the same time, resulting in poor stability. Although Bluetooth also needs to use APP, it is generally much more stable than WIFI. In addition to the specific control method, I also implemented two kinds of motor control programs–servo and stepper motor. For these two motors, their control principles are different–the servo is controlled by the PWM signal, and the time when the high level is generated determines the angle, that is the duty cycle; the stepper motor relies on the electrical pulse signal to control the angle and the number of rotations, and cannot be used duty cycle to control. Although I only need to import the related libraries of these two types of motors in the Arduino program to achieve control, the basic principles must be understood. Only in this way can I truly understand the control method and be able to migrate to other development boards’ control.<br>What’s more, due to changes in our final demo trolley scheme, the specific functions of the motor need to be changed, so the control program needed to be changed–planA only requires the motor to rotate through a specific angle, and does not need to rotate continuously, and the intermediate period is longer; planB requires the motor’s continuous rotation, and can start and stop rotation at any time, the requirements are even higher. Therefore I found that the core code in the library given by Arduino could not achieve the above functions, so I changed the strategy in time–write the core code by myself. I went back to the C’s expression–configure the pins into different output modes: VCC provides power to the driver, pls provides pulses to the stepper motor, dir determines the forward or reverse rotation of the motor, and ena is equivalent to the switch of the stepper motor driver. Finally, I successfully achieved continuous forward and reverse rotation, and the function of stopping at any time. The function implemented by Bluetooth is to transmit several digital signals–1, 0, 2, which represent forward rotation, reverse rotation and stop. In summary, I have implemented many control methods and have the ability to write core codes independently. I have basically mastered the control methods of these two kinds of motors. Although many control programs were not used, I have exercised my programming ability and adaptability, which is very helpful for later learning. And during this period, I constantly searched for information, and constantly debugged–whether it was hardware or software problems, I encountered them many times, but they were all solved successfully. In general, I have a set of debugging procedures, which is very precious for me.</p>
+<img title="" src="https://s2.loli.net/2022/10/08/wtATpfvr542sGho.png" alt="a31.png" data-align="center" width="216">
+
+<h2 id="STM32-for-servo-tester"><a href="#STM32-for-servo-tester" class="headerlink" title="STM32 for servo tester"></a>STM32 for servo tester</h2><p>When I implemented the air pump control of planB, I found the servo tester, which is a very useful control tool, and just found that I can use STM32 to realize a self-made servo tester, which just met my idea of using MCU. So I decided to do it.<br>The implementation process was actually not complicated–it basically followed the existing steps and then learned from it. So learning STM32 is not only learning programming, but also learning to check information, check data manuals, software use and debugging methods. There are not many parts that really need to be built from scratch, I can just learn from the experience of the predecessors and move over to get what I need.<br>The specific code will not be explained in detail–in general, the common ADC reading voltage is used as sampling, and then mathematical conversion is performed. At the same time, TIM triggers sampling and outputs PWM signals at regular intervals, which are transferred to the register through DMA and processed Mean filtering, and then output specific values.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>All in all, in the process of learning 242, I not only learned the knowledge of analog electronics, but also mastered the methodology of learning related knowledge through practice, and mastered the internal principles, not only in specific scenarios.</p>
+<p>If you are interested in some code about Arduino or motor control, you can find all the code in: <a href="https://pan.baidu.com/s/1iIlhQWmPiUof1JwQjWSyQQ?pwd=is7i">https://pan.baidu.com/s/1iIlhQWmPiUof1JwQjWSyQQ?pwd=is7i</a></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h2><p>[1] <a href="https://www.sohu.com/a/154282071_755644">https://www.sohu.com/a/154282071_755644</a></p>
+]]></content>
+      <categories>
+        <category>电控</category>
+      </categories>
+      <tags>
+        <tag>电控</tag>
+        <tag>大二秋季学期</tag>
+        <tag>Multidisciplinary Project</tag>
+        <tag>SDM242</tag>
+        <tag>Op-amp</tag>
+        <tag>MCU</tag>
+        <tag>STM32</tag>
+        <tag>Arduino</tag>
+        <tag>Motor Control</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SDM232 Project1——Sweeper disassembly and modeling</title>
     <url>/2022/10/07/%E6%89%AB%E5%9C%B0%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E6%A8%A1/</url>
-    <content><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  This project is not difficult, the main content is to disassemble the sweeping robot, understand and identify the mechanical structure of the content, briefly analyze its assembly structure, and propose possible improvement solutions. After that, we use Solidworks software to model the whole thing, just try to fit with the real thing.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  This project is not difficult, the main content is to disassemble the sweeping robot, understand and identify the mechanical structure of the content, briefly analyze its assembly structure, and propose possible improvement solutions. After that, we use Solidworks software to model the whole thing, just try to fit with the real thing.</p>
 <p>  On the whole, iRobot Roomba 960 is 9.3cm high, 34.5cm wide, only 7s power-on time and 66dB maximum noise. Compared with other types of sweeping robot, it is a good product.</p>
 <img title="" src="https://s2.loli.net/2022/10/07/CNX1KAG3zrdZihn.jpg" alt="img" width="265" data-align="center">
 
@@ -43,15 +242,42 @@
         <category>机械</category>
       </categories>
       <tags>
-        <tag>扫地机器人</tag>
-        <tag>Solidworks</tag>
         <tag>机械结构</tag>
+        <tag>大二秋季学期</tag>
+        <tag>扫地机器人</tag>
+        <tag>SDM232</tag>
+        <tag>Solidworks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Design Thinking Final Report——Learn from 202 project</title>
+    <url>/2022/10/07/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4-202/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>  As we all know, 212 meas “Design Thinking and Engineering”, and obviously design thinking is the most important in this class. So this final report is to show what I learned from design thinking and how do I apply these to solve the engineering problems for our mobile transportation vehicles project.<br>  First of all, what is “Design Thinking”—Design thinking refers to the cognitive, strategic and practical processes by which design concepts are developed.</p>
+<img title="" src="https://s2.loli.net/2022/10/07/UzPfdpXojqOuAEJ.png" alt="a27.png" width="443" data-align="center">
+
+<p>  For empathize, I think it can refer to ask our teachers requests in our final project. In fact, the final examiner of this project is our teachers, just like our users. Not only to understand the specific requirements of the teachers and their thoughts on this project, but also to exchange some information with the teachers at some times to avoid useless work. For example, Prof.Hong changed my view on the core points of the final project, make me have a clearer direction to go forward——he said that what we have learned in this project and how we use these are more important than build our car. There is no doubt that Prof.Hong is right, we should get something from this project but not just finish it. </p>
+<p>  For define and ideate, I think Fred-Park is a good tool to finish these two stages. We use functional requirements to define and use design parameters to ideate. At the beginning of this project, we abstracted the requirements of the demo, and subdivided them into small modules, defined for each small part, and then proposed ideas to complete each requirement. There were various ideas, and finally the best way to solve the requirements was obtained by comparison. These two parts are the most discussed in our group, because they are very important foundations in the design and engineering. If these two parts are not organized in the early stage, then there will be big problems later. It is precisely because we understood the importance of these two parts to our project in class, we have been improving the concept in the early stage, instead of rushing to move forward. Specifically, I often turn myself into a car, thinking about how I should move to meet functional needs, how can I complete every action more easily and quickly, so that I can better think about problems from the perspective of a car. </p>
+<p><img src="https://s2.loli.net/2022/10/07/mWN13LujDVodHYM.png" alt="a28.png"></p>
+<p>  For prototype and test, these two parts are really of great help to physical production, we can simply build a model to verify the rationality and feasibility of the design. Just like what the teacher said: we can’t stay on the nihilistic idea for a long time, we have to make actual things to verify the idea. For example, the robotic arm and linkage mechanism we designed did not seem to have any design problems, but after discussing with the manufacturer, we found that there were major design problems, some of which did not meet the basic principles, and some of the parts could not be processed or the cost is too high for our project. Therefore, we have improved many parts of the design under the suggestion of the processor, and finally have a design plan and drawing that meets the requirements of all aspects. As for the model we made by ourselves not only to verify the idea, but also to find a better way to achieve this requirement. For example, I have tested how to use the suction cup to suck the block, and finally found that the four cubes in the first two rows can be sucked at the same time, and some objects can not be sucked, which both has a great effect on the design of the scheme. </p>
+<img title="" src="https://s2.loli.net/2022/10/07/ocqI7kYDVnTxRLj.png" alt="a29.png" width="408" data-align="center">
+
+<p>  These five stages are not independent of each other——empathize can help define the problem, just like ask teachers about the project; tests can create new ideas for the project and reveal insights that redefine the problem; prototypes can be learned from to spark new ideas. In fact, we have changed our final demo plan, that’s because through prototypes and tests, we founded that planA had some unavoidable problem, so we returned to the stage of defining the specific functions of the car, and finally got planB, which was fit for our requests. In summary, these five parts are interconnected and influenced by each other, forming a complete logic chain and a whole design process.<br>  What’s more, teamwork is a kind of meaningful thing in our project. The entire project must be completed by cooperation within the group. From the perspective of design thinking, it is necessary to divide the work after determining the work to be done. At the same time, cooperation in the process of separate realization is essential. Meanwhile, we should communicate with other groups of students and help each other, this is a win-win situation.</p>
+<p>  All in all, design thinking is the guiding ideology for our final project. Once there was a design problem, I would return to the entire design process to see which part of the problem occurred, and improve it by communicating with my team members. Although the 212 course is over, design thinking will not disappear, but will be reflected in every subsequent project, providing me with ideological and methodological help.</p>
+]]></content>
+      <categories>
+        <category>设计思维</category>
+      </categories>
+      <tags>
+        <tag>大二秋季学期</tag>
+        <tag>Multidisciplinary Project</tag>
+        <tag>SDM212</tag>
+        <tag>Design Thinking</tag>
       </tags>
   </entry>
   <entry>
     <title>SDM232 Project2——Stapler disassembly and motion simulation</title>
     <url>/2022/10/07/%E8%AE%A2%E4%B9%A6%E6%9C%BA/</url>
-    <content><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a><strong>Introduction:</strong></h2><p>  This project’s main content is to disassemble the stapler, understand and identify the mechanical structure of the content, briefly analyze its assembly structure. After that, we use Solidworks software to model the whole thing, then use Solidworks motion to stimulate the motion of pressing the staple and analyze the forces in this motion.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a><strong>Introduction:</strong></h2><p>  This project’s main content is to disassemble the stapler, understand and identify the mechanical structure of the content, briefly analyze its assembly structure. After that, we use Solidworks software to model the whole thing, then use Solidworks motion to stimulate the motion of pressing the staple and analyze the forces in this motion.</p>
 <h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a>Procedure:</h2><ul>
 <li>Modeling process<br>First of all, we need to consider the issue of size. We uniformly adopt the actual size to reduce the error, and the parts that need to be matched must be exactly the same as the relevant size. The second is to draw a sketch by observing the structure, and then modeling. The most important thing is to coordinate the various parts into a stapler, which can show the basic structure and function of the stapler and produce the correct visual effect. Finally, beautify appropriately to make the whole look more like a stapler.</li>
 <li>Later improvement after initial completion<br>Different from the last assembly, as long as the matching relationship is complete and correct, and the dimensions are basically the same, there is no problem with the structure and the task is completed. But this time we are going to do a motion analysis. During the analysis, a lot of mold-through situations appeared, which caused some structures to fail to reach the correct position. In order to solve this problem, the original sketch and model can only be modified slowly, and the initial position must be determined in order to make the interference disappear. After this, we learned how to use a new tool called Interfere Check in Solidworks.</li>
@@ -65,16 +291,36 @@
         <category>机械</category>
       </categories>
       <tags>
-        <tag>Solidworks</tag>
         <tag>机械结构</tag>
-        <tag>订书机</tag>
         <tag>运动仿真</tag>
+        <tag>大二秋季学期</tag>
+        <tag>Solidworks</tag>
+        <tag>订书机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dyson Case Study——Use design thinking</title>
+    <url>/2022/10/07/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4%E2%80%94%E2%80%94%E6%88%B4%E6%A3%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="5-stages-of-design-thinking-process"><a href="#5-stages-of-design-thinking-process" class="headerlink" title="5 stages of design thinking process"></a>5 stages of design thinking process</h2><p>(1)    Empathy<br>When James Dyson cleaned the house dust himself, he found that the vacuum cleaner would block the hole of the vacuum bag due to the absorption of dust, and the suction power would be greatly reduced, this creates a sense of frustration and empathy with other users to James Dyson.<br>(2)    Define problem<br>The powder continues to block the tiny holes, resulting in a greatly reduced suction.<br>(3)    Idea<br>Dyson designed a double cyclone vacuum cleaner. When the airflow moves quickly along a spiral path, all dirt particles will be thrown out of the airflow due to strong centrifugal force. In this way, the dirt can be separated from the air flow without using any type of filter, and the dirt is collected at the bottom of the cylinder.<br>(4)    Prototype<br>The dust will be replaced in the cone in the middle, then centrifugal force will be used to rotate it to the edge of the tank, and then it will be removed from the tank. This is the first of 5127 prototypes.<br>Cooling fan (640 prototype products manufactured)<br>(5)    Test<br>After completing the first generation of products, Dyson conducted market research: For Japanese, their houses are smaller and cleaner, and do not require very large machines; for Americans, they like large machines, so the production cost should be the primary consideration.<br>They focus on how the machines are assembled together and constantly test materials to achieve the goal of sustainable use of the machines</p>
+<h2 id="Types-of-prototyping-methods"><a href="#Types-of-prototyping-methods" class="headerlink" title="Types of prototyping methods"></a>Types of prototyping methods</h2><p>(1)    Sketching<br>When designing the steering wheel, the designer directly draws the rough shape on the drawing, and then may change the size or add details on the basis of the drawing. The advantage is that it can be modified without cost, which is more intuitive.<br>(2)    3D modeling by design software<br>When considering how the parts are assembled, designers use modeling software to model, simulate the assembly process, play a role in pre-assembly, and verify whether this method is feasible.<br>(3)    Use computer software to make animations to show the general working principles and functions<br>After the function is designed, a vivid effect can be made through animation demonstration, and check whether it is in line with expectations and whether it can be achieved<br>(4)    Role play<br>When verifying the flexibility of the steering wheels, Dyson employees dressed up as users walking through narrowing roadblocks to verify whether the flexibility could meet the requirements.<br>(5)    Using cardboard and plastics to make mockup<br>And when some structures are determined, some simple materials can be used to build these structures to verify whether the relevant functions can be achieved</p>
+<h2 id="Why-failures-are-important"><a href="#Why-failures-are-important" class="headerlink" title="Why failures are important"></a>Why failures are important</h2><p>  As James Dyson said, failure is a good starting point. Because when something fails, so that we know exactly what the problem is, and then know the reason for the failure in the experiment, engineers can use mathematics and scientific principles to analyze and improve, until the final solution is found.<br>  As far as I am concerned, I think failure is the only way to make a product. If there is no failure, it will inevitably be reflected in the final product, and there will be many problems and mistakes that were not there before. Through failure, the correctness of the idea and the feasibility of the design can be tested, and the risk of the final product can be reduced.</p>
+<h2 id="Why-math-and-science-are-important"><a href="#Why-math-and-science-are-important" class="headerlink" title="Why math and science are important"></a>Why math and science are important</h2><p>  The foundation of successful engineering design and Dyson’s basic principles is mathematics and science. Most of the work done by engineers includes mathematics and science. Trigonometric functions consider the relationship with other devices.<br>  Use mathematics to calculate the percentage efficiency of dust to adjust the design on the tool to ensure that the maximum efficiency is achieved in the lowest level of mathematics. And science affects all areas of engineering. Both will speed up the process, bring engineers closer to the final result, and learn from it.</p>
+<h2 id="What’s-the-differences-of-view-and-approach-between-James-Dyson-and-scientist-Why-does-it-contribute-to-innovation"><a href="#What’s-the-differences-of-view-and-approach-between-James-Dyson-and-scientist-Why-does-it-contribute-to-innovation" class="headerlink" title="What’s the differences of view and approach between James Dyson and scientist? Why does it contribute to innovation?"></a>What’s the differences of view and approach between James Dyson and scientist? Why does it contribute to innovation?</h2><p>  Scientists tend to think right and it is difficult to think wrong, so they will not do something that seems stupid and wrong, but do something that is beneficial to them; James Dyson thinks he is an artist, he understands invention The value of, will start from another angle, so he will often try some wrong roads, or even completely wrong roads, he thinks this is valuable and meaningful, and will learn things in the process.<br>  James Dyson’s views and methods are obviously beneficial to innovation, because innovation itself means a process from scratch. How many ideas were recognized as wrong or even disgusted at first, but they were finally proved by practice. Innovative products derived from this idea are valuable, so if you dare to take the wrong path and do the wrong thing, you can accelerate the process of innovation. At the same time, the wrong idea itself can also eliminate some mistakes and gain some experience, so that in the final product design process, you can avoid detours and come up with solutions faster.</p>
+]]></content>
+      <categories>
+        <category>设计思维</category>
+      </categories>
+      <tags>
+        <tag>大二秋季学期</tag>
+        <tag>SDM212</tag>
+        <tag>Design Thinking</tag>
+        <tag>Dyson</tag>
       </tags>
   </entry>
   <entry>
     <title>SDM232 Project3——Linkage Design</title>
     <url>/2022/10/07/%E8%BF%9E%E6%9D%86/</url>
-    <content><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  The project is to design a giftware to put on top of a cup using linkage and Stirling engine. The Stirling engine is to provide power source for the product. We need to design a linkage mechanism to be driven by either a crank-rocker or a crank-slider four-bar mechanism.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  The project is to design a giftware to put on top of a cup using linkage and Stirling engine. The Stirling engine is to provide power source for the product. We need to design a linkage mechanism to be driven by either a crank-rocker or a crank-slider four-bar mechanism.</p>
 <h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a><strong>Procedure:</strong></h2><ul>
 <li><p>Research</p>
 <p>We first researched on some basic linkage mechanisms. In this process, we found an interesting linkage structure called Peaucellier-Lipkin linkage. </p>
@@ -112,16 +358,18 @@
         <category>机械</category>
       </categories>
       <tags>
-        <tag>Solidworks</tag>
         <tag>机械结构</tag>
-        <tag>连杆</tag>
         <tag>GGB</tag>
+        <tag>大二秋季学期</tag>
+        <tag>SDM232</tag>
+        <tag>Solidworks</tag>
+        <tag>连杆</tag>
       </tags>
   </entry>
   <entry>
     <title>SDM232 Project4——Linkage and cam</title>
     <url>/2022/10/07/%E8%BF%9E%E6%9D%86%E4%B8%8E%E9%BD%BF%E8%BD%AE/</url>
-    <content><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  This project is to use GGB and Mech Designer to combine linkage and cam, then use Solidworks to produce a 3D model and use Solidworks motion to stimulate the motion.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  This project is to use GGB and Mech Designer to combine linkage and cam, then use Solidworks to produce a 3D model and use Solidworks motion to stimulate the motion.</p>
 <p>  At the designing stage of our linkage-cam, our group decided to use the knowledge we acquired to design a useful linkage-cam for our final project- the companion robot. We settled on the idea of a mechanical structure that can pour pills into a box in order to make up a prescription.</p>
 <h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a><strong>Procedure:</strong></h2><ul>
 <li><p>Geogebra</p>
@@ -156,17 +404,19 @@
       </categories>
       <tags>
         <tag>机械结构</tag>
-        <tag>连杆</tag>
         <tag>运动仿真</tag>
-        <tag>齿轮</tag>
         <tag>GGB</tag>
+        <tag>大二秋季学期</tag>
+        <tag>SDM232</tag>
+        <tag>连杆</tag>
+        <tag>齿轮</tag>
         <tag>Mech Designer</tag>
       </tags>
   </entry>
   <entry>
     <title>SDM232 Project5——Clock disassembly and modeling</title>
     <url>/2022/10/07/%E9%97%B9%E9%92%9F/</url>
-    <content><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  After learning about gears, we consolidated knowledge by disassembling the mechanical alarm clock and analyzing its internal gear structure and its transmission law. After that, we use Mech Designer, SolidWorks, KYtools to further analyze and reconstruct the gear structure, and build a 3D model of the gear system with motion examples.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  After learning about gears, we consolidated knowledge by disassembling the mechanical alarm clock and analyzing its internal gear structure and its transmission law. After that, we use Mech Designer, SolidWorks, KYtools to further analyze and reconstruct the gear structure, and build a 3D model of the gear system with motion examples.</p>
 <h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a><strong>Procedure:</strong></h2><ul>
 <li><p>Clock disassembly</p>
 <p>First, we disassembled clock, and drew a simple diagram to display:</p>
@@ -408,12 +658,440 @@
         <category>机械</category>
       </categories>
       <tags>
-        <tag>Solidworks</tag>
         <tag>运动仿真</tag>
+        <tag>大二秋季学期</tag>
+        <tag>SDM232</tag>
+        <tag>Solidworks</tag>
         <tag>齿轮</tag>
         <tag>Mech Designer</tag>
         <tag>闹钟</tag>
         <tag>KYtools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM283 mini project 2</title>
+    <url>/2022/10/09/SDM283-mini-project-2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In this project, we mainly use the knowledge of material mechanics to design a workbench for placing eight 3D printers(Raise3D E2).</p>
+<img title="" src="https://s2.loli.net/2022/10/09/4i6WZLetI91xzpN.png" alt="a58.png" width="388" data-align="center">
+
+<h2 id="Material-related-specification-constraints"><a href="#Material-related-specification-constraints" class="headerlink" title="Material related specification constraints"></a>Material related specification constraints</h2><h3 id="Overall-analysis"><a href="#Overall-analysis" class="headerlink" title="Overall analysis"></a>Overall analysis</h3><ol>
+<li><p>Intensity</p>
+<p>$$<br>min(Load)&#x3D;8*35&#x3D;280kg<br>$$</p>
+<p>Therefore, the minimum strength of the supporting structure shall ensure that no obvious deformation will occur when subjected to min Load, which is sufficient for a long time.</p>
+</li>
+<li><p>Deflection</p>
+<p>$$<br>max(Deflection)&#x3D;0.1mm<br>$$</p>
+<p>The 3D printer has a leveling process before use. If the plane it is placed on is not horizontal, it will cause leveling errors; At the same time, too much inclination of the plane during printing may cause the initial support to slip, resulting in poor print quality or even failure.</p>
+<p>After asking about the specific information of this printer, we got the allowable inclination of 0.1mm, so the maximum deformation of the overall structure is 0.1mm, and the smaller the better.</p>
+</li>
+<li><p>Weight</p>
+<p>$$<br>max(weight)&#x3D;1140kg<br>$$</p>
+<p>The alloy steel with high strength is selected as the initial material to ensure that it absolutely meets the strength requirements, but the total mass of the structure is indeed too large. Therefore, after the stress analysis, the material will be iterated to minimize the structure.</p>
+</li>
+<li><p>Size</p>
+<p>Because the placement method is 4 × 2. Therefore, in addition to the length of the printer itself, the middle spacing (considering the simultaneous opening of the doors at both ends for placing printing materials) and the length from the edge should also be considered.</p>
+<p>$$<br>Length:（61+23×2）× 4+3×10+5×2&#x3D;468cm<br>$$</p>
+<p>Because the placement method is 4 × 2. Therefore, in addition to the width of the printer itself, the middle space should also be considered (considering that the top cover is opened at the same time, it is found that the top cover is not more than the width of the bottom as a whole when it is opened to the maximum extent, so no additional increase is required), And the length from the edge (after the design investigation, it is found that the existing design is that the printer exceeds the table edge, which should make the chassis in the printer easy to reposition after being pulled out, so this small design is continued).</p>
+<p>$$<br>Width:60× 2+11×2-5×2 + 5 &#x3D;137cm<br>$$</p>
+<p><img src="https://s2.loli.net/2022/10/09/qYgyGRua1zdT6Cj.png" alt="a59.png"></p>
+<p>Because the placement method is 4 × 2. Therefore, it is the height of the bottom support plus the height of a printer. But at this time, the overall height needs to be determined according to ergonomics, and then subtract the height of the printer to get the height of the bottom support. According to the average height of men and women, the overall height is within the range of [160, 170]. The height of the printer includes two parts - the height of the printer itself and the increased height of the top cover opening, which is about 98.5cm after measurement. Therefore, the height interval of the bottom support structure is [61.5, 71.5].</p>
+</li>
+</ol>
+<h3 id="Simple-analysis-for-preliminary-design"><a href="#Simple-analysis-for-preliminary-design" class="headerlink" title="Simple analysis for preliminary design"></a>Simple analysis for preliminary design</h3><img title="" src="https://s2.loli.net/2022/10/09/WpN2Pfd3x5AhIge.png" alt="a60.PNG" width="443" data-align="center">
+
+<img title="" src="https://s2.loli.net/2022/10/09/N2Vwjq4bpt3FWOL.png" alt="a61.PNG" width="448" data-align="center">
+
+<h2 id="Structural-Design"><a href="#Structural-Design" class="headerlink" title="Structural Design"></a>Structural Design</h2><h3 id="Structure-and-component-design"><a href="#Structure-and-component-design" class="headerlink" title="Structure and component design"></a>Structure and component design</h3><ol>
+<li><p>Bottom support structure</p>
+<img title="" src="https://s2.loli.net/2022/10/09/4XgL3ztvdybMOPm.png" alt="a62.png" width="268" data-align="center">
+
+<p>There are 3 types of column, 2 types of plate and 1 type of beam in this structure.</p>
+</li>
+<li><p>Outer frame</p>
+<img title="" src="https://s2.loli.net/2022/10/09/gzLbt3sKC5dkaSp.png" alt="a63.png" width="421" data-align="center">
+
+<p>There are 2 types of column, 2 types of beam, 1 type of tie rod and 1 type of plane in this structure.</p>
+</li>
+<li><p>Upper table plate</p>
+<p><img src="https://s2.loli.net/2022/10/09/HEj3QTtOwYmKPV8.png" alt="a64.png"></p>
+</li>
+</ol>
+<h3 id="Connection-mode-between-components"><a href="#Connection-mode-between-components" class="headerlink" title="Connection mode between components"></a>Connection mode between components</h3><p>In general, punching and riveting are used at the joints with small stress, while welding is used at the joints with large stress</p>
+<h3 id="Material-selection"><a href="#Material-selection" class="headerlink" title="Material selection"></a>Material selection</h3><p>Use the combination of function, constrain, object, free variable of each compoent to decide which material will use.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bottom support structure</th>
+<th>Outer frame</th>
+<th>Upper table plate</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Material</td>
+<td>Metal</td>
+<td>Metal</td>
+<td>Wood</td>
+</tr>
+</tbody></table>
+<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><h3 id="Load-analysis"><a href="#Load-analysis" class="headerlink" title="Load analysis"></a>Load analysis</h3><ol>
+<li><p>Upper table plate:</p>
+<p>The load application part is: the contact part between the printer and the desktop (as shown in the figure below):</p>
+<img title="" src="https://s2.loli.net/2022/10/09/5nP7Brs23It1hCM.png" alt="a65.png" width="348" data-align="center">
+
+<p>The direction of applied load is: vertically downward</p>
+<p>The load on the board is 450N for the contact part of a single printer, with a total load of 3600N</p>
+</li>
+<li><p>Outer frame</p>
+<p>The load application part is: the contact part between the desktop and the frame</p>
+<p>The direction of applied load is: vertically downward</p>
+<p>The load on the frame is 450N</p>
+</li>
+<li><p>Bottom support structure</p>
+<p>The load application part is: the contact part between the printer and the board (as shown in the figure below):</p>
+<img title="" src="https://s2.loli.net/2022/10/09/5YygaWNBcARkKTw.png" alt="a66.png" width="349" data-align="center">
+
+<p>The direction of applied load is: vertically downward</p>
+<p>The load on the board is 450N</p>
+</li>
+</ol>
+<h3 id="Stress-analysis"><a href="#Stress-analysis" class="headerlink" title="Stress analysis"></a>Stress analysis</h3><ol>
+<li><p>Upper table plate:</p>
+<p>According to the load distribution, the distribution of shear force can be obtained.</p>
+<p>Shear force diagram (V-x image) is as follows (simplified to 2D)—the abscissa is the length of the board (unit: mm), and the ordinate is the shear force (unit: N):</p>
+<p>So for theplate, the stress is full bending, so the stress is:</p>
+<p>$$<br>σ&#x3D;V&#x2F;A&#x3D;1.217×10^3  Pa<br>$$</p>
+</li>
+<li><p>Long rod in outer frame</p>
+<p>The contact area between the long rod and the plate is all the parts above the long rod, so the vertical stress of the long rod can be considered as evenly distributed, and the stress is:</p>
+<p>$$<br>σ_y&#x3D;V&#x2F;A_y &#x3D;1.498×10^6 Pa<br>$$</p>
+<p>In the horizontal direction, the force of long rod is pinned pinned buckling:</p>
+<img src="https://s2.loli.net/2022/10/09/6UQbRvVuHx1k8LA.png" title="" alt="a68.PNG" data-align="center">
+</li>
+<li><p>Short rod in outer frame</p>
+<p>The contact area between the short rod and the plate is all the parts above the short rod, so the stress in the vertical direction of the short rod can be considered as evenly distributed, and the stress is:</p>
+<p>$$<br>σ_y&#x3D;V&#x2F;A_y &#x3D;1.512×10^6 Pa<br>$$</p>
+<p>In the horizontal direction, the force of short rod is pinned pinned buckling:</p>
+<img title="" src="https://s2.loli.net/2022/10/09/lq9Jv6V84pYCk5K.png" alt="a69.PNG" data-align="center" width="367">
+</li>
+<li><p>Bottom support structure</p>
+<p>The stress is pinned buckling, so the maximum stress is:</p>
+<p><img src="https://s2.loli.net/2022/10/09/PNIvj8YDscgkVJf.png" alt="a70.PNG"></p>
+</li>
+</ol>
+<h3 id="Deflection-Analysis"><a href="#Deflection-Analysis" class="headerlink" title="Deflection Analysis"></a>Deflection Analysis</h3><table>
+<thead>
+<tr>
+<th></th>
+<th>Bottom support structure</th>
+<th>Outer frame</th>
+<th>Upper table plate</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Max deflection</td>
+<td>$3.153*10^{-4}mm$</td>
+<td>$1.189mm$</td>
+<td>$1.980mm$</td>
+</tr>
+</tbody></table>
+<h3 id="Stress-concentration-analysis"><a href="#Stress-concentration-analysis" class="headerlink" title="Stress concentration analysis"></a>Stress concentration analysis</h3><ol>
+<li>Long pole of frame structure</li>
+</ol>
+<img title="" src="https://s2.loli.net/2022/10/09/enLBfgDyriI7JtZ.png" alt="a71.png" width="464" data-align="center">
+
+<p>(1) Part function: support and fix the upper table, and connect the table with the main support structure;</p>
+<p>(2) Stress concentration part: the part contacting the lower diagonal rod;</p>
+<p>(3) Cause of stress concentration</p>
+<p>The rod is rigidly connected with the lower diagonal tie rod, and the contact area of the connecting part is small, the stress is large, and the stress difference between the connecting part and the adjacent section is large, so the stress concentration phenomenon appears.</p>
+<p>(4) Improvement measures</p>
+<p>Increase the contact area between the lower diagonal tie rod and the member, extend the diagonal tie rod and move its connection with the member to the middle of the member as far as possible to reduce local stress.</p>
+<ol start="2">
+<li>Support rod of frame structure</li>
+</ol>
+<img title="" src="https://s2.loli.net/2022/10/09/6C1fFcPU4ntqids.png" alt="a72.png" width="215" data-align="center">
+
+<p>(1) Part function: support the upper table, connect and fix the main body of the frame structure;</p>
+<p>(2) Stress concentration part: near the contact with the side diagonal tie rod fastener;</p>
+<p>(3) Cause of stress concentration</p>
+<p>The rod is rigidly connected with the side diagonal tie rod fixing, and the force acting on the nearby area becomes larger due to the extrusion from the fixing, so the stress concentration phenomenon occurs.</p>
+<p>(4) Improvement measures</p>
+<p>Increase the cross-sectional area of the member and adopt smooth transition to reduce local stress;</p>
+<p>Materials with slightly lower rigidity after surface strengthening (shot peening, rolling, nitriding, etc.) are selected to enhance their fatigue resistance.</p>
+<ol start="3">
+<li>Diagonal tie rod of frame structure</li>
+</ol>
+<img title="" src="https://s2.loli.net/2022/10/09/9seVkXrCwPKy2AT.png" alt="a73.png" width="498" data-align="center">
+
+<p>(1) Part function: support the upper table, connect and fix the frame structure to make it more stable;</p>
+<p>(2) Stress concentration part: near the contact part with the table;</p>
+<p>(3) Cause of stress concentration</p>
+<p>The contact area between the bar and the table is too small, and the contact position with the table is just the force bearing position of the table, so the force on the bar is also large, which leads to a large stress on this part and a large difference between the stress on its side. The stress concentration is caused.</p>
+<p>(4) Improvement measures</p>
+<p>Cut off the sharp corner above the diagonal tie rod to avoid contact with the upper table.</p>
+<ol start="4">
+<li>Frame structure diagonal tie rod fastener</li>
+</ol>
+<img title="" src="https://s2.loli.net/2022/10/09/OYPwWQJr7VyhpfF.png" alt="a74.PNG" width="534" data-align="center">
+
+<p>(1) Part function: connect and fix the frame structure;</p>
+<p>(2) Stress concentration part: near the bolt hole;</p>
+<p>(3) Cause of stress concentration</p>
+<p>Holes are left on the fastener, reducing its cross-sectional area, and the bolt used for fixing in the hole has a large reaction force near its hole due to large force. However, the part of the fastener far from the hole bears less stress, has a large cross-sectional area, and has small stress, so stress concentration occurs.</p>
+<p>(4) Improvement measures</p>
+<p>A certain thickness of material shall be excavated at the upper and lower sides of the hole to reduce the rigidity of this part, so as to ease the stress concentration.</p>
+<h2 id="Failure-Analysis"><a href="#Failure-Analysis" class="headerlink" title="Failure Analysis"></a>Failure Analysis</h2><p>The simulation function of solidworks software is used for static stress analysis to simulate the stress and deformation of the designed table for placing printers under the load of eight RAISE E2 printers.</p>
+<h3 id="Without-bottom-support-structure"><a href="#Without-bottom-support-structure" class="headerlink" title="Without bottom support structure"></a>Without bottom support structure</h3><ol>
+<li><p>Load</p>
+<p>According to our design, apply a load of 400N on each groove surface where the printer is placed, and fix the four legs of the table under ideal conditions.</p>
+</li>
+<li><p>Stress analysis</p>
+<img title="" src="https://s2.loli.net/2022/10/09/x3ICgPFvrElinhW.png" alt="a75.png" width="485" data-align="center">
+
+<p>It can be seen from the stress simulation results that although the load is directly applied to the wooden plane of the table, the stress on the wooden plane is relatively small because of the large area of load application, and the stress on the wooden plane is almost the smallest in the whole structure, about $8.253*10 ^ 2 Pa.$</p>
+<p>Because the contact area between the frame at the bottom and the wood plane is relatively small, and the weight of the wood plane is added to the load on the frame based on the quality of the printer, the stress on the frame will be much larger than that on the wood plane, and even the part of the whole structure with the largest stress, about $1.847 * 10 ^ 7 Pa.$</p>
+</li>
+<li><p>Displayment analysis</p>
+<p>In the same static stress analysis example, we can get the deformation of the table under the same fixed and load as the stress analysis:</p>
+<img title="" src="https://s2.loli.net/2022/10/09/8FztIVLu9HYhMGk.png" alt="a76.png" width="489" data-align="center">
+
+<p>Through the simulation results, we can find that the most deformed part of the model is in the center of the wood plane. Because the wood plane only receives the supporting force on its four sides, the center lacks the supporting force applied from the bottom, but because of the placement of the printer, the load applied to the center of the wood plane is relatively large, so the center of the wood plane will have a large deformation, up to 2.31mm. Even at the position where the printer is placed, the deformation reaches 1mm, but the maximum allowable plane deviation of the printer itself is 0.1mm, so the deformation cannot meet the requirements. The reason for this result may be that the elastic modulus of the selected material itself is small, and no bottom support is applied to the center of the wood plane. Therefore, in order to solve this problem, we plan to apply the bottom support in the place where the printer is placed on the wooden plane.</p>
+<p>Similarly, we can also obtain the structural strain image after simulation:</p>
+<img title="" src="https://s2.loli.net/2022/10/09/6OCfEqUMySP85l2.png" alt="a77.png" width="454" data-align="center">
+
+<p>Because the material we choose to simulate is alloy steel, which has a large elastic modulus, the resulting strain is less than 0.01.</p>
+</li>
+<li><p>Buckling analysis</p>
+<p>Because when the applied load is too large, the structure may buckle, resulting in some structural failure. Through buckling analysis, find out the position where buckling occurs, and observe the stress change after buckling.</p>
+<p>Fix the four legs of the model without bottom support, apply a load of 100N on the position where the printer is placed, and calculate the load factor at this time through the buckling analysis of solidworks software.</p>
+<img title="" src="https://s2.loli.net/2022/10/09/lUOPXoRnSQiMADx.jpg" alt="a78.jpg" width="451" data-align="center">
+
+<p>It can be seen from the simulation results that the load factor is 123.41. In the simulation of solidworks, different levels of grid refinement of the structure will affect the results of the load factor obtained from the buckling analysis, so the results obtained from the simulation will also be biased and may not be correct.</p>
+<p>We multiply the applied load by the load factor as a new load. In the static stress analysis, we can obtain the static stress analysis results of the bottom support structure during buckling by the same fixing method and load application method.</p>
+<img title="" src="https://s2.loli.net/2022/10/09/BThjs1UGYeZ9iQl.png" alt="a79.png" width="445" data-align="center">
+
+<p>At this time, it can be seen from the simulation results that the maximum deformation has reached 76.28mm, and the entire structure has undergone visible deformation. At the same time, this deformation is far greater than the printer’s requirement of 0.01mm, which will cause the printer to fail.</p>
+</li>
+</ol>
+<h2 id="Iteration"><a href="#Iteration" class="headerlink" title="Iteration"></a>Iteration</h2><h3 id="Material"><a href="#Material" class="headerlink" title="Material"></a>Material</h3><p>In order to ensure the stability and strength of the structure in the initial design, alloy steel with large strength and weight was selected as the material of the external frame and bottom support. No specific analysis was carried out for each structure. The data obtained from the previous stress analysis can be used to re select materials to meet the requirements of lightweight</p>
+<p>In terms of material selection, we iterated to reduce the mass and ensure that the deformation does not exceed the specified value. By selecting materials with small density and specific modulus within the required range of modulus, lightweight can be carried out.</p>
+<p>In the support at the lower end, considering the mass of alloy steel and carbon steel previously selected is large, aluminum alloy is selected by searching for materials with smaller density. The common aluminum alloy material is 1060.4032. 1060 is cheaper, 4032 has higher silicon content, and is better than 1060 in density and modulus. Therefore, 4032 is selected for larger parts and 1060 is selected for smaller parts. Apply them to the four outermost brackets and the eight brackets at the lower end of the printer.</p>
+<p>The simulation analysis of the bottom support structure after iterative optimization is shown in the figure:</p>
+<img title="" src="https://s2.loli.net/2022/10/09/qcwzx4A7pmjHIir.png" alt="a80.png" width="345" data-align="center">
+
+<p>Its mass is optimized to 14 kg per group.</p>
+<p>At the same time, common desktop materials are searched, which are often used as particleboard and medium density fiberboard. Its modulus and density are similar to that of light wood. We also tried to apply it to marble, but we measured that the mass of the table top when applying marble was 426 kg, which was far beyond our expectations for mass, so we rejected it.</p>
+<p>The simulation results of the overall desktop are shown in the figure:</p>
+<img title="" src="https://s2.loli.net/2022/10/09/YlUcZKVrnRyduMx.png" alt="a81.png" width="483" data-align="center">
+
+<p>Its mass is optimized to 80 kg.</p>
+<h3 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h3><ol>
+<li><p>Bottom support structure</p>
+<img title="" src="https://s2.loli.net/2022/10/09/N6c74DqLzkpxjFa.png" alt="a82.png" width="446" data-align="center">
+
+<p>From the stress diagram, it is obvious that the stress of the four column2(blue) parts is smaller than that of the rest parts, so it is considered that holes can be dug to reduce the weight without damaging their main functions.</p>
+<p>After iteration:</p>
+<img title="" src="https://s2.loli.net/2022/10/09/xCebYBAZUs7zMFD.png" alt="a83.png" width="394" data-align="center">
+</li>
+<li><p>Tie rod 1 in outer frame</p>
+<img title="" src="https://s2.loli.net/2022/10/09/97Umrj2QsBFql4L.png" alt="a84.png" width="416" data-align="center">
+
+<p>From the stress diagram, it is obvious that the stress of the two tie rod1(blue)s is smaller than that of the rest. Therefore, it is considered that holes can be dug to reduce the weight without damaging their main functions.</p>
+<p>After iteration:</p>
+<img title="" src="https://s2.loli.net/2022/10/09/ovQ2TAbJKaCkSWj.png" alt="a85.png" width="435" data-align="center">
+</li>
+<li><p>Column4 in outer frame</p>
+<img title="" src="https://s2.loli.net/2022/10/09/SW7TAEMQt3lfjUR.png" alt="a86.png" width="460" data-align="center">
+
+<p>From the stress diagram, it can be seen that there is stress concentration at the contact part between column4 and the table board. The reason is that the contact area is too small, which mainly results in the stress at the top, causing sudden changes and concentration of stress. Therefore, it is necessary to increase the contact area to reduce the stress.</p>
+<p>After iteration:</p>
+<img title="" src="https://s2.loli.net/2022/10/09/vTQoRIx9UfkWKYh.png" alt="a87.png" width="424" data-align="center"></li>
+</ol>
+<h3 id="Analysis-after-iteration"><a href="#Analysis-after-iteration" class="headerlink" title="Analysis after iteration"></a>Analysis after iteration</h3><ol>
+<li><p>Load analysis</p>
+<p>Basically, the load size and direction on all structures have not changed, but the change of materials and specific structures has led to a slight change in the stress. At the same time, the deformation size has changed, and the stress concentration has decreased.</p>
+</li>
+<li><p>Stress analysis</p>
+<img title="" src="https://s2.loli.net/2022/10/09/SlP8kuYqvX4tzsd.png" alt="a88.png" width="501" data-align="center">
+
+<p>For outer frame and table plate, the overall distribution is more uniform, and the maximum value is decreased from $1.847 × 10^7$ to $1.614 × 10^7$, the minimum value is increased from $8.253 × 10^2$ to $1.283 × 10^3$.</p>
+<img title="" src="https://s2.loli.net/2022/10/09/n6J2VY5kBKOclFa.png" alt="a89.png" width="360" data-align="center">
+
+<p>For bottom support structure, the overall distribution is more uniform, and the maximum value is decreased from $2.652 × 10^5$to $2.103 × 10^5$, the minimum value is increased from $3.094 × 10^2$ to $4.505× 10^2$.</p>
+<p>In general, the overall change of stress is small, and the structure can still meet the strength requirements.</p>
+</li>
+<li><p>Strain analysis</p>
+<img title="" src="https://s2.loli.net/2022/10/09/DZ2RFjEhmBNd8Y9.png" alt="a90.png" width="449" data-align="center">
+
+<p>For outer frame and table plate, except for the minimum deformation, other deformation increases to a small extent, but the basic deformation of the external frame is 0.001 mm, which meets the requirements. As for the large deformation in the middle of the upper table, the deformation will be greatly reduced after the installation of the bottom support structure.</p>
+<img title="" src="https://s2.loli.net/2022/10/09/ObHgIWhcDzUQlvG.png" alt="a91.png" width="379" data-align="center">
+
+<p>For bottom support structure, except for the minimum deformation, the other deformation is basically 3 times of the previous deformation, but the basic deformation is far less than 0.01 mm, meeting the requirements; Even if it is loaded with one more serving board (with a small mass), it will not change too much.</p>
+</li>
+<li><p>Buckling analysis</p>
+<img title="" src="https://s2.loli.net/2022/10/09/m7goZjydkuGErSv.png" alt="a94.png" width="455" data-align="center">
+
+<p>For outer frame and table plate, the overall amplitude increases slightly, and the load factor decreases significantly from 123.41 to 58.159, that is, the maximum load decreases significantly, which makes it easier to fail.</p>
+<img title="" src="https://s2.loli.net/2022/10/09/AovWRf5jl9CJxV3.png" alt="a95.png" width="427" data-align="center">
+
+<p>For bottom support structure, the overall amplitude increased slightly, and the load factor decreased significantly from 6672.2 to 1603.9, that is, the maximum load decreased significantly, making it easier to fail.</p>
+</li>
+</ol>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>After secondary design, a relatively satisfactory supporting structure is finally obtained, which is divided into three parts: the upper table board, the outer frame, and the bottom supporting structure(× 8).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">Weight</th>
+<th>Volume</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>data</td>
+<td align="center">$263.95kg$</td>
+<td>$5.13m^3$</td>
+</tr>
+</tbody></table>
+<p>Below is the final model:</p>
+<p><img src="https://s2.loli.net/2022/10/09/jB435FrdIm2vzW9.png" alt="a96.png"></p>
+]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>机械结构</tag>
+        <tag>大二春季学期</tag>
+        <tag>SDM283</tag>
+        <tag>Solidworks</tag>
+        <tag>材料力学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM283 mini project 3</title>
+    <url>/2022/10/09/SDM283-mini-project-3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In this project, based on a four wheel racing model, we use Adams to simulate its traveling state on bumpy roads, and change its own shock absorber to achieve the minimum vibration and deflection of the front beam.</p>
+<p><img src="https://s2.loli.net/2022/10/09/McHynRlPt2f9mi7.png" title="" alt="b1.PNG" data-align="center"></p>
+<h2 id="Simple-Research-on-Automobile-Shock-Absorber"><a href="#Simple-Research-on-Automobile-Shock-Absorber" class="headerlink" title="Simple Research on Automobile Shock Absorber"></a>Simple Research on Automobile Shock Absorber</h2><h3 id="Definition-and-basic-functions"><a href="#Definition-and-basic-functions" class="headerlink" title="Definition and basic functions"></a>Definition and basic functions</h3><p>The shock absorber is one of the important components in the vehicle suspension system, which has an important impact on the vehicle driving safety and comfort.</p>
+<p>There are two basic functions - correcting the transmission from uneven road surface to vehicle by adjusting vehicle body vibration; Quickly attenuate the wheel and axle vibration caused by road impact to provide a safe grip for the vehicle.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/yVXxcjkRlQW8AnD.png" alt="b2.png" width="309" data-align="center"></p>
+<h3 id="Suspension-parameters"><a href="#Suspension-parameters" class="headerlink" title="Suspension parameters"></a>Suspension parameters</h3><p>The main parameters related to the shock absorber are stiffness and damping coefficient, which have a great impact on the vehicle’s ride comfort. A reasonable matching of stiffness and damping coefficient can reduce the transfer function and improve the vehicle’s ride comfort - that is, reduce the free deflection at the end of the beam.</p>
+<h5 id="Damping-coefficient"><a href="#Damping-coefficient" class="headerlink" title="Damping coefficient"></a>Damping coefficient</h5><p>When the stiffness of the front and rear shock absorbers changes, the root mean square value of the total weighted acceleration at the seat changes, and the front damping change has less impact on the vehicle ride comfort than the rear damping. The higher the damping force, the more sporty the car is; the lower the damping force, the better the car’s comfort (definition: low speed level of vibration occurring on the whole vehicle and vehicle parts).</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/ET3AJQlhrMew4jD.png" alt="b3.png" width="352" data-align="center"></p>
+<p>It can be seen from the figure that the amplification coefficient of body acceleration increases with the increase of damping constant in the frequency range between body and wheel resonance frequencies, and the comfort of the vehicle becomes worse.</p>
+<p>There are three important characteristic curves in the research of shock absorber: damping force displacement curve, quasi-static and dynamic damping force velocity curve</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/ZyqtJ6VDxbsCRvP.png" alt="b4.png" width="230" data-align="center"></p>
+<p>The damping coefficient and attenuation coefficient describe the trend of the quasi-static damping force velocity characteristic curve. The damping coefficient affects the slope of the curve, while the attenuation index affects the concave convex trend of the curve.</p>
+<p>Dynamic damping shows the relationship between damping force and piston speed at a certain excitation frequency - the overall trend is to decrease with the increase of excitation frequency.</p>
+<h5 id="Stiffness"><a href="#Stiffness" class="headerlink" title="Stiffness"></a>Stiffness</h5><p>When the front and rear spring stiffness changes, the root mean square value of the total weighted acceleration at the seat has a significant change, and the change of the front spring stiffness has less impact on the vehicle ride comfort than the change of the rear spring stiffness.</p>
+<h2 id="Adams-stimulation"><a href="#Adams-stimulation" class="headerlink" title="Adams stimulation"></a>Adams stimulation</h2><h3 id="Overview-of-simulation-model"><a href="#Overview-of-simulation-model" class="headerlink" title="Overview of simulation model"></a>Overview of simulation model</h3><h5 id="Physical-definition-of-beam"><a href="#Physical-definition-of-beam" class="headerlink" title="Physical definition of beam"></a>Physical definition of beam</h5><p>There are two types of physical definition of beam: rigid and flexible beam.</p>
+<p>For rigid beam, we need to add a fix joint-between the beam and the beam holder:</p>
+<p><img src="https://s2.loli.net/2022/10/09/kdW2i6ot3pqjSzI.png" alt="b5.png"></p>
+<p>For flexible beam, we need to use flex function in Adams to construct it:</p>
+<p><img src="https://s2.loli.net/2022/10/09/gJivlWdx79YSecU.png" alt="b6.png"></p>
+<p>More information about rigid and flexible in stimulation software:</p>
+<p>Most simulation analysis uses rigid components, which will not deform under the force. In reality, it can meet the requirements to treat most components as rigid bodies, because the elastic deformation between parts has little impact on the dynamic characteristics of each part of the mechanism.</p>
+<p>However, it is necessary to consider the deformation of components, which will affect the accuracy results. When it is necessary to study the size and distribution of stress and load output of components, as well as thin-walled components and high-precision instrument components, they should be treated as flexible bodies, so that the calculation results will be more accurate. For flexible body mechanism, deformation plays a decisive role in dynamic influence.</p>
+<h5 id="Wheel-Motion-Mode"><a href="#Wheel-Motion-Mode" class="headerlink" title="Wheel Motion Mode"></a>Wheel Motion Mode</h5><p>The motion part is the synchronous motion of four wheels - the speed remains the same and the size remains the same, which is $720^0/sec$.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/ODjhR6i9noUflKv.png" alt="b7.png" width="390" data-align="center"></p>
+<h5 id="Determination-of-simulation-time"><a href="#Determination-of-simulation-time" class="headerlink" title="Determination of simulation time"></a>Determination of simulation time</h5><p><img title="" src="https://s2.loli.net/2022/10/09/275cKgZ1pXP6zls.png" alt="b8.png" width="497" data-align="center"></p>
+<p>Since the purpose of simulation is to get the deflection of the beam carried by the car on the undulating road, reducing the time spent on the flat road and the time spent on falling can better meet the calculation and simulation requirements.</p>
+<p>After several simulation experiments, 7.25s was selected as the total simulation time. The position of the car is as shown in the figure above - the car left the undulating road and did not start to fall, which is more in line with expectations.</p>
+<h5 id="Overall-operation"><a href="#Overall-operation" class="headerlink" title="Overall operation"></a>Overall operation</h5><p>Stiffness/damping coefficients for shock absorbers of four wheels in Force, with the same initial values - select appropriate values.</p>
+<p>*It is divided into two parts - the former two change at the same time, and the latter two change at the same time</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/z4e62kxh7oLG5Ht.png" alt="b9.png" width="372" data-align="center"></p>
+<p>Stiffness/damping coefficients of shock absorber for beam in Force — select one of the three positions and select the appropriate value</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/7vUBtq8fWg2D5i3.png" alt="b10.png" width="475" data-align="center"></p>
+<h3 id="Specific-simulation-operation-optimization-design"><a href="#Specific-simulation-operation-optimization-design" class="headerlink" title="Specific simulation operation - optimization design"></a>Specific simulation operation - optimization design</h3><p>Use design variable in Adams for parametric modeling, hoping to optimize the design.</p>
+<p>The design variable is used in some scenes of adams, which can make the operation more convenient. For example, some groups of forces have the same size, so that they all reference the same design variable. Just change the value of the design variable, you can change all force sizes.</p>
+<p>In this project, we use design variable for K/C(stiffness and damping coefficient).</p>
+<h5 id="Rigid-beam"><a href="#Rigid-beam" class="headerlink" title="Rigid beam"></a>Rigid beam</h5><p>Use Matlab to substitute K and C according to the assumed value, and select the best answer. It is used to determine the interval, and then the optimal solution of KC is obtained by twice approximation.</p>
+<p>In the optimization of the third question, we reduce the matrix of the flexible body calculated in the second question to 3 × 3. In this way, the whole can be estimated as a rigid body.</p>
+<p>We choose to use the for loop to bring in the values of K and C, store the final result in the array, find the smallest corresponding serial number, and generate it. Since it counts from zero, subtracting 1 is the final answer.</p>
+<p>Let’s assume that all K and C values are the same, with only two variables and two for loops:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/AqCZ8WnDIzBo9KV.jpg" alt="b11.jpg" data-align="center" width="369"></p>
+<p>The value of C is 10 and the value of K is 500. Considering that the K and C values of Beam are relatively small, we add two variables again:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/SzuIXKrtG6JqZ5Y.png" alt="b12.png" data-align="center" width="337"></p>
+<p>$C=10000,K=100000,C_b=50000,K_b=100000$. After determining the approximate value, select adjacent intervals for approximation.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/rfdIFkVoT3CelG7.jpg" alt="b12.jpg" data-align="center" width="462"></p>
+<p>$C=5000,K=500000,C_b=100000,K_b=200000$. After determining the approximate value, select adjacent intervals for approximation.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/MqRpxSTgdUnFC59.png" alt="b13.png" data-align="center" width="452"></p>
+<p>$C=5000,K=500000,C_b=150000,K_b=250000$, and the possible optimal solution can be obtained after two approximations. </p>
+<p>However, there is still something unreasonable: the value of Cb gradually increases, which is not consistent with the actual situation. It is also unreasonable that the relationship between C and K is 100 times different.</p>
+<p>Then use above values in Adams to get result:</p>
+<p><img src="https://s2.loli.net/2022/10/09/aCwVltgOIsLWJry.png" alt="b14.png"></p>
+<p>The red line is the initial C/K, and the blue line is the optimized C/K</p>
+<p>The end Deflection simulation image is:</p>
+<p><img src="https://s2.loli.net/2022/10/09/mNARGXfylCWV3p9.png" alt="b15.png"></p>
+<p>The effect of the position of the shock absorber at the beam on the free end displacement:</p>
+<p><img src="https://s2.loli.net/2022/10/09/LQEPWSe6J4Koi3z.png" alt="b16.png"></p>
+<p>Red is the free end discharge at position 1; Blue refers to the free end discharge at position 2; The pink color is the free end defect of position 3.</p>
+<p>As shown in the figure, when beam 2 is running, the car overturns, so it is decided to remove this position:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/x9OsGcLfk8Z5mB4.png" alt="b17.png" width="458" data-align="center"></p>
+<p><img src="https://s2.loli.net/2022/10/09/tBKOE3iSVQlRfPF.png" alt="b18.png"></p>
+<p>Finally, according to the results, the wheels are all C=50/K=250, and the beam (choose beam1) is C=5/K=100.</p>
+<h5 id="Flexible-beam"><a href="#Flexible-beam" class="headerlink" title="Flexible beam"></a>Flexible beam</h5><p>The basic method is similar to the above, except that a column is added to the X matrix and X_dot matrix:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/8PJVsxveowUE7QL.png" alt="b19.png" width="430" data-align="center"></p>
+<p>$C=10000,K=100000,C_b=50000,K_b=100000$, and the possible optimal solution can be obtained after two approximations.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/PrCQT7BmxWSiHgb.png" alt="b20.png" width="333" data-align="center"></p>
+<p>$C=5000, K=1000000, C_b=100000, K_b=2000000$, get the possible optimal solution after approximation.</p>
+<p>Then use above values in Adams to get result:</p>
+<p><img src="https://s2.loli.net/2022/10/09/nr5kAXLIemlszwb.png" alt="b21.png"></p>
+<p>The red line is the initial C/K, and the blue line is the optimized C/K.</p>
+<p>Finally, combining matlab and Adams, the optimal solution is obtained as follows: the wheels are all C=5/K=250, and the beam (choose beam1) is C=50/K=100</p>
+<p>The end Deflection simulation image is:</p>
+<p><img src="https://s2.loli.net/2022/10/09/UuIzJixmsQrnX5a.png" alt="b22.png"></p>
+<p>The effect of the position of the shock absorber at the beam on the free end displacement:</p>
+<p><img src="https://s2.loli.net/2022/10/09/zx9qjS4ckHaPQD6.png" alt="b23.png"></p>
+<p>The pink color is the free end discharge at position 1; Red is the free end discharge at position 2; Blue is the free end collection of position 3.</p>
+<p>Finally, according to the results, the wheels are all C=5/K=250, and the beam (choose beam1) is C=50/K=100.</p>
+<h3 id="TBD："><a href="#TBD：" class="headerlink" title="TBD："></a>TBD：</h3><p>The basic assumption is that the C/K of the four wheels is the same, but it should be further explored - the wheels can take different C/K values; At the same time, we simply judge the position of the shock absorber at the beam according to the results, without exploring its internal principle and mathematical relationship.</p>
+<h2 id="Matlab-stimulation"><a href="#Matlab-stimulation" class="headerlink" title="Matlab stimulation"></a>Matlab stimulation</h2><p>In the simulation, the damping system of the trolley is simplified as a spring with an elastic coefficient of k and a viscous damper with a viscosity coefficient of v. The damping system of the trolley shall ensure that there is no obvious boundary between passing and failing frequencies. Therefore, there should be a gradual transition in the design of the damping system. In the modeling of the system, the step signal is used to simulate the uneven road surface. If the step response of the trolley damping system presents a relatively large continuous oscillation, a flange on the road (equivalent to the step signal) will cause the trolley to bump.</p>
+<h3 id="Establishment-of-mathematical-model-of-damping-system"><a href="#Establishment-of-mathematical-model-of-damping-system" class="headerlink" title="Establishment of mathematical model of damping system"></a>Establishment of mathematical model of damping system</h3><p><img title="" src="https://s2.loli.net/2022/10/09/6JnFLDZzxmgwKe1.png" alt="b24.png" width="302" data-align="center"></p>
+<p>The model diagram of the damping system of the car can be shown in the above figure: $x (t)$ is the displacement of the wheel when driving relative to the horizontal road surface, and $y (t)$ is the displacement of the car chassis when driving relative to the horizontal road surface. Moreover, when $t=0$, the trolley is in balance on the horizontal road, that is, $x (t)=y (t)=0$. However, when the car moves on the uneven road, there will be $x (t) ≠ 0$, and the balance of the car will be broken.</p>
+<p>Since the force analysis and calculation of the trolley have been carried out previously, the differential equation of the car chassis can be simply expressed as:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/xp6Ma3FwevchzYQ.png" alt="b25.PNG" data-align="center" width="344"></p>
+<p>Among them, m is the mass of the vehicle chassis, k and b are coefficients related to springs and shock absorbers, respectively. Therefore, the transfer function of the system can be expressed as:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/wvUXe4VSs2hPTQo.png" alt="b26.PNG" data-align="center" width="245"></p>
+<p>Among them, $ω_ n=√(k/m)$，$2 ξω_ n=b/m$,  $ω_ n$ is the undamped natural frequency, $ξ$ Is the damping coefficient.</p>
+<h3 id="MATLAB-Simulink-simulation"><a href="#MATLAB-Simulink-simulation" class="headerlink" title="MATLAB Simulink simulation"></a>MATLAB Simulink simulation</h3><p>The overall model is as follows:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/LXJ5D7RGaHu9n14.png" alt="b27.png" width="491" data-align="center"></p>
+<p>For the step module, adjust the final value to 1000 and the step time to 0:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/Yv7IswDujnoCxE6.png" alt="b28.png" width="357" data-align="center"></p>
+<p>In order to make the output image curve more smooth, the original automatic step size is changed to a fixed step size of 0.01:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/WLV724yTlRkhnp8.png" alt="b29.png" width="466" data-align="center"></p>
+<p>As a whole, three to workspace modules are also built to introduce the values in simulink to the workbench for easy image output.</p>
+<h5 id="Analysis-of-simulation-results"><a href="#Analysis-of-simulation-results" class="headerlink" title="Analysis of simulation results"></a>Analysis of simulation results</h5><ol>
+<li><p>Effect of viscosity coefficient on damping characteristics</p>
+<p>From the measured k and m, we get $ω_ n=0.66$, let $ξ$= 0.1:0.1:1. Write a matlab program to call the model file for simulation, and draw the step response curve and bode diagram:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/TeLm5Ezc1OxatBl.png" alt="b30.png" width="346" data-align="center"></p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/FPfMj7pyR5LKgHq.png" alt="b31.png" width="397" data-align="center"></p>
+<p>Through the analysis of the image, it can be concluded that the damping system of the trolley is based on the natural frequency $ω_n$ to control, the value of $ω_n$ becomes larger, the more compressed the functions $h (t)$ and $s (t)$ as t in time, and the higher the oscillation frequency, so that the rise time of the system. If the natural frequency is low, the damping system tends to filter out slower changes, so as to provide a stable driving environment, but this will increase the rise time of the system, and the system will become sluggish.</p>
+<p>As the damping coefficient decreases, the cut-off curve of the system frequency response becomes steeper, and overshoot and oscillation tend to increase, which means that a compromise is found between the starting point and the frequency domain, that is, the system frequency and $ξ$ Is related to the value of. It can be seen from the figure $ξ= 0.4-0.8$, the adjustment time is relatively short, and a relatively stable driving environment can be obtained.</p>
+</li>
+<li><p>Effect of elastic coefficient on damping characteristics</p>
+<p>At this time, instead of using the determined value of $\omega_n$, let $\omega_n = 1:1:10,ξ=0.7 $, compile a matlab program to call the model file for simulation, and draw the step response curve and bode diagram:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/KQdk8TovjFguyI4.png" alt="b32.png" width="402" data-align="center"><img title="" src="https://s2.loli.net/2022/10/09/K1SyTlDJvBm78A3.png" alt="b33.png" width="416" data-align="center"></p>
+<p>It can be seen that the smaller the elastic coefficient is, the more sluggish the system’s response is. However, k is too large, the natural frequency is high, and the filtering in the damping system area changes rapidly, which leads to unstable driving of the car. Then the elastic coefficient can be a compromise value.</p>
+</li>
+</ol>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>[1] 艾小娇,章桐.汽车减震器特征参数的建立与评价[J].上海汽车,2014(04):38-41+51. </p>
+<p>[2] 史广奎,李槟,孟宪民.汽车设计中减震器相对阻尼系数的确定[J].汽车工程,1995(06):367-373+346.</p>
+<p> [3] 王想亭,张瑞乾,赵峻.基于ADAMS的汽车平顺性的仿真分析[J].汽车实用技术,2013(12):8-14. </p>
+<p>[4] 赵锋. 基于MATLAB环境的汽车减震器阻尼特性仿真分析[D].华中科技大学,2007. </p>
+<p>[5] Jugulkar, L. M., Singh, S., &amp; Sawant, S. M. (2016). Analysis of suspension with variable stiffness and variable damping force for automotive applications. Advances in Mechanical Engineering.</p>
+<p> [6] Sun, S, Deng, H, Li, W. Variable stiffness and damping suspension system for train. In: Proceedings of SPIE: active and passive smart structures and integrated systems 2014. Bellingham, WA: SPIE, 2014, pp.1–12.</p>
+]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>机械结构</tag>
+        <tag>运动仿真</tag>
+        <tag>大二春季学期</tag>
+        <tag>SDM283</tag>
+        <tag>Adams</tag>
+        <tag>Matlab</tag>
+        <tag>机械振动</tag>
       </tags>
   </entry>
 </search>
