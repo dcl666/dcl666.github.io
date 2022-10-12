@@ -10,83 +10,79 @@
 <p><img src="https://s2.loli.net/2022/10/09/MVDuU4IaHKoZRXN.png" alt="a33.png"></p>
 <p>The model can be divided into three parallelograms - when the bottom point C is driven by point 0, the FG rod is the main motion rod and points D and D’ do not move (representing the control of up and down motion); when the upper point D is driven by point O, the model moves as a whole with the same relative position (representing the back and forth motion) .<br>These two motions are driven by different joints and are not equivalent (this is to be reflected in the simulation); meanwhile the BO bar is always in the same position; the motion can be controlled by changing the size of the two parallelogram angles on the left side (which can represent variables in matlab, i.e. angle change values).<br>Finally by some fixed values (rod length, angle) and variables can be based on the coordinates of the O point to represent the coordinates of all the remaining points, for the convenience of the subsequent programming.</p>
 <h3 id="Adams-simulation"><a href="#Adams-simulation" class="headerlink" title="Adams simulation"></a>Adams simulation</h3><p>First import the solidworks model into Adams:Here we made the mistake of moving the original model of s, resulting in the A inside not being in the model default coordinates, resulting in a less than standardized answer.</p>
-<img title="" src="https://s2.loli.net/2022/10/09/m3j8Jd9MDOIh46A.png" alt="a34.png" width="265" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/m3j8Jd9MDOIh46A.png" alt="a34.png" width="265" data-align="center"></p>
 <p>First separate each linkage structure, so as to provide easy operation afterwards.</p>
 <p><img src="https://s2.loli.net/2022/10/09/inJgGUM9NWSOpD5.png" title="" alt="a35.png" data-align="center">Then add joints, gravity, load, and motion to achieve the function of movement, you need to combine the model in sw to set the position of joints and motion need to carry the joint.</p>
 <p><img title="" src="https://s2.loli.net/2022/10/09/IwXngSGBeNti9mK.png" alt="a36.PNG" data-align="center">What is important to note here is that when adding joints, the view needs to be perpendicular to it to ensure that the rotating joints are correct, otherwise the situation will appear as follows.</p>
 <p><img src="https://s2.loli.net/2022/10/09/rvq8ZRKGe4nkgw1.png" title="" alt="a37.png" data-align="center">Next we extract the data (length of the rod) from the Solidworks model. The correct Markers are selected in Adams to determine the coordinates of the key points. This data is then fed into Task1 and Task2. Then set the common rotation angle and rotation speed. The G-point coordinates are measured at the end of the rotation to enable verification of Task1.</p>
 <h5 id="Task1"><a href="#Task1" class="headerlink" title="Task1"></a>Task1</h5><ul>
 <li><p>Motion1</p>
-<img src="https://s2.loli.net/2022/10/09/UjW25BJmXDxkCSd.png" title="" alt="a38.png" data-align="center">
+<p><img src="https://s2.loli.net/2022/10/09/UjW25BJmXDxkCSd.png" title="" alt="a38.png" data-align="center"></p>
 </li>
 <li><p>Motion2</p>
-<img src="https://s2.loli.net/2022/10/09/eABVPJFDp8Lzqr1.png" title="" alt="a39.png" data-align="center">
+<p><img src="https://s2.loli.net/2022/10/09/eABVPJFDp8Lzqr1.png" title="" alt="a39.png" data-align="center"></p>
 </li>
 <li><p>Motion3</p>
-<img src="https://s2.loli.net/2022/10/09/F7xRO8ea5bQmDM3.png" title="" alt="a40.png" data-align="center">
+<p><img src="https://s2.loli.net/2022/10/09/F7xRO8ea5bQmDM3.png" title="" alt="a40.png" data-align="center"></p>
 </li>
 <li><p>G-point end coordinates</p>
-<img title="" src="https://s2.loli.net/2022/10/09/PTCcVBDvg5GR2Qo.png" alt="a41.png" data-align="center"></li>
+<p><img title="" src="https://s2.loli.net/2022/10/09/PTCcVBDvg5GR2Qo.png" alt="a41.png" data-align="center"></p>
+</li>
 </ul>
 <h5 id="Task2"><a href="#Task2" class="headerlink" title="Task2"></a>Task2</h5><ul>
 <li><p>G-point（XYZ）Translational velocity</p>
-<img title="" src="https://s2.loli.net/2022/10/09/RhfUyOleNgxImWH.png" alt="a42.png" width="254" data-align="center">
+<p><img title="" src="https://s2.loli.net/2022/10/09/RhfUyOleNgxImWH.png" alt="a42.png" width="254" data-align="center"></p>
 </li>
 <li><p>G-point（XYZ）Angular velocity</p>
-<img title="" src="https://s2.loli.net/2022/10/09/BaCyUFWOSiEkqL1.png" alt="a43.png" width="258" data-align="center"></li>
+<p><img title="" src="https://s2.loli.net/2022/10/09/BaCyUFWOSiEkqL1.png" alt="a43.png" width="258" data-align="center"></p>
+</li>
 </ul>
 <h5 id="Task3"><a href="#Task3" class="headerlink" title="Task3"></a>Task3</h5><p>By adding only a downward load, the torque at the three joints was measured. The following results were obtained:</p>
 <p><img src="https://s2.loli.net/2022/10/09/BAEmj4nrYGKLfSw.png" alt="a44.png"></p>
-<h5 id="Task4"><a href="#Task4" class="headerlink" title="Task4"></a>Task4</h5><img title="" src="https://s2.loli.net/2022/10/09/GWgF82VBui1LzTQ.png" alt="a45.PNG" width="303" data-align="center">
-
+<h5 id="Task4"><a href="#Task4" class="headerlink" title="Task4"></a>Task4</h5><p><img title="" src="https://s2.loli.net/2022/10/09/GWgF82VBui1LzTQ.png" alt="a45.PNG" width="303" data-align="center"></p>
 <p>The torque at the three joints was measured. The following results were obtained:</p>
 <p><img src="https://s2.loli.net/2022/10/09/rnZ9FKizUlmdcCV.png" alt="a46.png"></p>
 <h3 id="Math-caculate"><a href="#Math-caculate" class="headerlink" title="Math caculate"></a>Math caculate</h3><h5 id="Task1-1"><a href="#Task1-1" class="headerlink" title="Task1"></a>Task1</h5><p>In Task1, the angle of joint rotation is used as the independent variable. After the RGB460 has been rotated by a certain angle in all three joints, we need to find the coordinates of the end points after the change.<br>First, we measured the angle and the length of the rod in Adams to calculate the coordinates of each joint we need.</p>
 <p><img src="https://s2.loli.net/2022/10/09/4oktmFPZJCd9OAL.png" alt="a55.PNG"></p>
 <p>q is the coordinate of each joint before rotation.<br>For each joint, we can write a $\hatξ$ matrix, and in the order of the three joints, we end up with three $\hatξ$ matrices.<br>In order to calculate the coordinates of each joint after rotation, we need to calculate the rotation matrix R (at this time, R is a 4x4 matrix, and for the purpose of calculation, we have to write the 3x1 matrix of the initial coordinates of the joints as a 4x1 matrix).</p>
-<p>$$<br>R(q,\theta)&#x3D;e^{\hatξ\theta}&#x3D;\begin{bmatrix}e^{\hat\omega\theta} &amp; (I-e^{\hat\omega\theta})q \ 0 &amp; 1\end{bmatrix}<br>$$</p>
-<p>(Rodriguez Formula).</p>
+<script type="math/tex; mode=display">
+R(q,\theta)=e^{\hatξ\theta}=\begin{bmatrix}e^{\hat\omega\theta} & (I-e^{\hat\omega\theta})q \\ 0 & 1\end{bmatrix}</script><p>(Rodriguez Formula).</p>
 <p>In this tkas, there are three joints rotated and there exist three angles of rotation, and according to the multiplication of the rotation matrix, we will get:</p>
-<p>$$<br>g_{ab}&#x3D;e^{\hatξ_1\theta_1}*e^{\hatξ_2\theta_2}*e^{\hatξ_3\theta_3}*g_{ab0}<br>$$</p>
-<p>Bringing the three matrices R obtained earlier into the above equation, we can get the representation matrix $g_{ab}$ of the rigid body after rotation. In addition, we have done some other ways to think about solving the problem, but we finally gave up this idea because it would complicate the simple problem. The specific process of this idea is as follows:<br>(a) Determine the origin of the overall linkage coordinate system and the x, y, and z axis directions.<br>(b) Apply the rotation to move the coordinate system to solve the problem, first determine the rotation matrix $R$ according to our rotation process, where </p>
+<script type="math/tex; mode=display">
+g_{ab}=e^{\hatξ_1\theta_1}*e^{\hatξ_2\theta_2}*e^{\hatξ_3\theta_3}*g_{ab0}</script><p>Bringing the three matrices R obtained earlier into the above equation, we can get the representation matrix $g_{ab}$ of the rigid body after rotation. In addition, we have done some other ways to think about solving the problem, but we finally gave up this idea because it would complicate the simple problem. The specific process of this idea is as follows:<br>(a) Determine the origin of the overall linkage coordinate system and the x, y, and z axis directions.<br>(b) Apply the rotation to move the coordinate system to solve the problem, first determine the rotation matrix $R$ according to our rotation process, where </p>
 <p><img src="https://s2.loli.net/2022/10/09/BxHrGjpMAekf18g.png" alt="a57.PNG"></p>
 <p>(c) It is known that the overall coordinate system is not displaced, so </p>
-<p>$$<br>p_{ab}&#x3D;0<br>$$</p>
-<p>(d) So task1 final result is:</p>
-<p>$$<br>g_{ab}&#x3D;\begin{bmatrix}R &amp; p \ 0 &amp; 1\end{bmatrix}<br>$$</p>
-<h5 id="Task2-1"><a href="#Task2-1" class="headerlink" title="Task2"></a>Task2</h5><p>In the calculation of task1, $g_{ab0}$ is converted to $g_{ab}$ by the input angles of rotation of the three joints, and thus the coordinate frame of the rotated rigid body is obtained.<br>In task2, in addition to the angles of rotation of the three joints, the angular velocity corresponding to the rotation of each joint is also input. Since the desired $\hat V_{ab}$ represents the velocity of the rigid body, it can be found by $g_{ab}$ as follows: </p>
-<p>$$<br>\hat V_{ab}&#x3D;\acute g_{ab}*g_{ab}^{-1}&#x3D;\hatξ_1\theta_1+e^{\hatξ_1\theta_1}e^{-\hatξ_1\theta_1}\hatξ_2\acute \theta_2+e^{\hatξ_1\theta_1}e^{-\hatξ_1\theta_1}e^{\hatξ_2\theta_2}e^{-\hatξ_2\theta_2}\hatξ_3\acute \theta_3<br>$$</p>
-<p>Substitute the three matrices obtained in task 1 into the above formula to obtain</p>
-<p>$$<br>\hat V_{ab}<br>$$</p>
-<h5 id="Task3-1"><a href="#Task3-1" class="headerlink" title="Task3"></a>Task3</h5><p><img src="https://s2.loli.net/2022/10/09/iBrRub5tLIjHGAT.png" alt="a56.PNG"></p>
+<script type="math/tex; mode=display">
+p_{ab}=0</script><p>(d) So task1 final result is:</p>
+<script type="math/tex; mode=display">
+g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a href="#Task2-1" class="headerlink" title="Task2"></a>Task2</h5><p>In the calculation of task1, $g_{ab0}$ is converted to $g_{ab}$ by the input angles of rotation of the three joints, and thus the coordinate frame of the rotated rigid body is obtained.<br>In task2, in addition to the angles of rotation of the three joints, the angular velocity corresponding to the rotation of each joint is also input. Since the desired $\hat V_{ab}$ represents the velocity of the rigid body, it can be found by $g_{ab}$ as follows: </p>
+<script type="math/tex; mode=display">
+\hat V_{ab}=\acute g_{ab}*g_{ab}^{-1}=\hatξ_1\theta_1+e^{\hatξ_1\theta_1}e^{-\hatξ_1\theta_1}\hatξ_2\acute \theta_2+e^{\hatξ_1\theta_1}e^{-\hatξ_1\theta_1}e^{\hatξ_2\theta_2}e^{-\hatξ_2\theta_2}\hatξ_3\acute \theta_3</script><p>Substitute the three matrices obtained in task 1 into the above formula to obtain</p>
+<script type="math/tex; mode=display">
+\hat V_{ab}</script><h5 id="Task3-1"><a href="#Task3-1" class="headerlink" title="Task3"></a>Task3</h5><p><img src="https://s2.loli.net/2022/10/09/iBrRub5tLIjHGAT.png" alt="a56.PNG"></p>
 <h5 id="Task4-1"><a href="#Task4-1" class="headerlink" title="Task4"></a>Task4</h5><p>It has the same principle as task3, but it lacks the load and increases the calculation of kinetic energy; Calculated according to euler lagrange equation: </p>
-<p>$$<br>\frac{d}{dt} (∂L&#x2F;∂θ)- ∂L&#x2F;∂θ<br>$$</p>
-<p><img src="https://s2.loli.net/2022/10/09/JDxdkVW3SKQng6v.png" alt="a47.PNG"></p>
+<script type="math/tex; mode=display">
+\frac{d}{dt} (∂L/∂θ)- ∂L/∂θ</script><p><img src="https://s2.loli.net/2022/10/09/JDxdkVW3SKQng6v.png" alt="a47.PNG"></p>
 <p>Then start to derive each item according to the formula</p>
-<p>When deriving theta, separate T and V for derivation – take the derivative of theta1&#x2F;2&#x2F;3 for T and V of three centroids respectively</p>
+<p>When deriving theta, separate T and V for derivation — take the derivative of theta1/2/3 for T and V of three centroids respectively</p>
 <p>Where the centroid coordinate is:</p>
 <p><img src="https://s2.loli.net/2022/10/09/6TdgwLYNnbWOJly.png" alt="a48.PNG"></p>
 <p>For $\acute \theta$ takes derivative, it is only related to T, and V’s derivative of $\acute \theta$ is 0; This is still derivative for $\acute \theta_1,\acute \theta_2,\acute \theta_3$ respectively</p>
 <p><img src="https://s2.loli.net/2022/10/09/aKCtOzQ6Nhq8vBi.png" alt="a49.PNG"></p>
 <p>Add after all calculations.</p>
-<h3 id="Matlab-coding"><a href="#Matlab-coding" class="headerlink" title="Matlab coding"></a>Matlab coding</h3><h5 id="Task1-x2F-Task2"><a href="#Task1-x2F-Task2" class="headerlink" title="Task1&#x2F;Task2"></a>Task1&#x2F;Task2</h5><p>Task 2 applies some functions used in task 1 in MATLAB calculation, so the calculation of the two tasks can be implemented together.</p>
+<h3 id="Matlab-coding"><a href="#Matlab-coding" class="headerlink" title="Matlab coding"></a>Matlab coding</h3><h5 id="Task1-Task2"><a href="#Task1-Task2" class="headerlink" title="Task1/Task2"></a>Task1/Task2</h5><p>Task 2 applies some functions used in task 1 in MATLAB calculation, so the calculation of the two tasks can be implemented together.</p>
 <p>In these two tasks, some functions are mainly used:</p>
-<img src="https://s2.loli.net/2022/10/09/wvqmZ6Y8WbESV2d.png" title="" alt="a50.png" data-align="center">
-
+<p><img src="https://s2.loli.net/2022/10/09/wvqmZ6Y8WbESV2d.png" title="" alt="a50.png" data-align="center"></p>
 <p>First omega_ hat function is used to complete the conversion of omega cross multiplication:</p>
-<img src="https://s2.loli.net/2022/10/09/rEcm19a5dbkVluH.png" title="" alt="a51.png" data-align="center">
-
+<p><img src="https://s2.loli.net/2022/10/09/rEcm19a5dbkVluH.png" title="" alt="a51.png" data-align="center"></p>
 <p>Next is xi_hat function, used to calculate $\hat ξ$ :</p>
-<img src="https://s2.loli.net/2022/10/09/BAfFC8WVarg7GEP.png" title="" alt="a52.png" data-align="center">
-
+<p><img src="https://s2.loli.net/2022/10/09/BAfFC8WVarg7GEP.png" title="" alt="a52.png" data-align="center"></p>
 <p>Substitute these two results into the rotate function to obtain the matrix we need:</p>
 <p><img src="https://s2.loli.net/2022/10/09/XsV3yId8ASgB7R1.png" alt="a53.png"></p>
 <p>After defining these functions, it is only necessary to substitute the relevant parameters of each joint into the formula in the principle analysis to get the results</p>
-<h5 id="Task3-x2F-Task4"><a href="#Task3-x2F-Task4" class="headerlink" title="Task3&#x2F;Task4"></a>Task3&#x2F;Task4</h5><p>In the calculation of task 3 and task 4, several functions used in task1 and task2 are also needed.</p>
+<h5 id="Task3-Task4"><a href="#Task3-Task4" class="headerlink" title="Task3/Task4"></a>Task3/Task4</h5><p>In the calculation of task 3 and task 4, several functions used in task1 and task2 are also needed.</p>
 <p>However, because of the need for formulas and calculations, it is necessary to reference a function for changing $\hat ξ$ to $ξ$, in order to change the 4x4 matrix into a 6x1 matrix and substitute it into our formula.</p>
-<img src="https://s2.loli.net/2022/10/09/2qYPCp5H3E1RxFa.png" title="" alt="a54.png" data-align="center">
-
+<p><img src="https://s2.loli.net/2022/10/09/2qYPCp5H3E1RxFa.png" title="" alt="a54.png" data-align="center"></p>
 <p>After we have these functions for calculation, we can use these functions to substitute into the calculation according to the derived formula to get our final result</p>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In general, this mini project covers the dynamics knowledge points learned in the first five weeks very well, so that we can not only deepen our understanding of knowledge, but also apply it in practice, understand the details that should be paid attention to in specific operations, learn the general method, and lay a foundation for similar structure analysis in the future.</p>
 ]]></content>
@@ -102,10 +98,11 @@
         <tag>GGB</tag>
         <tag>Adams</tag>
         <tag>Matlab</tag>
+        <tag>机器人运动学</tag>
       </tags>
   </entry>
   <entry>
-    <title>SDM202 Project</title>
+    <title>SDM202 Mobile Trolley Project</title>
     <url>/2022/10/09/202/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>SDM202 Project, which is a multidisciplinary Project in my autumn Semester of sophomore. In this project, our group should use many kinds of knowledge(machinery, electric control, material, manufacturing, design thinking, etc) to build a mobile trolley capable of grasping objects, and compete among different groups.</p>
 <h2 id="Pre-PPT"><a href="#Pre-PPT" class="headerlink" title="Pre PPT"></a>Pre PPT</h2>
@@ -116,12 +113,10 @@
 
 
 
-
 <h2 id="Competition-Video"><a href="#Competition-Video" class="headerlink" title="Competition Video"></a>Competition Video</h2>
 
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
 <iframe src="//player.bilibili.com/player.html?aid=388893698&bvid=BV1Yd4y1i7EV&cid=856526874&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div>
-
 
 <h2 id="Other-Files"><a href="#Other-Files" class="headerlink" title="Other Files"></a>Other Files</h2><p>Model file and Poster:</p>
 <p><a href="https://pan.baidu.com/s/1U8T7CdyEHZlo_V3FWXFznw?pwd=rwjb">https://pan.baidu.com/s/1U8T7CdyEHZlo_V3FWXFznw?pwd=rwjb</a><br>Show page from SDIM：</p>
@@ -131,11 +126,6 @@
         <category>大项目</category>
       </categories>
       <tags>
-        <tag>机械</tag>
-        <tag>电控</tag>
-        <tag>材料</tag>
-        <tag>制造</tag>
-        <tag>设计思维</tag>
         <tag>大二秋季学期</tag>
         <tag>Multidisciplinary Project</tag>
       </tags>
@@ -152,7 +142,6 @@
 
 
 
-
 <h2 id="Other-Files"><a href="#Other-Files" class="headerlink" title="Other Files"></a>Other Files</h2><p>Model file:</p>
 <p><a href="https://pan.baidu.com/s/1KY9RjtCPA4Otuew12wjZ4A?pwd=no56">https://pan.baidu.com/s/1KY9RjtCPA4Otuew12wjZ4A?pwd=no56</a></p>
 ]]></content>
@@ -160,28 +149,26 @@
         <category>机械</category>
       </categories>
       <tags>
-        <tag>机械</tag>
-        <tag>材料</tag>
+        <tag>机械结构</tag>
         <tag>大三秋季学期</tag>
       </tags>
   </entry>
   <entry>
-    <title>SDM242 Final Report—— Learn from 202 project</title>
+    <title>SDM242 Final Report——Based on SDM202 project</title>
     <url>/2022/10/08/%E7%94%B5%E6%8E%A7-202/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>After a semester of study, knowledge is gained from courses and projects–in our lecture,  what we studied are mainly about concept, function and practical application of op-amp; in our project, what I studied are mainly about MCU、Arduino, focused on motor control.</p>
-<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>For op-amp, although I did not build an op-amp module from scratch by myself, I have a clear understanding of the most basic principles of op-amp. At the same time, I have studied some integrated op-amp modules and understood the principles. What’s more, because I am in charge of the electronic control part of the project of our group, mainly the control of the motor, so I went to learn the use of MCU and some demo boards, mainly using STM32 and Arduino. In the main text, I will not only talk about knowledge points, I will explain them separately according to the following four points, focusing on the learning process–what I learned、why I learned、how can it do、how I use it.</p>
-<h2 id="Op-amp"><a href="#Op-amp" class="headerlink" title="Op-amp"></a>Op-amp</h2><p>242, which is represented analog circuit system design, there is no doubt that op-amp is the most important part in 242, so it is necessary to know the most basic principles of op-amp–virtual short and virtual break, all op-amp circuits can be solved using these two concepts. No matter the relationship between output and input can be obtained, the principle of op-amp can be fundamentally understood.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>After a semester of study, knowledge is gained from courses and projects—in our lecture,  what we studied are mainly about concept, function and practical application of op-amp; in our project, what I studied are mainly about MCU、Arduino, focused on motor control.</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>For op-amp, although I did not build an op-amp module from scratch by myself, I have a clear understanding of the most basic principles of op-amp. At the same time, I have studied some integrated op-amp modules and understood the principles. What’s more, because I am in charge of the electronic control part of the project of our group, mainly the control of the motor, so I went to learn the use of MCU and some demo boards, mainly using STM32 and Arduino. In the main text, I will not only talk about knowledge points, I will explain them separately according to the following four points, focusing on the learning process—what I learned、why I learned、how can it do、how I use it.</p>
+<h2 id="Op-amp"><a href="#Op-amp" class="headerlink" title="Op-amp"></a>Op-amp</h2><p>242, which is represented analog circuit system design, there is no doubt that op-amp is the most important part in 242, so it is necessary to know the most basic principles of op-amp—virtual short and virtual break, all op-amp circuits can be solved using these two concepts. No matter the relationship between output and input can be obtained, the principle of op-amp can be fundamentally understood.</p>
 <p>A. virtual short</p>
-<p> It means that when the operational amplifier is in the linear state, the two input terminals can be regarded as equipotential–because the amplifier has a large amplification factor and its own output voltage is limited, the differential mode input voltage is less than 1mV, and the two input terminals are approximately The same potential is equivalent to a short circuit. The greater the magnification, the closer to the same. This feature is called virtual short. Obviously, we can’t treat the two input terminals as short circuits.</p>
+<p> It means that when the operational amplifier is in the linear state, the two input terminals can be regarded as equipotential—because the amplifier has a large amplification factor and its own output voltage is limited, the differential mode input voltage is less than 1mV, and the two input terminals are approximately The same potential is equivalent to a short circuit. The greater the magnification, the closer to the same. This feature is called virtual short. Obviously, we can’t treat the two input terminals as short circuits.</p>
 <p>B. virtual break: </p>
-<p>It means that when the operational amplifier is in the linear state, the two input terminals can be regarded as equivalent open circuit–due to the large differential input resistance, the current flowing into the input terminal of the operational amplifier is only 1μA, much smaller than the current of the external circuit at the input terminal. Therefore, the two input terminals can be regarded as open circuits, and the greater the input resistance, the greater the current difference, and the closer to the open circuit. This feature is called virtual break. Obviously, we can’t treat the two input terminals as open circuits.</p>
+<p>It means that when the operational amplifier is in the linear state, the two input terminals can be regarded as equivalent open circuit—due to the large differential input resistance, the current flowing into the input terminal of the operational amplifier is only 1μA, much smaller than the current of the external circuit at the input terminal. Therefore, the two input terminals can be regarded as open circuits, and the greater the input resistance, the greater the current difference, and the closer to the open circuit. This feature is called virtual break. Obviously, we can’t treat the two input terminals as open circuits.</p>
 <p>C. Example</p>
-<p>Then there is an example about how to use these two concepts to analyze an op-amp circuit, which is the non-inverting amplifier, below is the analysis:<img title="" src="https://s2.loli.net/2022/10/08/QLPIj8YXkzvt6Cu.png" alt="a30.png" width="201" data-align="center">$V_i&#x2F;V_-$are the two input terminals, using the virtual short: $V_i &#x3D; V_-$, using the virtual break: the input resistance of the inverting input terminal is very high, and there is almost no current injection or outflow. Therefore, the current through $R_1&#x2F;R_2$are equal. Set this current as $I$. </p>
-<p>According to Ohm’s law: $I &#x3D; V_{out} &#x2F; (R1+R2)$, $V_i$ is equal to the partial pressure on $R2$, $V_i &#x3D; I * R_2$, finally get $V_{out} &#x3D; V_i * (R_1+R_2) &#x2F; R_2$<br>When studying op-amp circuits, I learned that learning a concept can’t always remember some formulas or terms, but to understand the most fundamental principles, try to use the most basic methods to understand the concept, and go step by step, can’t be content with superficial understanding.</p>
-<h2 id="Motor-control-in-the-project"><a href="#Motor-control-in-the-project" class="headerlink" title="Motor control in the project"></a>Motor control in the project</h2><p>Although for the 242, motor control is not the most important part, it can even be said to be the part of digital circuits, but the learning process is very useful, and it is also for the whole group, so after learning I realized that it is meaningful for 242 study.<br>First of all, at the beginning of the project, I must first determine the control tool to use, or what demo boards to choose–since I wanted to use the robot’s own motor at the beginning, I planned to use the C board(STM32) to develop the control program. Although I need to learn embedded programming, this is also a good learning opportunity, so I started to move forward. I have successfully configured all the programming environment, software and other hardware to be used in accordance with the tutorial and materials, but during the initial practice-the PC cannot recognize the C board and cannot burn the code, which caused the process to stall. I did not find the problem at that time, but when I reused the STM32, I found that it should be caused by an error in the connection line between ST-Link and C board; in fact, there are still several such error correction processes, which made me learn to find more errors in the hardware. At the same time, you should not blindly believe in the tutorials and materials, and make appropriate changes based on the actual situation.<br>After that, I asked the TAs for help, and finally got a useful piece of information-Arduino can be used to achieve such a modular function. After checking the information, I decided to use Arduino–first, the control program is really simple and effective; second, I wanted to try new things and learn more.<br>After deciding to use Arduino, I started to think about and find out the specific control method to be implemented–my goal was to implement different control methods, so that I can reserve a few roads in case which control method has problems or does not meet actual requirements. Finally, I found four control methods–one is wired control, the most stable, through PC and serial port control, as a minimum protection scheme; the other three are infrared, WIFI, Bluetooth–infrared has requirements for external conditions and control specifications, WIFI needs to be connected to my mobile phone hotspot and is realized by APP at the same time, resulting in poor stability. Although Bluetooth also needs to use APP, it is generally much more stable than WIFI. In addition to the specific control method, I also implemented two kinds of motor control programs–servo and stepper motor. For these two motors, their control principles are different–the servo is controlled by the PWM signal, and the time when the high level is generated determines the angle, that is the duty cycle; the stepper motor relies on the electrical pulse signal to control the angle and the number of rotations, and cannot be used duty cycle to control. Although I only need to import the related libraries of these two types of motors in the Arduino program to achieve control, the basic principles must be understood. Only in this way can I truly understand the control method and be able to migrate to other development boards’ control.<br>What’s more, due to changes in our final demo trolley scheme, the specific functions of the motor need to be changed, so the control program needed to be changed–planA only requires the motor to rotate through a specific angle, and does not need to rotate continuously, and the intermediate period is longer; planB requires the motor’s continuous rotation, and can start and stop rotation at any time, the requirements are even higher. Therefore I found that the core code in the library given by Arduino could not achieve the above functions, so I changed the strategy in time–write the core code by myself. I went back to the C’s expression–configure the pins into different output modes: VCC provides power to the driver, pls provides pulses to the stepper motor, dir determines the forward or reverse rotation of the motor, and ena is equivalent to the switch of the stepper motor driver. Finally, I successfully achieved continuous forward and reverse rotation, and the function of stopping at any time. The function implemented by Bluetooth is to transmit several digital signals–1, 0, 2, which represent forward rotation, reverse rotation and stop. In summary, I have implemented many control methods and have the ability to write core codes independently. I have basically mastered the control methods of these two kinds of motors. Although many control programs were not used, I have exercised my programming ability and adaptability, which is very helpful for later learning. And during this period, I constantly searched for information, and constantly debugged–whether it was hardware or software problems, I encountered them many times, but they were all solved successfully. In general, I have a set of debugging procedures, which is very precious for me.</p>
-<img title="" src="https://s2.loli.net/2022/10/08/wtATpfvr542sGho.png" alt="a31.png" data-align="center" width="216">
-
-<h2 id="STM32-for-servo-tester"><a href="#STM32-for-servo-tester" class="headerlink" title="STM32 for servo tester"></a>STM32 for servo tester</h2><p>When I implemented the air pump control of planB, I found the servo tester, which is a very useful control tool, and just found that I can use STM32 to realize a self-made servo tester, which just met my idea of using MCU. So I decided to do it.<br>The implementation process was actually not complicated–it basically followed the existing steps and then learned from it. So learning STM32 is not only learning programming, but also learning to check information, check data manuals, software use and debugging methods. There are not many parts that really need to be built from scratch, I can just learn from the experience of the predecessors and move over to get what I need.<br>The specific code will not be explained in detail–in general, the common ADC reading voltage is used as sampling, and then mathematical conversion is performed. At the same time, TIM triggers sampling and outputs PWM signals at regular intervals, which are transferred to the register through DMA and processed Mean filtering, and then output specific values.</p>
+<p>Then there is an example about how to use these two concepts to analyze an op-amp circuit, which is the non-inverting amplifier, below is the analysis:<img title="" src="https://s2.loli.net/2022/10/08/QLPIj8YXkzvt6Cu.png" alt="a30.png" width="201" data-align="center">$V_i/V_-$are the two input terminals, using the virtual short: $V_i = V_-$, using the virtual break: the input resistance of the inverting input terminal is very high, and there is almost no current injection or outflow. Therefore, the current through $R_1/R_2$are equal. Set this current as $I$. </p>
+<p>According to Ohm’s law: $I = V_{out} / (R1+R2)$, $V_i$ is equal to the partial pressure on $R2$, $V_i = I <em> R_2$, finally get $V_{out} = V_i </em> (R_1+R_2) / R_2$<br>When studying op-amp circuits, I learned that learning a concept can’t always remember some formulas or terms, but to understand the most fundamental principles, try to use the most basic methods to understand the concept, and go step by step, can’t be content with superficial understanding.</p>
+<h2 id="Motor-control-in-the-project"><a href="#Motor-control-in-the-project" class="headerlink" title="Motor control in the project"></a>Motor control in the project</h2><p>Although for the 242, motor control is not the most important part, it can even be said to be the part of digital circuits, but the learning process is very useful, and it is also for the whole group, so after learning I realized that it is meaningful for 242 study.<br>First of all, at the beginning of the project, I must first determine the control tool to use, or what demo boards to choose—since I wanted to use the robot’s own motor at the beginning, I planned to use the C board(STM32) to develop the control program. Although I need to learn embedded programming, this is also a good learning opportunity, so I started to move forward. I have successfully configured all the programming environment, software and other hardware to be used in accordance with the tutorial and materials, but during the initial practice-the PC cannot recognize the C board and cannot burn the code, which caused the process to stall. I did not find the problem at that time, but when I reused the STM32, I found that it should be caused by an error in the connection line between ST-Link and C board; in fact, there are still several such error correction processes, which made me learn to find more errors in the hardware. At the same time, you should not blindly believe in the tutorials and materials, and make appropriate changes based on the actual situation.<br>After that, I asked the TAs for help, and finally got a useful piece of information-Arduino can be used to achieve such a modular function. After checking the information, I decided to use Arduino—first, the control program is really simple and effective; second, I wanted to try new things and learn more.<br>After deciding to use Arduino, I started to think about and find out the specific control method to be implemented—my goal was to implement different control methods, so that I can reserve a few roads in case which control method has problems or does not meet actual requirements. Finally, I found four control methods—one is wired control, the most stable, through PC and serial port control, as a minimum protection scheme; the other three are infrared, WIFI, Bluetooth—infrared has requirements for external conditions and control specifications, WIFI needs to be connected to my mobile phone hotspot and is realized by APP at the same time, resulting in poor stability. Although Bluetooth also needs to use APP, it is generally much more stable than WIFI. In addition to the specific control method, I also implemented two kinds of motor control programs—servo and stepper motor. For these two motors, their control principles are different—the servo is controlled by the PWM signal, and the time when the high level is generated determines the angle, that is the duty cycle; the stepper motor relies on the electrical pulse signal to control the angle and the number of rotations, and cannot be used duty cycle to control. Although I only need to import the related libraries of these two types of motors in the Arduino program to achieve control, the basic principles must be understood. Only in this way can I truly understand the control method and be able to migrate to other development boards’ control.<br>What’s more, due to changes in our final demo trolley scheme, the specific functions of the motor need to be changed, so the control program needed to be changed—planA only requires the motor to rotate through a specific angle, and does not need to rotate continuously, and the intermediate period is longer; planB requires the motor’s continuous rotation, and can start and stop rotation at any time, the requirements are even higher. Therefore I found that the core code in the library given by Arduino could not achieve the above functions, so I changed the strategy in time—write the core code by myself. I went back to the C’s expression—configure the pins into different output modes: VCC provides power to the driver, pls provides pulses to the stepper motor, dir determines the forward or reverse rotation of the motor, and ena is equivalent to the switch of the stepper motor driver. Finally, I successfully achieved continuous forward and reverse rotation, and the function of stopping at any time. The function implemented by Bluetooth is to transmit several digital signals—1, 0, 2, which represent forward rotation, reverse rotation and stop. In summary, I have implemented many control methods and have the ability to write core codes independently. I have basically mastered the control methods of these two kinds of motors. Although many control programs were not used, I have exercised my programming ability and adaptability, which is very helpful for later learning. And during this period, I constantly searched for information, and constantly debugged—whether it was hardware or software problems, I encountered them many times, but they were all solved successfully. In general, I have a set of debugging procedures, which is very precious for me.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/08/wtATpfvr542sGho.png" alt="a31.png" data-align="center" width="216"></p>
+<h2 id="STM32-for-servo-tester"><a href="#STM32-for-servo-tester" class="headerlink" title="STM32 for servo tester"></a>STM32 for servo tester</h2><p>When I implemented the air pump control of planB, I found the servo tester, which is a very useful control tool, and just found that I can use STM32 to realize a self-made servo tester, which just met my idea of using MCU. So I decided to do it.<br>The implementation process was actually not complicated—it basically followed the existing steps and then learned from it. So learning STM32 is not only learning programming, but also learning to check information, check data manuals, software use and debugging methods. There are not many parts that really need to be built from scratch, I can just learn from the experience of the predecessors and move over to get what I need.<br>The specific code will not be explained in detail—in general, the common ADC reading voltage is used as sampling, and then mathematical conversion is performed. At the same time, TIM triggers sampling and outputs PWM signals at regular intervals, which are transferred to the register through DMA and processed Mean filtering, and then output specific values.</p>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>All in all, in the process of learning 242, I not only learned the knowledge of analog electronics, but also mastered the methodology of learning related knowledge through practice, and mastered the internal principles, not only in specific scenarios.</p>
 <p>If you are interested in some code about Arduino or motor control, you can find all the code in: <a href="https://pan.baidu.com/s/1iIlhQWmPiUof1JwQjWSyQQ?pwd=is7i">https://pan.baidu.com/s/1iIlhQWmPiUof1JwQjWSyQQ?pwd=is7i</a></p>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h2><p>[1] <a href="https://www.sohu.com/a/154282071_755644">https://www.sohu.com/a/154282071_755644</a></p>
@@ -190,15 +177,9 @@
         <category>电控</category>
       </categories>
       <tags>
-        <tag>电控</tag>
         <tag>大二秋季学期</tag>
         <tag>Multidisciplinary Project</tag>
         <tag>SDM242</tag>
-        <tag>Op-amp</tag>
-        <tag>MCU</tag>
-        <tag>STM32</tag>
-        <tag>Arduino</tag>
-        <tag>Motor Control</tag>
       </tags>
   </entry>
   <entry>
@@ -206,8 +187,7 @@
     <url>/2022/10/07/%E6%89%AB%E5%9C%B0%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E6%A8%A1/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>  This project is not difficult, the main content is to disassemble the sweeping robot, understand and identify the mechanical structure of the content, briefly analyze its assembly structure, and propose possible improvement solutions. After that, we use Solidworks software to model the whole thing, just try to fit with the real thing.</p>
 <p>  On the whole, iRobot Roomba 960 is 9.3cm high, 34.5cm wide, only 7s power-on time and 66dB maximum noise. Compared with other types of sweeping robot, it is a good product.</p>
-<img title="" src="https://s2.loli.net/2022/10/07/CNX1KAG3zrdZihn.jpg" alt="img" width="265" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/07/CNX1KAG3zrdZihn.jpg" alt="img" width="265" data-align="center"></p>
 <h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a><strong>Procedure:</strong></h2><ul>
 <li><p>Analysis by using</p>
 <p>The RVC has two fundamental functions, cleaning the floor and self-navigation. The cleaning function is supported by the moving module, power module, sweeping and vacuuming module, and the controlling module. The self-navigation function is supported by power module, sensing module, and the controlling module.</p>
@@ -227,10 +207,8 @@
 <li>Create 3D model</li>
 </ul>
 <p> We used Solidworks to create a 3D assembly model (simple enough to ignore time consuming details but clear enough for understanding its functionality) for the RVC to demonstrate its mechanical working principles.</p>
-<h2 id="Solidworks-model"><a href="#Solidworks-model" class="headerlink" title="Solidworks model:"></a><strong>Solidworks model:</strong></h2><img title="" src="https://s2.loli.net/2022/10/07/AerXc1EzDJURlPt.png" alt="img" data-align="center" width="329">
-
-<img title="" src="https://s2.loli.net/2022/10/07/btjNGCUza7WEH8s.png" alt="img" width="313" data-align="center">
-
+<h2 id="Solidworks-model"><a href="#Solidworks-model" class="headerlink" title="Solidworks model:"></a><strong>Solidworks model:</strong></h2><p><img title="" src="https://s2.loli.net/2022/10/07/AerXc1EzDJURlPt.png" alt="img" data-align="center" width="329"></p>
+<p><img title="" src="https://s2.loli.net/2022/10/07/btjNGCUza7WEH8s.png" alt="img" width="313" data-align="center"></p>
 <h2 id="Appendix-Problems-and-solutions-for-improvement"><a href="#Appendix-Problems-and-solutions-for-improvement" class="headerlink" title="Appendix: Problems and solutions for improvement"></a><strong>Appendix: Problems and solutions for improvement</strong></h2><p>  In the process of consulting information, it is found that the sweeping robot often faces a problem, that is, the scattered hair in the home will be entangled in the fan leaves, making the machine unable to operate, so how to improve it?</p>
 <ol>
 <li><p>When the fan blade is not in use, the machine can be equipped with a comb that can be moved in parallel to comb down the hair wrapped on the fan blade.</p>
@@ -238,7 +216,7 @@
 <li><p>It is suggested to modify the installation mode of the fan blade. Now the fan blade is connected to the machine body by a long screw, and the screw that have to be removed by tools can be replaced by the nail that can be manually twisted down. This can reduce the difficulty of removing hair on the fan blade and improve the user experience.</p>
 </li>
 </ol>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a><strong>Reference:</strong></h2><p>[1] Huang Chenghong. IRobot 961 VS Dyson 360:Assessment and Evaluation of High-end sweeping robot [J]. Consumer Report,2017(05):63-66 </p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a><strong>Reference:</strong></h2><p>[1] Huang Chenghong. IRobot 961 VS Dyson 360:Assessment and Evaluation of High-end sweeping robot [J]. Consumer Report,2017(05):63-66 </p>
 ]]></content>
       <categories>
         <category>机械</category>
@@ -246,23 +224,20 @@
       <tags>
         <tag>机械结构</tag>
         <tag>大二秋季学期</tag>
-        <tag>扫地机器人</tag>
         <tag>SDM232</tag>
         <tag>Solidworks</tag>
       </tags>
   </entry>
   <entry>
-    <title>Design Thinking Final Report——Learn from 202 project</title>
+    <title>SDM212 Final Report——Based on SDM202 project</title>
     <url>/2022/10/07/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4-202/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>  As we all know, 212 meas “Design Thinking and Engineering”, and obviously design thinking is the most important in this class. So this final report is to show what I learned from design thinking and how do I apply these to solve the engineering problems for our mobile transportation vehicles project.<br>  First of all, what is “Design Thinking”—Design thinking refers to the cognitive, strategic and practical processes by which design concepts are developed.</p>
-<img title="" src="https://s2.loli.net/2022/10/07/UzPfdpXojqOuAEJ.png" alt="a27.png" width="443" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/07/UzPfdpXojqOuAEJ.png" alt="a27.png" width="443" data-align="center"></p>
 <p>  For empathize, I think it can refer to ask our teachers requests in our final project. In fact, the final examiner of this project is our teachers, just like our users. Not only to understand the specific requirements of the teachers and their thoughts on this project, but also to exchange some information with the teachers at some times to avoid useless work. For example, Prof.Hong changed my view on the core points of the final project, make me have a clearer direction to go forward——he said that what we have learned in this project and how we use these are more important than build our car. There is no doubt that Prof.Hong is right, we should get something from this project but not just finish it. </p>
 <p>  For define and ideate, I think Fred-Park is a good tool to finish these two stages. We use functional requirements to define and use design parameters to ideate. At the beginning of this project, we abstracted the requirements of the demo, and subdivided them into small modules, defined for each small part, and then proposed ideas to complete each requirement. There were various ideas, and finally the best way to solve the requirements was obtained by comparison. These two parts are the most discussed in our group, because they are very important foundations in the design and engineering. If these two parts are not organized in the early stage, then there will be big problems later. It is precisely because we understood the importance of these two parts to our project in class, we have been improving the concept in the early stage, instead of rushing to move forward. Specifically, I often turn myself into a car, thinking about how I should move to meet functional needs, how can I complete every action more easily and quickly, so that I can better think about problems from the perspective of a car. </p>
 <p><img src="https://s2.loli.net/2022/10/07/mWN13LujDVodHYM.png" alt="a28.png"></p>
 <p>  For prototype and test, these two parts are really of great help to physical production, we can simply build a model to verify the rationality and feasibility of the design. Just like what the teacher said: we can’t stay on the nihilistic idea for a long time, we have to make actual things to verify the idea. For example, the robotic arm and linkage mechanism we designed did not seem to have any design problems, but after discussing with the manufacturer, we found that there were major design problems, some of which did not meet the basic principles, and some of the parts could not be processed or the cost is too high for our project. Therefore, we have improved many parts of the design under the suggestion of the processor, and finally have a design plan and drawing that meets the requirements of all aspects. As for the model we made by ourselves not only to verify the idea, but also to find a better way to achieve this requirement. For example, I have tested how to use the suction cup to suck the block, and finally found that the four cubes in the first two rows can be sucked at the same time, and some objects can not be sucked, which both has a great effect on the design of the scheme. </p>
-<img title="" src="https://s2.loli.net/2022/10/07/ocqI7kYDVnTxRLj.png" alt="a29.png" width="408" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/07/ocqI7kYDVnTxRLj.png" alt="a29.png" width="408" data-align="center"></p>
 <p>  These five stages are not independent of each other——empathize can help define the problem, just like ask teachers about the project; tests can create new ideas for the project and reveal insights that redefine the problem; prototypes can be learned from to spark new ideas. In fact, we have changed our final demo plan, that’s because through prototypes and tests, we founded that planA had some unavoidable problem, so we returned to the stage of defining the specific functions of the car, and finally got planB, which was fit for our requests. In summary, these five parts are interconnected and influenced by each other, forming a complete logic chain and a whole design process.<br>  What’s more, teamwork is a kind of meaningful thing in our project. The entire project must be completed by cooperation within the group. From the perspective of design thinking, it is necessary to divide the work after determining the work to be done. At the same time, cooperation in the process of separate realization is essential. Meanwhile, we should communicate with other groups of students and help each other, this is a win-win situation.</p>
 <p>  All in all, design thinking is the guiding ideology for our final project. Once there was a design problem, I would return to the entire design process to see which part of the problem occurred, and improve it by communicating with my team members. Although the 212 course is over, design thinking will not disappear, but will be reflected in every subsequent project, providing me with ideological and methodological help.</p>
 ]]></content>
@@ -273,7 +248,6 @@
         <tag>大二秋季学期</tag>
         <tag>Multidisciplinary Project</tag>
         <tag>SDM212</tag>
-        <tag>Design Thinking</tag>
       </tags>
   </entry>
   <entry>
@@ -301,7 +275,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Dyson Case Study——Use design thinking</title>
+    <title>SDM212 Dyson Case Study</title>
     <url>/2022/10/07/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4%E2%80%94%E2%80%94%E6%88%B4%E6%A3%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="5-stages-of-design-thinking-process"><a href="#5-stages-of-design-thinking-process" class="headerlink" title="5 stages of design thinking process"></a>5 stages of design thinking process</h2><p>(1)    Empathy<br>When James Dyson cleaned the house dust himself, he found that the vacuum cleaner would block the hole of the vacuum bag due to the absorption of dust, and the suction power would be greatly reduced, this creates a sense of frustration and empathy with other users to James Dyson.<br>(2)    Define problem<br>The powder continues to block the tiny holes, resulting in a greatly reduced suction.<br>(3)    Idea<br>Dyson designed a double cyclone vacuum cleaner. When the airflow moves quickly along a spiral path, all dirt particles will be thrown out of the airflow due to strong centrifugal force. In this way, the dirt can be separated from the air flow without using any type of filter, and the dirt is collected at the bottom of the cylinder.<br>(4)    Prototype<br>The dust will be replaced in the cone in the middle, then centrifugal force will be used to rotate it to the edge of the tank, and then it will be removed from the tank. This is the first of 5127 prototypes.<br>Cooling fan (640 prototype products manufactured)<br>(5)    Test<br>After completing the first generation of products, Dyson conducted market research: For Japanese, their houses are smaller and cleaner, and do not require very large machines; for Americans, they like large machines, so the production cost should be the primary consideration.<br>They focus on how the machines are assembled together and constantly test materials to achieve the goal of sustainable use of the machines</p>
 <h2 id="Types-of-prototyping-methods"><a href="#Types-of-prototyping-methods" class="headerlink" title="Types of prototyping methods"></a>Types of prototyping methods</h2><p>(1)    Sketching<br>When designing the steering wheel, the designer directly draws the rough shape on the drawing, and then may change the size or add details on the basis of the drawing. The advantage is that it can be modified without cost, which is more intuitive.<br>(2)    3D modeling by design software<br>When considering how the parts are assembled, designers use modeling software to model, simulate the assembly process, play a role in pre-assembly, and verify whether this method is feasible.<br>(3)    Use computer software to make animations to show the general working principles and functions<br>After the function is designed, a vivid effect can be made through animation demonstration, and check whether it is in line with expectations and whether it can be achieved<br>(4)    Role play<br>When verifying the flexibility of the steering wheels, Dyson employees dressed up as users walking through narrowing roadblocks to verify whether the flexibility could meet the requirements.<br>(5)    Using cardboard and plastics to make mockup<br>And when some structures are determined, some simple materials can be used to build these structures to verify whether the relevant functions can be achieved</p>
@@ -315,8 +289,6 @@
       <tags>
         <tag>大二秋季学期</tag>
         <tag>SDM212</tag>
-        <tag>Design Thinking</tag>
-        <tag>Dyson</tag>
       </tags>
   </entry>
   <entry>
@@ -376,13 +348,12 @@
 <h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a><strong>Procedure:</strong></h2><ul>
 <li><p>Geogebra</p>
 <p>The pouring linkage-cam requires two main functions. The first function is making the platform which holds the pills incline so that the pills can fall into the box. This is essentially a 2-positon synthesis which can be realized by linkages.</p>
-<img title="" src="https://s2.loli.net/2022/10/07/1LBapr89coJ4klO.png" alt="img" width="296" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/07/1LBapr89coJ4klO.png" alt="img" width="296" data-align="center"></p>
 <p><img src="https://s2.loli.net/2022/10/07/1IzcwuFDKV9rRTW.png" alt="img"></p>
 </li>
 <li><p>Mech Designer:</p>
 <p>The second function is controlling the pouring speed. To ensure the sufficiency of fill-up and pour-down time, we used cams to control the speed of rotation and leave some dwells.</p>
-<img title="" src="https://s2.loli.net/2022/10/07/ZNumy39hjvdzW5t.png" alt="a3.PNG" width="459" data-align="center">
+<p><img title="" src="https://s2.loli.net/2022/10/07/ZNumy39hjvdzW5t.png" alt="a3.PNG" width="459" data-align="center"></p>
 </li>
 <li><p>Solidworks</p>
 <p>After generating the curve of our cam according to our motion timing requirements, we made a 3D model of tin Solidworks.</p>
@@ -394,7 +365,8 @@
 <p>(5) Calculate and draw two bars to control the position relation between the static bar of the linkage and the cam. Link two bars with the two edges of the static bar of the linkage to form a triangle. Because the lengths of 3 sides of triangle are fixed. The center of the cam is now fixed. The cam can only rotate around the center axis of the cam.</p>
 <p>(6) Set the static bar of the four-bar-linkage as the foundation. Assemble the four-bar-linkage first, then fit the cam on the four-bar-linkage using other bars that are used to control the position relation between the cam and the linkage.</p>
 <p>(7) After assembling the pieces to form a linkage-cam model. Add a motion study on the model. Use a rotation motor to drive the cam and observe its motion.</p>
-<img src="https://s2.loli.net/2022/10/07/ct8XFPYqGv5Hrb9.png" title="" alt="a4.PNG" data-align="center"></li>
+<p><img src="https://s2.loli.net/2022/10/07/ct8XFPYqGv5Hrb9.png" title="" alt="a4.PNG" data-align="center"></p>
+</li>
 </ul>
 <h2 id="Discussion-and-Conclusion"><a href="#Discussion-and-Conclusion" class="headerlink" title="Discussion and Conclusion"></a><strong>Discussion and Conclusion</strong></h2><p>  In the GeoGebra constructing process, we could not construct the structure following video. The structure we constructed always had more than one driving points. So we turned to others for help, learned a new technique, and solved the problem by adding a new drawing zone.<br>  In MD PRO design process, we rebuilt the four-bar linkages based on the mechanism we designed in GeoGebra. But later when we added a motion controller and the MD PRO automatically generated a 2D cam, we got an odd-shape cam. Different lines overlapped with each other and it hard to make such cam. So we had to rearrange the position of the motion controller and adjust motion timing. Finally, the cam became the irregular circle which can satisfy our needs.</p>
 <p><img src="https://s2.loli.net/2022/10/07/aN8T2JglpkO4s6S.png" alt="a5.PNG"></p>
@@ -410,8 +382,6 @@
         <tag>GGB</tag>
         <tag>大二秋季学期</tag>
         <tag>SDM232</tag>
-        <tag>连杆</tag>
-        <tag>齿轮</tag>
         <tag>Mech Designer</tag>
       </tags>
   </entry>
@@ -424,169 +394,30 @@
 <p>First, we disassembled clock, and drew a simple diagram to display:</p>
 <p><img src="https://s2.loli.net/2022/10/07/rkmRc6tqebjHdB8.png" alt="a6.PNG"></p>
 <p>The exploded view of the physical object is as follows:</p>
-<img title="" src="https://s2.loli.net/2022/10/07/s2hqyG8oK5dince.png" alt="a7.PNG" width="388" data-align="center">
-
-<img title="" src="https://s2.loli.net/2022/10/07/HaVJw7FIpu5mQg8.png" alt="a8.PNG" width="340" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/07/s2hqyG8oK5dince.png" alt="a7.PNG" width="388" data-align="center"></p>
+<p><img title="" src="https://s2.loli.net/2022/10/07/HaVJw7FIpu5mQg8.png" alt="a8.PNG" width="340" data-align="center"></p>
 <p>There are 12 gears and a special balance wheel in the entire gear train of the alarm clock. Front and reverse gears are interconnected by co-axial rotation.</p>
 </li>
 <li><p>Mating relationship of each gear:</p>
 <ul>
 <li><p>Pendulum part</p>
-<img title="" src="https://s2.loli.net/2022/10/07/AgmwJ2PlQ6xoCsX.png" alt="a9.PNG" data-align="inline">
-
-<table>
-<thead>
-<tr>
-<th align="left"></th>
-<th align="left">1(big)</th>
-<th align="left">1(small)</th>
-<th align="left">2</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Teeth number</td>
-<td align="left">18</td>
-<td align="left">6</td>
-<td align="left">40</td>
-</tr>
-<tr>
-<td align="left">Engagement relationship</td>
-<td align="left"></td>
-<td align="left">√</td>
-<td align="left">√</td>
-</tr>
-<tr>
-<td align="left">Transmission ratio</td>
-<td align="left"></td>
-<td align="left">3</td>
-<td align="left">20</td>
-</tr>
-</tbody></table>
+<p><img title="" src="https://s2.loli.net/2022/10/07/AgmwJ2PlQ6xoCsX.png" alt="a9.PNG" data-align="inline"></p>
+<p>|                         | 1(big) | 1(small) | 2   |<br>|:———————————- |:——— |:———— |:—- |<br>| Teeth number            | 18     | 6        | 40  |<br>| Engagement relationship |        | √        | √   |<br>| Transmission ratio      |        | 3        | 20  |</p>
 <p>Gear No.2 is driven by the clockwork on the common shaft, which in turn drives gear No.1 to rotate. No. 1 gear in the rotation process to drive the common axis of the ratchet rotation, so that the pendulum constantly swing back and forth, strike the bell, and finally make a sound.</p>
 </li>
 <li><p>Second hand part</p>
 <p><img src="https://s2.loli.net/2022/10/07/XpnbBxYmMQt7zFo.png" alt="a10.PNG"></p>
-<table>
-<thead>
-<tr>
-<th align="left"></th>
-<th>3(big)</th>
-<th>3(small)</th>
-<th align="left">4(big)</th>
-<th>4(small)</th>
-<th>5</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Teeth number</td>
-<td>56</td>
-<td>6</td>
-<td align="left">15</td>
-<td>7</td>
-<td>Ratchet</td>
-</tr>
-<tr>
-<td align="left">Engagement relationship</td>
-<td></td>
-<td>√       –</td>
-<td align="left">√</td>
-<td></td>
-<td>–</td>
-</tr>
-<tr>
-<td align="left">Transmission ratio</td>
-<td></td>
-<td>2</td>
-<td align="left"></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
+<p>|                         | 3(big) | 3(small)   | 4(big) | 4(small) | 5       |<br>|:———————————- | ——— | ————— |:——— | ———— | ———- |<br>| Teeth number            | 56     | 6          | 15     | 7        | Ratchet |<br>| Engagement relationship |        | √       — | √      |          | —      |<br>| Transmission ratio      |        | 2          |        |          |         |</p>
 <p>Gear No.6 outside the structure drives the No.4(small), then No.4(big) rotate coaxially with the pinion.<br>Gear No.4 drives the No.3(small), then No.3(big) rotate coaxially with the pinion, while No.3 gear controls the movement of the second hand.<br>During the rotation, No.3(big)’s protruding teeth continuously strike the two straight rods at one end of the connecting rod, thus causing it to oscillate. At the same time, the other end of the connecting rod oscillates with the frequency of strikes, and during the oscillation of this end, the straight rod on the No.5 balance is struck by it. During the swing of this end, the straight rod on the balance wheel No.5 is struck by it, and the balance wheel No.5 is thus stressed and keeps swinging.</p>
 </li>
 <li><p>Mainspring part</p>
 <p><img src="https://s2.loli.net/2022/10/07/3Qy4f9SjeWUb8oK.png" alt="a11.PNG"></p>
-<table>
-<thead>
-<tr>
-<th align="left"></th>
-<th>6(big)</th>
-<th>6(small)</th>
-<th align="left">7(big)</th>
-<th>7(small)</th>
-<th>8</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Teeth number</td>
-<td>40</td>
-<td>6</td>
-<td align="left">54</td>
-<td>9</td>
-<td>54</td>
-</tr>
-<tr>
-<td align="left">Engagement relationship</td>
-<td></td>
-<td>√</td>
-<td align="left">√</td>
-<td>**</td>
-<td>**</td>
-</tr>
-<tr>
-<td align="left">Transmission ratio</td>
-<td></td>
-<td>2</td>
-<td align="left">18</td>
-<td>1</td>
-<td>6</td>
-</tr>
-</tbody></table>
+<p>|                         | 6(big) | 6(small) | 7(big) | 7(small) | 8   |<br>|:———————————- | ——— | ———— |:——— | ———— | —- |<br>| Teeth number            | 40     | 6        | 54     | 9        | 54  |<br>| Engagement relationship |        | √        | √      | <strong>       | </strong>  |<br>| Transmission ratio      |        | 2        | 18     | 1        | 6   |</p>
 <p>Gear No.8 is driven by a co-axial mainspring, which in turn rotates No.7(small)<br>No.7(big) and the gear No.10 outside this structure rotate co-axially with the No.7(small), which in turn drives No. 6(small). No.6(big) rotates co-axially with No. 6(small) and eventually drives the No.4(small) outside the structure.</p>
 </li>
-<li><p>Hour hand&#x2F;minute hand&#x2F;outside time control part</p>
+<li><p>Hour hand/minute hand/outside time control part</p>
 <p><img src="https://s2.loli.net/2022/10/07/LGAm1QRDzJtBEIs.png" alt="a12.PNG"></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>9(big)</th>
-<th>9(small)</th>
-<th>10</th>
-<th>12</th>
-<th>13</th>
-<th>11</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Teeth number</td>
-<td>45</td>
-<td>12</td>
-<td>15</td>
-<td>15</td>
-<td>48</td>
-<td>48</td>
-</tr>
-<tr>
-<td>Engagement relationship</td>
-<td>√      –</td>
-<td>**</td>
-<td>√</td>
-<td>–</td>
-<td>**</td>
-<td>**</td>
-</tr>
-<tr>
-<td>Transmission ratio</td>
-<td>3      3</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>4</td>
-<td>4</td>
-</tr>
-</tbody></table>
+<p>|                         | 9(big)    | 9(small) | 10  | 12  | 13  | 11  |<br>| ———————————- | ————- | ———— | —- | —- | —- | —- |<br>| Teeth number            | 45        | 12       | 15  | 15  | 48  | 48  |<br>| Engagement relationship | √      — | <strong>       | √   | —  | </strong>  | **  |<br>| Transmission ratio      | 3      3  | 1        | 1   | 1   | 4   | 4   |</p>
 <p>No.10 gear is rotated by the co-axial drive of the No.7 outside the structure, which drives the No.9(big). No.9(small) rotates co-axially with the No.9(big) and drives No.11 and No.13.<br>At the same time, No. 9 also rotates the No. 12. And No.11 controls the time, while No.12 and No.13 control the minute and hour hands, respectively.</p>
 </li>
 </ul>
@@ -600,7 +431,7 @@
 </li>
 <li><p>Mech Designer gear trajectory drawing</p>
 <p><img src="https://s2.loli.net/2022/10/07/1iPZ9sSUMlXBHTe.png" alt="a14.PNG"></p>
-<p>  After measuring the radius of several of the gears and obtaining the radius of all gear indexing circles according to the basic law of gear motion, then use the formula: number of gears × modulus ÷ 2 &#x3D; axis distance, which can obtain the gear modulus.</p>
+<p>  After measuring the radius of several of the gears and obtaining the radius of all gear indexing circles according to the basic law of gear motion, then use the formula: number of gears × modulus ÷ 2 = axis distance, which can obtain the gear modulus.</p>
 <p>  Based on the obtained modulus values and tooth values, the gears are drawn and the gear relationships are matched to obtain the final gear trajectory diagram. Finally, export the gear trajectory to DXF file.</p>
 </li>
 <li><p>SolidWorks modeling</p>
@@ -625,34 +456,7 @@
 </ul>
 <h2 id="Problems-and-solutions"><a href="#Problems-and-solutions" class="headerlink" title="Problems and solutions"></a><strong>Problems and solutions</strong></h2><ul>
 <li><p>Mech Designer</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Determination of gear indexing circle radius</th>
-<th>Unable to generate individual gears</th>
-<th>DXF profile</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Problem</td>
-<td>During the first MD drawing, the modulus was calculated using the rough measurements taken at the beginning, and it was found that the final gears were not able to be produced. After the SW gears finished moving together Interference was generated when the final SW gear finished moving.</td>
-<td>In the internal integral gear system of the alarm clock, some gears have a pair of multiple meshing relationships, and some gears only have a co-axial relationship and no meshing relationship, and there are difficulties in drawing these gears</td>
-<td>After exporting a DXF file it is not possible to change the teeth again wheel track</td>
-</tr>
-<tr>
-<td>Analysis</td>
-<td>After several fits and adjustments the corresponding gears still cannot be fully after several fits and adjustments, the problem is therefore determined to lie in the preliminary gear drawing. The radius of the gear indexing circle corresponds to the number of teeth, and is a relatively fixed value</td>
-<td>MD can only be generated in pairs gears, there is no individual gear generation method. And the straight line that determines the tooth center distance can only be used once.</td>
-<td>Need to convert the trajectory to 2D image before exporting DXF file, the trajectory cannot be changed after conversion.</td>
-</tr>
-<tr>
-<td>Solution</td>
-<td>The radius of the index circle is calculated using the relationship between the ratio of the index circle radius and the ratio of the number of teeth, using the radius of the index circle obtained from certain measurements as the basic quantity, and the corresponding modulus.</td>
-<td>A new line or a new set of gears needs to be drawn again to determine the distance between the teeth</td>
-<td>Backup the file and then convert the 2D image and export the DXF file. If you need to modify, you can do so directly on the backup file.</td>
-</tr>
-</tbody></table>
+<p>|          | Determination of gear indexing circle radius                                                                                                                                                                                                                                                                | Unable to generate individual gears                                                                                                                                                                                                                | DXF profile                                                                                                                              |<br>| ———— | —————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————- | ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————— | ———————————————————————————————————————————————————————————————————— |<br>| Problem  | During the first MD drawing, the modulus was calculated using the rough measurements taken at the beginning, and it was found that the final gears were not able to be produced. After the SW gears finished moving together Interference was generated when the final SW gear finished moving.             | In the internal integral gear system of the alarm clock, some gears have a pair of multiple meshing relationships, and some gears only have a co-axial relationship and no meshing relationship, and there are difficulties in drawing these gears | After exporting a DXF file it is not possible to change the teeth again wheel track                                                      |<br>| Analysis | After several fits and adjustments the corresponding gears still cannot be fully after several fits and adjustments, the problem is therefore determined to lie in the preliminary gear drawing. The radius of the gear indexing circle corresponds to the number of teeth, and is a relatively fixed value | MD can only be generated in pairs gears, there is no individual gear generation method. And the straight line that determines the tooth center distance can only be used once.                                                                     | Need to convert the trajectory to 2D image before exporting DXF file, the trajectory cannot be changed after conversion.                 |<br>| Solution | The radius of the index circle is calculated using the relationship between the ratio of the index circle radius and the ratio of the number of teeth, using the radius of the index circle obtained from certain measurements as the basic quantity, and the corresponding modulus.                        | A new line or a new set of gears needs to be drawn again to determine the distance between the teeth                                                                                                                                               | Backup the file and then convert the 2D image and export the DXF file. If you need to modify, you can do so directly on the backup file. |</p>
 </li>
 </ul>
 ]]></content>
@@ -664,9 +468,7 @@
         <tag>大二秋季学期</tag>
         <tag>SDM232</tag>
         <tag>Solidworks</tag>
-        <tag>齿轮</tag>
         <tag>Mech Designer</tag>
-        <tag>闹钟</tag>
         <tag>KYtools</tag>
       </tags>
   </entry>
@@ -674,44 +476,39 @@
     <title>SDM283 mini project 2</title>
     <url>/2022/10/09/SDM283-mini-project-2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In this project, we mainly use the knowledge of material mechanics to design a workbench for placing eight 3D printers(Raise3D E2).</p>
-<img title="" src="https://s2.loli.net/2022/10/09/4i6WZLetI91xzpN.png" alt="a58.png" width="388" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/4i6WZLetI91xzpN.png" alt="a58.png" width="388" data-align="center"></p>
 <h2 id="Material-related-specification-constraints"><a href="#Material-related-specification-constraints" class="headerlink" title="Material related specification constraints"></a>Material related specification constraints</h2><h3 id="Overall-analysis"><a href="#Overall-analysis" class="headerlink" title="Overall analysis"></a>Overall analysis</h3><ol>
 <li><p>Intensity</p>
-<p>$$<br>min(Load)&#x3D;8*35&#x3D;280kg<br>$$</p>
-<p>Therefore, the minimum strength of the supporting structure shall ensure that no obvious deformation will occur when subjected to min Load, which is sufficient for a long time.</p>
+<script type="math/tex; mode=display">
+min(Load)=8*35=280kg</script><p>Therefore, the minimum strength of the supporting structure shall ensure that no obvious deformation will occur when subjected to min Load, which is sufficient for a long time.</p>
 </li>
 <li><p>Deflection</p>
-<p>$$<br>max(Deflection)&#x3D;0.1mm<br>$$</p>
-<p>The 3D printer has a leveling process before use. If the plane it is placed on is not horizontal, it will cause leveling errors; At the same time, too much inclination of the plane during printing may cause the initial support to slip, resulting in poor print quality or even failure.</p>
+<script type="math/tex; mode=display">
+max(Deflection)=0.1mm</script><p>The 3D printer has a leveling process before use. If the plane it is placed on is not horizontal, it will cause leveling errors; At the same time, too much inclination of the plane during printing may cause the initial support to slip, resulting in poor print quality or even failure.</p>
 <p>After asking about the specific information of this printer, we got the allowable inclination of 0.1mm, so the maximum deformation of the overall structure is 0.1mm, and the smaller the better.</p>
 </li>
 <li><p>Weight</p>
-<p>$$<br>max(weight)&#x3D;1140kg<br>$$</p>
-<p>The alloy steel with high strength is selected as the initial material to ensure that it absolutely meets the strength requirements, but the total mass of the structure is indeed too large. Therefore, after the stress analysis, the material will be iterated to minimize the structure.</p>
+<script type="math/tex; mode=display">
+max(weight)=1140kg</script><p>The alloy steel with high strength is selected as the initial material to ensure that it absolutely meets the strength requirements, but the total mass of the structure is indeed too large. Therefore, after the stress analysis, the material will be iterated to minimize the structure.</p>
 </li>
 <li><p>Size</p>
 <p>Because the placement method is 4 × 2. Therefore, in addition to the length of the printer itself, the middle spacing (considering the simultaneous opening of the doors at both ends for placing printing materials) and the length from the edge should also be considered.</p>
-<p>$$<br>Length:（61+23×2）× 4+3×10+5×2&#x3D;468cm<br>$$</p>
-<p>Because the placement method is 4 × 2. Therefore, in addition to the width of the printer itself, the middle space should also be considered (considering that the top cover is opened at the same time, it is found that the top cover is not more than the width of the bottom as a whole when it is opened to the maximum extent, so no additional increase is required), And the length from the edge (after the design investigation, it is found that the existing design is that the printer exceeds the table edge, which should make the chassis in the printer easy to reposition after being pulled out, so this small design is continued).</p>
-<p>$$<br>Width:60× 2+11×2-5×2 + 5 &#x3D;137cm<br>$$</p>
-<p><img src="https://s2.loli.net/2022/10/09/qYgyGRua1zdT6Cj.png" alt="a59.png"></p>
+<script type="math/tex; mode=display">
+Length:（61+23×2）× 4+3×10+5×2=468cm</script><p>Because the placement method is 4 × 2. Therefore, in addition to the width of the printer itself, the middle space should also be considered (considering that the top cover is opened at the same time, it is found that the top cover is not more than the width of the bottom as a whole when it is opened to the maximum extent, so no additional increase is required), And the length from the edge (after the design investigation, it is found that the existing design is that the printer exceeds the table edge, which should make the chassis in the printer easy to reposition after being pulled out, so this small design is continued).</p>
+<script type="math/tex; mode=display">
+Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022/10/09/qYgyGRua1zdT6Cj.png" alt="a59.png"></p>
 <p>Because the placement method is 4 × 2. Therefore, it is the height of the bottom support plus the height of a printer. But at this time, the overall height needs to be determined according to ergonomics, and then subtract the height of the printer to get the height of the bottom support. According to the average height of men and women, the overall height is within the range of [160, 170]. The height of the printer includes two parts - the height of the printer itself and the increased height of the top cover opening, which is about 98.5cm after measurement. Therefore, the height interval of the bottom support structure is [61.5, 71.5].</p>
 </li>
 </ol>
-<h3 id="Simple-analysis-for-preliminary-design"><a href="#Simple-analysis-for-preliminary-design" class="headerlink" title="Simple analysis for preliminary design"></a>Simple analysis for preliminary design</h3><img title="" src="https://s2.loli.net/2022/10/09/WpN2Pfd3x5AhIge.png" alt="a60.PNG" width="443" data-align="center">
-
-<img title="" src="https://s2.loli.net/2022/10/09/N2Vwjq4bpt3FWOL.png" alt="a61.PNG" width="448" data-align="center">
-
+<h3 id="Simple-analysis-for-preliminary-design"><a href="#Simple-analysis-for-preliminary-design" class="headerlink" title="Simple analysis for preliminary design"></a>Simple analysis for preliminary design</h3><p><img title="" src="https://s2.loli.net/2022/10/09/WpN2Pfd3x5AhIge.png" alt="a60.PNG" width="443" data-align="center"></p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/N2Vwjq4bpt3FWOL.png" alt="a61.PNG" width="448" data-align="center"></p>
 <h2 id="Structural-Design"><a href="#Structural-Design" class="headerlink" title="Structural Design"></a>Structural Design</h2><h3 id="Structure-and-component-design"><a href="#Structure-and-component-design" class="headerlink" title="Structure and component design"></a>Structure and component design</h3><ol>
 <li><p>Bottom support structure</p>
-<img title="" src="https://s2.loli.net/2022/10/09/4XgL3ztvdybMOPm.png" alt="a62.png" width="268" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/4XgL3ztvdybMOPm.png" alt="a62.png" width="268" data-align="center"></p>
 <p>There are 3 types of column, 2 types of plate and 1 type of beam in this structure.</p>
 </li>
 <li><p>Outer frame</p>
-<img title="" src="https://s2.loli.net/2022/10/09/gzLbt3sKC5dkaSp.png" alt="a63.png" width="421" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/gzLbt3sKC5dkaSp.png" alt="a63.png" width="421" data-align="center"></p>
 <p>There are 2 types of column, 2 types of beam, 1 type of tie rod and 1 type of plane in this structure.</p>
 </li>
 <li><p>Upper table plate</p>
@@ -720,6 +517,7 @@
 </ol>
 <h3 id="Connection-mode-between-components"><a href="#Connection-mode-between-components" class="headerlink" title="Connection mode between components"></a>Connection mode between components</h3><p>In general, punching and riveting are used at the joints with small stress, while welding is used at the joints with large stress</p>
 <h3 id="Material-selection"><a href="#Material-selection" class="headerlink" title="Material selection"></a>Material selection</h3><p>Use the combination of function, constrain, object, free variable of each compoent to decide which material will use.</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -729,18 +527,20 @@
 <th>Upper table plate</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>Material</td>
 <td>Metal</td>
 <td>Metal</td>
 <td>Wood</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><h3 id="Load-analysis"><a href="#Load-analysis" class="headerlink" title="Load analysis"></a>Load analysis</h3><ol>
 <li><p>Upper table plate:</p>
 <p>The load application part is: the contact part between the printer and the desktop (as shown in the figure below):</p>
-<img title="" src="https://s2.loli.net/2022/10/09/5nP7Brs23It1hCM.png" alt="a65.png" width="348" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/5nP7Brs23It1hCM.png" alt="a65.png" width="348" data-align="center"></p>
 <p>The direction of applied load is: vertically downward</p>
 <p>The load on the board is 450N for the contact part of a single printer, with a total load of 3600N</p>
 </li>
@@ -751,8 +551,7 @@
 </li>
 <li><p>Bottom support structure</p>
 <p>The load application part is: the contact part between the printer and the board (as shown in the figure below):</p>
-<img title="" src="https://s2.loli.net/2022/10/09/5YygaWNBcARkKTw.png" alt="a66.png" width="349" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/5YygaWNBcARkKTw.png" alt="a66.png" width="349" data-align="center"></p>
 <p>The direction of applied load is: vertically downward</p>
 <p>The load on the board is 450N</p>
 </li>
@@ -762,26 +561,27 @@
 <p>According to the load distribution, the distribution of shear force can be obtained.</p>
 <p>Shear force diagram (V-x image) is as follows (simplified to 2D)—the abscissa is the length of the board (unit: mm), and the ordinate is the shear force (unit: N):</p>
 <p>So for theplate, the stress is full bending, so the stress is:</p>
-<p>$$<br>σ&#x3D;V&#x2F;A&#x3D;1.217×10^3  Pa<br>$$</p>
-</li>
+<script type="math/tex; mode=display">
+σ=V/A=1.217×10^3  Pa</script></li>
 <li><p>Long rod in outer frame</p>
 <p>The contact area between the long rod and the plate is all the parts above the long rod, so the vertical stress of the long rod can be considered as evenly distributed, and the stress is:</p>
-<p>$$<br>σ_y&#x3D;V&#x2F;A_y &#x3D;1.498×10^6 Pa<br>$$</p>
-<p>In the horizontal direction, the force of long rod is pinned pinned buckling:</p>
-<img src="https://s2.loli.net/2022/10/09/6UQbRvVuHx1k8LA.png" title="" alt="a68.PNG" data-align="center">
+<script type="math/tex; mode=display">
+σ_y=V/A_y =1.498×10^6 Pa</script><p>In the horizontal direction, the force of long rod is pinned pinned buckling:</p>
+<p><img src="https://s2.loli.net/2022/10/09/6UQbRvVuHx1k8LA.png" title="" alt="a68.PNG" data-align="center"></p>
 </li>
 <li><p>Short rod in outer frame</p>
 <p>The contact area between the short rod and the plate is all the parts above the short rod, so the stress in the vertical direction of the short rod can be considered as evenly distributed, and the stress is:</p>
-<p>$$<br>σ_y&#x3D;V&#x2F;A_y &#x3D;1.512×10^6 Pa<br>$$</p>
-<p>In the horizontal direction, the force of short rod is pinned pinned buckling:</p>
-<img title="" src="https://s2.loli.net/2022/10/09/lq9Jv6V84pYCk5K.png" alt="a69.PNG" data-align="center" width="367">
+<script type="math/tex; mode=display">
+σ_y=V/A_y =1.512×10^6 Pa</script><p>In the horizontal direction, the force of short rod is pinned pinned buckling:</p>
+<p><img title="" src="https://s2.loli.net/2022/10/09/lq9Jv6V84pYCk5K.png" alt="a69.PNG" data-align="center" width="367"></p>
 </li>
 <li><p>Bottom support structure</p>
 <p>The stress is pinned buckling, so the maximum stress is:</p>
 <p><img src="https://s2.loli.net/2022/10/09/PNIvj8YDscgkVJf.png" alt="a70.PNG"></p>
 </li>
 </ol>
-<h3 id="Deflection-Analysis"><a href="#Deflection-Analysis" class="headerlink" title="Deflection Analysis"></a>Deflection Analysis</h3><table>
+<h3 id="Deflection-Analysis"><a href="#Deflection-Analysis" class="headerlink" title="Deflection Analysis"></a>Deflection Analysis</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th></th>
@@ -790,29 +590,30 @@
 <th>Upper table plate</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>Max deflection</td>
 <td>$3.153*10^{-4}mm$</td>
 <td>$1.189mm$</td>
 <td>$1.980mm$</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="Stress-concentration-analysis"><a href="#Stress-concentration-analysis" class="headerlink" title="Stress concentration analysis"></a>Stress concentration analysis</h3><ol>
 <li>Long pole of frame structure</li>
 </ol>
-<img title="" src="https://s2.loli.net/2022/10/09/enLBfgDyriI7JtZ.png" alt="a71.png" width="464" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/enLBfgDyriI7JtZ.png" alt="a71.png" width="464" data-align="center"></p>
 <p>(1) Part function: support and fix the upper table, and connect the table with the main support structure;</p>
 <p>(2) Stress concentration part: the part contacting the lower diagonal rod;</p>
 <p>(3) Cause of stress concentration</p>
 <p>The rod is rigidly connected with the lower diagonal tie rod, and the contact area of the connecting part is small, the stress is large, and the stress difference between the connecting part and the adjacent section is large, so the stress concentration phenomenon appears.</p>
 <p>(4) Improvement measures</p>
 <p>Increase the contact area between the lower diagonal tie rod and the member, extend the diagonal tie rod and move its connection with the member to the middle of the member as far as possible to reduce local stress.</p>
-<ol start="2">
+<ol>
 <li>Support rod of frame structure</li>
 </ol>
-<img title="" src="https://s2.loli.net/2022/10/09/6C1fFcPU4ntqids.png" alt="a72.png" width="215" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/6C1fFcPU4ntqids.png" alt="a72.png" width="215" data-align="center"></p>
 <p>(1) Part function: support the upper table, connect and fix the main body of the frame structure;</p>
 <p>(2) Stress concentration part: near the contact with the side diagonal tie rod fastener;</p>
 <p>(3) Cause of stress concentration</p>
@@ -820,22 +621,20 @@
 <p>(4) Improvement measures</p>
 <p>Increase the cross-sectional area of the member and adopt smooth transition to reduce local stress;</p>
 <p>Materials with slightly lower rigidity after surface strengthening (shot peening, rolling, nitriding, etc.) are selected to enhance their fatigue resistance.</p>
-<ol start="3">
+<ol>
 <li>Diagonal tie rod of frame structure</li>
 </ol>
-<img title="" src="https://s2.loli.net/2022/10/09/9seVkXrCwPKy2AT.png" alt="a73.png" width="498" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/9seVkXrCwPKy2AT.png" alt="a73.png" width="498" data-align="center"></p>
 <p>(1) Part function: support the upper table, connect and fix the frame structure to make it more stable;</p>
 <p>(2) Stress concentration part: near the contact part with the table;</p>
 <p>(3) Cause of stress concentration</p>
 <p>The contact area between the bar and the table is too small, and the contact position with the table is just the force bearing position of the table, so the force on the bar is also large, which leads to a large stress on this part and a large difference between the stress on its side. The stress concentration is caused.</p>
 <p>(4) Improvement measures</p>
 <p>Cut off the sharp corner above the diagonal tie rod to avoid contact with the upper table.</p>
-<ol start="4">
+<ol>
 <li>Frame structure diagonal tie rod fastener</li>
 </ol>
-<img title="" src="https://s2.loli.net/2022/10/09/OYPwWQJr7VyhpfF.png" alt="a74.PNG" width="534" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/OYPwWQJr7VyhpfF.png" alt="a74.PNG" width="534" data-align="center"></p>
 <p>(1) Part function: connect and fix the frame structure;</p>
 <p>(2) Stress concentration part: near the bolt hole;</p>
 <p>(3) Cause of stress concentration</p>
@@ -848,30 +647,25 @@
 <p>According to our design, apply a load of 400N on each groove surface where the printer is placed, and fix the four legs of the table under ideal conditions.</p>
 </li>
 <li><p>Stress analysis</p>
-<img title="" src="https://s2.loli.net/2022/10/09/x3ICgPFvrElinhW.png" alt="a75.png" width="485" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/x3ICgPFvrElinhW.png" alt="a75.png" width="485" data-align="center"></p>
 <p>It can be seen from the stress simulation results that although the load is directly applied to the wooden plane of the table, the stress on the wooden plane is relatively small because of the large area of load application, and the stress on the wooden plane is almost the smallest in the whole structure, about $8.253*10 ^ 2 Pa.$</p>
 <p>Because the contact area between the frame at the bottom and the wood plane is relatively small, and the weight of the wood plane is added to the load on the frame based on the quality of the printer, the stress on the frame will be much larger than that on the wood plane, and even the part of the whole structure with the largest stress, about $1.847 * 10 ^ 7 Pa.$</p>
 </li>
 <li><p>Displayment analysis</p>
 <p>In the same static stress analysis example, we can get the deformation of the table under the same fixed and load as the stress analysis:</p>
-<img title="" src="https://s2.loli.net/2022/10/09/8FztIVLu9HYhMGk.png" alt="a76.png" width="489" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/8FztIVLu9HYhMGk.png" alt="a76.png" width="489" data-align="center"></p>
 <p>Through the simulation results, we can find that the most deformed part of the model is in the center of the wood plane. Because the wood plane only receives the supporting force on its four sides, the center lacks the supporting force applied from the bottom, but because of the placement of the printer, the load applied to the center of the wood plane is relatively large, so the center of the wood plane will have a large deformation, up to 2.31mm. Even at the position where the printer is placed, the deformation reaches 1mm, but the maximum allowable plane deviation of the printer itself is 0.1mm, so the deformation cannot meet the requirements. The reason for this result may be that the elastic modulus of the selected material itself is small, and no bottom support is applied to the center of the wood plane. Therefore, in order to solve this problem, we plan to apply the bottom support in the place where the printer is placed on the wooden plane.</p>
 <p>Similarly, we can also obtain the structural strain image after simulation:</p>
-<img title="" src="https://s2.loli.net/2022/10/09/6OCfEqUMySP85l2.png" alt="a77.png" width="454" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/6OCfEqUMySP85l2.png" alt="a77.png" width="454" data-align="center"></p>
 <p>Because the material we choose to simulate is alloy steel, which has a large elastic modulus, the resulting strain is less than 0.01.</p>
 </li>
 <li><p>Buckling analysis</p>
 <p>Because when the applied load is too large, the structure may buckle, resulting in some structural failure. Through buckling analysis, find out the position where buckling occurs, and observe the stress change after buckling.</p>
 <p>Fix the four legs of the model without bottom support, apply a load of 100N on the position where the printer is placed, and calculate the load factor at this time through the buckling analysis of solidworks software.</p>
-<img title="" src="https://s2.loli.net/2022/10/09/lUOPXoRnSQiMADx.jpg" alt="a78.jpg" width="451" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/lUOPXoRnSQiMADx.jpg" alt="a78.jpg" width="451" data-align="center"></p>
 <p>It can be seen from the simulation results that the load factor is 123.41. In the simulation of solidworks, different levels of grid refinement of the structure will affect the results of the load factor obtained from the buckling analysis, so the results obtained from the simulation will also be biased and may not be correct.</p>
 <p>We multiply the applied load by the load factor as a new load. In the static stress analysis, we can obtain the static stress analysis results of the bottom support structure during buckling by the same fixing method and load application method.</p>
-<img title="" src="https://s2.loli.net/2022/10/09/BThjs1UGYeZ9iQl.png" alt="a79.png" width="445" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/BThjs1UGYeZ9iQl.png" alt="a79.png" width="445" data-align="center"></p>
 <p>At this time, it can be seen from the simulation results that the maximum deformation has reached 76.28mm, and the entire structure has undergone visible deformation. At the same time, this deformation is far greater than the printer’s requirement of 0.01mm, which will cause the printer to fail.</p>
 </li>
 </ol>
@@ -879,81 +673,75 @@
 <p>In terms of material selection, we iterated to reduce the mass and ensure that the deformation does not exceed the specified value. By selecting materials with small density and specific modulus within the required range of modulus, lightweight can be carried out.</p>
 <p>In the support at the lower end, considering the mass of alloy steel and carbon steel previously selected is large, aluminum alloy is selected by searching for materials with smaller density. The common aluminum alloy material is 1060.4032. 1060 is cheaper, 4032 has higher silicon content, and is better than 1060 in density and modulus. Therefore, 4032 is selected for larger parts and 1060 is selected for smaller parts. Apply them to the four outermost brackets and the eight brackets at the lower end of the printer.</p>
 <p>The simulation analysis of the bottom support structure after iterative optimization is shown in the figure:</p>
-<img title="" src="https://s2.loli.net/2022/10/09/qcwzx4A7pmjHIir.png" alt="a80.png" width="345" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/qcwzx4A7pmjHIir.png" alt="a80.png" width="345" data-align="center"></p>
 <p>Its mass is optimized to 14 kg per group.</p>
 <p>At the same time, common desktop materials are searched, which are often used as particleboard and medium density fiberboard. Its modulus and density are similar to that of light wood. We also tried to apply it to marble, but we measured that the mass of the table top when applying marble was 426 kg, which was far beyond our expectations for mass, so we rejected it.</p>
 <p>The simulation results of the overall desktop are shown in the figure:</p>
-<img title="" src="https://s2.loli.net/2022/10/09/YlUcZKVrnRyduMx.png" alt="a81.png" width="483" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/YlUcZKVrnRyduMx.png" alt="a81.png" width="483" data-align="center"></p>
 <p>Its mass is optimized to 80 kg.</p>
 <h3 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h3><ol>
 <li><p>Bottom support structure</p>
-<img title="" src="https://s2.loli.net/2022/10/09/N6c74DqLzkpxjFa.png" alt="a82.png" width="446" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/N6c74DqLzkpxjFa.png" alt="a82.png" width="446" data-align="center"></p>
 <p>From the stress diagram, it is obvious that the stress of the four column2(blue) parts is smaller than that of the rest parts, so it is considered that holes can be dug to reduce the weight without damaging their main functions.</p>
 <p>After iteration:</p>
-<img title="" src="https://s2.loli.net/2022/10/09/xCebYBAZUs7zMFD.png" alt="a83.png" width="394" data-align="center">
+<p><img title="" src="https://s2.loli.net/2022/10/09/xCebYBAZUs7zMFD.png" alt="a83.png" width="394" data-align="center"></p>
 </li>
 <li><p>Tie rod 1 in outer frame</p>
-<img title="" src="https://s2.loli.net/2022/10/09/97Umrj2QsBFql4L.png" alt="a84.png" width="416" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/97Umrj2QsBFql4L.png" alt="a84.png" width="416" data-align="center"></p>
 <p>From the stress diagram, it is obvious that the stress of the two tie rod1(blue)s is smaller than that of the rest. Therefore, it is considered that holes can be dug to reduce the weight without damaging their main functions.</p>
 <p>After iteration:</p>
-<img title="" src="https://s2.loli.net/2022/10/09/ovQ2TAbJKaCkSWj.png" alt="a85.png" width="435" data-align="center">
+<p><img title="" src="https://s2.loli.net/2022/10/09/ovQ2TAbJKaCkSWj.png" alt="a85.png" width="435" data-align="center"></p>
 </li>
 <li><p>Column4 in outer frame</p>
-<img title="" src="https://s2.loli.net/2022/10/09/SW7TAEMQt3lfjUR.png" alt="a86.png" width="460" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/SW7TAEMQt3lfjUR.png" alt="a86.png" width="460" data-align="center"></p>
 <p>From the stress diagram, it can be seen that there is stress concentration at the contact part between column4 and the table board. The reason is that the contact area is too small, which mainly results in the stress at the top, causing sudden changes and concentration of stress. Therefore, it is necessary to increase the contact area to reduce the stress.</p>
 <p>After iteration:</p>
-<img title="" src="https://s2.loli.net/2022/10/09/vTQoRIx9UfkWKYh.png" alt="a87.png" width="424" data-align="center"></li>
+<p><img title="" src="https://s2.loli.net/2022/10/09/vTQoRIx9UfkWKYh.png" alt="a87.png" width="424" data-align="center"></p>
+</li>
 </ol>
 <h3 id="Analysis-after-iteration"><a href="#Analysis-after-iteration" class="headerlink" title="Analysis after iteration"></a>Analysis after iteration</h3><ol>
 <li><p>Load analysis</p>
 <p>Basically, the load size and direction on all structures have not changed, but the change of materials and specific structures has led to a slight change in the stress. At the same time, the deformation size has changed, and the stress concentration has decreased.</p>
 </li>
 <li><p>Stress analysis</p>
-<img title="" src="https://s2.loli.net/2022/10/09/SlP8kuYqvX4tzsd.png" alt="a88.png" width="501" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/SlP8kuYqvX4tzsd.png" alt="a88.png" width="501" data-align="center"></p>
 <p>For outer frame and table plate, the overall distribution is more uniform, and the maximum value is decreased from $1.847 × 10^7$ to $1.614 × 10^7$, the minimum value is increased from $8.253 × 10^2$ to $1.283 × 10^3$.</p>
-<img title="" src="https://s2.loli.net/2022/10/09/n6J2VY5kBKOclFa.png" alt="a89.png" width="360" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/n6J2VY5kBKOclFa.png" alt="a89.png" width="360" data-align="center"></p>
 <p>For bottom support structure, the overall distribution is more uniform, and the maximum value is decreased from $2.652 × 10^5$to $2.103 × 10^5$, the minimum value is increased from $3.094 × 10^2$ to $4.505× 10^2$.</p>
 <p>In general, the overall change of stress is small, and the structure can still meet the strength requirements.</p>
 </li>
 <li><p>Strain analysis</p>
-<img title="" src="https://s2.loli.net/2022/10/09/DZ2RFjEhmBNd8Y9.png" alt="a90.png" width="449" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/DZ2RFjEhmBNd8Y9.png" alt="a90.png" width="449" data-align="center"></p>
 <p>For outer frame and table plate, except for the minimum deformation, other deformation increases to a small extent, but the basic deformation of the external frame is 0.001 mm, which meets the requirements. As for the large deformation in the middle of the upper table, the deformation will be greatly reduced after the installation of the bottom support structure.</p>
-<img title="" src="https://s2.loli.net/2022/10/09/ObHgIWhcDzUQlvG.png" alt="a91.png" width="379" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/ObHgIWhcDzUQlvG.png" alt="a91.png" width="379" data-align="center"></p>
 <p>For bottom support structure, except for the minimum deformation, the other deformation is basically 3 times of the previous deformation, but the basic deformation is far less than 0.01 mm, meeting the requirements; Even if it is loaded with one more serving board (with a small mass), it will not change too much.</p>
 </li>
 <li><p>Buckling analysis</p>
-<img title="" src="https://s2.loli.net/2022/10/09/m7goZjydkuGErSv.png" alt="a94.png" width="455" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/m7goZjydkuGErSv.png" alt="a94.png" width="455" data-align="center"></p>
 <p>For outer frame and table plate, the overall amplitude increases slightly, and the load factor decreases significantly from 123.41 to 58.159, that is, the maximum load decreases significantly, which makes it easier to fail.</p>
-<img title="" src="https://s2.loli.net/2022/10/09/AovWRf5jl9CJxV3.png" alt="a95.png" width="427" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/09/AovWRf5jl9CJxV3.png" alt="a95.png" width="427" data-align="center"></p>
 <p>For bottom support structure, the overall amplitude increased slightly, and the load factor decreased significantly from 6672.2 to 1603.9, that is, the maximum load decreased significantly, making it easier to fail.</p>
 </li>
 </ol>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>After secondary design, a relatively satisfactory supporting structure is finally obtained, which is divided into three parts: the upper table board, the outer frame, and the bottom supporting structure(× 8).</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
 <th></th>
-<th align="center">Weight</th>
+<th style="text-align:center">Weight</th>
 <th>Volume</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>data</td>
-<td align="center">$263.95kg$</td>
+<td style="text-align:center">$263.95kg$</td>
 <td>$5.13m^3$</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>Below is the final model:</p>
 <p><img src="https://s2.loli.net/2022/10/09/jB435FrdIm2vzW9.png" alt="a96.png"></p>
 ]]></content>
@@ -966,6 +754,7 @@
         <tag>SDM283</tag>
         <tag>Solidworks</tag>
         <tag>材料力学</tag>
+        <tag>应力应变仿真</tag>
       </tags>
   </entry>
   <entry>
@@ -1116,12 +905,11 @@
       </categories>
       <tags>
         <tag>大二春季学期</tag>
-        <tag>设计思维</tag>
-        <tag>工业设计</tag>
+        <tag>SDM214</tag>
       </tags>
   </entry>
   <entry>
-    <title>SDM215 Travel Mug Design-Based on future technology</title>
+    <title>SDM215 Travel Mug Design——Based on future technology</title>
     <url>/2022/10/11/%E6%9D%AF%E5%AD%90/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This project is the final project for SDM215, which let me design travel mug based on a certain theme—future technology. </p>
 <p>After several weeks of exploration and design, the theme finally converged to UFO, the following is a detailed introduction of the design.</p>
@@ -1142,8 +930,7 @@
       </categories>
       <tags>
         <tag>大二春季学期</tag>
-        <tag>设计思维</tag>
-        <tag>工业设计</tag>
+        <tag>SDM215</tag>
       </tags>
   </entry>
   <entry>
@@ -1158,7 +945,6 @@
 
 
 
-
 <h2 id="System-Instruction"><a href="#System-Instruction" class="headerlink" title="System Instruction"></a>System Instruction</h2><p><a href="https://pan.baidu.com/s/11BUmRM9xJeZhGNydaynLmQ?pwd=p0tg">https://pan.baidu.com/s/11BUmRM9xJeZhGNydaynLmQ?pwd=p0tg</a></p>
 ]]></content>
       <categories>
@@ -1166,8 +952,7 @@
       </categories>
       <tags>
         <tag>大二春季学期</tag>
-        <tag>系统设计</tag>
-        <tag>留学查询系统</tag>
+        <tag>SDM223</tag>
       </tags>
   </entry>
   <entry>
@@ -1194,13 +979,321 @@
         <category>大项目</category>
       </categories>
       <tags>
-        <tag>机械</tag>
-        <tag>电控</tag>
-        <tag>材料</tag>
-        <tag>制造</tag>
-        <tag>设计思维</tag>
         <tag>Multidisciplinary Project</tag>
         <tag>大三暑期课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM312 Related Documents——Based on SDM303 project</title>
+    <url>/2022/10/12/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Pre-PPT"><a href="#Pre-PPT" class="headerlink" title="Pre PPT"></a>Pre PPT</h2><p>This PPT contains the early exploration of the SDM303 project - the definition of problem and possible solution.</p>
+
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a98552568696@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<p>This PPT contains confirmation and analysis of problem, and how to integrate the contents of each course into the completion of the project.</p>
+
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a96779570338@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Workbook"><a href="#Workbook" class="headerlink" title="Workbook"></a>Workbook</h2><p>This document records the initial divergence and exploration of the SDM303 project, and includes the final physical robot.</p>
+
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a95944571899@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>大项目</category>
+      </categories>
+      <tags>
+        <tag>Multidisciplinary Project</tag>
+        <tag>大三秋季学期</tag>
+        <tag>SDM312</tag>
+        <tag>产品设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM354 Report Book——Based on SDM303 project</title>
+    <url>/2022/10/12/SDM354-Report-Book-Based-on-SDM303-project/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This report book was written from the perspective of industrial design, forming the design report book of SDM303 project.</p>
+<h2 id="Report-Book"><a href="#Report-Book" class="headerlink" title="Report Book"></a>Report Book</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a94188579888@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>大项目</category>
+      </categories>
+      <tags>
+        <tag>大三秋季学期</tag>
+        <tag>人机工程学</tag>
+        <tag>SDM354</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM354 Ergonomic Chair Design Project</title>
+    <url>/2022/10/12/%E4%BA%BA%E4%BD%93%E5%B7%A5%E7%A8%8B%E5%AD%A6%E6%A4%85%E5%AD%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This project is to design an ergonomic chair that is most suitable for all members of the same group according to the data and ergonomic knowledge after measuring the body data of the group members, and at the same time, it can be equipped with a computer desk.</p>
+<h2 id="Report-Book"><a href="#Report-Book" class="headerlink" title="Report Book"></a>Report Book</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a89543576639@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>设计作品</category>
+      </categories>
+      <tags>
+        <tag>大三秋季学期</tag>
+        <tag>SDM354</tag>
+        <tag>人体工学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM352 Bite-size Project</title>
+    <url>/2022/10/12/SDM352-Bite-size-Project/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Final-Report"><a href="#Final-Report" class="headerlink" title="Final Report"></a>Final Report</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a98916586698@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h2 id="Other-Files"><a href="#Other-Files" class="headerlink" title="Other Files"></a>Other Files</h2><h5 id="Abaqus-files"><a href="#Abaqus-files" class="headerlink" title="Abaqus files"></a>Abaqus files</h5><p><a href="https://pan.baidu.com/s/1Qn7nkcWNVlqCrQBgNHL4Vg?pwd=9ohk">https://pan.baidu.com/s/1Qn7nkcWNVlqCrQBgNHL4Vg?pwd=9ohk</a></p>
+<h5 id="Matlab-files"><a href="#Matlab-files" class="headerlink" title="Matlab files"></a>Matlab files</h5><p><a href="https://pan.baidu.com/s/1_zz4weKU_mbFSjl46igJHQ?pwd=rpwc">https://pan.baidu.com/s/1_zz4weKU_mbFSjl46igJHQ?pwd=rpwc</a></p>
+]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>运动仿真</tag>
+        <tag>Matlab</tag>
+        <tag>大三秋季学期</tag>
+        <tag>SDM352</tag>
+        <tag>FMC</tag>
+        <tag>TFM</tag>
+        <tag>Abaqus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM352 Final Project Stimulation——Based on SDM303 project</title>
+    <url>/2022/10/12/SDM352-Final-Project-Stimulation/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Final-Report"><a href="#Final-Report" class="headerlink" title="Final Report"></a>Final Report</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a91904591124@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+ 
+]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>运动仿真</tag>
+        <tag>大三秋季学期</tag>
+        <tag>SDM352</tag>
+        <tag>Abaqus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM314 Inverted Pendulum Project</title>
+    <url>/2022/10/12/SDM314-Inverted-Pendulum-Project/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Lab-1"><a href="#Lab-1" class="headerlink" title="Lab 1"></a>Lab 1</h2><h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>This experiment examined the first order inverted pendulum, we obtain the numerical linearized transfer function model of the inverted, build the nonlinear system in simulink, and carry out a closed-loop simulation with the controller we designed.<br>Inverted pendulum control system (IPS) is a complex, unstable and nonlinear system, which is an ideal experimental platform for teaching control theory and conducting various control experiments. The typicality of inverted pendulum is that, as a controlled object, it is a high-order, unstable, multi-variable, nonlinear and strongly coupled complex controlled system, which can effectively reflect many problems in the control.<br>The research of inverted pendulum system can effectively reflect many typical problems in control, such as nonlinear problem, robustness problem, stabilization problem, follow-up problem and tracking problem. The control of inverted pendulum is used to test whether the new control method has strong ability to deal with nonlinear and unstable problems.</p>
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>The purpose of this experiment was to make inverted pendulum stable without upswing. These were be done by using linear transition, pole assignment and matlab simulink. We use our own simulink to simulate the control, and use the provided simulink to control the actual inverted pendulum, and compare the two results, get the differences, and then analyze the reasons, and expect to learn the stable control method for the inverted pendulum system through the above process.</p>
+<h3 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure"></a>Procedure</h3><h4 id="Pre-lab"><a href="#Pre-lab" class="headerlink" title="Pre lab"></a>Pre lab</h4><p>This part is mainly to calculate the equations of motion of the model, to give the method of pole placement (specific theoretical description and matlab code implementation), and to build simulink to carry out the simulation of the inverted pendulum, to lay the foundation for the comparison with the actual experimental results afterwards. </p>
+<p>(1) Obtain the numerical linearized transfer function model of the inverted pendulum system(also concluding steps to derive a linearized mathematical models for the plant) Applying Newton’s law to the horizontal direction:</p>
+<p><img src="https://s2.loli.net/2022/10/12/Jg6tpWi5fuUxDKh.png" alt="b39.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/nYyesV3hBtlg2uk.png" alt="b40.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/AGODuxJgVQWU5ei.png" alt="b41.PNG"></p>
+<p>(2) Write a MATLAB program to do the pole placement. This program should have the desired poles as its input and the parameters for the controller as the output.<br>There are two methods to do the pole placement, based on the linear model obtained above:</p>
+<p><img src="https://s2.loli.net/2022/10/12/SYH8WyQio3hrvsn.png" alt="b42.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/6xLACNqwjg2VOSD.png" alt="b43.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/LJTfKVO46ac2Mgm.png" alt="b44.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/QGjpbgNU4L289RM.png" alt="b46.PNG"></p>
+<p>Both of these methods can make the inverted pendulum stable in the simulink model by input the K, and achieve the experimental goal, which will be described in detail in the Lab section.</p>
+<p>(3) Build the nonlinear system in SIMULINK, and carry out a closed-loop simulation with the controller designed in 2. In the simulation, set the external disturbances to zero but set the initial conditions of the plant states $[x(0),\acute x(0),\theta(0),\acute \theta(0)]^T$ to the value $[0,0,3,0.5]^T$. Check whether the controller can indeed stabilize the rod. If not, redesign the controller and repeat the simulation.<br>At the beginning, we thought that the coefficient calculation method above can be used to calculate the $K$ value in the nonlinear case<br>The motion model of the nonlinear system:</p>
+<p><img src="https://s2.loli.net/2022/10/12/fe3YtCFM9W57sKq.png" alt="b47.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/4RFdHGeUm12yn8M.png" alt="b48.PNG"></p>
+<p>However, in the nonlinear calculation, sinceandcannot be transformed, further simplification to obtain  cannot be performed in the next step, resulting in the failure of the second method of calculation.<br>In summary, it is not possible to continue solving for the coefficients, so it is necessary to build an additional simulink to perform the simulation control in the nonlinear case.</p>
+<h4 id="Build-the-nonlinear-system-in-simulink"><a href="#Build-the-nonlinear-system-in-simulink" class="headerlink" title="Build the nonlinear system in simulink"></a>Build the nonlinear system in simulink</h4><h5 id="Purpose-of-Simulation"><a href="#Purpose-of-Simulation" class="headerlink" title="Purpose of Simulation"></a>Purpose of Simulation</h5><p>Idealized simulation of the motion of an inverted pendulum to verify the correctness of the experimental results.</p>
+<h5 id="Simulation-steps"><a href="#Simulation-steps" class="headerlink" title="Simulation steps"></a>Simulation steps</h5><p>(1) Calculate the equations of motion of the inverted pendulum model<br>The equation of motion of an inverted pendulum is：</p>
+<p><img src="https://s2.loli.net/2022/10/12/MBmQqCNGHSukLEs.png" alt="b49.PNG"></p>
+<p>(2) Rectify the equations of motion of an inverted pendulum into matrix form</p>
+<p><img src="https://s2.loli.net/2022/10/12/7InMv9LphmJ6Tuq.png" alt="b50.PNG"></p>
+<p>(3)  Construction of equations of motion in simulink<br>There are two methods of construction here:<br>One is constructed directly using matrix calculations;<br>The other is to use the elimination method to solve the expression of the sum and then construct.</p>
+<ul>
+<li>Matrix construction of main expressions</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/10/12/NWfEihY15TrnswV.png" alt="b51.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/aUediJ2b8hnKMm4.png" alt="b52.PNG"></p>
+<ul>
+<li>Main expressions of the elimination method</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/10/12/upkVcwjLSGPoRz8.png" alt="b53.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/mitqd7ge8GBSUWQ.png" alt="b54.PNG"></p>
+<p>It can be seen that the two methods are basically the same in the running result curve image of the motion module, but the period of the result obtained by the elimination method is smaller, and the error between the two is about $5%$.<br>But in theory the results obtained by these two methods should be the same, this difference may be due to the error caused by the different ways of matrix operation and numerical operation in the software itself, the matrix operation will lead to the degradation of system performance, so the numerical operation results are more ideal.</p>
+<p>(4) Bringing the constructed equations of motion module into the system</p>
+<p><img src="https://s2.loli.net/2022/10/12/luNep7Vnsb1LUah.png" alt="b55.PNG"></p>
+<p>(5) Run the system and get the output image results</p>
+<h5 id="Simulation-results"><a href="#Simulation-results" class="headerlink" title="Simulation results"></a>Simulation results</h5><ul>
+<li>Matrix method results</li>
+</ul>
+<p>The images of $\theta$ and $x$ are as follows, respectively:</p>
+<p><img src="https://s2.loli.net/2022/10/12/n2JLUomY1Ekhreu.png" alt="b56.PNG">The images of $F$ are as follows:<img src="https://s2.loli.net/2022/10/12/sVHyv7wYNgrS1MD.png" title="" alt="b57.PNG" data-align="center"></p>
+<ul>
+<li>Elimination method results</li>
+</ul>
+<p>The images of $\theta$ and $x$ are as follows, respectively:</p>
+<p><img src="https://s2.loli.net/2022/10/12/trzO5IoDdfxRJUH.png" alt="b58.PNG"></p>
+<p>The images of $F$ are as follows:</p>
+<p><img src="https://s2.loli.net/2022/10/12/KmwX6gUdtM8FcHZ.png" alt="b59.PNG"></p>
+<p>With the above simulation results, it can be determined that the four coefficients $(K_{x,P},K_{x,D},K_{\theta,P},K_{\theta,D})$ we have calculated can keep the inverted pendulum system stable.</p>
+<h4 id="Build-the-linear-system-in-simulink"><a href="#Build-the-linear-system-in-simulink" class="headerlink" title="Build the linear system in simulink"></a>Build the linear system in simulink</h4><p>The main difference between non-linear and linear is the difference in input $\acute \theta&#x3D;0$ , Here $\acute \theta$ no longer varies with other quantities, so there is only one variable $\acute x$ , but the stability conditions, etc are consistent with nonlinearity. Therefore it is only necessary to replace the value of $\acute \theta$ in the equation of motion directly with the constant $0$.</p>
+<p><img src="https://s2.loli.net/2022/10/12/f7ve61cNKboVBIt.png" alt="b60.PNG"></p>
+<p>The images of $\theta$ and $x$ are as follows, respectively:</p>
+<p><img src="https://s2.loli.net/2022/10/12/peYxFJ5QA6h2XHt.png" alt="b61.PNG"></p>
+<img src="https://s2.loli.net/2022/10/12/5h3acHlNRk4qeoX.png" title="" alt="b62.PNG" data-align="center">
+
+<h4 id="Actual-Lab"><a href="#Actual-Lab" class="headerlink" title="Actual Lab"></a>Actual Lab</h4><p>This part consists of conducting experiments (the actual simulink run was modeled for the nonlinear case) with an actual inverted pendulum system, substituting the previously calculated K values, observing the stability, outputting the relevant images, comparing the results with those obtained from the simulation, and analyzing the reasons for the differences.</p>
+<h5 id="Simulink-control"><a href="#Simulink-control" class="headerlink" title="Simulink control"></a>Simulink control</h5><p>Simulink model——only four $K$ values need to be filled in</p>
+<img src="https://s2.loli.net/2022/10/12/CD2djLY8NXFoBzq.png" title="" alt="b63.PNG" data-align="center">
+
+<p>Enter the four $K$ values obtained by the two previous methods respectively<br>Total running time are about 20 seconds.<br>After simulink starts to run, manually straighten the pendulum to 90 degrees to simulate theta input in the case of non-linearity.</p>
+<h6 id="Coefficient-comparison-method"><a href="#Coefficient-comparison-method" class="headerlink" title="Coefficient comparison method"></a>Coefficient comparison method</h6><p>Output of angular and displacement images (The output image is of the ball on the pendulum)</p>
+<ol>
+<li>Angular</li>
+</ol>
+<img title="" src="https://s2.loli.net/2022/10/12/LeRlOhNark6A7X1.png" alt="b64.PNG" data-align="center" width="116">
+
+<p>As shown in the figure, the steep rise and fall at the forefront is due to lifting the pendulum, then the angle will fluctuate continuously within a very small range and can be regarded as carrying out a steady state. Maximum offset angle is only 0.07 degrees.</p>
+<ol start="2">
+<li>Displacement</li>
+</ol>
+<p>As shown in the figure, at the beginning, it was kept at 0 because the movement did not actually start, then the back-and-forth motion is carried out continuously, and the displacement size is increasing with time. Maximum offset displacement is only 0.14 cm.</p>
+<img title="" src="https://s2.loli.net/2022/10/12/Ym3DG5PVKJdAzqB.png" alt="b65.PNG" data-align="center" width="124">
+
+<h6 id="State-space-model-method"><a href="#State-space-model-method" class="headerlink" title="State space model method"></a>State space model method</h6><p>Output of angular and displacement images (The output image is of the ball on the pendulum)</p>
+<ol>
+<li>Angular</li>
+</ol>
+<img title="" src="https://s2.loli.net/2022/10/12/xmwCK7QMXb4fy6N.png" alt="b66.PNG" width="134" data-align="center">
+
+<p>As shown in the figure, the steep rise and fall at the forefront is due to lifting the pendulum, then the angle will fluctuate continuously within a very small range and can be regarded as carrying out a steady state. Maximum offset angle is only 0.06 degrees.</p>
+<ol start="2">
+<li>Displacement</li>
+</ol>
+<img title="" src="https://s2.loli.net/2022/10/12/WxDiMyGwPzrNk3F.png" alt="b67.PNG" data-align="center" width="171">
+
+<p>As shown in the figure, at the beginning, it was kept at 0 because the movement did not actually start, then the back-and-forth motion is carried out continuously. Maximum offset displacement is only 0.085 cm.</p>
+<p>In general, the $K$ values obtained by the two methods can make the actual inverted pendulum stable and the motion is basically the same, except that the second method is more stable with less variation in angle and displacement.</p>
+<h5 id="Comment-on-any-difference-between-the-simulation-and-experimental-results-for-nonlinear"><a href="#Comment-on-any-difference-between-the-simulation-and-experimental-results-for-nonlinear" class="headerlink" title="Comment on any difference between the simulation and experimental results(for nonlinear)"></a>Comment on any difference between the simulation and experimental results(for nonlinear)</h5><p>It is obvious from the output images of angle and displacement that although the output results of both simulation and experiment can prove that the system is in the stable state. But the angle and displacement of simulation converge to 0 after a fluctuation, while the specific experiment is always in a fluctuation state——This is because during the simulation when the system gives an excitation (displacement) to the inverted pendulum and get a small offset angle, that is, the system is considered to have stabilized, so the motion is stopped and stabilized at a certain position, the angle and displacement are 0; but in the actual experiment when the system will always give excitation (displacement) to determine whether the system is stable, but because the calculated $K$ value is not perfect, as well as the influence of the surrounding environment, resulting in the system has not been able to really reach a stable state, so it has been in constant motion, in the hope of eventually reaching stability, so the angle and displacement will always be some range has been fluctuating.</p>
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>In summary, the experimental objectives were basically achieved through the joint efforts of all group members. In the process of realization, we got a deeper understanding of the pole configuration method, the simulink model building method, the control principle and method of inverted pendulum, etc. These knowledge are the most basic control engineering knowledge points, which will be migrated to the actual construction of large projects afterwards.</p>
+<h2 id="Lab2"><a href="#Lab2" class="headerlink" title="Lab2"></a>Lab2</h2><h3 id="Abstract-1"><a href="#Abstract-1" class="headerlink" title="Abstract"></a>Abstract</h3><p>This experiment examined the first order inverted pendulum, we obtain the numerical linearized transfer function model of the inverted, build the nonlinear system in simulink, and carry out a closed-loop simulation with the controller we designed. Inverted pendulum control system (IPS) is a complex, unstable and nonlinear system, which is an ideal experimental platform for teaching control theory and conducting various control experiments. The typicality of inverted pendulum is that, as a controlled object, it is a high-order, unstable, multi-variable, nonlinear and strongly coupled complex controlled system, which can effectively reflect many problems in the control. The research of inverted pendulum system can effectively reflect many typical problems in control, such as nonlinear problem, robustness problem, stabilization problem, follow-up problem and tracking problem. The control of inverted pendulum is used to test whether the new control method has strong ability to deal with nonlinear and unstable problems.</p>
+<p>Compared with lab1’s inverted pendulum system which is single-input and multiple-output, lab2’s system changes multiple outputs to single output, and uses the coefficient $\alpha$ to combine the two, which will be explained in detail later.</p>
+<h3 id="Introduction-1"><a href="#Introduction-1" class="headerlink" title="Introduction"></a>Introduction</h3><p>The purpose of this experiment was to make inverted pendulum stable without upswing. These were be done by using linear transition, pole assignment and matlab simulink. We use our own simulink to simulate the control, and use the provided simulink to control the actual inverted pendulum, and compare the two results, get the differences, and then analyze the reasons, and expect to learn the stable control method for the inverted pendulum system through the above process.</p>
+<h3 id="Procedure-1"><a href="#Procedure-1" class="headerlink" title="Procedure"></a>Procedure</h3><p>This part is mainly to calculate the equations of motion of the model, to give the method of pole placement (specific theoretical description and matlab code implementation), and to build simulink to carry out the simulation of the inverted pendulum, to lay the foundation for the comparison with the actual experimental results afterwards. </p>
+<p>(1) Obtain the numerical linearized transfer function model of the inverted pendulum system(also concluding steps to derive a linearized mathematical models for the plant)<br>Applying Newton’s law to the horizontal direction.</p>
+<p><img src="https://s2.loli.net/2022/10/12/Tfy9eEcWQwp8txO.png" alt="b68.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/J2H8j45u1ALPsTq.png" alt="b69.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/UmIKbDsQV4Onew7.png" alt="b70.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/qAl7vNawZ1X2Koh.png" alt="b71.PNG"></p>
+<p>(2) Write a MATLAB program to do the pole placement. This program should have the desired poles as its input and the parameters for the controller as the output.</p>
+<p><img src="https://s2.loli.net/2022/10/12/mgqADi9GwLrIkxE.png" alt="b72.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/MHdflKVTOx5Uqrj.png" alt="b73.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/GUrfBgKImiZPyqF.png" alt="b74.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/8Gdm5tgUMXp49Ti.png" alt="b75.PNG"></p>
+<p>The method can make the inverted pendulum stable in the simulink model by input the $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$, and achieve the experimental goal, which will be described in detail in the lab section.</p>
+<p>(3) Build the nonlinear system in SIMULINK, and carry out a closed-loop simulation with the controller designed in 2. In the simulation, set the external disturbances to zero and set the initial conditions of the plant states to be slightly different from the equilibrium point. Check whether the controller can indeed stabilize the rod. If not, redesign the controller and repeat the simulation.</p>
+<h4 id="Simulation-of-inverted-pendulum"><a href="#Simulation-of-inverted-pendulum" class="headerlink" title="Simulation of inverted pendulum"></a>Simulation of inverted pendulum</h4><h5 id="Purpose-of-Simulation-1"><a href="#Purpose-of-Simulation-1" class="headerlink" title="Purpose of Simulation"></a>Purpose of Simulation</h5><p>Idealized simulation of the motion of an inverted pendulum to verify the correctness of the experimental results.</p>
+<h5 id="Simulation-steps-1"><a href="#Simulation-steps-1" class="headerlink" title="Simulation steps"></a>Simulation steps</h5><p>(1) Calculate the equations of motion of the inverted pendulum model<br>Newton’s second law in the horizontal direction:</p>
+<p><img src="https://s2.loli.net/2022/10/12/M8hlKPCzc9exTpW.png" alt="b76.PNG"></p>
+<p>(2) Rectify the equations of motion of an inverted pendulum into matrix form</p>
+<p><img src="https://s2.loli.net/2022/10/12/K6YzdBLDgjXCAob.png" alt="b77.PNG"></p>
+<p>(3) Construction of equations of motion in simulink<br>There are two methods of construction here:<br>One is constructed directly using matrix calculations;<br>The other is to use the elimination method to solve the expression of the sum and then construct.</p>
+<ul>
+<li>Matrix construction of main expressions:</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/10/12/eSfPHmbWn6RAJpj.png" alt="b78.PNG"></p>
+<ul>
+<li>Main expressions of the elimination method:</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/10/12/eT9jpGly8nwH63V.png" alt="b79.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/12/CYeILxMiuh4Hr9V.png" alt="b80.PNG"></p>
+<p>It can be seen that the two methods are basically the same in the running result curve image of the motion module, but the period of the result obtained by the elimination method is smaller, and the error between the two is about 5%.<br>(4) Bringing the constructed equations of motion module into the system</p>
+<p><img src="https://s2.loli.net/2022/10/12/IKaQknEH8dSzvts.png" alt="b81.PNG"></p>
+<p>(5) Run the system and get the output image results</p>
+<h5 id="Simulation-results-1"><a href="#Simulation-results-1" class="headerlink" title="Simulation results"></a>Simulation results</h5><ul>
+<li>Matrix method results</li>
+</ul>
+<p>The images of $z$ are as follows, respectively:</p>
+<img title="" src="https://s2.loli.net/2022/10/12/N9BTO4nR6qreyQX.png" alt="b82.PNG" width="424" data-align="center">
+
+<ul>
+<li>Elimination method results</li>
+</ul>
+<p>The images of $z$ are as follows, respectively:</p>
+<img title="" src="https://s2.loli.net/2022/10/12/VBWlqYRaCdMc76O.png" alt="b83.PNG" width="425" data-align="center">
+
+<p>With the above simulation results, it can be determined that the four coefficients $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ we have calculated can keep the inverted pendulum system stable.</p>
+<h4 id="Actual-Lab-1"><a href="#Actual-Lab-1" class="headerlink" title="Actual Lab"></a>Actual Lab</h4><p>This part consists of conducting experiments (the actual simulink run was modeled for the nonlinear case) with an actual inverted pendulum system, substituting the previously calculated $K$ values, observing the stability, outputting the relevant images, comparing the results with those obtained from the simulation, and analyzing the reasons for the differences.</p>
+<h5 id="Simulink-control-1"><a href="#Simulink-control-1" class="headerlink" title="Simulink control"></a>Simulink control</h5><p>Simulink model——only the coefficients values of $C(s)$ need to be filled in</p>
+<img src="https://s2.loli.net/2022/10/12/rlLZcoICMk2T4At.png" title="" alt="b84.PNG" data-align="center">
+
+<p>Enter $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ values obtained by the previous method, $\alpha&#x3D;2.5$</p>
+<img src="https://s2.loli.net/2022/10/12/W9gYqjDf2Gu7iSJ.png" title="" alt="b85.PNG" data-align="center">
+
+<p>Total running time are about 20 seconds.<br>After simulink starts to run, manually straighten the pendulum to 90 degrees to simulate theta input in the case of non-linearity.</p>
+<p>Output of $z$ (combine angle and displacement) \angular and displacement images (The output image is of the ball on the pendulum).</p>
+<ol>
+<li>$z$</li>
+</ol>
+<img title="" src="https://s2.loli.net/2022/10/12/luRK8SNV9dbpn61.png" alt="b86.PNG" data-align="center" width="184">
+
+<p>As shown in the figure, z will always fluctuate continuously within a very small range and can be regarded as carrying out a steady state. Maximum offset z is only 0.1cm.</p>
+<ol start="2">
+<li>angular and displacement</li>
+</ol>
+<img title="" src="https://s2.loli.net/2022/10/12/n3dWBsfvaDUpSVC.png" alt="b87.PNG" width="499" data-align="center">
+
+<p>As shown in the figure, the steep rise and fall at the forefront is due to lifting the pendulum, then angle and displacement will always fluctuate continuously within a very small range and can be regarded as carrying out a steady state. Maximum offset angle is only 0.2 agrees, maximum offset displacement is only 0.09 m.</p>
+<h5 id="Comment-on-any-difference-between-the-simulation-and-experimental-results-for-nonlinear-1"><a href="#Comment-on-any-difference-between-the-simulation-and-experimental-results-for-nonlinear-1" class="headerlink" title="Comment on any difference between the simulation and experimental results(for nonlinear)"></a>Comment on any difference between the simulation and experimental results(for nonlinear)</h5><p>It is obvious from the output images of $z$ that although the output results of both simulation and experiment can prove that the system is in the stable state. But the $z$ of simulation converge to 0 after a fluctuation, while the specific experiment is always in a fluctuation state——This is because during the simulation when the system gives an excitation (displacement) to the inverted pendulum and get a small offset angle, that is, the system is considered to have stabilized, so the motion is stopped and stabilized at a certain position, the $z$ is 0; but in the actual experiment when the system will always give excitation (displacement) to determine whether the system is stable, but because the calculated $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ value is not perfect, as well as the influence of the surrounding environment, resulting in the system has not been able to really reach a stable state, so it has been in constant motion, in the hope of eventually reaching stability, so the angle and displacement will always be some range has been fluctuating.</p>
+<h5 id="The-choice-of-alpha-and-its-influence"><a href="#The-choice-of-alpha-and-its-influence" class="headerlink" title="The choice of $\alpha$ and its influence"></a>The choice of $\alpha$ and its influence</h5><p>First of all, we must first understand the impact of the value of $\alpha$ on $z$:<br>If $0 &lt;\alpha &lt; 1$, $z(t)$ will be the horizontal position of a point on the rod.<br>If  $\alpha&gt;1$, $z(t)$ will be the horizontal position of a point on the extended line of the rod.<br>In addition, if $\alpha$  &#x3D; 1, $z(t)$ will be the horizontal position of the tip point of the rod and if  $\alpha&#x3D;0$, $z(t)$ will be the horizontal position of the cart.<br>For our lab2, the approximate range of  is $[0.5,3]$, we finally choose 2.5 for $\alpha$’s value, but why: the obvious reason is when $\alpha&#x3D;2.5$, the inverted pendulum can be easier to become stable and more stable for a long time.<br>And for deep understanding, the value of  determines the influence of theta on the system–if it is too small, it proves that the relationship between the inverted pendulum system and theta is basically no, that is, whether the inverted pendulum is swinging has no effect, which will lead to the robustness of the system to be weak, because the output has no effect on the entire system; but if $\alpha$ is too large, if we want the $P_z(s)$ to become 0, then the x itself (that is, the displacement of the inverted pendulum) needs to be large, which can be regarded as a device that moves at the bottom requires a larger range of motion, but the moving range of the bottom mobile device of the provided inverted pendulum system is about 1m. If it is too large, $P_z(s)$ will not be equal to 0, that is, the entire system will not be stable.</p>
+<h3 id="Conclusion-1"><a href="#Conclusion-1" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>In summary, the experimental objectives were basically achieved through the joint efforts of all group members. Compared with lab1, the specific steps of simulation and experiment have changed because the number of outputs has changed from multiple to one, but the overall idea is the same. Therefore, compared with lab1, lab2 completed the whole process more skillfully.<br>In the process of realization, we got a deeper understanding of the pole configuration method, the simulink model building method, the control principle and method of inverted pendulum, etc. These knowledge are the most basic control engineering knowledge points, which will be migrated to the actual construction of large projects afterwards.</p>
+<h3 id="Appendix"><a href="#Appendix" class="headerlink" title="Appendix"></a>Appendix</h3><p>I figured $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ out by matlab very early, however, no matter how you modify the value of $\alpha$, the actual inverted pendulum model cannot be stabilized, it basically hits the side after stabilizing, which means control failure.<br>After checking the pole configuration code, I found that there was no problem; I asked other students and learned that it is likely that the seven poles provided are not suitable for our inverted pendulum system, so even $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ are right, the system will not be stabled.<br>So I learned some methods of how to calculate the poles of a closed-loop system, and wrote some matlab codes to calculate the actual poles, below are the code:</p>
+<p><img src="https://s2.loli.net/2022/10/12/Lo2yz3enwUS756Q.png" alt="b88.PNG"></p>
+<p>However, it is found that the calculated poles are quite different from the provided ones, and $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ cannot even be obtained after replacement.<br>After trying hard, I still failed. I couldn’t find the appropriate seven poles to make the system stable. Then I learned that the G5’s system meets the provided poles. If the coefficients are correct, the system can be stabilized, so I decided to use theirs system to carry out the actual experiment, and finally got the correct experimental result.</p>
+]]></content>
+      <categories>
+        <category>机械</category>
+      </categories>
+      <tags>
+        <tag>运动仿真</tag>
+        <tag>Matlab</tag>
+        <tag>大三秋季学期</tag>
+        <tag>SDM14</tag>
       </tags>
   </entry>
 </search>
