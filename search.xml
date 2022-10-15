@@ -960,10 +960,11 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 
 
 
+
 <h2 id="System-Instruction"><a href="#System-Instruction" class="headerlink" title="System Instruction"></a>System Instruction</h2><p><a href="https://pan.baidu.com/s/11BUmRM9xJeZhGNydaynLmQ?pwd=p0tg">https://pan.baidu.com/s/11BUmRM9xJeZhGNydaynLmQ?pwd=p0tg</a></p>
 ]]></content>
       <categories>
-        <category>设计作品</category>
+        <category>其余课程项目</category>
       </categories>
       <tags>
         <tag>大二春季学期</tag>
@@ -1969,30 +1970,40 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>该文档包含了在学习SDM374机器学习这门课程中的作业记录，包括了对于机器学习常见算法的学习与实践</p>
 <h2 id="Week2"><a href="#Week2" class="headerlink" title="Week2"></a>Week2</h2><p><img src="https://s2.loli.net/2022/10/14/9sZ4nGDNH7CU8Wa.png" alt="c86.png"></p>
 <h5 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h5><p>运行结果如下：</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/QC3XSrvtNuspjDV.png" alt="c87.png" width="443" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/QC3XSrvtNuspjDV.png" alt="c87.png" width="443" data-align="center">
+
 <p>下图为θ的取值</p>
-<p><img src="https://s2.loli.net/2022/10/14/LE4dsvC9e6ji3qu.png" title="" alt="c88.png" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/LE4dsvC9e6ji3qu.png" title="" alt="c88.png" data-align="center">
+
 <p>使用该方法得到的拟合效果不错，使用R2方法得到的差值为0.73295；由所给示例的梯度下降得到的差值为0.73291。由此可见对于这些数据这两种方式拟合效果相差不大，根据得到的数据来看使用sklearn得到的拟合效果较好</p>
 <h5 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h5><p>使用梯度下降</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/drlnytLWZTG23u1.png" alt="c89.PNG" width="357" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/drlnytLWZTG23u1.png" alt="c89.PNG" width="357" data-align="center">
+
 <p>使用sklearn</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/tQwgsmWphukZRNV.png" alt="c90.PNG" width="373" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/tQwgsmWphukZRNV.png" alt="c90.PNG" width="373" data-align="center">
+
 <p>由r2_sorce的数据看出使用scikit-learn的拟合效果较好，两者整体相差不大。</p>
 <h5 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h5><p>采用循环去一次性输出最优值以及画出迭代图</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/ISt24OXUgqyGlvm.png" alt="c91.PNG" width="394" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/ISt24OXUgqyGlvm.png" alt="c91.PNG" width="394" data-align="center">
+
 <p>如图所示第九阶为最优，拟合效果最好；下图为拟合结果图</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/h1OpSPTCJGomdRx.png" alt="c92.png" width="427" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/h1OpSPTCJGomdRx.png" alt="c92.png" width="427" data-align="center">
+
 <h5 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h5><p>选择T-DM为x，P-DM为y</p>
 <p>使用多项式拟合，如第三题</p>
 <p>依据下图得出一阶拟合效果最好  </p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/4snCFeXE8gRA1qZ.png" alt="c93.png" width="443" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/4snCFeXE8gRA1qZ.png" alt="c93.png" width="443" data-align="center">
+
 <p>下图为散点图和拟合效果图</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/OQ9fdxlimGFMnr7.png" alt="c94.png" width="456" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/OQ9fdxlimGFMnr7.png" alt="c94.png" width="456" data-align="center">
+
 <p>之后增加正则项实现正则化——通过输出均方误差去看正则化的效果，以此判断是否需要添加正则化</p>
 <p>Lasso回归</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/cDLPGk8aKQ5UbIn.png" alt="c95.PNG" width="516" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/cDLPGk8aKQ5UbIn.png" alt="c95.PNG" width="516" data-align="center">
+
 <p>Ridge回归</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/oNUeH653KIpm2EW.png" alt="c96.PNG" width="530" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/oNUeH653KIpm2EW.png" alt="c96.PNG" width="530" data-align="center">
+
 <p>首先根据输出的与之前未加正则项的均方误差对比（第一行为原始的，第二行为加上正则项的），毫无疑问这两种方法使得拟合效果更差，因此不需加入正则项</p>
 <p>同时对比这两种方式得到的结果，不难看出对于这组数据来说，ridge的效果较好（均方误差更小，即预测值与真实值更接近）</p>
 <p>$λ$ 的影响：</p>
@@ -2001,30 +2012,40 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 <p><img src="https://s2.loli.net/2022/10/14/QeyrGJcPpxKVD9w.png" alt="c97.png"></p>
 <p>同样是采取训练集（80%）和测试集（20%）</p>
 <p>使用多项式拟合，首先去求得最佳的阶数：</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/xi49VpgneC5GBaF.png" alt="c98.png" width="435" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/xi49VpgneC5GBaF.png" alt="c98.png" width="435" data-align="center">
+
 <p>即阶数等于2时为最优拟合，效果图如下：</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/zmPYOhapVDUouR9.png" alt="c99.png" width="436" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/zmPYOhapVDUouR9.png" alt="c99.png" width="436" data-align="center">
+
 <p>之后讨论是否要加正则项，和第四题相同的方法</p>
 <p>Lasso回归</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/iDWnmxIza51UOQq.png" alt="c100.PNG" width="491" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/iDWnmxIza51UOQq.png" alt="c100.PNG" width="491" data-align="center">
+
 <p>Ridge回归</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/g6lZIjyAakmCQBN.png" alt="c101.PNG" width="513" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/g6lZIjyAakmCQBN.png" alt="c101.PNG" width="513" data-align="center">
+
 <p>由输出的结果来看使用正则化后拟合效果变差，因此只需使用二阶模型去拟合以上数据，最终的系数为下图：</p>
 <p><img src="https://s2.loli.net/2022/10/14/EOZmHRwWsFSNBjx.png" alt="c102.png"></p>
 <h2 id="Week3"><a href="#Week3" class="headerlink" title="Week3"></a>Week3</h2><p><img src="https://s2.loli.net/2022/10/14/4BemL9AVQUfXy7G.png" alt="d1.png"></p>
 <h5 id="第一题-1"><a href="#第一题-1" class="headerlink" title="第一题"></a>第一题</h5><p>使用梯度下降</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/hdQ2rjfbJUsl3iH.png" alt="d8.PNG" width="465" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/hdQ2rjfbJUsl3iH.png" alt="d8.PNG" width="465" data-align="center">
+
 <p>调用sklearn中的LogisticRegression</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/3M8DVkvbcJCTAp9.png" alt="d3.PNG" width="498" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/3M8DVkvbcJCTAp9.png" alt="d3.PNG" width="498" data-align="center">
+
 <p>同时可以在上述方法的基础上增加多项式正则化<br>多项式的实现是使用pipeline方式组合三个步骤<br>设置一个比较小的损失函数的权重参数C，相当于让模型正则化的项起到更大的作用，让分类准确度损失函数起到小一点的作用</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/kVTt4mW9djXCghr.png" alt="d7.PNG" width="502" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/kVTt4mW9djXCghr.png" alt="d7.PNG" width="502" data-align="center">
+
 <p>SVM算法</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/avQVfuXmZyiEBbF.png" alt="d4.PNG" width="478" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/avQVfuXmZyiEBbF.png" alt="d4.PNG" width="478" data-align="center">
+
 <p>KNN算法</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/N8HPb91FzB2pAiw.png" alt="d5.PNG" width="509" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/N8HPb91FzB2pAiw.png" alt="d5.PNG" width="509" data-align="center">
+
 <p>首先需要得到最优的K值</p>
-<p>不难看出k = 14时error最小</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/JkPgOH1jxurGAT5.png" alt="d6.PNG" width="514" data-align="center"></p>
+<p>不难看出k &#x3D; 14时error最小</p>
+<img title="" src="https://s2.loli.net/2022/10/14/JkPgOH1jxurGAT5.png" alt="d6.PNG" width="514" data-align="center">
+
 <p>共采用了五种分类形式，对比评价指标来看——梯度下降（未加正则）分类效果最差，然后是LogisticRegression和KNN基本一致，对比更为具体的指标，KNN只是稍稍更好一些，两者基本一致；然后是SVM，各个指标基本都比较高；最优的是多项式拟合加正则，准确率可达到87.5%</p>
 <h5 id="第二题-1"><a href="#第二题-1" class="headerlink" title="第二题"></a>第二题</h5><p>首先看到特征过多，所以通过代码去选择十个与是否患病相关性最大的特征</p>
 <p><img src="https://s2.loli.net/2022/10/14/pKhZ89on7fjyTSE.png" alt="d15.png"></p>
@@ -2032,12 +2053,15 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 <p><img src="https://s2.loli.net/2022/10/14/DglvcmRIEXqf7OQ.png" alt="d9.png"></p>
 <p>下面进行具体操作<br>使用梯度下降<br><img title="" src="https://s2.loli.net/2022/10/14/n71SQRGF5K3MkIh.png" alt="d10.png" width="459" data-align="center"></p>
 <p>调用sklearn中的LogisticRegression</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/nRLNpbXwyIdQuES.png" alt="d11.png" width="470" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/nRLNpbXwyIdQuES.png" alt="d11.png" width="470" data-align="center">
+
 <p>增加正则化</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/7wSrHNj6AnocRap.png" alt="d14.png" width="480" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/7wSrHNj6AnocRap.png" alt="d14.png" width="480" data-align="center">
+
 <p>SVM算法<br><img title="" src="https://s2.loli.net/2022/10/14/vsaBOPpWTzjYyQG.png" alt="d12.png" width="500" data-align="center"></p>
 <p>KNN算法</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/I4XJxDKnkFzlETu.png" alt="d13.png" width="488" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/I4XJxDKnkFzlETu.png" alt="d13.png" width="488" data-align="center">
+
 <p>共采用了五种分类形式，对比评价指标来看——梯度下降（未加正则）和LogisticRegression分类效果最差，两者完全一致；然后是SVM算法；然后是KNN；最优的是逻辑回归增加多项式正则化的算法</p>
 <h5 id="第三题-1"><a href="#第三题-1" class="headerlink" title="第三题"></a>第三题</h5><p>首先看到特征过多，所以通过代码去选择十个与是否患病相关性最大的特征</p>
 <p><img src="https://s2.loli.net/2022/10/14/yfx1PCbkpnVGYUB.png" alt="d17.png"></p>
@@ -2046,52 +2070,66 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 <p>下面进行具体操作<br>使用梯度下降<br><img title="" src="https://s2.loli.net/2022/10/14/bdvsCp6XYDV12Sf.png" alt="d19.png" width="482" data-align="center"></p>
 <p>调用sklearn中的LogisticRegression<br><img title="" src="https://s2.loli.net/2022/10/14/7Q6GVIPdARLirae.png" alt="d20.png" width="473" data-align="center"></p>
 <p>增加正则化</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/HT3Ui274LXJoM6q.png" alt="d23.png" width="458" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/HT3Ui274LXJoM6q.png" alt="d23.png" width="458" data-align="center">
+
 <p>SVM算法<br><img title="" src="https://s2.loli.net/2022/10/14/YCoFK6EUPrGwqcx.png" alt="d21.PNG" width="462" data-align="center"></p>
 <p>KNN算法</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/wjyzOU5LTRcWg1N.png" alt="d22.png" width="471" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/wjyzOU5LTRcWg1N.png" alt="d22.png" width="471" data-align="center">
+
 <p>共采用了五种分类形式，对比评价指标来看——梯度下降（未加正则）分类效果最差；然后是SVM算法；然后是KNN；最优的分类形式是LogisticRegression</p>
 <h5 id="第四题-1"><a href="#第四题-1" class="headerlink" title="第四题"></a>第四题</h5><p>这种现象是叫类别样本不均衡，样本不均衡将导致样本量小的分类所包含的特征过少，并很难从中提取规律；即使得到分类模型，也容易产生过度依赖于有限的数据样本而导致过拟合的问题（不难看出，1.3的准确率比1.2的准确率都更高，但是召回率会较低）；而当模型应用到新的数据上时，模型的准确性会很差。</p>
 <h5 id="第五题-1"><a href="#第五题-1" class="headerlink" title="第五题"></a>第五题</h5><p>读取图像RGB中的某一个作为vector</p>
 <p><img src="https://s2.loli.net/2022/10/14/USXZr4hyQPqa98T.png" alt="d24.png"></p>
 <p>在尝试过分别读取R\G\B的值发现预测结果完全一致，这是因为图像是黑白的，导致R\G\B三个的值完全相同，更多的均值等操作没有意义，只需读取一个即可<br>但是如果对于彩色图片，完全可以转化为灰度图片然后采用上述方法，更为简便，不需要同时读取R\G\B三个值<br>调用sklearn中的LogisticRegression<br><img title="" src="https://s2.loli.net/2022/10/14/mNp1TeOSP85sgLJ.png" alt="d25.png" width="463" data-align="center"></p>
 <p>增加正则化</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/NHJTilMSszIBetq.png" alt="d29.png" width="480" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/NHJTilMSszIBetq.png" alt="d29.png" width="480" data-align="center">
+
 <p>SVM算法<br><img title="" src="https://s2.loli.net/2022/10/14/qEPRwk3opV8WiyD.png" alt="d26.png" width="475" data-align="center"></p>
 <p>KNN算法<br>首先得到最优的k值</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/ua1zjOenbIZCQMv.png" alt="d27.png" width="462" data-align="center"></p>
-<p>选取k=1<br><img title="" src="https://s2.loli.net/2022/10/14/VQul7MzqAa45Yw6.png" alt="d28.png" width="510" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/ua1zjOenbIZCQMv.png" alt="d27.png" width="462" data-align="center">
+
+<p>选取k&#x3D;1<br><img title="" src="https://s2.loli.net/2022/10/14/VQul7MzqAa45Yw6.png" alt="d28.png" width="510" data-align="center"></p>
 <p> 共采用了四种分类形式，对比评价指标来看——最差的是SVM和逻辑回归增加多项式正则化，两者各项指标基本一致，然后是KNN，最优的是LogisticRegression</p>
 <p>总的来说，本次作业共采用了五种分类形式，结合题目输出的结果来看各个方法都有其特点，同时预测的准确度高低是与数据本身有关，不存在某一个完全优于其他的现象（只能说加了多项式正则后大部分情况下明显是比其他算法更优的）<br>经过以上题目的练习，我掌握了这五种方法，可以灵活地适应不同的实际情况；同时还有其他的算法也进行了相关学习，但是没有应用到实际解题中</p>
 <h2 id="Week4"><a href="#Week4" class="headerlink" title="Week4"></a>Week4</h2><p><img src="https://s2.loli.net/2022/10/14/3MnOLvqtcWGDITS.png" alt="d30.png"></p>
-<h5 id="第一题-2"><a href="#第一题-2" class="headerlink" title="第一题"></a>第一题</h5><h6 id="调包"><a href="#调包" class="headerlink" title="调包"></a>调包</h6><p><img title="" src="https://s2.loli.net/2022/10/14/y8DL7eNn2sQUTAh.png" alt="d31.png" width="513" data-align="center"></p>
+<h5 id="第一题-2"><a href="#第一题-2" class="headerlink" title="第一题"></a>第一题</h5><h6 id="调包"><a href="#调包" class="headerlink" title="调包"></a>调包</h6><img title="" src="https://s2.loli.net/2022/10/14/y8DL7eNn2sQUTAh.png" alt="d31.png" width="513" data-align="center">
+
 <p>得到的指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/bhrosXeO52Gpatg.png" alt="d32.png" width="522" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/bhrosXeO52Gpatg.png" alt="d32.png" width="522" data-align="center">
+
 <p>发现本题中改变迭代次数（max_iter）不影响最终的结果；而且在学习率大致上大于或等于0.0365时，增加学习率对于分类结果没有影响，一致保持上述的值；但是一旦学习率下降到0.0365以下，那么分类结果会发生变化</p>
-<h6 id="手写单层感知机"><a href="#手写单层感知机" class="headerlink" title="手写单层感知机"></a>手写单层感知机</h6><p>定义参数——ω定义为None，而不能直接=0（因为ω是个矩阵，ndarray；而不是个数，保证规范性）</p>
-<p><img src="https://s2.loli.net/2022/10/14/4BJF9T6KYEfxkDG.png" title="" alt="d33.png" data-align="center"></p>
+<h6 id="手写单层感知机"><a href="#手写单层感知机" class="headerlink" title="手写单层感知机"></a>手写单层感知机</h6><p>定义参数——ω定义为None，而不能直接&#x3D;0（因为ω是个矩阵，ndarray；而不是个数，保证规范性）</p>
+<img src="https://s2.loli.net/2022/10/14/4BJF9T6KYEfxkDG.png" title="" alt="d33.png" data-align="center">
+
 <p>之后定义用来训练的函数（读取X_train、y_train，给定迭代次数和学习率），其中迭代次数不能大于123（X_train的行数-1），之后会讨论迭代次数和学习率对于模型预测效果的影响</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/n9ZLf5iJCOvbtyX.png" alt="d34.png" width="552" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/n9ZLf5iJCOvbtyX.png" alt="d34.png" width="552" data-align="center">
+
 <p>优化参数</p>
-<p><img src="https://s2.loli.net/2022/10/14/sRWKwfn6DAp5HYq.png" title="" alt="d35.png" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/sRWKwfn6DAp5HYq.png" title="" alt="d35.png" data-align="center">
+
 <p>最后是进行预测的函数（读取X_test，使用train函数返回的参数值）</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/MicFDq3BOTWXr7P.png" alt="d36.png" width="527" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/MicFDq3BOTWXr7P.png" alt="d36.png" width="527" data-align="center">
+
 <p>以上便是代码的主体部分，后面只是准备数据和实际进行预测<br>之后改变迭代次数和学习率得到了以下指标和结论<br>在保持迭代次数不变时，改变学习率不会影响预测结果，而且在迭代次数过小或过大时会出现上述的报错（即某一类预测数为0）<br>又去增加了一个循环去找出规律（但是有缺陷，即只能最终找到最大的准确率，不能实现输出所有的变化过程，不过通过print可以最终找到所有的变化过程）</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/zJElVWIqkOfiXw1.png" alt="d37.png" width="499" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/zJElVWIqkOfiXw1.png" alt="d37.png" width="499" data-align="center">
+
 <p>以下是最终得到的结果：学习率全部为0.001，只是改变迭代次数得到的指标</p>
-<p>迭代次数=6：70</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/sVnpMhLIPFzJ4fC.png" alt="d38.png" width="510" data-align="center"></p>
+<p>迭代次数&#x3D;6：70</p>
+<img title="" src="https://s2.loli.net/2022/10/14/sVnpMhLIPFzJ4fC.png" alt="d38.png" width="510" data-align="center">
+
 <p>经过对比，由此得出结论：当迭代次数处于[6,70]区间时预测的效果最好，且优于直接调包的效果</p>
-<h5 id="第二题-2"><a href="#第二题-2" class="headerlink" title="第二题"></a>第二题</h5><h6 id="调包-1"><a href="#调包-1" class="headerlink" title="调包"></a>调包</h6><p>同样的迭代次数不影响分类效果，改变学习率会影响分类效果<br>当学习率0.0152—0.0178时分类效果最好</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/HjLdZKkaVixJQpt.png" alt="d39.png" width="494" data-align="center"></p>
+<h5 id="第二题-2"><a href="#第二题-2" class="headerlink" title="第二题"></a>第二题</h5><h6 id="调包-1"><a href="#调包-1" class="headerlink" title="调包"></a>调包</h6><p>同样的迭代次数不影响分类效果，改变学习率会影响分类效果<br>当学习率0.0152–0.0178时分类效果最好</p>
+<img title="" src="https://s2.loli.net/2022/10/14/HjLdZKkaVixJQpt.png" alt="d39.png" width="494" data-align="center">
+
 <h6 id="手写单层感知机-1"><a href="#手写单层感知机-1" class="headerlink" title="手写单层感知机"></a>手写单层感知机</h6><p>之后改变迭代次数和学习率得到了以下指标和结论<br>在保持迭代次数不变时，改变学习率不会影响预测结果，而且在迭代次数过小或过大时会出现上述的报错（即某一类预测数为0）<br>又去增加了一个循环去找出规律（但是有缺陷，即只能最终找到最大的准确率，不能实现输出所有的变化过程，不过通过print可以最终找到所有的变化过程）<br>以下是最终得到的结果：学习率全部为0.001，只是改变迭代次数得到的指标</p>
-<p>迭代次数=136：137</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/14fBY5NMUyslLXd.png" alt="d40.png" width="481" data-align="center"></p>
+<p>迭代次数&#x3D;136：137</p>
+<img title="" src="https://s2.loli.net/2022/10/14/14fBY5NMUyslLXd.png" alt="d40.png" width="481" data-align="center">
+
 <p>通过结果对比，由此得出结论：当迭代次数处于[136,137]区间时预测的效果最好，且优于直接调包的效果</p>
 <p>结合前两题不难看出迭代次数和学习率会对于预测结果有影响，但不存在什么明显的规律，且不同的数据会有不同的影响效果</p>
 <h5 id="第三题-2"><a href="#第三题-2" class="headerlink" title="第三题"></a>第三题</h5><p>由于之前手写的是单层感知机，因此去尝试实现多层感知机，即神经网络</p>
 <h6 id="调包MLPClassifier"><a href="#调包MLPClassifier" class="headerlink" title="调包MLPClassifier"></a>调包MLPClassifier</h6><ol>
-<li>第一题的数据 </li>
+<li>第一题的数据</li>
 </ol>
 <p>首先去得到最优的求解器</p>
 <p><img src="https://s2.loli.net/2022/10/14/C9aui4IpjlYq7Lc.png" alt="d41.png"></p>
@@ -2113,55 +2151,68 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 <p>最终实现：隐藏层数为1，单层神经元为2，输入层单元为5，输出层单元为1 </p>
 <p>代码主体框架与逻辑阐述： </p>
 <p>输入层到隐藏层的激活函数，仍采用sigmoid函数;以及对其进行求导的函数，为之后的反向传播奠定基础</p>
-<p><img src="https://s2.loli.net/2022/10/14/Jl52E8zGewbZLIc.png" title="" alt="d47.PNG" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/Jl52E8zGewbZLIc.png" title="" alt="d47.PNG" data-align="center">
+
 <p>损失函数，仍使用最为常用的函数——方差平均值</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/2zWEt3YpkLHCVfU.png" alt="d48.png" width="530" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/2zWEt3YpkLHCVfU.png" alt="d48.png" width="530" data-align="center">
+
 <p>之后定义神经网络类，内部是代码的主体函数部分——训练和测试</p>
-<p><img src="https://s2.loli.net/2022/10/14/w6DpKA95M1GJeQk.png" title="" alt="d50.png" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/w6DpKA95M1GJeQk.png" title="" alt="d50.png" data-align="center">
+
 <p>定义网络</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/tB2KD1A5RMLxbEO.png" alt="d51.png" width="374" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/tB2KD1A5RMLxbEO.png" alt="d51.png" width="374" data-align="center">
+
 <p>定义训练函数</p>
 <p><img src="https://s2.loli.net/2022/10/14/KcadW8iP5VQ6MU7.png" alt="d52.png"></p>
 <p>使用反向传播算法和随机梯度下降去得到最优的参数，使得损失最小</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/gaITi9ljdZ2qbcH.png" alt="d53.png" width="526" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/gaITi9ljdZ2qbcH.png" alt="d53.png" width="526" data-align="center">
+
 <p>梯度下降</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/iWO2GTuJ3tqmSKN.png" alt="d54.png" width="489" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/iWO2GTuJ3tqmSKN.png" alt="d54.png" width="489" data-align="center">
+
 <p>预测函数——向前传播学习</p>
 <p><img src="https://s2.loli.net/2022/10/14/aj2O461rCgxwA58.png" alt="d55.png"></p>
 <p>准备数据</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/lgFXx3WCh8JqvSy.png" alt="d56.png" width="471" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/lgFXx3WCh8JqvSy.png" alt="d56.png" width="471" data-align="center">
+
 <p>进行训练得到参数，并进行预测</p>
-<p><img src="https://s2.loli.net/2022/10/14/cyx2hlVizNC4DmM.png" title="" alt="d57.png" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/cyx2hlVizNC4DmM.png" title="" alt="d57.png" data-align="center">
+
 <p>输出指标</p>
 <p><img src="https://s2.loli.net/2022/10/14/hxF7uvtqQpeac25.png" alt="d58.png"></p>
 <p>得到的指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/cH1K9QUCv4IS8Fl.png" alt="d59.png" width="506" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/cH1K9QUCv4IS8Fl.png" alt="d59.png" width="506" data-align="center">
+
 <p>很完美，准确率为100%<br>代码写的过程中的几个需要注意的点：<br>一定要注意输入层的神经元个数和代码中的定义相同，不然会造成浪费或是不存在索引的情况出现；输入的X（features）一定要进行np.array和转置操作（保证矩阵维度的正确性，保证运算的合法性），不然会报错；要对预测函数输出的y进行处理，因为它输出的不是0或1，而是小数（有正有负），将其处理成y_test样式的才行，这样才能去输出指标</p>
-<ol>
+<ol start="2">
 <li>第二题的数据</li>
 </ol>
 <p>由于需要提供的features过多，导致如果全部添加的话需要增加很多输入层，在代码中需要添加很多行（都是基本相同，没有太多意义），因此也是只读取5个features（前五个），实现功能即可<br>最终实现：隐藏层数为1，单层神经元为2，输入层单元为5，输出层单元为1<br>得到的指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/lx8mi4npaHJuwgC.png" alt="d60.png" width="503" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/lx8mi4npaHJuwgC.png" alt="d60.png" width="503" data-align="center">
+
 <p>很完美，准确率为100%</p>
 <p>总的来说，手写的实现效果比调包更好，而且手写的隐藏层还比调包实现的更加简单，更加证明了MPL可以有效提高二分类问题的预测效果</p>
 <h5 id="第四题-2"><a href="#第四题-2" class="headerlink" title="第四题"></a>第四题</h5><p>首先是读取图片将其转化为vector，这次改为了使用给的示例的读取方式，更加简单<br>只需要读取RGB中的一个即可</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/U4zFqyBi5JRdsTQ.png" alt="d61.PNG" width="392" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/U4zFqyBi5JRdsTQ.png" alt="d61.PNG" width="392" data-align="center">
+
 <p>之后将其转存为csv进行二次读取</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/LSrdgNmTIEz6oYU.png" alt="d62.png" width="405" data-align="center"></p>
-<p>之后定义2层神经网络模型（类）<br>初始化一些参数<br>使用矩阵简明地表示权重：此时的wih/who（链接权重矩阵）已经是w的转置形式，可与输入的x直接相乘——二者的设置是使用了较为复杂的正态分布形式（中心为0.0），表示节点数目的-0.5次方，即与下一层中节点的标准方差相关</p>
+<img title="" src="https://s2.loli.net/2022/10/14/LSrdgNmTIEz6oYU.png" alt="d62.png" width="405" data-align="center">
+
+<p>之后定义2层神经网络模型（类）<br>初始化一些参数<br>使用矩阵简明地表示权重：此时的wih&#x2F;who（链接权重矩阵）已经是w的转置形式，可与输入的x直接相乘——二者的设置是使用了较为复杂的正态分布形式（中心为0.0），表示节点数目的-0.5次方，即与下一层中节点的标准方差相关</p>
 <p>定义激活函数，使用了scipy中自带的函数</p>
 <p><img src="https://s2.loli.net/2022/10/14/dXHLNlGkhYU1TVi.png" alt="d63.png"></p>
 <p>定义进行最终输出的函数query()，主要实现的是计算隐藏层信号和输出层信号</p>
 <p><img src="https://s2.loli.net/2022/10/14/CgSXBnH2Rt5dvZr.png" alt="d64.png"></p>
 <p>定义用来训练网络的函数train()，主要有两部分：针对给定的训练样本计算输出，query()函数已经实现了；之后将计算得到的输出与所需输出对比，使用差值来指导网络权重的更新<br>多出了一个targets_list作为目标答案的训练样本来训练网络<br>最为重要的就是计算误差，为每个隐藏层节点重组这些误差：</p>
-<script type="math/tex; mode=display">
-errors_{hidden}=weights_{hidden\_output}^T*errors_{output}</script><p><img src="https://s2.loli.net/2022/10/14/386fHPANOg7FIMJ.png" alt="d65.png"></p>
+<p>$$<br>errors_{hidden}&#x3D;weights_{hidden_output}^T*errors_{output}<br>$$</p>
+<p><img src="https://s2.loli.net/2022/10/14/386fHPANOg7FIMJ.png" alt="d65.png"></p>
 <p>之后定义出神经网络的具体信息——层数、神经元个数，并建立神经网络类<br>输入的神经元个数是依据图片的vecotor个数来定的(28*28)；输出的神经元个数为5（要将图片分为五类），中间的单层隐藏层的神经元个数为(5*10)</p>
 <p><img src="https://s2.loli.net/2022/10/14/wpWmtKI8lRC9oDg.png" alt="d66.png"></p>
 <p>同时要对输入的数据进行相应处理：神经网络生成0和1的输出，对于激活函数而言是不可能的，这会导致大的权重和饱和网络，因此需要重新调整这些数字——我们将使用值0.01和0.99来代替0和1</p>
 <p><img src="https://s2.loli.net/2022/10/14/Nts2zhXAOeVDCZx.png" alt="d67.png"></p>
 <p>进行训练和预测</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/GmLh2U5Q4ErskaD.png" alt="d68.PNG" width="354" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/GmLh2U5Q4ErskaD.png" alt="d68.PNG" width="354" data-align="center">
+
 <p>得到的指标</p>
 <p><img src="https://s2.loli.net/2022/10/14/1dQRVySYzXThqF7.png" alt="d69.png"></p>
 <p>以上是实现了一个较为简单的MPL，但是针对以上数据准确率已经比较高了</p>
@@ -2171,47 +2222,61 @@ errors_{hidden}=weights_{hidden\_output}^T*errors_{output}</script><p><img src="
 <p>建立的模型</p>
 <p><img src="https://s2.loli.net/2022/10/14/iDYLMAyJkHNTK87.png" alt="d71.png"></p>
 <p>输出的指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/QIMT6j8HL4d53Yp.png" alt="d72.png" width="427" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/QIMT6j8HL4d53Yp.png" alt="d72.png" width="427" data-align="center">
+
 <h6 id="使用之前定义好的单层隐藏层的神经网络"><a href="#使用之前定义好的单层隐藏层的神经网络" class="headerlink" title="使用之前定义好的单层隐藏层的神经网络"></a>使用之前定义好的单层隐藏层的神经网络</h6><p>主要是要更改输出的神经元个数为10（分了10类），增加了隐藏层神经元的个数，减小学习率；通过以上参数的改变实现了预测</p>
 <p><img src="https://s2.loli.net/2022/10/14/ZFtblABrpuk2OE6.png" alt="d74.png"></p>
 <p>输出的指标</p>
-<p><img src="https://s2.loli.net/2022/10/14/tC8LWn3wqTEA2Dz.png" title="" alt="d75.png" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/tC8LWn3wqTEA2Dz.png" title="" alt="d75.png" data-align="center">
+
 <p>果然太过简单的神经网络无法达到极高准确率的要求<br>之后进行了算法的优化以便增加隐藏层的层数<br>定义网络——一共6层——输入1层（神经元个数为28*28），隐藏层3层（每层神经元个数都为20），输出1层（神经元个数为10）</p>
 <p>输出指标</p>
-<p><img src="https://s2.loli.net/2022/10/14/NxgWiUzsLn2d3Ek.png" title="" alt="d73.png" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/NxgWiUzsLn2d3Ek.png" title="" alt="d73.png" data-align="center">
+
 <p>预测效果很好，实现了要求</p>
 <h6 id="使用pytorch"><a href="#使用pytorch" class="headerlink" title="使用pytorch"></a>使用pytorch</h6><p>读取数据——与之前相同</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/7u3kxBiXWqmrh6C.png" alt="d77.png" width="427" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/7u3kxBiXWqmrh6C.png" alt="d77.png" width="427" data-align="center">
+
 <p>增加了一步数据的数据形式的改变——否则会报错：依据损失函数的不同而不同</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/nLUMR87HuavlfSI.png" alt="d76.png" width="520" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/nLUMR87HuavlfSI.png" alt="d76.png" width="520" data-align="center">
+
 <p>定义神经网络<br>共6层——输入1层（神经元个数为28*28），隐藏层4层（每层神经元个数都为200），输出1层（神经元个数为10）<br>对于激活函数——通过5个相同的全连接层来实现这一点，除了最后一个——不是ReLU激活函数而是返回一个log_softmax</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/shR6CuG7zOtWjf8.png" alt="d78.png" width="424" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/shR6CuG7zOtWjf8.png" alt="d78.png" width="424" data-align="center">
+
 <p>之后定义一个优化器（optimizer）和一个损失准则（loss criterion）——而损失函数的选择就会改变输入x,y的数据类型——此处选取的是NLLLoss-负对数似然损失函数，数据类型必须是x为float，y为long</p>
 <p><img src="https://s2.loli.net/2022/10/14/DBvmUOHVkgd4KSC.png" alt="d79.png"></p>
 <p>模型进行训练——放入循环中，每次最后会将参数归零为之后的反向传播做准备</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/fwzONkBHYG9XLu1.png" alt="d80.png" width="427" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/fwzONkBHYG9XLu1.png" alt="d80.png" width="427" data-align="center">
+
 <p>进行预测与输出指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/GfYL6szTKaoOykM.png" alt="d81.png" width="500" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/GfYL6szTKaoOykM.png" alt="d81.png" width="500" data-align="center">
+
 <p>输出指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/VWSo3PcDENYZitj.png" alt="d82.png" data-align="inline"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/VWSo3PcDENYZitj.png" alt="d82.png" data-align="inline">
+
 <p>预测效果很好，实现了目标</p>
 <h5 id="第二题-3"><a href="#第二题-3" class="headerlink" title="第二题"></a>第二题</h5><h6 id="调包-3"><a href="#调包-3" class="headerlink" title="调包"></a>调包</h6><p>相较于之前的模型选取了更适用于大数据集的solver：adam，选择了relu函数作为激活函数，且建立了三层隐藏层（每层的神经元个数为20*10个）以得到更好的预测效果</p>
 <p>建立的模型</p>
 <p><img src="https://s2.loli.net/2022/10/14/iSrVdlob6Mx2vF1.png" alt="d83.png"></p>
 <p>输出的指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/LaQ1PFIjfKixTpk.png" alt="d84.png" width="460" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/LaQ1PFIjfKixTpk.png" alt="d84.png" width="460" data-align="center">
+
 <h6 id="使用之前定义好的单层隐藏层的神经网络-1"><a href="#使用之前定义好的单层隐藏层的神经网络-1" class="headerlink" title="使用之前定义好的单层隐藏层的神经网络"></a>使用之前定义好的单层隐藏层的神经网络</h6><p>主要是要更改输出的神经元个数为10（分了10类），增加了隐藏层神经元的个数，减小学习率；通过以上参数的改变实现了预测</p>
 <p><img src="https://s2.loli.net/2022/10/14/QNZqEeYk5tfg3hy.png" alt="d85.png"></p>
 <p>输出的指标</p>
-<p><img src="https://s2.loli.net/2022/10/14/MimOwdLIEaPHTlu.png" title="" alt="d86.png" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/MimOwdLIEaPHTlu.png" title="" alt="d86.png" data-align="center">
+
 <p>准确率过低，且如果隐藏层限制在一层改变其他的参数并不能提高准确率，还是需要增加隐藏层层数</p>
 <p>优化后的多个隐藏层——隐藏层为4，单层神经元个数为50</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/2ONTJmvwtjs43Iy.png" alt="d87.png" width="486" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/2ONTJmvwtjs43Iy.png" alt="d87.png" width="486" data-align="center">
+
 <p>输出指标</p>
-<p><img src="https://s2.loli.net/2022/10/14/DwBC6bpEQrcGv2y.png" title="" alt="d88.png" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/DwBC6bpEQrcGv2y.png" title="" alt="d88.png" data-align="center">
+
 <h6 id="使用pytorch-1"><a href="#使用pytorch-1" class="headerlink" title="使用pytorch"></a>使用pytorch</h6><p>读取数据仍采用了之前的方式 </p>
 <p>构建的网络——共6层：其中四层隐藏层，每层神经元个数为300，激活函数仍是除了输出层的为log_softmax外其余都为relu</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/BfHR1CtlFzGpKuV.png" alt="d89.png" width="370" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/BfHR1CtlFzGpKuV.png" alt="d89.png" width="370" data-align="center">
+
 <p>优化器和一个损失函数形式没有改变，循环次数是20</p>
 <p><img src="https://s2.loli.net/2022/10/14/b4NcyOZaH2soFzU.png" alt="d90.png"></p>
 <p>输出指标</p>
@@ -2220,97 +2285,128 @@ errors_{hidden}=weights_{hidden\_output}^T*errors_{output}</script><p><img src="
 <h5 id="第三题-3"><a href="#第三题-3" class="headerlink" title="第三题"></a>第三题</h5><p>首先需要将mnist和syn中的图片统一读取当作数据集——只需多去增加一个循环即可<br>输出的数据集的shape</p>
 <p><img src="https://s2.loli.net/2022/10/14/m9r2In4eGUvBMgD.png" alt="d92.png"></p>
 <p>基于keras，采用10-fold交叉验证方式去处理数据集<br>将数据集分成k份，每一轮用其中(k-1)份做训练而剩余1份做验证，以这种方式执行k轮，得到k个模型．将k次的性能取平均，作为该算法的整体性能．k一般取值为5或者10<br>sklearn.model_selection提供了KFold方法，使用的StratifiedKFold采用的是分层抽样，它保证各类别的样本在切割后每一份小数据集中的比例都与原数据集中的比例相同<br>代码主体<br>首先将数据进行再次处理——改变维度，变成张量，为之后的读取做准备</p>
-<p><img src="https://s2.loli.net/2022/10/14/OGWx32cAHNnFoyd.png" title="" alt="d93.png" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/OGWx32cAHNnFoyd.png" title="" alt="d93.png" data-align="center">
+
 <p>之后进行读取</p>
 <p><img src="https://s2.loli.net/2022/10/14/ByjuqTUOrfeNSQw.png" alt="d94.png"></p>
 <p>数据处理</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/vc83iNZMkOdlrUn.png" alt="d95.png" width="493" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/vc83iNZMkOdlrUn.png" alt="d95.png" width="493" data-align="center">
+
 <p>建立网络——一共6层，包括一层输入层，四层隐藏层，一层输出层</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/1bJgkLGI5xioUXn.png" alt="d96.png" width="478" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/1bJgkLGI5xioUXn.png" alt="d96.png" width="478" data-align="center">
+
 <p>开始训练</p>
 <p><img src="https://s2.loli.net/2022/10/14/gPHqLNBUkl1G89Y.png" alt="d97.png"></p>
 <p>在这里的validation_data更好的是用验证集，但是添加了之后会报错且没有解决，因此采取折中的办法用自己去验证自己<br>进行预测并输出</p>
-<p><img src="https://s2.loli.net/2022/10/14/9KbpGM6h3eiHJNU.png" title="" alt="d98.png" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/9KbpGM6h3eiHJNU.png" title="" alt="d98.png" data-align="center">
+
 <p>输出指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/Bprc9JqwuGSsUL6.png" alt="d99.png" width="537" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/Bprc9JqwuGSsUL6.png" alt="d99.png" width="537" data-align="center">
+
 <p>最终损失减小到了1.2684，准确率达到了0.5371，预测效果可以接受</p>
 <h5 id="第四题-3"><a href="#第四题-3" class="headerlink" title="第四题"></a>第四题</h5><p>首先该数据集是没有区分训练集和测试集的，因此可以将训练集看成测试集，测试集看成训练集，只需一个循环读取数据即可<br>而且由于不是黑白图片，为了提高准确率读取RGB，之后的一些语句随之改变</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/seroFYh3GxMKBJU.png" alt="e1.png" width="422" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/seroFYh3GxMKBJU.png" alt="e1.png" width="422" data-align="center">
+
 <p>关于正则项的添加主要是在建立网络的第一层中进行添加</p>
 <p><img src="https://s2.loli.net/2022/10/14/ObZupqe9gzPxJcj.png" alt="e2.png"></p>
 <p>而关于网络结构则是主要体现在隐藏层层数和神经元个数，再包括激活函数、学习率等会造成预测效果变化的参数<br>（1）使用上面构建的网络，正则化类别全部选择L1<br>loss的收敛曲线</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/j7B123F9cNyVGWI.png" alt="e3.png" width="412" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/j7B123F9cNyVGWI.png" alt="e3.png" width="412" data-align="center">
+
 <p>准确率的变化曲线</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/Biyrex6FX1ANuC9.png" alt="e4.png" width="404" data-align="center"></p>
-<p>准确率最高的是epochs=7时的33.8%<br>明显来看预测准确率较低，需要调整网络结构和正则项<br>（2）正则项的类别选择<br>如果全部改为L2，准确率会降低<br>如果全部改为L1_L2，准确率整体会提高，大概10%左右<br>如果使用dropout，准确率会降低，且需要在输入和隐藏层都要添加，且参数（舍弃率）同样需要选择<br>（3）正则项的大小选择<br>主要是在0.01-1的区间中选择，最终选择了0.05（虽然中间会有准确率较低的情况，但是最大的准确率较高）<br>最终正则项的添加——没有考虑添加的位置的变化，只是在输入层进行了添加</p>
+<img title="" src="https://s2.loli.net/2022/10/14/Biyrex6FX1ANuC9.png" alt="e4.png" width="404" data-align="center">
+
+<p>准确率最高的是epochs&#x3D;7时的33.8%<br>明显来看预测准确率较低，需要调整网络结构和正则项<br>（2）正则项的类别选择<br>如果全部改为L2，准确率会降低<br>如果全部改为L1_L2，准确率整体会提高，大概10%左右<br>如果使用dropout，准确率会降低，且需要在输入和隐藏层都要添加，且参数（舍弃率）同样需要选择<br>（3）正则项的大小选择<br>主要是在0.01-1的区间中选择，最终选择了0.05（虽然中间会有准确率较低的情况，但是最大的准确率较高）<br>最终正则项的添加——没有考虑添加的位置的变化，只是在输入层进行了添加</p>
 <p><img src="https://s2.loli.net/2022/10/14/zBlZDy7hYvQgcsT.png" alt="e5.png"></p>
-<p>（4）网络结构<br>首先是隐藏层的层数——在经过实验后发现并不是越多越好，最终确定为4层（每层神经元个数=65*10=650）；激活函数同样保持除了输出层是softmax，其余都是relu；学习率=1e-3</p>
+<p>（4）网络结构<br>首先是隐藏层的层数——在经过实验后发现并不是越多越好，最终确定为4层（每层神经元个数&#x3D;65*10&#x3D;650）；激活函数同样保持除了输出层是softmax，其余都是relu；学习率&#x3D;1e-3</p>
 <p><img src="https://s2.loli.net/2022/10/14/IY5sH2R1k6vOFBf.png" alt="e6.png"></p>
 <p>（5）最终的输出指标<br>Loss的收敛曲线</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/JinLdEehj8l1539.png" alt="e7.png" width="334" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/JinLdEehj8l1539.png" alt="e7.png" width="334" data-align="center">
+
 <p>准确率的变化</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/g8BCJ7DU2Hl14MG.png" alt="e8.png" width="387" data-align="center"></p>
-<p>准确率最高的是epochs=9时的47.4%</p>
+<img title="" src="https://s2.loli.net/2022/10/14/g8BCJ7DU2Hl14MG.png" alt="e8.png" width="387" data-align="center">
+
+<p>准确率最高的是epochs&#x3D;9时的47.4%</p>
 <h5 id="第五题-2"><a href="#第五题-2" class="headerlink" title="第五题"></a>第五题</h5><p>选择过程不做额外的阐述，与第四题基本一致<br>最终的网络模型</p>
 <p><img src="https://s2.loli.net/2022/10/14/QIOw7deU2Va4XKN.png" alt="e9.png"></p>
 <p>Loss的收敛曲线</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/wS7Ur32ORy9QZ6z.png" alt="e10.png" width="408" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/wS7Ur32ORy9QZ6z.png" alt="e10.png" width="408" data-align="center">
+
 <p>准确率变化</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/jRKzoJWxMFDQ3qs.png" alt="e11.png" width="380" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/jRKzoJWxMFDQ3qs.png" alt="e11.png" width="380" data-align="center">
+
+
+
 <h2 id="Week6"><a href="#Week6" class="headerlink" title="Week6"></a>Week6</h2><p><img src="https://s2.loli.net/2022/10/14/TAfaPIy6m4Yo1Qt.png" alt="e12.png"></p>
 <h5 id="第一题-4"><a href="#第一题-4" class="headerlink" title="第一题"></a>第一题</h5><h6 id="调包实现SVM"><a href="#调包实现SVM" class="headerlink" title="调包实现SVM"></a>调包实现SVM</h6><p>代码主体</p>
 <p><img src="https://s2.loli.net/2022/10/14/QR2oHe79FjbSVAM.png" alt="e13.png"></p>
 <p>对于上面的四个参数中的前三个都需要进行选取，使用GridSearchCV方法去实现——由于搜索速度较慢，因此参数列举的不多</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/rYmsfnDF5SPClHa.png" alt="e14.png" width="472" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/rYmsfnDF5SPClHa.png" alt="e14.png" width="472" data-align="center">
+
 <p>尽管输出的最优参数是上面的，但是尝试过后发现还是不够优<br>最终代码与输出指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/ATQULsnNpBrW4f7.png" alt="e15.png" width="470" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/ATQULsnNpBrW4f7.png" alt="e15.png" width="470" data-align="center">
+
 <h6 id="手写实现SVM"><a href="#手写实现SVM" class="headerlink" title="手写实现SVM"></a>手写实现SVM</h6><p>将线性核和多项式核一起写在同一个代码中，而高斯核则单独去写，因为其多了一个参数$\sigma$ （1）线性核和多项式核 </p>
 <p>读取数据集——定义了一个函数</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/Kd8FZzw1ASOTMIH.png" alt="e16.png" width="411" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/Kd8FZzw1ASOTMIH.png" alt="e16.png" width="411" data-align="center">
+
 <p>定义参数<br>在kernel处可以进行核函数的更改；C则是直接去赋值即可</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/jBhZcwbu1oIN54m.png" alt="e17.png" width="422" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/jBhZcwbu1oIN54m.png" alt="e17.png" width="422" data-align="center">
+
 <p>KKT条件判断，为SMO优化作基础</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/4BYMpcTRZJLQdA2.png" alt="e18.png" width="475" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/4BYMpcTRZJLQdA2.png" alt="e18.png" width="475" data-align="center">
+
 <p>其中的_g函数是得到预测值</p>
 <p><img src="https://s2.loli.net/2022/10/14/JrdKfvBML81jwNz.png" alt="e27.png"></p>
 <p>线性核函数和多项式核函数</p>
 <p>可通过改变a的值去更改多项式次数</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/U3CiuQbNpSFl78Y.png" alt="e19.PNG" width="469" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/U3CiuQbNpSFl78Y.png" alt="e19.PNG" width="469" data-align="center">
+
 <p>误差函数——预测值和真实值的差值</p>
-<p><img src="https://s2.loli.net/2022/10/14/zAhis4RWSfVjHE6.png" title="" alt="e20.png" data-align="center"></p>
+<img src="https://s2.loli.net/2022/10/14/zAhis4RWSfVjHE6.png" title="" alt="e20.png" data-align="center">
+
 <p>进行SMO，实现参数的最优化，得到两个 $α$</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/IrFe3BHj27WyQk1.png" alt="e21.PNG" width="364" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/IrFe3BHj27WyQk1.png" alt="e21.PNG" width="364" data-align="center">
+
 <p>进行训练，得到参数并进行最优化</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/Tmut1XPHZv6eD9j.png" alt="e22.PNG" width="470" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/Tmut1XPHZv6eD9j.png" alt="e22.PNG" width="470" data-align="center">
+
 <p>最优化更新</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/chlryKN3e9OdFC1.png" alt="e23.png" width="332" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/chlryKN3e9OdFC1.png" alt="e23.png" width="332" data-align="center">
+
 <p>预测函数</p>
 <p><img src="https://s2.loli.net/2022/10/14/pfnD7HUu9EZlJ6x.png" alt="e24.png"></p>
 <p>输出准确率</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/cu4F1eZVrnWhds2.png" alt="e25.png" width="384" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/cu4F1eZVrnWhds2.png" alt="e25.png" width="384" data-align="center">
+
 <p>代入数据集运行并输出指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/rRZN8MbylLHgU6z.png" alt="e26.PNG" width="452" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/rRZN8MbylLHgU6z.png" alt="e26.PNG" width="452" data-align="center">
+
 <p>（2）高斯核函数<br>读取数据方式一致<br>定义参数——新增了一个 $\sigma$</p>
 <p><img src="https://s2.loli.net/2022/10/14/BzAyNV7wpC92OZb.png" alt="e28.png"></p>
 <p>计算高斯核函数</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/v3EJAZmhRG1wqlO.png" alt="e29.png" width="454" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/v3EJAZmhRG1wqlO.png" alt="e29.png" width="454" data-align="center">
+
 <p>之后也是求预测值_g和判断KKT条件<br>之后是SMO，逻辑完全一致，但是返回的不同——为支持向量的下标，之后会用</p>
 <p><img src="https://s2.loli.net/2022/10/14/p7bP2DJzahQY6EA.png" alt="e30.png"></p>
 <p>计算单个核函数</p>
 <p><img src="https://s2.loli.net/2022/10/14/FS5GPIKR7MUeNJl.png" alt="e31.png"></p>
 <p>预测函数</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/CprqN8uXOfljIg5.png" alt="e32.png" width="435" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/CprqN8uXOfljIg5.png" alt="e32.png" width="435" data-align="center">
+
 <p>测试函数，输出指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/FaBGqturUjiYRDC.png" alt="e33.png" width="419" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/FaBGqturUjiYRDC.png" alt="e33.png" width="419" data-align="center">
+
 <p>代入数据集运行，并输出指标</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/SlVcUBWyQ1mdIjw.png" alt="e34.png" width="464" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/SlVcUBWyQ1mdIjw.png" alt="e34.png" width="464" data-align="center">
+
 <h5 id="第二题-4"><a href="#第二题-4" class="headerlink" title="第二题"></a>第二题</h5><h6 id="调包实现SVM-1"><a href="#调包实现SVM-1" class="headerlink" title="调包实现SVM"></a>调包实现SVM</h6><p>同样进行了参数选择</p>
 <p><img src="https://s2.loli.net/2022/10/14/BXQqJEh8gOjpmcU.png" alt="e35.png"></p>
 <p>尽管输出的最优参数是上面的，但是尝试过后发现还是不够优<br>最终代码与输出指标</p>
 <p><img src="https://s2.loli.net/2022/10/14/OpxXJnZILcqWhA9.png" alt="e36.png"></p>
 <h6 id="手写实现SVM-1"><a href="#手写实现SVM-1" class="headerlink" title="手写实现SVM"></a>手写实现SVM</h6><p>读取数据集</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/PG57iJkxQ6YjqUu.png" alt="e37.png" width="460" data-align="center"></p>
-<p>（1）线性核和多项式核<br>选择多项式核，C=1（与调包的参数保持一致）</p>
+<img title="" src="https://s2.loli.net/2022/10/14/PG57iJkxQ6YjqUu.png" alt="e37.png" width="460" data-align="center">
+
+<p>（1）线性核和多项式核<br>选择多项式核，C&#x3D;1（与调包的参数保持一致）</p>
 <p><img src="https://s2.loli.net/2022/10/14/NBY86UgrPMmq7Zw.png" alt="e38.png"></p>
 <p>（2）高斯核（与调包的参数保持一致）</p>
 <p><img src="https://s2.loli.net/2022/10/14/Hc8Po6BdE7paSKl.png" alt="e39.png"></p>
@@ -2318,48 +2414,61 @@ errors_{hidden}=weights_{hidden\_output}^T*errors_{output}</script><p><img src="
 <h5 id="第三题-4"><a href="#第三题-4" class="headerlink" title="第三题"></a>第三题</h5><p>（1）首先探讨C值对于分类结果的影响——代码使用手写的</p>
 <p><img src="https://s2.loli.net/2022/10/14/iOjLPdQw7HS9D5e.png" alt="e40.png"></p>
 <p>第一题数据<br>线性核</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/m67VTwk1ElNBMRZ.png" alt="e41.png" width="376" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/m67VTwk1ElNBMRZ.png" alt="e41.png" width="376" data-align="center">
+
 <p>多项式核</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/2hxscijF5PvTEJz.png" alt="e42.png" width="372" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/2hxscijF5PvTEJz.png" alt="e42.png" width="372" data-align="center">
+
 <p>高斯核</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/QhpcilrdI5jew79.png" alt="e43.png" width="393" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/QhpcilrdI5jew79.png" alt="e43.png" width="393" data-align="center">
+
 <p>第二题数据<br>线性核</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/DEjhvsWVIdCRZ4t.png" alt="e44.png" width="389" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/DEjhvsWVIdCRZ4t.png" alt="e44.png" width="389" data-align="center">
+
 <p>多项式核</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/VLwMuKFEsNYADjG.png" alt="e45.png" width="402" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/VLwMuKFEsNYADjG.png" alt="e45.png" width="402" data-align="center">
+
 <p>高斯核</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/ep3v51IuqBG8Zso.png" alt="e46.png" width="400" data-align="center"></p>
-<p>结合以上六幅图来看——总体上当C值较小时（C=1），准确率还算可以；之后随着C值的增大，准确率会有一定的减小，但是整体呈增加的趋势；之后则是当C过大时会出现过拟合的情况，大部分情况下并不是C越大准确率越大<br>同时有一个比较有趣的点是对于多项式核来说，当C增大到一定值后继续增大不会影响预测的准确率了<br>总的来说，惩罚因子C的取值权衡了经验风险和结构风险：C越大，经验风险越小，结构风险越大，容易出现过拟合；C越小，模型复杂度越低，容易出现欠拟合<br>（2）之后讨论不同核函数对于分类的影响</p>
+<img title="" src="https://s2.loli.net/2022/10/14/ep3v51IuqBG8Zso.png" alt="e46.png" width="400" data-align="center">
+
+<p>结合以上六幅图来看——总体上当C值较小时（C&#x3D;1），准确率还算可以；之后随着C值的增大，准确率会有一定的减小，但是整体呈增加的趋势；之后则是当C过大时会出现过拟合的情况，大部分情况下并不是C越大准确率越大<br>同时有一个比较有趣的点是对于多项式核来说，当C增大到一定值后继续增大不会影响预测的准确率了<br>总的来说，惩罚因子C的取值权衡了经验风险和结构风险：C越大，经验风险越小，结构风险越大，容易出现过拟合；C越小，模型复杂度越低，容易出现欠拟合<br>（2）之后讨论不同核函数对于分类的影响</p>
 <p><img src="https://s2.loli.net/2022/10/14/P6C8nmYBTfbiypU.png" alt="e47.png"></p>
 <p>总的来说，“linear”对于线性超平面是有用的，“rbf”和“poly”对于非线性超平面是有用的<br>从上面的六幅图来看，对于1.1、1.2来说由于数据集是线性可分的，所以整体来说“linear”的效果是不错的；同时对于高斯核来说如果选择了合适的sigma来说应该是较优的核函数</p>
 <h5 id="第四题-4"><a href="#第四题-4" class="headerlink" title="第四题"></a>第四题</h5><p>（1）调包实现SVM<br>读取数据集的方式同样采取之前的方式<br>同样进行了参数选择</p>
 <p><img src="https://s2.loli.net/2022/10/14/daXS4npEhJYrytN.png" alt="e48.png"></p>
 <p>使用上面的参数进行预测，最终代码与输出指标</p>
 <p><img src="https://s2.loli.net/2022/10/14/KwuRhp3zNvtgZPJ.png" alt="e49.png"></p>
-<p>（2）手写实现SVM<br>线性核和多项式核<br>选择线性核，C=1（与调包的参数保持一致）</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/wXFmp56QRfrDZuN.png" alt="e50.PNG" width="481" data-align="center"></p>
+<p>（2）手写实现SVM<br>线性核和多项式核<br>选择线性核，C&#x3D;1（与调包的参数保持一致）</p>
+<img title="" src="https://s2.loli.net/2022/10/14/wXFmp56QRfrDZuN.png" alt="e50.PNG" width="481" data-align="center">
+
 <p>选择多项式核</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/PRWmekAIGOBnqaj.png" alt="e51.PNG" width="458" data-align="center"></p>
-<p>高斯核，C=1，sigma=0.1（与调包的参数保持一致）</p>
+<img title="" src="https://s2.loli.net/2022/10/14/PRWmekAIGOBnqaj.png" alt="e51.PNG" width="458" data-align="center">
+
+<p>高斯核，C&#x3D;1，sigma&#x3D;0.1（与调包的参数保持一致）</p>
 <p><img src="https://s2.loli.net/2022/10/14/5WGCwczptjhg1BQ.png" alt="e52.png"></p>
 <p>这证明在相同参数下，手写的明显不如直接调包的准确率高</p>
 <h5 id="第五题-3"><a href="#第五题-3" class="headerlink" title="第五题"></a>第五题</h5><p>（1）调包实现SVM<br>同样进行了参数选择</p>
 <p><img src="https://s2.loli.net/2022/10/14/Tek9azRFJWA3SoI.png" alt="e53.png"></p>
 <p>使用上面的参数进行预测</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/kgSHwEUXLcdfsbR.png" alt="e54.PNG" width="428" data-align="center"></p>
+<img title="" src="https://s2.loli.net/2022/10/14/kgSHwEUXLcdfsbR.png" alt="e54.PNG" width="428" data-align="center">
+
 <p>最终代码与输出指标</p>
-<p>（2）手写实现SVM<br>线性核和多项式核<br>选择线性核，C=1</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/atqmioYkW7BJ3UQ.png" alt="e55.PNG" width="475" data-align="center"></p>
-<p>选择多项式核，C=1（与调包的参数保持一致）</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/TOmQ6kBLFbpXseH.png" alt="e56.PNG" width="485" data-align="center"></p>
-<p>高斯核，C=1，sigma=0.1</p>
-<p><img title="" src="https://s2.loli.net/2022/10/14/3cu7XK8kFYEqVOr.png" alt="e57.PNG" width="496" data-align="center"></p>
+<p>（2）手写实现SVM<br>线性核和多项式核<br>选择线性核，C&#x3D;1</p>
+<img title="" src="https://s2.loli.net/2022/10/14/atqmioYkW7BJ3UQ.png" alt="e55.PNG" width="475" data-align="center">
+
+<p>选择多项式核，C&#x3D;1（与调包的参数保持一致）</p>
+<img title="" src="https://s2.loli.net/2022/10/14/TOmQ6kBLFbpXseH.png" alt="e56.PNG" width="485" data-align="center">
+
+<p>高斯核，C&#x3D;1，sigma&#x3D;0.1</p>
+<img title="" src="https://s2.loli.net/2022/10/14/3cu7XK8kFYEqVOr.png" alt="e57.PNG" width="496" data-align="center">
+
 <h2 id="Week7"><a href="#Week7" class="headerlink" title="Week7"></a>Week7</h2><p><img src="https://s2.loli.net/2022/10/14/CrB9vjW1HQO6AhU.png" alt="e59.png"></p>
 
 
 	<div class="row">
     <embed src="https://maiimg.com/dec/a97792531959@pdf" width="100%" height="550" type="application/pdf">
 	</div>
+
 
 
 
@@ -2372,7 +2481,9 @@ errors_{hidden}=weights_{hidden\_output}^T*errors_{output}</script><p><img src="
 
 
 
-<h2 id="Week9"><a href="#Week9" class="headerlink" title="Week9"></a>Week9</h2><p><img title="" src="https://s2.loli.net/2022/10/14/ERbD1mUSyjf7ag6.png" alt="e61.PNG" width="403" data-align="center"></p>
+
+<h2 id="Week9"><a href="#Week9" class="headerlink" title="Week9"></a>Week9</h2><img title="" src="https://s2.loli.net/2022/10/14/ERbD1mUSyjf7ag6.png" alt="e61.PNG" width="403" data-align="center">
+
 
 
 	<div class="row">
@@ -2381,7 +2492,9 @@ errors_{hidden}=weights_{hidden\_output}^T*errors_{output}</script><p><img src="
 
 
 
-<h2 id="Week10"><a href="#Week10" class="headerlink" title="Week10"></a>Week10</h2><p><img title="" src="https://s2.loli.net/2022/10/14/xvEM9hP4LNmIZpk.png" alt="e62.png" width="505" data-align="center"></p>
+
+<h2 id="Week10"><a href="#Week10" class="headerlink" title="Week10"></a>Week10</h2><img title="" src="https://s2.loli.net/2022/10/14/xvEM9hP4LNmIZpk.png" alt="e62.png" width="505" data-align="center">
+
 
 
 	<div class="row">
@@ -2390,6 +2503,9 @@ errors_{hidden}=weights_{hidden\_output}^T*errors_{output}</script><p><img src="
 
 
 
+
+<h2 id="Download-All-Code"><a href="#Download-All-Code" class="headerlink" title="Download All Code"></a>Download All Code</h2><p>如果您对上述任一代码感兴趣，可从以下链接进行下载：</p>
+<p><a href="https://pan.baidu.com/s/1O1NnClSjPnF_rUF49lwxSw?pwd=7zvs">https://pan.baidu.com/s/1O1NnClSjPnF_rUF49lwxSw?pwd=7zvs</a></p>
 ]]></content>
       <categories>
         <category>课程作业</category>
