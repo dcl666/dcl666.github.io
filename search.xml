@@ -99,12 +99,13 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
         <tag>Adams</tag>
         <tag>Matlab</tag>
         <tag>机器人运动学</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
-    <title>SDM202 Mobile Trolley Project</title>
+    <title>SDM202 Project—Mobile trolley for pick objects</title>
     <url>/2022/10/09/202/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>SDM202 Project, which is a multidisciplinary Project in my autumn Semester of sophomore. In this project, our group should use many kinds of knowledge(machinery, electric control, material, manufacturing, design thinking, etc) to build a mobile trolley capable of grasping objects, and compete among different groups.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>SDM202 Project, which is a multidisciplinary project in my autumn semester of sophomore. In this project, our group should use many kinds of knowledge(machinery, electric control, material, manufacturing, design thinking, etc) to build a mobile trolley capable of picking objects, and compete among different groups.</p>
 <h2 id="Pre-PPT"><a href="#Pre-PPT" class="headerlink" title="Pre PPT"></a>Pre PPT</h2>
 
 	<div class="row">
@@ -123,11 +124,12 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
 <p><a href="https://mp.weixin.qq.com/s/fsX4CVbHuUFMin67sRrlxg">https://mp.weixin.qq.com/s/fsX4CVbHuUFMin67sRrlxg</a></p>
 ]]></content>
       <categories>
-        <category>大项目</category>
+        <category>综合项目</category>
       </categories>
       <tags>
         <tag>大二秋季学期</tag>
         <tag>Multidisciplinary Project</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -151,6 +153,7 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
       <tags>
         <tag>机械结构</tag>
         <tag>大三秋季学期</tag>
+        <tag>中英</tag>
       </tags>
   </entry>
   <entry>
@@ -178,8 +181,8 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
       </categories>
       <tags>
         <tag>大二秋季学期</tag>
-        <tag>Multidisciplinary Project</tag>
         <tag>SDM242</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -226,6 +229,7 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
         <tag>大二秋季学期</tag>
         <tag>SDM232</tag>
         <tag>Solidworks</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -248,6 +252,7 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
         <tag>大二秋季学期</tag>
         <tag>Multidisciplinary Project</tag>
         <tag>SDM212</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -261,7 +266,7 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
 </ul>
 <h2 id="Results"><a href="#Results" class="headerlink" title="Results:"></a>Results:</h2><p>  The connecting rod structure can save effort, which the connecting rod structure can save effort——Input 20N, output 120N, efficiency is 500%.</p>
 <p><img src="https://s2.loli.net/2022/10/07/9GBASRQjXLtNeiw.png" alt="img"></p>
-<h2 id="Solidworks-model"><a href="#Solidworks-model" class="headerlink" title="Solidworks model:"></a>Solidworks model:</h2><img title="" src="https://s2.loli.net/2022/10/07/17d8Wg6wLKXIyeu.png" alt="img" width="416" data-align="center">
+<h2 id="Solidworks-model"><a href="#Solidworks-model" class="headerlink" title="Solidworks model:"></a>Solidworks model:</h2><p><img title="" src="https://s2.loli.net/2022/10/07/17d8Wg6wLKXIyeu.png" alt="img" width="416" data-align="center"></p>
 ]]></content>
       <categories>
         <category>机械</category>
@@ -272,6 +277,7 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
         <tag>大二秋季学期</tag>
         <tag>Solidworks</tag>
         <tag>订书机</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -289,6 +295,7 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
       <tags>
         <tag>大二秋季学期</tag>
         <tag>SDM212</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -298,22 +305,23 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
 <h2 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure:"></a><strong>Procedure:</strong></h2><ul>
 <li><p>Research</p>
 <p>We first researched on some basic linkage mechanisms. In this process, we found an interesting linkage structure called Peaucellier-Lipkin linkage. </p>
-<img src="https://s2.loli.net/2022/10/07/sHpn5wiDlyME4ZT.png" title="" alt="img" data-align="center">
-
+<p><img src="https://s2.loli.net/2022/10/07/sHpn5wiDlyME4ZT.png" title="" alt="img" data-align="center"></p>
 <p>When we start to design our own mechanism, the first thing we need to do is calculate the position the hinges and the length of each rods: It is composed of two groups of rods, one group is composed of 4 short rods of the same length to form a rhombus with a variable shape, and the other group is composed of two long rods of equal length. Determine the specific size according to the ratio of the found video and enlarge it as a whole after a unified transformation. Regarding the structure of the connecting part, it needs to be calculated according to the actual size and the error of 3D printing. At the same time, it also needs to be compared and optimized continuously.</p>
 </li>
 <li><p>Mathematical model and calculation:</p>
 <p>Here we refer to the principle of Peaucellier Lipkin linkage. Here, we will briefly introduce the principle of Peaucellier Lipkin linkage:)</p>
-<img title="" src="https://s2.loli.net/2022/10/07/1SYJg6lBQoUTHNe.jpg" alt="img" data-align="center">
-
-<p>$$<br>forΔANE \sim ΔABM \</p>
+<p><img title="" src="https://s2.loli.net/2022/10/07/1SYJg6lBQoUTHNe.jpg" alt="img" data-align="center"></p>
+<script type="math/tex; mode=display">
+forΔANE \sim ΔABM \\
+then\ AB/AN = BM/EN=AM/AE \\
+then\ AN=AB * AE/AM \\
+connect\ C\ and\ D \\
+then\ CD\ intersect\ at\ F \\
+then\ we\ have: AE=AF+FE \\
+AB=AF-FB=AF-FE \\
+AN=(AF+FE)·(AF-FE)/AM=(AF^2-FE^2)/AM</script><p>Obviously, length of AN is a constant. In our model, in order to make the whole toy use better, the connecting rod of OB part is improved.</p>
+<p><img src="https://s2.loli.net/2022/10/07/7xBFQ2yaZpiel3f.png" alt="img"></p>
 </li>
-</ul>
-<p>then\ AB&#x2F;AN &#x3D; BM&#x2F;EN&#x3D;AM&#x2F;AE \<br>then\ AN&#x3D;AB * AE&#x2F;AM \<br>connect\ C\ and\ D \<br>then\ CD\ intersect\ at\ F \<br>then\ we\ have: AE&#x3D;AF+FE \<br>AB&#x3D;AF-FB&#x3D;AF-FE \<br>AN&#x3D;(AF+FE)·(AF-FE)&#x2F;AM&#x3D;(AF^2-FE^2)&#x2F;AM</p>
-<p>  $$</p>
-<p>  Obviously, length of AN is a constant. In our model, in order to make the whole toy use better, the connecting rod of OB part is improved.</p>
-<p>  <img src="https://s2.loli.net/2022/10/07/7xBFQ2yaZpiel3f.png" alt="img"></p>
-<ul>
 <li><p>Creat 3D model</p>
 <p>We use solidworks to build our first prototype model. Figures below show a side view of the slide throughout the installation and a side view of the connecting rod of the whole device.</p>
 <p><img src="https://s2.loli.net/2022/10/07/fvhQBLuN78y5mKk.png" alt="img"></p>
@@ -338,6 +346,7 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
         <tag>SDM232</tag>
         <tag>Solidworks</tag>
         <tag>连杆</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -383,6 +392,7 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
         <tag>大二秋季学期</tag>
         <tag>SDM232</tag>
         <tag>Mech Designer</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -470,6 +480,7 @@ g_{ab}=\begin{bmatrix}R & p \\ 0 & 1\end{bmatrix}</script><h5 id="Task2-1"><a hr
         <tag>Solidworks</tag>
         <tag>Mech Designer</tag>
         <tag>KYtools</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -755,6 +766,7 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
         <tag>Solidworks</tag>
         <tag>材料力学</tag>
         <tag>应力应变仿真</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -883,12 +895,13 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
         <tag>Adams</tag>
         <tag>Matlab</tag>
         <tag>机械振动</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
     <title>SDM214 Campus Cultural and Creative Product Design</title>
     <url>/2022/10/11/%E6%96%87%E5%88%9B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This project is the final project for SDM215, which let me design a kind of campus cultural and creative products, based on Sustech’s features.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This project is the final project for SDM214, which let me design a kind of campus cultural and creative products, based on Sustech’s features.</p>
 <p>After several weeks of exploration and design, I develop TripoFly, a multi-functional cultural and creative product. The following is a detailed introduction of the design.</p>
 <h2 id="Poster"><a href="#Poster" class="headerlink" title="Poster"></a>Poster</h2><p><img title="" src="https://s2.loli.net/2022/10/11/ZLlwFg4SCcrW2QX.png" alt="文创海报.png" width="367" data-align="center"></p>
 <h2 id="Pre-PPT"><a href="#Pre-PPT" class="headerlink" title="Pre PPT"></a>Pre PPT</h2>
@@ -906,6 +919,7 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
       <tags>
         <tag>大二春季学期</tag>
         <tag>SDM214</tag>
+        <tag>中英</tag>
       </tags>
   </entry>
   <entry>
@@ -931,6 +945,7 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
       <tags>
         <tag>大二春季学期</tag>
         <tag>SDM215</tag>
+        <tag>中英</tag>
       </tags>
   </entry>
   <entry>
@@ -953,6 +968,7 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
       <tags>
         <tag>大二春季学期</tag>
         <tag>SDM223</tag>
+        <tag>中英</tag>
       </tags>
   </entry>
   <entry>
@@ -963,7 +979,7 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 <p><img src="https://s2.loli.net/2022/10/11/dNChG34imZre6vX.png" alt="b35.PNG"></p>
 <p><img src="https://s2.loli.net/2022/10/11/inPQGyfF6587tkE.png" alt="b36.PNG"></p>
 <p><img src="https://s2.loli.net/2022/10/11/7gS5fxuXp4YbcWv.png" alt="b37.PNG"></p>
-<h2 id="Poster"><a href="#Poster" class="headerlink" title="Poster"></a>Poster</h2><p><img src="https://s2.loli.net/2022/10/11/C3BJblEdPt6VNnc.png" alt="b38.PNG"></p>
+<h2 id="Poster"><a href="#Poster" class="headerlink" title="Poster"></a>Poster</h2><p><img src="https://s2.loli.net/2022/10/12/Tnjx6UcCwtJVAyF.png" alt="b91.PNG"></p>
 <h2 id="Pre-PPT"><a href="#Pre-PPT" class="headerlink" title="Pre PPT"></a>Pre PPT</h2>
 
 	<div class="row">
@@ -972,15 +988,20 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 
 
 
-<h2 id="Story-video"><a href="#Story-video" class="headerlink" title="Story video"></a>Story video</h2><p><a href="https://www.bilibili.com/video/BV16S4y1B7gc/">https://www.bilibili.com/video/BV16S4y1B7gc/</a>  10:15—14:12</p>
-<h2 id="Model-Files"><a href="#Model-Files" class="headerlink" title="Model Files"></a>Model Files</h2><p><a href="https://pan.baidu.com/s/1x6hl0or1KoKcRGdQkoWrvA?pwd=1z8u">https://pan.baidu.com/s/1x6hl0or1KoKcRGdQkoWrvA?pwd=1z8u</a> </p>
+<h2 id="Story-video"><a href="#Story-video" class="headerlink" title="Story video"></a>Story video</h2>
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<iframe src="//player.bilibili.com/player.html?aid=816566945&bvid=BV1kG4y1p7EE&cid=859855859&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div>
+
+<h2 id="Other-Files"><a href="#Other-Files" class="headerlink" title="Other Files"></a>Other Files</h2><h2 id="Model-Files"><a href="#Model-Files" class="headerlink" title="Model Files"></a>Model Files</h2><p><a href="https://pan.baidu.com/s/1x6hl0or1KoKcRGdQkoWrvA?pwd=1z8u">https://pan.baidu.com/s/1x6hl0or1KoKcRGdQkoWrvA?pwd=1z8u</a> </p>
 ]]></content>
       <categories>
-        <category>大项目</category>
+        <category>综合项目</category>
       </categories>
       <tags>
         <tag>Multidisciplinary Project</tag>
         <tag>大三暑期课程</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -1015,13 +1036,14 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 
 ]]></content>
       <categories>
-        <category>大项目</category>
+        <category>综合项目</category>
       </categories>
       <tags>
         <tag>Multidisciplinary Project</tag>
         <tag>大三秋季学期</tag>
         <tag>SDM312</tag>
         <tag>产品设计</tag>
+        <tag>中英</tag>
       </tags>
   </entry>
   <entry>
@@ -1038,12 +1060,13 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 
 ]]></content>
       <categories>
-        <category>大项目</category>
+        <category>综合项目</category>
       </categories>
       <tags>
         <tag>大三秋季学期</tag>
         <tag>人机工程学</tag>
         <tag>SDM354</tag>
+        <tag>中英</tag>
       </tags>
   </entry>
   <entry>
@@ -1066,6 +1089,7 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
         <tag>大三秋季学期</tag>
         <tag>SDM354</tag>
         <tag>人体工学</tag>
+        <tag>中英</tag>
       </tags>
   </entry>
   <entry>
@@ -1076,7 +1100,6 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 	<div class="row">
     <embed src="https://maiimg.com/dec/a98916586698@pdf" width="100%" height="550" type="application/pdf">
 	</div>
-
 
 
 
@@ -1094,6 +1117,7 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
         <tag>FMC</tag>
         <tag>TFM</tag>
         <tag>Abaqus</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -1116,6 +1140,7 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
         <tag>大三秋季学期</tag>
         <tag>SDM352</tag>
         <tag>Abaqus</tag>
+        <tag>英文</tag>
       </tags>
   </entry>
   <entry>
@@ -1154,7 +1179,7 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 </ul>
 <p><img src="https://s2.loli.net/2022/10/12/upkVcwjLSGPoRz8.png" alt="b53.PNG"></p>
 <p><img src="https://s2.loli.net/2022/10/12/mitqd7ge8GBSUWQ.png" alt="b54.PNG"></p>
-<p>It can be seen that the two methods are basically the same in the running result curve image of the motion module, but the period of the result obtained by the elimination method is smaller, and the error between the two is about $5%$.<br>But in theory the results obtained by these two methods should be the same, this difference may be due to the error caused by the different ways of matrix operation and numerical operation in the software itself, the matrix operation will lead to the degradation of system performance, so the numerical operation results are more ideal.</p>
+<p>It can be seen that the two methods are basically the same in the running result curve image of the motion module, but the period of the result obtained by the elimination method is smaller, and the error between the two is about $5\%$.<br>But in theory the results obtained by these two methods should be the same, this difference may be due to the error caused by the different ways of matrix operation and numerical operation in the software itself, the matrix operation will lead to the degradation of system performance, so the numerical operation results are more ideal.</p>
 <p>(4) Bringing the constructed equations of motion module into the system</p>
 <p><img src="https://s2.loli.net/2022/10/12/luNep7Vnsb1LUah.png" alt="b55.PNG"></p>
 <p>(5) Run the system and get the output image results</p>
@@ -1171,42 +1196,36 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 <p>The images of $F$ are as follows:</p>
 <p><img src="https://s2.loli.net/2022/10/12/KmwX6gUdtM8FcHZ.png" alt="b59.PNG"></p>
 <p>With the above simulation results, it can be determined that the four coefficients $(K_{x,P},K_{x,D},K_{\theta,P},K_{\theta,D})$ we have calculated can keep the inverted pendulum system stable.</p>
-<h4 id="Build-the-linear-system-in-simulink"><a href="#Build-the-linear-system-in-simulink" class="headerlink" title="Build the linear system in simulink"></a>Build the linear system in simulink</h4><p>The main difference between non-linear and linear is the difference in input $\acute \theta&#x3D;0$ , Here $\acute \theta$ no longer varies with other quantities, so there is only one variable $\acute x$ , but the stability conditions, etc are consistent with nonlinearity. Therefore it is only necessary to replace the value of $\acute \theta$ in the equation of motion directly with the constant $0$.</p>
+<h4 id="Build-the-linear-system-in-simulink"><a href="#Build-the-linear-system-in-simulink" class="headerlink" title="Build the linear system in simulink"></a>Build the linear system in simulink</h4><p>The main difference between non-linear and linear is the difference in input $\acute \theta=0$ , Here $\acute \theta$ no longer varies with other quantities, so there is only one variable $\acute x$ , but the stability conditions, etc are consistent with nonlinearity. Therefore it is only necessary to replace the value of $\acute \theta$ in the equation of motion directly with the constant $0$.</p>
 <p><img src="https://s2.loli.net/2022/10/12/f7ve61cNKboVBIt.png" alt="b60.PNG"></p>
 <p>The images of $\theta$ and $x$ are as follows, respectively:</p>
 <p><img src="https://s2.loli.net/2022/10/12/peYxFJ5QA6h2XHt.png" alt="b61.PNG"></p>
-<img src="https://s2.loli.net/2022/10/12/5h3acHlNRk4qeoX.png" title="" alt="b62.PNG" data-align="center">
-
+<p><img src="https://s2.loli.net/2022/10/12/5h3acHlNRk4qeoX.png" title="" alt="b62.PNG" data-align="center"></p>
 <h4 id="Actual-Lab"><a href="#Actual-Lab" class="headerlink" title="Actual Lab"></a>Actual Lab</h4><p>This part consists of conducting experiments (the actual simulink run was modeled for the nonlinear case) with an actual inverted pendulum system, substituting the previously calculated K values, observing the stability, outputting the relevant images, comparing the results with those obtained from the simulation, and analyzing the reasons for the differences.</p>
 <h5 id="Simulink-control"><a href="#Simulink-control" class="headerlink" title="Simulink control"></a>Simulink control</h5><p>Simulink model——only four $K$ values need to be filled in</p>
-<img src="https://s2.loli.net/2022/10/12/CD2djLY8NXFoBzq.png" title="" alt="b63.PNG" data-align="center">
-
+<p><img src="https://s2.loli.net/2022/10/12/CD2djLY8NXFoBzq.png" title="" alt="b63.PNG" data-align="center"></p>
 <p>Enter the four $K$ values obtained by the two previous methods respectively<br>Total running time are about 20 seconds.<br>After simulink starts to run, manually straighten the pendulum to 90 degrees to simulate theta input in the case of non-linearity.</p>
 <h6 id="Coefficient-comparison-method"><a href="#Coefficient-comparison-method" class="headerlink" title="Coefficient comparison method"></a>Coefficient comparison method</h6><p>Output of angular and displacement images (The output image is of the ball on the pendulum)</p>
 <ol>
 <li>Angular</li>
 </ol>
-<img title="" src="https://s2.loli.net/2022/10/12/LeRlOhNark6A7X1.png" alt="b64.PNG" data-align="center" width="116">
-
+<p><img title="" src="https://s2.loli.net/2022/10/12/LeRlOhNark6A7X1.png" alt="b64.PNG" data-align="center" width="116"></p>
 <p>As shown in the figure, the steep rise and fall at the forefront is due to lifting the pendulum, then the angle will fluctuate continuously within a very small range and can be regarded as carrying out a steady state. Maximum offset angle is only 0.07 degrees.</p>
-<ol start="2">
+<ol>
 <li>Displacement</li>
 </ol>
 <p>As shown in the figure, at the beginning, it was kept at 0 because the movement did not actually start, then the back-and-forth motion is carried out continuously, and the displacement size is increasing with time. Maximum offset displacement is only 0.14 cm.</p>
-<img title="" src="https://s2.loli.net/2022/10/12/Ym3DG5PVKJdAzqB.png" alt="b65.PNG" data-align="center" width="124">
-
+<p><img title="" src="https://s2.loli.net/2022/10/12/Ym3DG5PVKJdAzqB.png" alt="b65.PNG" data-align="center" width="124"></p>
 <h6 id="State-space-model-method"><a href="#State-space-model-method" class="headerlink" title="State space model method"></a>State space model method</h6><p>Output of angular and displacement images (The output image is of the ball on the pendulum)</p>
 <ol>
 <li>Angular</li>
 </ol>
-<img title="" src="https://s2.loli.net/2022/10/12/xmwCK7QMXb4fy6N.png" alt="b66.PNG" width="134" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/12/xmwCK7QMXb4fy6N.png" alt="b66.PNG" width="134" data-align="center"></p>
 <p>As shown in the figure, the steep rise and fall at the forefront is due to lifting the pendulum, then the angle will fluctuate continuously within a very small range and can be regarded as carrying out a steady state. Maximum offset angle is only 0.06 degrees.</p>
-<ol start="2">
+<ol>
 <li>Displacement</li>
 </ol>
-<img title="" src="https://s2.loli.net/2022/10/12/WxDiMyGwPzrNk3F.png" alt="b67.PNG" data-align="center" width="171">
-
+<p><img title="" src="https://s2.loli.net/2022/10/12/WxDiMyGwPzrNk3F.png" alt="b67.PNG" data-align="center" width="171"></p>
 <p>As shown in the figure, at the beginning, it was kept at 0 because the movement did not actually start, then the back-and-forth motion is carried out continuously. Maximum offset displacement is only 0.085 cm.</p>
 <p>In general, the $K$ values obtained by the two methods can make the actual inverted pendulum stable and the motion is basically the same, except that the second method is more stable with less variation in angle and displacement.</p>
 <h5 id="Comment-on-any-difference-between-the-simulation-and-experimental-results-for-nonlinear"><a href="#Comment-on-any-difference-between-the-simulation-and-experimental-results-for-nonlinear" class="headerlink" title="Comment on any difference between the simulation and experimental results(for nonlinear)"></a>Comment on any difference between the simulation and experimental results(for nonlinear)</h5><p>It is obvious from the output images of angle and displacement that although the output results of both simulation and experiment can prove that the system is in the stable state. But the angle and displacement of simulation converge to 0 after a fluctuation, while the specific experiment is always in a fluctuation state——This is because during the simulation when the system gives an excitation (displacement) to the inverted pendulum and get a small offset angle, that is, the system is considered to have stabilized, so the motion is stopped and stabilized at a certain position, the angle and displacement are 0; but in the actual experiment when the system will always give excitation (displacement) to determine whether the system is stable, but because the calculated $K$ value is not perfect, as well as the influence of the surrounding environment, resulting in the system has not been able to really reach a stable state, so it has been in constant motion, in the hope of eventually reaching stability, so the angle and displacement will always be some range has been fluctuating.</p>
@@ -1214,7 +1233,7 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 <h2 id="Lab2"><a href="#Lab2" class="headerlink" title="Lab2"></a>Lab2</h2><h3 id="Abstract-1"><a href="#Abstract-1" class="headerlink" title="Abstract"></a>Abstract</h3><p>This experiment examined the first order inverted pendulum, we obtain the numerical linearized transfer function model of the inverted, build the nonlinear system in simulink, and carry out a closed-loop simulation with the controller we designed. Inverted pendulum control system (IPS) is a complex, unstable and nonlinear system, which is an ideal experimental platform for teaching control theory and conducting various control experiments. The typicality of inverted pendulum is that, as a controlled object, it is a high-order, unstable, multi-variable, nonlinear and strongly coupled complex controlled system, which can effectively reflect many problems in the control. The research of inverted pendulum system can effectively reflect many typical problems in control, such as nonlinear problem, robustness problem, stabilization problem, follow-up problem and tracking problem. The control of inverted pendulum is used to test whether the new control method has strong ability to deal with nonlinear and unstable problems.</p>
 <p>Compared with lab1’s inverted pendulum system which is single-input and multiple-output, lab2’s system changes multiple outputs to single output, and uses the coefficient $\alpha$ to combine the two, which will be explained in detail later.</p>
 <h3 id="Introduction-1"><a href="#Introduction-1" class="headerlink" title="Introduction"></a>Introduction</h3><p>The purpose of this experiment was to make inverted pendulum stable without upswing. These were be done by using linear transition, pole assignment and matlab simulink. We use our own simulink to simulate the control, and use the provided simulink to control the actual inverted pendulum, and compare the two results, get the differences, and then analyze the reasons, and expect to learn the stable control method for the inverted pendulum system through the above process.</p>
-<h3 id="Procedure-1"><a href="#Procedure-1" class="headerlink" title="Procedure"></a>Procedure</h3><p>This part is mainly to calculate the equations of motion of the model, to give the method of pole placement (specific theoretical description and matlab code implementation), and to build simulink to carry out the simulation of the inverted pendulum, to lay the foundation for the comparison with the actual experimental results afterwards. </p>
+<h3 id="Procedure-1"><a href="#Procedure-1" class="headerlink" title="Procedure"></a>Procedure</h3><p>This part is mainly to calculate the equations of motion of the model, to give the method of pole placement (specific theoretical description and matlab code implementation), and to build simulink to carry out the simulation of the inverted pendulum, to lay the foundation for the comparison with the actual experimental results afterwards. </p>
 <p>(1) Obtain the numerical linearized transfer function model of the inverted pendulum system(also concluding steps to derive a linearized mathematical models for the plant)<br>Applying Newton’s law to the horizontal direction.</p>
 <p><img src="https://s2.loli.net/2022/10/12/Tfy9eEcWQwp8txO.png" alt="b68.PNG"></p>
 <p><img src="https://s2.loli.net/2022/10/12/J2H8j45u1ALPsTq.png" alt="b69.PNG"></p>
@@ -1249,38 +1268,32 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
 <li>Matrix method results</li>
 </ul>
 <p>The images of $z$ are as follows, respectively:</p>
-<img title="" src="https://s2.loli.net/2022/10/12/N9BTO4nR6qreyQX.png" alt="b82.PNG" width="424" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/12/N9BTO4nR6qreyQX.png" alt="b82.PNG" width="424" data-align="center"></p>
 <ul>
 <li>Elimination method results</li>
 </ul>
 <p>The images of $z$ are as follows, respectively:</p>
-<img title="" src="https://s2.loli.net/2022/10/12/VBWlqYRaCdMc76O.png" alt="b83.PNG" width="425" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/12/VBWlqYRaCdMc76O.png" alt="b83.PNG" width="425" data-align="center"></p>
 <p>With the above simulation results, it can be determined that the four coefficients $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ we have calculated can keep the inverted pendulum system stable.</p>
 <h4 id="Actual-Lab-1"><a href="#Actual-Lab-1" class="headerlink" title="Actual Lab"></a>Actual Lab</h4><p>This part consists of conducting experiments (the actual simulink run was modeled for the nonlinear case) with an actual inverted pendulum system, substituting the previously calculated $K$ values, observing the stability, outputting the relevant images, comparing the results with those obtained from the simulation, and analyzing the reasons for the differences.</p>
 <h5 id="Simulink-control-1"><a href="#Simulink-control-1" class="headerlink" title="Simulink control"></a>Simulink control</h5><p>Simulink model——only the coefficients values of $C(s)$ need to be filled in</p>
-<img src="https://s2.loli.net/2022/10/12/rlLZcoICMk2T4At.png" title="" alt="b84.PNG" data-align="center">
-
-<p>Enter $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ values obtained by the previous method, $\alpha&#x3D;2.5$</p>
-<img src="https://s2.loli.net/2022/10/12/W9gYqjDf2Gu7iSJ.png" title="" alt="b85.PNG" data-align="center">
-
+<p><img src="https://s2.loli.net/2022/10/12/rlLZcoICMk2T4At.png" title="" alt="b84.PNG" data-align="center"></p>
+<p>Enter $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ values obtained by the previous method, $\alpha=2.5$</p>
+<p><img src="https://s2.loli.net/2022/10/12/W9gYqjDf2Gu7iSJ.png" title="" alt="b85.PNG" data-align="center"></p>
 <p>Total running time are about 20 seconds.<br>After simulink starts to run, manually straighten the pendulum to 90 degrees to simulate theta input in the case of non-linearity.</p>
 <p>Output of $z$ (combine angle and displacement) \angular and displacement images (The output image is of the ball on the pendulum).</p>
 <ol>
 <li>$z$</li>
 </ol>
-<img title="" src="https://s2.loli.net/2022/10/12/luRK8SNV9dbpn61.png" alt="b86.PNG" data-align="center" width="184">
-
+<p><img title="" src="https://s2.loli.net/2022/10/12/luRK8SNV9dbpn61.png" alt="b86.PNG" data-align="center" width="184"></p>
 <p>As shown in the figure, z will always fluctuate continuously within a very small range and can be regarded as carrying out a steady state. Maximum offset z is only 0.1cm.</p>
-<ol start="2">
+<ol>
 <li>angular and displacement</li>
 </ol>
-<img title="" src="https://s2.loli.net/2022/10/12/n3dWBsfvaDUpSVC.png" alt="b87.PNG" width="499" data-align="center">
-
+<p><img title="" src="https://s2.loli.net/2022/10/12/n3dWBsfvaDUpSVC.png" alt="b87.PNG" width="499" data-align="center"></p>
 <p>As shown in the figure, the steep rise and fall at the forefront is due to lifting the pendulum, then angle and displacement will always fluctuate continuously within a very small range and can be regarded as carrying out a steady state. Maximum offset angle is only 0.2 agrees, maximum offset displacement is only 0.09 m.</p>
 <h5 id="Comment-on-any-difference-between-the-simulation-and-experimental-results-for-nonlinear-1"><a href="#Comment-on-any-difference-between-the-simulation-and-experimental-results-for-nonlinear-1" class="headerlink" title="Comment on any difference between the simulation and experimental results(for nonlinear)"></a>Comment on any difference between the simulation and experimental results(for nonlinear)</h5><p>It is obvious from the output images of $z$ that although the output results of both simulation and experiment can prove that the system is in the stable state. But the $z$ of simulation converge to 0 after a fluctuation, while the specific experiment is always in a fluctuation state——This is because during the simulation when the system gives an excitation (displacement) to the inverted pendulum and get a small offset angle, that is, the system is considered to have stabilized, so the motion is stopped and stabilized at a certain position, the $z$ is 0; but in the actual experiment when the system will always give excitation (displacement) to determine whether the system is stable, but because the calculated $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ value is not perfect, as well as the influence of the surrounding environment, resulting in the system has not been able to really reach a stable state, so it has been in constant motion, in the hope of eventually reaching stability, so the angle and displacement will always be some range has been fluctuating.</p>
-<h5 id="The-choice-of-alpha-and-its-influence"><a href="#The-choice-of-alpha-and-its-influence" class="headerlink" title="The choice of $\alpha$ and its influence"></a>The choice of $\alpha$ and its influence</h5><p>First of all, we must first understand the impact of the value of $\alpha$ on $z$:<br>If $0 &lt;\alpha &lt; 1$, $z(t)$ will be the horizontal position of a point on the rod.<br>If  $\alpha&gt;1$, $z(t)$ will be the horizontal position of a point on the extended line of the rod.<br>In addition, if $\alpha$  &#x3D; 1, $z(t)$ will be the horizontal position of the tip point of the rod and if  $\alpha&#x3D;0$, $z(t)$ will be the horizontal position of the cart.<br>For our lab2, the approximate range of  is $[0.5,3]$, we finally choose 2.5 for $\alpha$’s value, but why: the obvious reason is when $\alpha&#x3D;2.5$, the inverted pendulum can be easier to become stable and more stable for a long time.<br>And for deep understanding, the value of  determines the influence of theta on the system–if it is too small, it proves that the relationship between the inverted pendulum system and theta is basically no, that is, whether the inverted pendulum is swinging has no effect, which will lead to the robustness of the system to be weak, because the output has no effect on the entire system; but if $\alpha$ is too large, if we want the $P_z(s)$ to become 0, then the x itself (that is, the displacement of the inverted pendulum) needs to be large, which can be regarded as a device that moves at the bottom requires a larger range of motion, but the moving range of the bottom mobile device of the provided inverted pendulum system is about 1m. If it is too large, $P_z(s)$ will not be equal to 0, that is, the entire system will not be stable.</p>
+<h5 id="The-choice-of-alpha-and-its-influence"><a href="#The-choice-of-alpha-and-its-influence" class="headerlink" title="The choice of $\alpha$ and its influence"></a>The choice of $\alpha$ and its influence</h5><p>First of all, we must first understand the impact of the value of $\alpha$ on $z$:<br>If $0 &lt;\alpha &lt; 1$, $z(t)$ will be the horizontal position of a point on the rod.<br>If  $\alpha&gt;1$, $z(t)$ will be the horizontal position of a point on the extended line of the rod.<br>In addition, if $\alpha$  = 1, $z(t)$ will be the horizontal position of the tip point of the rod and if  $\alpha=0$, $z(t)$ will be the horizontal position of the cart.<br>For our lab2, the approximate range of  is $[0.5,3]$, we finally choose 2.5 for $\alpha$’s value, but why: the obvious reason is when $\alpha=2.5$, the inverted pendulum can be easier to become stable and more stable for a long time.<br>And for deep understanding, the value of  determines the influence of theta on the system—if it is too small, it proves that the relationship between the inverted pendulum system and theta is basically no, that is, whether the inverted pendulum is swinging has no effect, which will lead to the robustness of the system to be weak, because the output has no effect on the entire system; but if $\alpha$ is too large, if we want the $P_z(s)$ to become 0, then the x itself (that is, the displacement of the inverted pendulum) needs to be large, which can be regarded as a device that moves at the bottom requires a larger range of motion, but the moving range of the bottom mobile device of the provided inverted pendulum system is about 1m. If it is too large, $P_z(s)$ will not be equal to 0, that is, the entire system will not be stable.</p>
 <h3 id="Conclusion-1"><a href="#Conclusion-1" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>In summary, the experimental objectives were basically achieved through the joint efforts of all group members. Compared with lab1, the specific steps of simulation and experiment have changed because the number of outputs has changed from multiple to one, but the overall idea is the same. Therefore, compared with lab1, lab2 completed the whole process more skillfully.<br>In the process of realization, we got a deeper understanding of the pole configuration method, the simulink model building method, the control principle and method of inverted pendulum, etc. These knowledge are the most basic control engineering knowledge points, which will be migrated to the actual construction of large projects afterwards.</p>
 <h3 id="Appendix"><a href="#Appendix" class="headerlink" title="Appendix"></a>Appendix</h3><p>I figured $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ out by matlab very early, however, no matter how you modify the value of $\alpha$, the actual inverted pendulum model cannot be stabilized, it basically hits the side after stabilizing, which means control failure.<br>After checking the pole configuration code, I found that there was no problem; I asked other students and learned that it is likely that the seven poles provided are not suitable for our inverted pendulum system, so even $[p_0 \ p_1 \ p_2 \ p_3 \ q_0 \ q_1 \ q_2 \ q_3]$ are right, the system will not be stabled.<br>So I learned some methods of how to calculate the poles of a closed-loop system, and wrote some matlab codes to calculate the actual poles, below are the code:</p>
 <p><img src="https://s2.loli.net/2022/10/12/Lo2yz3enwUS756Q.png" alt="b88.PNG"></p>
@@ -1294,6 +1307,1098 @@ Width:60× 2+11×2-5×2 + 5 =137cm</script><p><img src="https://s2.loli.net/2022
         <tag>Matlab</tag>
         <tag>大三秋季学期</tag>
         <tag>SDM14</tag>
+        <tag>英文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM303 Project—Automated feeding of young calves</title>
+    <url>/2022/10/12/SDM303-Project/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>SDM303 Project, which is a multidisciplinary Project in my autumn Semester of junior. In this project, our group should use many kinds of knowledge(machinery, electric control, material, manufacturing, design thinking, etc) to provide a kind of solution to problems in ranching based on mobile chassis.</p>
+<h2 id="Poster"><a href="#Poster" class="headerlink" title="Poster"></a>Poster</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a89635786996@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<p><img src="https://s2.loli.net/2022/10/12/68mfpVZPI5snKuq.png" title="" alt="b89.PNG" width="646"></p>
+<p><img src="https://s2.loli.net/2022/10/12/TtFGAmqBsgbWIE3.png" alt="b90.PNG"></p>
+<h2 id="Pre-PPT"><a href="#Pre-PPT" class="headerlink" title="Pre PPT"></a>Pre PPT</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a91306791707@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h2>
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<iframe src="//player.bilibili.com/player.html?aid=465451570&bvid=BV1DL411V7uA&cid=477925437&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div>
+
+<h2 id="Other-Files"><a href="#Other-Files" class="headerlink" title="Other Files"></a>Other Files</h2><p>Model file:</p>
+<p><a href="https://pan.baidu.com/s/1MGmkTCTOePC4jofRf3sfoQ?pwd=c00y">https://pan.baidu.com/s/1MGmkTCTOePC4jofRf3sfoQ?pwd=c00y</a></p>
+]]></content>
+      <categories>
+        <category>综合项目</category>
+      </categories>
+      <tags>
+        <tag>Multidisciplinary Project</tag>
+        <tag>大三秋季学期</tag>
+        <tag>中英</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM374 Final Project——Medical image triage and classification system</title>
+    <url>/2022/10/12/SDM374-Final-Project/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This project is using machine learning to construct a medical Image Triage and Classification System, which is based on COVID-19 database(X_ray and CT).</p>
+<h2 id="Research-Proposal"><a href="#Research-Proposal" class="headerlink" title="Research Proposal"></a>Research Proposal</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a90648777044@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Final-Report"><a href="#Final-Report" class="headerlink" title="Final Report"></a>Final Report</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a90316778044@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Final-Pre-PPT"><a href="#Final-Pre-PPT" class="headerlink" title="Final Pre PPT"></a>Final Pre PPT</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a89491778557@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Code-Download"><a href="#Code-Download" class="headerlink" title="Code Download"></a>Code Download</h2><p><a href="https://github.com/feary-li/Medical-Image-Triage-and-Classification-System-Based-on-COVID-19-CT-and-X-ray-Scan-Dataset">https://github.com/feary-li/Medical-Image-Triage-and-Classification-System-Based-on-COVID-19-CT-and-X-ray-Scan-Dataset</a></p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>大三秋季学期</tag>
+        <tag>机器学习</tag>
+        <tag>SDM374</tag>
+        <tag>中英</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM315 Final Project—Exoskeleton equipment design</title>
+    <url>/2022/10/13/SDM315/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This project is the final project for SDM315, which let our group design a type of exoskeleton equipment by using rhino7 and grasshopper tool, and pay attention to the role of calculation design in the project.</p>
+<p>Our group’s design product can help  stroke patients to do rehabilitation training, which solve the problems of some rehabilitation equipment at present, and provide better services for this group.</p>
+<h2 id="Pre-PPT"><a href="#Pre-PPT" class="headerlink" title="Pre PPT"></a>Pre PPT</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a95563240604@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h2>
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<iframe src="//player.bilibili.com/player.html?aid=897408720&bvid=BV14A4y1R7e7&cid=746477463&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div>
+
+]]></content>
+      <categories>
+        <category>设计作品</category>
+      </categories>
+      <tags>
+        <tag>大三春季学期</tag>
+        <tag>Rhino7</tag>
+        <tag>Grasshopper</tag>
+        <tag>中英</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM313 Final Project—Intelligent classroom system</title>
+    <url>/2022/10/13/SDM313/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This project is the final project for SDM313, which let our group design a type of small intelligent system by using Zigbee, and pay attention to the role of different sensors in the project.</p>
+<h2 id="Project-Planning-Paper"><a href="#Project-Planning-Paper" class="headerlink" title="Project Planning Paper"></a>Project Planning Paper</h2> 
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a91663249976@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Poster"><a href="#Poster" class="headerlink" title="Poster"></a>Poster</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a95108250604@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Final-Report"><a href="#Final-Report" class="headerlink" title="Final Report"></a>Final Report</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a98096251206@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Other-Documents"><a href="#Other-Documents" class="headerlink" title="Other Documents"></a>Other Documents</h2><h5 id="Detailed-description-of-calibration-experiment"><a href="#Detailed-description-of-calibration-experiment" class="headerlink" title="Detailed description of calibration experiment"></a>Detailed description of calibration experiment</h5><p><a href="https://www.bilibili.com/read/cv16661079">https://www.bilibili.com/read/cv16661079</a></p>
+<h5 id="Zigbee-code"><a href="#Zigbee-code" class="headerlink" title="Zigbee code"></a>Zigbee code</h5><p><a href="https://pan.baidu.com/s/1uvdJxTUOl6uCfaltj3vWow?pwd=0vq0">https://pan.baidu.com/s/1uvdJxTUOl6uCfaltj3vWow?pwd=0vq0</a></p>
+]]></content>
+      <categories>
+        <category>电控</category>
+      </categories>
+      <tags>
+        <tag>大三秋季学期</tag>
+        <tag>Zigbee</tag>
+        <tag>SDM313</tag>
+        <tag>中英</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM321 Project1—Customer satisfaction questionnaire</title>
+    <url>/2022/10/13/SDM321-Project1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a89348141324@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>其余课程项目</category>
+      </categories>
+      <tags>
+        <tag>大三春季学期</tag>
+        <tag>SDM321</tag>
+        <tag>中文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM321 Project2—Exploration of Huawei&#39;s quality management system</title>
+    <url>/2022/10/13/SDM321-Project2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a97806144334@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>其余课程项目</category>
+      </categories>
+      <tags>
+        <tag>大三春季学期</tag>
+        <tag>SDM321</tag>
+        <tag>中文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM393 Final Project—Smart reminder assistant</title>
+    <url>/2022/10/13/SDM393-Project/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This project is the final project for SDM393, which let our group design a type of innovative product based on exercise and health.</p>
+<p>Our group finally design EX-Gain, which can remind ordinary workers to stretch at work to help them relieve fatigue.</p>
+<h2 id="Product-Test-Report"><a href="#Product-Test-Report" class="headerlink" title="Product Test Report"></a>Product Test Report</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a89538276698@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Final-Report"><a href="#Final-Report" class="headerlink" title="Final Report"></a>Final Report</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a95969277859@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>设计作品</category>
+      </categories>
+      <tags>
+        <tag>大三春季学期</tag>
+        <tag>SDM393</tag>
+        <tag>中英</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM375 Weekly Homework</title>
+    <url>/2022/10/13/SDM375-Weekly-Homework/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>该文档包含了在学习SDM375智能机器人设计这门课程中的作业记录</p>
+<h2 id="Week1"><a href="#Week1" class="headerlink" title="Week1"></a>Week1</h2><h3 id="Theory-Class"><a href="#Theory-Class" class="headerlink" title="Theory Class"></a>Theory Class</h3><p><img title="" src="https://s2.loli.net/2022/10/13/nlsPGdfDYBqjZU9.png" alt="b92.png" width="461" data-align="center"></p>
+<h5 id="一、机器人四大家族"><a href="#一、机器人四大家族" class="headerlink" title="一、机器人四大家族"></a>一、机器人四大家族</h5><p><img title="" src="https://s2.loli.net/2022/10/13/MtLaiKRkUnQJ5Xo.jpg" alt="b93.jpg" width="473" data-align="center"></p>
+<p>（1）产品特点</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KUKA</td>
+<td>对本体结构和易用性的创新，系统集成业务占比最高，并且操作简单——“最为炫酷，爱好黑科技”</td>
+</tr>
+<tr>
+<td>FANUC</td>
+<td>在于高精度、重量轻和小型化等特点，而且存在负载能力较弱的缺点，基本负载达到80%就会报警——“技艺精湛，整合能力极强”</td>
+</tr>
+<tr>
+<td>YASKAWA</td>
+<td>在于稳定性好，负载大，满负载运行也不会报警，但是精度较差；综合售价最低——“简洁实用，性价比高”</td>
+</tr>
+<tr>
+<td>ABB</td>
+<td>在于对运动控制和自动化的整合，其机器人的整体性较优——“极度严谨，实用至上”</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>（2）核心指标</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KUKA</td>
+<td>操作简单（其实存在一定的落后）</td>
+</tr>
+<tr>
+<td>FANUC</td>
+<td>数控系统稳定易用、性价比高、覆盖面广，同时有着整套的加工和生产流水线</td>
+</tr>
+<tr>
+<td>YASKAWA</td>
+<td>伺服电机系统（AC 伺服）</td>
+</tr>
+<tr>
+<td>ABB</td>
+<td>运动控制系统，其算法是最好的，不仅仅有全面的运动控制解决方案，产品使用技术文档也相当专业和具体</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="二、分析原因"><a href="#二、分析原因" class="headerlink" title="二、分析原因"></a>二、分析原因</h5><p>（1）协作机器人公司Rethink Robotics破产的原因<br>Rethink于2008年成立，是业内最先提出协作机器人概念的公司。如图1所示，在过去的10年时间里，Rethink主要发布了两款机器人Baxter (2012年)和Sawyer (2015年)。<br>Rethink是工业协作机器人这个门类的开创者，但是最终却走上了破产的道路，以下是原因：Rethink的核心问题是没能将其产品与其他产品的不同转化成使用者能够实际感受到的益处，出在技术到产品定义和使用场景的转化上——Rethink一开始的技术路线就过于激进，与传统机器人的形态、结构和追求的指标都相差甚远，也并没有想好真实的使用场景。而且其具备的技术方式，已经离工业客户的需求有较大距离，比如：Baxter在机器人关节中内置了弹性元件SEA，而这让机器人整体的刚度和精度变得非常低，比传统机器人低2个数量级，这在精细化操作上是不能被接受的。<br>以上这些都直接导致了其机器人产品的销售量远远低于预期，导致现金流不足，最终导致公司破产。</p>
+<p>（2）机器人新秀UR (Universal Robotics）公司成功的原因<br>Universal Robots公司(优傲机器人)是一家致力于开发具有广泛可用性的机器人技术的公司，公司成立于2005年，总部位于丹麦的欧登塞市。UR机器人可以在所有工业生产领域实现自动化和合理化，具备成本效益高、高度灵活、且使用方便安全等特点，广获业界青睐。Universal Robots (优傲机器人)的核心产品是6轴串联工业机器人。<br>以下是UR公司成功的原因：优傲机器人具有更先进的设计理念——首先是协作的理念，机器人与人共享工作空间，共同完成某项工作；其次是安全的理念，有专利保护的安全参数设置方式，保护人和机器人不受伤害；再次是人性化的理念，图形化界面以及简单编程和操作，任何人都可以成为机器人工程师；还有实用的理念，快速灵活部署，省时省电省维护；最后是经济的理念，投资回报快，适应中小企业多品种生产，提高竞争力。这些使得它的产品在质量和成本上面有着优势，在市场上更受欢迎；同时UR开发了全免费在线学习系统“优傲学院”，可以随时随地学习UR机器人技术知识，这也让更多的人能够了解UR，受众更多，市场被无意中扩大。</p>
+<h5 id="三、SpotMini调研报告"><a href="#三、SpotMini调研报告" class="headerlink" title="三、SpotMini调研报告"></a>三、SpotMini调研报告</h5><p><img title="" src="https://s2.loli.net/2022/10/13/2KLmMfs9gGcPbr3.jpg" alt="b94.jpg" width="459" data-align="center"></p>
+<p>SpotMini由Boston Dynamics研发，2016年正式亮相实机。总的来说SpotMini是一款小型的四足机器人，重量为约25kg（带上手臂30kg），它是电池能源供电，液压系统作为驱动设备，所以免去了油料燃烧产生的噪声，因此运动起来相对比较安静；同时充电一次可以使用约90分钟，而且可以实现室内和室外的操作。<br>SpotMini本身的传感器包括：3D距离传感器、惯性测量单元、以及四肢内的位置/力量传感器。这些都是感知周围环境、了解自己运动状态，从而实现自主导航的必备传感器：SpotMini的正面，侧面，后面都安装了视觉传感器，拥有360°的导航视野。SpotMini使用的3D距离传感器同样来自这家公司，型号为MultiSense S7 ，是一种紧凑的双目立体相机，分辨率高达2K x 2K，通过两相机视差可以计算出物体和相机的距离。这些立体摄像头可以帮助机器狗组装3D点云，机器狗的四个侧面至少有4个摄像头，前面还有8个巨大的摄像头，使得它的能见度在没有机载激光雷达的情况下达到4米。<br>操控Spot的方法是使用附带的7英寸Android平板电脑，它看起来像是任天堂和Xbox控制器的混合体，并且显示器的左右两侧装有一整套手柄控制装置。机器狗可以通过平板上的两个操纵杆来控制，左边的操纵杆用来上下左右，右边的控制旋转。不仅如此，你还可以发出高级指令，它的每条腿可以自动躲避障碍。你还可以在周围设定一些位置来进行自主行进，并且可以记录和播放行进路线。<br>机器人实现自主定位和导航的核心技术称为Simultaneous Localization and Mapping，简称SLAM，中文译作同时定位与地图创建。而SpotMini由于事先人工引导建立了地图，解决了未知环境的问题，所以难度比SLAM降低了不少。因此，可以说SpotMini的自主导航其实是在已经建立好的地图上进行的定位，可以认为是利用3D视觉传感器及IMU来观察周围环境，看看自己在地图的什么位置，然后开始规划自己的运动路径，沿着地图奔跑。<br>而目前SpotMini的应用领域包括以下部分：<br>（1）娱乐： SpotMini可以发挥娱乐机器人作用，与人们进行互动<br>（2）应急响应： SpotMini 已经可以灵活运动，也许未来 SpotMini 还可以与其他机器人（比如无人机、机器蛇等）组队执行搜索和救援任务。当然它还需要克服高温、潮湿和肮脏环境等。<br>（3）包裹配送：对于一般的包裹递送，快递员是最便宜和高效的方案。不过机器人的优势在递送食品。由于食品订单是间歇性和不可预测的，配送员经常需要等待。对于机器人来说，等待的时间成本很低。而且他们还能向饥肠辘辘的客户准确预测送达时间，甚至愿意亲自送到客户身边<br>（4）工程建设：建筑工地当然算是有着许多复杂物体的危险环境了。地面的情况也在不断变化，要求机器人有很好的运动能力。SpotMini 可以在两点之间搬运重物，不过实现自动搬运算法花费的成本就要额外计算了<br>综上所述，SpotMini是目前的一款比较先进的机器人，且已经被投放入市场，广受消费者喜爱。</p>
+<p>参考文献：<br>[1] SpotMini机器狗[J].少年电脑世界,2020(12):3.<br>[2] 家用机器人·小黄SPOTMINI[J].少年电脑世界,2020(12):26-27.<br>[3] He, J., Gao, F. Mechanism, Actuation, Perception, and Control of Highly Dynamic Multilegged Robots: A Review. Chin. J. Mech. Eng. 33, 79 (2020).<br>[4] Tam, B., Molnar, T., Talbot, F., Wood, B., &amp; Steindl, R. (2021). Deploying COTS Legged Robot Platforms into a Heterogeneous Robot Team. ArXiv, abs/2106.07182.<br>[5] E. Guizzo, “By leaps and bounds: An exclusive look at how Boston dynamics is redefining robot agility,” in IEEE Spectrum, vol. 56, no. 12, pp. 34-39, Dec. 2019.</p>
+<h3 id="Lab-Class"><a href="#Lab-Class" class="headerlink" title="Lab Class"></a>Lab Class</h3><p>Modeling a robot with some sensors.</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/6BwPdcXF8hRC7VY.png" alt="b93.png" width="411" data-align="center"></p>
+<h2 id="Week2"><a href="#Week2" class="headerlink" title="Week2"></a>Week2</h2><h3 id="Theory-Class-1"><a href="#Theory-Class-1" class="headerlink" title="Theory Class"></a>Theory Class</h3><h5 id="一、对比ROS和工业机器人操作系统的优缺点"><a href="#一、对比ROS和工业机器人操作系统的优缺点" class="headerlink" title="一、对比ROS和工业机器人操作系统的优缺点"></a>一、对比ROS和工业机器人操作系统的优缺点</h5><p>ROS</p>
+<p>（1）优点</p>
+<p>ROS的设计者考虑到各开发者使用的开发语言不同，因此ROS的开发语言独立。因此，除了官方提供的功能包之外，ROS还聚合了全世界开发者实现的大量开源功能包，这些开源功能包与 ROS一起构成了强大的开源生态环境<br>ROS的系统结构设计也颇有特色，ROS运行时是由多个松耦合的进程组成，每个进程ROS称之为节点(Node)，所有节点可以运行在一个处理器上，也可以分布式运行在多个处理器上。在实际使用时，这种松耦合的结构设计可以让开发者根据机器人所需功能灵活添加各个功能模块</p>
+<p>（2）缺点</p>
+<p>ROS因为将功能分布在各个节点之中，节点间基于消息机制通信，通讯部分消耗了很多系统资源。尤其是当所有节点位于同一个处理器时，ROS仍然一直执行相应的消息分发，节点间的数据传递通过内存复制，大量的系统资源都浪费在通讯上，使得系统必须选用高性能的处理器和存储系统以弥补损耗。换句话说，利用ROS来实现SLAM，需要配备性能优越的硬件设备，这对于一些小型化嵌入式平台，尤其是实际的机器人产品里，其对计算资源、存储空间的消耗会使成本大幅上升<br>除了ROS本身系统设计的局限性外，利用ROS实现SLAM需要深入的调整优化，耗费大量人力与时间成本。更为重要的是，针对具体的机器人产品，如扫地机器人，还需要独特的贴边清扫、折回清扫、多房间自主导航等功能，目前已有的ROS系统，只能实现简单的建图，无法满足扫地机器人的实际需要<br>缺乏构建多机器人系统的标准方法<br>在Windows、MacOS、RTOS等系统上无法应用或者功能有限<br>缺少实时性方面的设计（在ROS 2上有所改进）<br>需要良好的网络环境保证数据的完整性，而且网络没有数据加密、安全防护等功能；<br>ROS 1的稳定性欠佳，研究开发与上市产品之间的过渡艰难</p>
+<p>工业机器人操作系统</p>
+<p>（1）优点<br>具有较高的重复定位精度，系统刚性好<br>采用开放式软件、硬件结构，可以根据需要移植到不同的系统<br>功能的模块化设计，不同的任务有不同的功能模块实现<br>满足实时性、多任务的要求<br>具备网络通讯功能，以便于多台机器人协同工作<br>直观便捷的人机交互<br>（2）缺点<br>不同工业机器人的开发系统基本都不一样，示教、编程方法也不同，一个熟练使用Motoman的工程师很可能并不会使用Kuka机械臂。就算是同种机器人，由于固件版本的更新换代，也可能造成程序的不兼容</p>
+<p>总结：<br>对比来说，ROS较之工业机器人操作系统来说最大的优势是其分布式操作系统，更具有可操作性；而工业机器人操作系统较之ROS较之来说最大的优势是实时性高，且系统不易损坏。</p>
+<h5 id="二、ROS未在工业领域广泛应用的原因"><a href="#二、ROS未在工业领域广泛应用的原因" class="headerlink" title="二、ROS未在工业领域广泛应用的原因"></a>二、ROS未在工业领域广泛应用的原因</h5><p>ROS已广泛应用于Clearpath物流机器人、Fetch导购机器人、Erle无人机、DJI大疆无人机、DataSpeed自动驾驶汽车、Nao舞蹈机器人、Lego玩具机器人、iRobot扫地机器人、Pepper情感机器人等，但工业机器人领域的应用却寥寥无几，原因如下：<br>（1）系统太过庞大、太过冗余<br>一方面是因为ROS系统内置的功能包太多，但其实企业在运用的过程中用不上这么多的功能包；另一方面是因为ROS系统内置的功能包会依赖于很多第三方的库和软件包，且依赖关系太过复杂，这是ROS系统不争的劣势<br>（2）ROS系统的实时性差<br>用ROS系统，发布指令之后，机器人可能要延迟一段时间才会执行，有些时候是不能满足工业需求的；ROS系统的实时性是不够的，还是必须搭配单独的运动控制器</p>
+<p>三、对比Linux系统和Windows系统的不同之处<br>（1）大小写<br>linux区分大小写，windows在dos界面命令下不区分大小写<br>（2）文件系统区别<br>在 windows 下，打开 “计算机”，看到的是一个个的驱动器盘符，每个驱动器都有自己的根目录结构，这样形成了多个树并列的情形；在 Linux 下，看不到这些驱动器盘符，看到的是文件夹（目录）：linux没有盘符这个概念，只有一个根目录 /，所有文件都在它下面<br>（3）文件形式<br>linux所有内容均以文件形式保存包括硬件，用户，而windows文件和硬件没什么关系，两个之间没有关联<br>（4）扩展名<br>windows用扩展名区分文件如.exe代表执行文件，.txt代表文本文件，而linux无扩展名的概念，当然为了管理员区分方便会有部分扩展<br>（5）平台本身区别<br>windows平台:数量和质量的优势，不过大部分为收费软件；由微软官方提供重要支持和服务<br>linux平台：大都为开源自由软件，用户可以修改定制和再发布，由于基本免费没有资金支持，部分软件质量和体验欠缺；有全球所有的Linux开发者和自由软件社区提供支持<br>（6）安全性<br>windows下的.exe文件不能直接在linux下安装与运行，同时linux大部分是字符界面，大大增加了linux系统的安全性，减少了木马攻击的可能性<br>（7）占用资源<br>同时linux字符界面占用的系统资源要小于windows下的图形界面所占的资源<br>（8）交互方式<br>Windows系统用户可以直接打开软件进行图形界面的操作，而linux系统用户需要通过命令行来执行<br>总的来说，Linux系统使用命令行界面，执行率较高、系统资源占用率较少，更加适合服务器; Windows系统使用图形化交互界面，更适合人机交互、广泛应用于个人电脑。</p>
+<h3 id="Lab-Class-1"><a href="#Lab-Class-1" class="headerlink" title="Lab Class"></a>Lab Class</h3><p>学习使用ROS系统基本操作并实现turtlesim，即小乌龟程序</p>
+<p><img src="https://s2.loli.net/2022/10/13/oIMgGWL8ZbnJQVt.png" title="" alt="b95.png" data-align="center"></p>
+<h2 id="Week3"><a href="#Week3" class="headerlink" title="Week3"></a>Week3</h2><h3 id="Theory-Class-2"><a href="#Theory-Class-2" class="headerlink" title="Theory Class"></a>Theory Class</h3><h5 id="一、对比ROS-中topic-、message-、service-的关系与区别"><a href="#一、对比ROS-中topic-、message-、service-的关系与区别" class="headerlink" title="一、对比ROS 中topic 、message 、service 的关系与区别"></a>一、对比ROS 中topic 、message 、service 的关系与区别</h5><p>（1）关系 </p>
+<p>topic和service是两种不同的通信方式，存在各自的优势与缺点，而message就是topic内容的数据类型，也称之为topic的格式标准</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/JkYQLHzXbvcfy3G.jpg" alt="b96.jpg" width="454" data-align="center"></p>
+<p>（2）区别</p>
+<p>topic和service</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/KOIBNdnr5atjf62.png" alt="b97.PNG" width="403" data-align="center"></p>
+<h5 id="二、系统的梳理ROS-文件空间的结构，并说明每部分的作用"><a href="#二、系统的梳理ROS-文件空间的结构，并说明每部分的作用" class="headerlink" title="二、系统的梳理ROS 文件空间的结构，并说明每部分的作用"></a>二、系统的梳理ROS 文件空间的结构，并说明每部分的作用</h5><p>与其他操作系统相似，一个ROS程序的不同组件要被放在不同的文件夹下，这些文件夹是根据不同的功能来对文件进行组织的。<br>首先是Catkin工作空间，即创建、修改、编译catkin软件包的目录。Catkin的工作空间，直观的形容就是一个仓库，里面装载着ROS的各种项目工程，便于系统组织管理调用。在可视化图形界面里是一个文件夹，ROS代码通常就放在工作空间中——该工作空间下会有3个文件夹：src、build、devel：<br>（1）src源文件空间：这个文件夹放置各个功能包和一个用于这些功能包的CMake配置文件CMakeLists.txt——由于ROS中的源码采用catkin工具进行编译，而catkin工具又是基于cmake技术的，所以会在src源文件空间和各个功能包中都会见到一个文件CMakeLists.txt，这个文件就是起编译配置的作用<br>（2）build编译空间：这个文件夹放置CMake和catkin编译功能包时产生的缓存、配置、中间文件等<br>（3）devel开发空间：这个文件夹放置编译好的可执行程序，这些可执行程序是不需要安装就能直接运行的。一旦功能包源码编译和测试通过后，可以将这些编译好的可执行文件直接导出与其他开发人员分享<br>src详细信息：</p>
+<p><img src="https://s2.loli.net/2022/10/13/ZGLVXDBdA2EmhCl.png" alt="b98.png"></p>
+<h3 id="Lab-Class-2"><a href="#Lab-Class-2" class="headerlink" title="Lab Class"></a>Lab Class</h3><p>新建控制小乌龟的程序，使其自动绘制矩形</p>
+<p>（1）在CMakeLists.txt中进行修改</p>
+<p><img src="https://s2.loli.net/2022/10/13/AlG8qzmJeNI9QEM.png" alt="b99.png"></p>
+<p>（2）代码的编写</p>
+<p>主要的思想就是一个while循环嵌套if语句，海龟先沿x轴线速度1进行移动，当迭代到第5次，x轴线速度变为0，此时海龟停止，并且绕z轴旋转90°，再继续向前行进，并循环执行。</p>
+<p><img src="https://s2.loli.net/2022/10/13/UyZYRLAf2Qsz7K3.png" title="" alt="b100.png" data-align="center"></p>
+<p>（3）最终图形</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/ab2M4Zvh8JVOjPy.png" alt="c1.png" width="243" data-align="center"></p>
+<p>要在迭代到指定次数后，将x轴线速度变为0，使小乌龟完全静止，否则会在转角处产生小圆弧，并不是完美的矩形。</p>
+<p><img src="https://s2.loli.net/2022/10/13/HMelKDypR6POXdz.png" title="" alt="c2.png" data-align="center"></p>
+<p>（4）其余图形绘制练习</p>
+<p>等边三角形</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/CFbY1coIzjSL987.png" alt="c3.png" data-align="center" width="251"></p>
+<p>正六边形</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/jwDx7aO69iIJTcb.png" alt="c4.png" data-align="center" width="238"></p>
+<h2 id="Week4"><a href="#Week4" class="headerlink" title="Week4"></a>Week4</h2><h3 id="Theory-Class-3"><a href="#Theory-Class-3" class="headerlink" title="Theory Class"></a>Theory Class</h3><h5 id="一、通信方式是ROS的核心功能，描述其包含的四种通信方式"><a href="#一、通信方式是ROS的核心功能，描述其包含的四种通信方式" class="headerlink" title="一、通信方式是ROS的核心功能，描述其包含的四种通信方式"></a>一、通信方式是ROS的核心功能，描述其包含的四种通信方式</h5><p>包括topic、service、parameter service、action </p>
+<p>(1) Topic </p>
+<p>对于实时性、周期性的消息，使用topic来传输是最佳的选择。topic是一种点对点的单向通信方式，这里的“点”指的是node，也就是说node之间可以通过topic方式来传递信息 </p>
+<p>(2) Service </p>
+<p>Service通信是双向的，它不仅可以发送消息，同时还会有反馈。所以service包括两部分，一部分是请求方（Clinet），另一部分是应答方/服务提供方（Server）。这时请求方（Client）就会发送一个request，要等待server处理，反馈回一个reply，这样通过类似“请求-应答”的机制完成整个服务通信 </p>
+<p>(3) Parameter service</p>
+<p>与前两种通信方式不同，parameter service也可以说是特殊的“通信方式”。特殊点在于参数服务器是节点存储参数的地方、用于配置参数，全局共享参数。参数服务器使用互联网传输，在节点管理器中运行，实现整个通信过程。它更加的静态，参数服务器维护着一个数据字典，字典里存储着各种参数和配置 </p>
+<p>(4) Action Action</p>
+<p>类似service，算是service的升级版本，是带有状态反馈的通信方式，通常用于长时间、可抢占的任务中。其主要弥补了service通信的一个不足，就是当机器人执行一个长时间的任务时，假如利用service通信方式，那么publisher会很长时间接受不到反馈的reply，致使通信受阻。当service通信不能很好的完成任务时候，action则可以比较适合实现长时间的通信过程。Action通信过程可以随时被查看过程进度，也可以终止请求，这样的一个特性，使得它在一些特别的机制中拥有很高的效率</p>
+<h5 id="二、ROS开发中常用的消息类型，并描述其格式"><a href="#二、ROS开发中常用的消息类型，并描述其格式" class="headerlink" title="二、ROS开发中常用的消息类型，并描述其格式"></a>二、ROS开发中常用的消息类型，并描述其格式</h5><p>(1) std_msgs </p>
+<p>该类型是ROS内置的标准消息类型，是最基础的消息类型 包括： bool int8, int16, int32, int64 (plus uint*) float32, float64 string time, duration variable-length array[]、fixed-length array[] uint8[]、bool[] </p>
+<p>特殊类型：Head，表示包头，它是一个结构体，内置三个类型</p>
+<p><img src="https://s2.loli.net/2022/10/13/ejtW7YFlVKpkzOa.png" title="" alt="c5.png" data-align="center"></p>
+<p>(2) comm_msg<br>该类型是ros常用数据类型的集合，包括以下几种：actionlib_msgs、diagnostic_msgs、geometry_msgs、nav_msgs、sensor_msgs</p>
+<h5 id="三、绘-图-描-述-Node-和-topic-、-service-、-action-、-parameter-service关系"><a href="#三、绘-图-描-述-Node-和-topic-、-service-、-action-、-parameter-service关系" class="headerlink" title="三、绘 图 描 述 Node 和 topic 、 service 、 action 、 parameter service关系"></a>三、绘 图 描 述 Node 和 topic 、 service 、 action 、 parameter service关系</h5><p>(1) Node 和 topic<br>首先，publisher节点和subscriber节点都要到节点管理器进行注册，然后publisher会发布topic，subscriber在master的指挥下会订阅该topic，从而建立起sub-pub之间的通信，整个过程是单向的；且一个topic可以有多个publisher和subscriber</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/gVdtHAbTq1iWNmh.png" alt="c6.png" width="455" data-align="center"></p>
+<p>(2) Node 和 service<br>Node B是server（应答方），提供了一个服务的接口，叫做/Service，一般都会用string类型来指定service的名称，类似于topic。Node A向Node B发起了请求，经过处理后得到了反馈</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/USWOF2EGAMIkDjq.png" alt="c7.png" width="454" data-align="center"></p>
+<p>(3) Node 和 action<br>基本和service过程相同，action的工作原理是client-server模式，也是一个双向的通信模式。通信双方在ROS Action Protocol下通过消息进行数据的交流通信。client和server为用户提供一个简单的API来请求目标（在客户端）或通过函数调用和回调来执行目标（在服务器端）</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/71imPXRfMDYhBTa.png" alt="c8.png" width="459" data-align="center"></p>
+<p>(4) Node 和parameter service<br>Parameter Server的作用相当于全局变量之于程序，各个Node可能不一定位于同一个PC中，但是只要在同一个ros环境里，都可以通过Parameter Server来访问全局字典的参数</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/ZQNp3JUO1eY2Lrs.png" alt="c9.png" width="479" data-align="center"></p>
+<h3 id="Lab-Class-3"><a href="#Lab-Class-3" class="headerlink" title="Lab Class"></a>Lab Class</h3><p><img title="" src="https://s2.loli.net/2022/10/13/SzPhqcMROK1YCy5.png" alt="c10.png" width="513" data-align="center"></p>
+<h5 id="一、话题与服务编程"><a href="#一、话题与服务编程" class="headerlink" title="一、话题与服务编程"></a>一、话题与服务编程</h5><p>（1）代码解释</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/9ZpfWga8z35LcVB.png" alt="c11.PNG" width="486" data-align="center"></p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/YQjayNHoJFk4fst.png" alt="c12.PNG" width="479" data-align="center"></p>
+<p>（2）结果截图</p>
+<p><img src="https://s2.loli.net/2022/10/13/qFBoLMme9WUDNw5.png" alt="c13.png"></p>
+<h5 id="二、动作编程"><a href="#二、动作编程" class="headerlink" title="二、动作编程"></a>二、动作编程</h5><p>（1）基本流程</p>
+<p><img src="https://s2.loli.net/2022/10/13/yB7OgwXZex6NhPA.png" title="" alt="c14.PNG" data-align="center"></p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/IOjLb4XTmEvM7Cw.png" alt="c15.PNG" data-align="center" width="440"></p>
+<p>（2）代码解释</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/3KjQDgTesLYAraN.png" alt="c16.PNG" width="515" data-align="center"></p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/rmd2KpNCkIAgROl.png" alt="c17.PNG" data-align="center" width="482"></p>
+<p>（3）结果截图</p>
+<p><img src="https://s2.loli.net/2022/10/13/biDK6vhU7rCeFHZ.png" alt="c18.png"></p>
+<h2 id="Week5"><a href="#Week5" class="headerlink" title="Week5"></a>Week5</h2><h3 id="Theory-Class-4"><a href="#Theory-Class-4" class="headerlink" title="Theory Class"></a>Theory Class</h3><h5 id="一、描述Rviz和Gazebo在机器人开发中有哪些作用"><a href="#一、描述Rviz和Gazebo在机器人开发中有哪些作用" class="headerlink" title="一、描述Rviz和Gazebo在机器人开发中有哪些作用"></a>一、描述Rviz和Gazebo在机器人开发中有哪些作用</h5><p>(1) Rviz </p>
+<p>Rviz是一个超强大的3D可视化工具，可以显示机器人模型、3D电影、各种文字图标、也可以很方便二次开发，提供了很多插件，这些插件可以显示图像、模型、路径等信息，但是前提都是这些数据已经以话题、参数的形式发布，rviz做的事情就是订阅这些数据，并完成可视化的渲染，让开发者更容易理解数据的意义。总的来说分为以下两个功能：     </p>
+<ul>
+<li>外部信息图形化显示 </li>
+</ul>
+<p>Rviz的显示插件除了默认的之外，还能够自定义显示插件，从而在rviz的基础上，打造属于我们自己的机器人人机界面。默认的显示项如下图：</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/SUgIY4Esx6uHh9Q.png" alt="c19.png" width="452" data-align="center"></p>
+<ul>
+<li>发布控制信息</li>
+</ul>
+<p>Markers:发送一些基本形状在rviz显示<br>Interractive Markers:可以进行交互的markers<br>Plugins:自定义新的显示和控制插件<br>Librviz:rviz不仅是可视化平台，同时也是一个库，可以调用其中的接口定制自己的GUI<br>(2) Gazebo<br>Gazebo不是显示工具，强调的是仿真，它不需要数据，而是创造数据，是三维物理仿真平台，强调的是创建一个虚拟的仿真环境。总的来说分为以下四个功能：</p>
+<ul>
+<li>构建机器人运动仿真模型</li>
+</ul>
+<p>在Gazebo里，提供了最基础的三个物体，球体，圆柱体，立方体，利用这三个物体以及它们的伸缩变换或者旋转变换，可以设计一个最简单的机器人三维仿真模型。更加地，Gazebo提供了CAD，Blender等各种2D，3D设计软件的接口，可以导入这些图纸让Gazebo的机器人模型更加真实。同时，Gazebo提供了机器人的运动仿真，通过Model Editor下的plugin，来添加我们需要验证的算法文件，就可以在Gazebo里对机器人的运动进行仿真</p>
+<ul>
+<li>构建现实世界各种场景的仿真模型</li>
+</ul>
+<p>Gazebo可以建立一个用来测试机器人的仿真场景，通过添加物体库，放入垃圾箱，雪糕桶，甚至是人偶等物体来模仿现实世界，还可以通过Building Editor，添加2D的房屋设计图，在设计图基础上构建出3D的房屋</p>
+<ul>
+<li>构建传感器仿真模型</li>
+</ul>
+<p>Gazebo拥有一个很强大的传感器模型库，包括camera，depth camera，laser，imu等机器人常用的传感器，并且已经有模拟库，已经可以直接使用，也可以自己从0创建一个新的传感器，添加它的具体参数，甚至还可以添加传感器噪声模型，让传感器更加真实</p>
+<ul>
+<li>为机器人模型添加现实世界的物理性质</li>
+</ul>
+<p>Gazebo里有force，physics的选项，可以为机器人添加例如重力，阻力等，Gazebo有一个很接近真实的物理仿真引擎，要记得一般的地面是没有阻力的，和现实世界有区别</p>
+<p>因此，通过gazebo可以创建一个机器人世界，不仅可以仿真机器人的运动功能，还可以仿真机器人的传感器数据。而这些数据就可以放到rviz中显示，所以使用gazebo的时候，经常也会和rviz配合使用。</p>
+<h5 id="二、用ROS节点通信的方式绘制移动机器人各部分之间节点通信关系图"><a href="#二、用ROS节点通信的方式绘制移动机器人各部分之间节点通信关系图" class="headerlink" title="二、用ROS节点通信的方式绘制移动机器人各部分之间节点通信关系图"></a>二、用ROS节点通信的方式绘制移动机器人各部分之间节点通信关系图</h5><p><img src="https://s2.loli.net/2022/10/13/kGfqFdsWIZhc7e5.png" alt="c20.png"></p>
+<h3 id="Lab-Class-4"><a href="#Lab-Class-4" class="headerlink" title="Lab Class"></a>Lab Class</h3><h5 id="一、在Gazebo中打开Spark机器人，并使用话题、服务、动作分别完成对Spark机器人的运动控制"><a href="#一、在Gazebo中打开Spark机器人，并使用话题、服务、动作分别完成对Spark机器人的运动控制" class="headerlink" title="一、在Gazebo中打开Spark机器人，并使用话题、服务、动作分别完成对Spark机器人的运动控制"></a>一、在Gazebo中打开Spark机器人，并使用话题、服务、动作分别完成对Spark机器人的运动控制</h5><p>（1）直线运动</p>
+<p>话题</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/CvwVJYAgNl9kEd7.png" alt="c21.PNG" width="471" data-align="center"></p>
+<p>服务</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/mtrfYCNSw743VFT.png" alt="c222.PNG" width="428" data-align="center"></p>
+<p>动作</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/7FSEyHomfAncpk5.png" alt="c23.PNG" width="418" data-align="center"></p>
+<p>（2）圆周运动</p>
+<p>话题</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/OBqhEfi9I7avUYl.png" alt="c24.PNG" width="475" data-align="center"></p>
+<p>服务</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/mhCfq1XHdz9ic7Q.png" alt="c25.PNG" width="465" data-align="center"></p>
+<p>动作</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/8r3xGi1BLVEaRyc.png" alt="c26.PNG" width="469" data-align="center"></p>
+<p>（3）矩形运动</p>
+<p>话题</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/eDlzYAF5CGnpmEk.png" alt="c27.PNG" width="478" data-align="center"></p>
+<p>服务</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/nVAXalQE3I8cWP5.png" alt="c28.PNG" width="474" data-align="center"></p>
+<p>动作</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/xDJgQ2e1qkUcanr.png" alt="c29.PNG" width="468" data-align="center"></p>
+<h2 id="Week6"><a href="#Week6" class="headerlink" title="Week6"></a>Week6</h2><h3 id="Theory-Class-5"><a href="#Theory-Class-5" class="headerlink" title="Theory Class"></a>Theory Class</h3><h5 id="一、变换矩阵"><a href="#一、变换矩阵" class="headerlink" title="一、变换矩阵"></a>一、变换矩阵</h5><p><img src="https://s2.loli.net/2022/10/13/mF4l5jNxpgoMksf.png" alt="c30.png"></p>
+<p>位置</p>
+<p><img src="https://s2.loli.net/2022/10/13/advzf6LumTsUlZH.png" title="" alt="c31.PNG" data-align="center"></p>
+<p>姿态</p>
+<p><img src="https://s2.loli.net/2022/10/13/DkVz4tNAfb1JTru.png" title="" alt="c32.PNG" data-align="center"></p>
+<h5 id="二、输出机器人结构图"><a href="#二、输出机器人结构图" class="headerlink" title="二、输出机器人结构图"></a>二、输出机器人结构图</h5><p>（1）机器人一</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/7jOw4SPydefTQVK.png" alt="c33.PNG" width="505" data-align="center"></p>
+<p>（2）机器人二</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/w7lpGzFnXDA592k.png" alt="c34.PNG" width="512" data-align="center"></p>
+<h3 id="Lab-Class-5"><a href="#Lab-Class-5" class="headerlink" title="Lab Class"></a>Lab Class</h3><p><img src="https://s2.loli.net/2022/10/13/zrl97yYBM3XnvO6.png" alt="c35.png"></p>
+<h5 id="一、TF编程"><a href="#一、TF编程" class="headerlink" title="一、TF编程"></a>一、TF编程</h5><p><img src="https://s2.loli.net/2022/10/13/rUf3AqYjSHNCIER.png" alt="c36.PNG"></p>
+<p>代码解释</p>
+<p><img src="https://s2.loli.net/2022/10/13/9YQoXPZMqLEmH4V.png" alt="c37.PNG"></p>
+<p><img src="https://s2.loli.net/2022/10/13/AlJN7PjS5BWuRYq.png" alt="c38.PNG"></p>
+<h5 id="二、urdf与xacro"><a href="#二、urdf与xacro" class="headerlink" title="二、urdf与xacro"></a>二、urdf与xacro</h5><p>urdf是一种机器人模型的描述格式，基于XML规范，通过树状结构进行链接，因此机器人只能通过关节进行刚性连接。而urdf模型虽然简单，但存在一些问题，例如代码重用性不好（重复代码只能复制），模块化不好（不能引用其它URDF文件）等等。xacro是urdf的Plus版本，它通过创建xacro来描述模型，macro可以被复用，也可以被其他文件引用，让代码更可读<br>(1) 将spark机器人urdf文件进行改写为xacro文件<br>经过观察，发现spark1_description.urdf中定义的部分包括了底盘、驱动轮（左右轮）、支撑轮（前后轮）、传感器及其他（激光雷达、LED、中控等），因此将其分为这几部分进行分别定义。但是碍于内部数据的复杂度，只将质量这一属性提取了出来，不能进行宏实现（数据没有统一计算方法），其余基本没有进行更改</p>
+<p><img src="https://s2.loli.net/2022/10/13/ZSrhpMwc4eUsPJE.png" title="" alt="c39.PNG" data-align="center"></p>
+<p><img src="https://s2.loli.net/2022/10/13/wVOPxq16H4DcYRl.png" title="" alt="c40.PNG" data-align="center"></p>
+<p>(2) 将xacro文件改写为urdf文件<br>只需在终端中进行相应文件夹后输入rosrun xacro xacro filename.xacro &gt; filename_new.urdf即可实现</p>
+<h2 id="Week7"><a href="#Week7" class="headerlink" title="Week7"></a>Week7</h2><h3 id="Theory-Class-6"><a href="#Theory-Class-6" class="headerlink" title="Theory Class"></a>Theory Class</h3><h5 id="一、Moveit平台介绍"><a href="#一、Moveit平台介绍" class="headerlink" title="一、Moveit平台介绍"></a>一、Moveit平台介绍</h5><p>一个机器人（mobile manipulation）相关的工具集软件，集成了各种 SOTA 库，包括：<br>运动规划（Motion Planning）、操作（Manipulation）、3D 感知（Perception）、运动学（Kinematics）、碰撞检测（Collision Checking）、控制（Control）、导航（Navigation）</p>
+<p>系统架构如下图：</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/s9oJBVaY6e2D1CG.png" alt="c41.png" width="446" data-align="center"></p>
+<h3 id="Lab-Class-6"><a href="#Lab-Class-6" class="headerlink" title="Lab Class"></a>Lab Class</h3><p><img title="" src="https://s2.loli.net/2022/10/13/iRbv6JmQByKrZM2.png" alt="c42.png" width="483" data-align="center"></p>
+<p>(1) 首先启动moveit可视化界面<br>有两种方式：launch文件或是rosrun</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/mfXHeK9OYVLRaZx.png" alt="c43.png" width="459" data-align="center"></p>
+<p>(2) 导入urdf文件——最开始时添加工作空间</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/cmPUZq4Ns3gFDy7.png" alt="c44.png" width="469" data-align="center"></p>
+<p>(3) 生成碰撞检测采样点<br>默认的Self-Collision Matrix 发生器搜寻机器人能够检测到碰撞时能安全避免，减小运动规划时间的连杆对<br>采样比重表示在多少个机器人的任意位置处去检测自碰撞。比重大时计算时间较长，比重小的本不应该disabled的连杆对被disabled的可能性变大。默认比重是10,000碰撞检测。碰撞检测与减小处理时间并行完成<br>针对该模型共有十个</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/1g5HIJ7y9svjtBx.png" alt="c45.png" width="486" data-align="center"></p>
+<p>(4) 添加虚拟关节<br>虚拟关节主要用于与世界坐标系相连，对于该模型仅定义一个虚拟关节，将base_link连接到世界坐标，这个虚拟关节代表了机器人基座在平面上的运动</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/WNHRAPxVQXcOjzo.png" alt="c46.png" width="547" data-align="center"></p>
+<p>(5) 添加规划组<br>对机器人不同部位的语义描述</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/bFQMyadBvEjxIN7.png" alt="c47.png" width="493" data-align="center"></p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/zXtlSDCUpIZEKe7.png" alt="c48.png" width="486" data-align="center"></p>
+<p>(6) 添加机器人位姿<br>Setup Assistant允许配置文件中设定固定位姿。 例如，想设定某个确定位置为机器人的Home位置<br>Home位置为竖直状态</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/LX2Z9MOzsqHhmFc.png" alt="c49.png" width="521" data-align="center"></p>
+<p>(7) 标记末端执行器</p>
+<p><img src="https://s2.loli.net/2022/10/13/RzDFI3hyK7redkB.png" title="" alt="c50.png" data-align="center"></p>
+<p>(8) 添加被动关节<br>告知规划器这些关节不能进行运动学规划<br>对于该模型所有关节均可运动，不需要添加被动关节</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/qirL6GtVOo2aN1p.png" alt="c51.png" width="527" data-align="center"></p>
+<p>(9) 添加控制器<br>自动产生</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/1dbIh2C5vftQVsk.png" alt="c52.png" width="534" data-align="center"></p>
+<p>(10) 生成gazebo下的urdf模型</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/snyipktfawYE2ml.png" alt="c53.png" width="538" data-align="center"></p>
+<p>还可添加视觉传感器，对于该模型不需添加<br>最终成功生成所有文件</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/D8uhoKRPrZJMEHA.png" alt="c54.png" width="529" data-align="center"></p>
+<p>(11) 在rviz中显示<br>先移动机械臂到某位置，之后进行规划和执行</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/lg3b1Q5hBpmOxWz.png" alt="c55.png" width="540" data-align="center"></p>
+<p>至此对于ur5模型全部配置成功</p>
+<h2 id="Week8"><a href="#Week8" class="headerlink" title="Week8"></a>Week8</h2><h3 id="Theory-Class-7"><a href="#Theory-Class-7" class="headerlink" title="Theory Class"></a>Theory Class</h3><p><img src="https://s2.loli.net/2022/10/13/dklIVh2EG8gpSA4.png" alt="c56.png"></p>
+<h5 id="一、摄像头标定的意义"><a href="#一、摄像头标定的意义" class="headerlink" title="一、摄像头标定的意义"></a>一、摄像头标定的意义</h5><p>摄像机标定的方法根据摄像机的数目可分为单目标定、双目标定以及多目标定。其中单目摄像机标定是双目标定的基础，而多目摄像机的标定则是双目摄像机的扩展。<br>计算机视觉的基本任务之一是从摄像头获取的图像信息出发计算三维空间中物体的几何信息，并由此重建和识别物体，而空间物体表面某点的三维几何位置与其在图像中对应点之间的相互关系是由摄像头成像的几何模型决定的，这些几何模型参数就是摄像头参数。而标定就是确定摄像头内参和外参的过程，其标定结果的精度及算法的稳定性直接影响摄像头工作产生结果的准确性。也就是说如果想要使用摄像头进行视觉方面的工作，标定是必须要进行的，否则将无法完成。</p>
+<h5 id="二、ROS中的图像"><a href="#二、ROS中的图像" class="headerlink" title="二、ROS中的图像"></a>二、ROS中的图像</h5><p>(1) 查看摄像头收到的图像话题的消息类型是sensor_msgs/Image，为二维图像数据<br>这是ROS定义的一种摄像头原始图像的消息类型.。使用命令后查看，得到以下具体描述：</p>
+<p><img src="https://s2.loli.net/2022/10/13/AWHqudIVrFmOasE.png" title="" alt="c57.png" data-align="center"></p>
+<p>(2) 图像在传输前往往会进行压缩处理，ROS也设计了压缩图像的消息类型——sensor_msgs/CompressedImage<br>相比于原始图像的定义要简洁不少，除消息头外，只包含图像的压缩编码格式“format”和存储图像数据的“data”数组。图像压缩编码格式包含JPEG、PNG、BMP等，每种编码格式对数据的结构已经进行了详细定义，所以在消息类型的定义中省去很多不必要的信息。<br>(3) Kinect数据显示中，rviz订阅camera/depth_registered/points话题后，主界面即可显示三维点云数据<br>该消息类型对应于rviz中Add可视化插件时所选择的插件类型，同样可查看具体结构：</p>
+<p><img src="https://s2.loli.net/2022/10/13/ETUeYIuo6myJt94.png" title="" alt="c58.png" data-align="center"></p>
+<p>点云数据中每个像素点的三维坐标都是浮点数，而且包含图像数据，所以单帧数据量也很大。</p>
+<h3 id="Lab-Class-7"><a href="#Lab-Class-7" class="headerlink" title="Lab Class"></a>Lab Class</h3><h5 id="一、人脸识别"><a href="#一、人脸识别" class="headerlink" title="一、人脸识别"></a>一、人脸识别</h5><p>(1) 实现步骤——语句如下：</p>
+<p><img src="https://s2.loli.net/2022/10/13/PrwR6ExginveQtm.png" title="" alt="c59.png" data-align="center"></p>
+<p>首先加载摄像头，然后加载识别人脸的代码，最后启动显示画面<br>(2) 实现效果</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/qaC9vErOdyTxXWj.png" alt="c60.png" data-align="center" width="183"></p>
+<h5 id="二、二维码识别"><a href="#二、二维码识别" class="headerlink" title="二、二维码识别"></a>二、二维码识别</h5><p>(1) 实现步骤——语句如下：</p>
+<p><img src="https://s2.loli.net/2022/10/13/KFmIxYlMZQG7an5.png" title="" alt="c61.png" data-align="center"></p>
+<p>首先加载摄像头，然后加载识别人脸的代码，最后启动显示画面<br>(2) 实现效果</p>
+<p>二维码图像</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/cDZiPfpE9sVvuSG.png" alt="c62.png" width="358" data-align="center"></p>
+<p>识别效果</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/9O6ohyCwbqgAxfZ.png" alt="c63.png" width="282" data-align="center"></p>
+<h2 id="Week9"><a href="#Week9" class="headerlink" title="Week9"></a>Week9</h2><h3 id="Theory-Class-8"><a href="#Theory-Class-8" class="headerlink" title="Theory Class"></a>Theory Class</h3><p><img title="" src="https://s2.loli.net/2022/10/13/OY2TEFzomn8jBqi.png" alt="c64.png" width="463" data-align="center"></p>
+<h5 id="一、SLAM与移动机器人"><a href="#一、SLAM与移动机器人" class="headerlink" title="一、SLAM与移动机器人"></a>一、SLAM与移动机器人</h5><p>SLAM (Simultaneous Localization and Mapping), 即时定位与地图构建，或并发建图与定位。问题可以描述为：机器人在未知环境中从一个未知位置开始移动，在移动过程中根据位置估计和传感器数据进行自身定位，同时建造增量式地图。在SLAM中，机器人利用自身携带的传感器识别未知环境中的特征标志，然后根据机器人与特征标志之间的相对位置和里程计的读数估计机器人和特征标志的全局坐标。<br>总体框架如下：</p>
+<p><img src="https://s2.loli.net/2022/10/13/AdBvfUVF13TjS2c.png" alt="c65.png"></p>
+<p>SLAM技术主要是解决机器人的地图构建与即时定位，而并没有实现路径规划和运动控制。也就是说为机器人的自主移动提供了前提，使得机器人对所处环境有了认知，并且建立了自己与环境的坐标关系，之后就可以增加自主控制的部分，实现智能自主移动机器人的建立。</p>
+<h5 id="二、ROS中SLAM功能包对比"><a href="#二、ROS中SLAM功能包对比" class="headerlink" title="二、ROS中SLAM功能包对比"></a>二、ROS中SLAM功能包对比</h5><p>(1) Gmapping<br>Gmapping 算法是目前基于 激光雷达和 里程计方案里面比较可靠和成熟的一个<br>算法，它基于粒子滤波，采用RBPF的方法效果稳定，许多基于ROS的机器人都跑的是gmapping_slam。<br>优点：在长廊及低特征场景中计算量较小、精度较高、建图效果好<br>缺点：严重依赖里程计（odometry）；无法适应无人机及地面不平坦的区域；无回环（激光SLAM很难做回环检测）；不适合大场景（因为粒子增加，而每个粒子都携带一张地图，因此在构建大地图是所需内存和计算量都会增加），特别消耗资源<br>(2) Hector_slam<br>Hector_slam算法是利用高斯牛顿方法解决scan-matching问题，只需要激光雷达数据， 而不需要里程计数据。<br>优点：不需要使用里程计，所以使得空中无人机及地面小车在不平坦区域建图存在运用的可行性；利用已经获得的地图对激光束点阵进行优化；可避免局部最小而非全局最优，使用多分辨率地图<br>缺点：需要雷达（LRS）的更新频率较高（40Hz）、测量噪声小；需要robot速度控制在比较低的情况下，建图效果才会比较理想；且在里程计数据比较精确的时候，无法有效利用里程计信息<br>总体来说，Hector_slam算法的效果不如 Gmapping，因为它仅用到激光雷达信息建图与定位，肯定就不如Gmapping是通过多传感器结合的效果好。<br>(3) Cartographer<br>Cartographer算法是是Google的实时室内建图项目，传感器安装在背包上面，可以生成分辨率为5cm的2D格网地图。获得的每一帧laser scan数据，利用scan match在最佳估计位置处插入子图（submap）中，且scan matching只跟当前submap有关。在生成一个submap后，会进行一次局部的回环（loop close），利用分支定位和预先计算的网格，所有submap完成后，会进行全局的回环。<br>优点：不采用粒子滤波（PF），累计误差较前两种算法低，能天然的输出协方差矩阵，后端优化的输入项，从而低廉设备也能获得较好的性能表现<br>缺点：需要复杂的矩阵运算，因此计算量大<br>总体来说，cartographer算法相比gmapping，前者是基于图优化框架的SLAM，后者基于滤波框架的SLAM，因此随着地图构建的扩大，内存消耗和计算量都很大，但是建图的效果相当好<br>(4) ORB_SLAM<br>ORB_SLAM算法是是西班牙 Zaragoza 大学的 Raúl Mur-Arta 编写的视觉 SLAM 系统。 它是一个完整的 SLAM 系统，包括视觉里程计、跟踪、回环检测，是一种完全基于稀疏特征点的单目 SLAM 系统，同时还有单目、双目、RGBD 相机的接口。其核心是使用 ORB (Orinted FAST and BRIEF) 作为整个视觉 SLAM 中的核心特征。<br>ORB-SLAM 它是由三大块、三个流程同时运行的：第一块是跟踪，第二块是建图，第三块是闭环检测。<br>优点：采用 g2o 作为后端优化工具，能有效地减少对特征点位置和自身位姿的估计误差；采用 DBOW 减少了寻找特征的计算量，同时回环匹配和重定位效果较好；使用了类似「适者生存」的方案来进行关键帧的删选，提高系统追踪的鲁棒性和系统的可持续运行。<br>缺点：构建出的地图是稀疏点云图，即只保留了图像中特征点的一部分作为关键点，固定在空间中进行定位，很难描绘地图中的障碍物的存在；初始化时最好保持低速运动，对准特征和几何纹理丰富的物体；旋转时比较容易丢帧，特别是对于纯旋转，对噪声敏感，不具备尺度不变性；如果使用纯视觉 slam 用于机器人导航，可能会精度不高，或者产生累积误差、漂移</p>
+<h3 id="Lab-Class-8"><a href="#Lab-Class-8" class="headerlink" title="Lab Class"></a>Lab Class</h3><p><img src="https://s2.loli.net/2022/10/13/LuSbcTD8hxXAqjQ.png" alt="c66.png"></p>
+<p>(1) Gmapping<br>以turtlebot3模型为例运行<br>首先加载Gazebo环境</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/bVowpFk15czQvaR.png" alt="c67.png" width="232" data-align="center"></p>
+<p>启动SLAM程序(slam_methods:=gmapping)，同时启动键盘控制程序，控制机器人完成建图</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/LEit5hSIZa2J8Yr.png" alt="c68.png" width="232" data-align="center"></p>
+<p>最后保存获取的地图</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/XR6fyZJibdV9hlq.png" alt="c69.png" width="219" data-align="center"></p>
+<p>至此全部完成<br>(2) Hector_slam<br>以turtlebot3模型为例运行<br>首先加载Gazebo环境</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/WhE51moBvulzy38.png" alt="c70.png" width="238" data-align="center"></p>
+<p>启动SLAM程序(slam_methods:=hector，需要额外安装hector功能包)，同时启动键盘控制程序，控制机器人完成建图</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/CM6SkX3zRPjD1BY.png" alt="c71.png" width="267" data-align="center"></p>
+<p>最后保存获取的地图</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/JPXYMUCD9HQ8hbA.png" alt="c72.png" width="269" data-align="center"></p>
+<p>至此全部完成<br>对比gmapping获得的地图效果来说较差，符合二者的特点<br>(3) Cartographer<br>运行2D demo</p>
+<p><img src="https://s2.loli.net/2022/10/13/3HTCyNB6eEWhbDq.jpg" alt="c73.jpg"></p>
+<p>运行成功<br>(4) ORB_SLAM<br>启动单目SLAM示例<br>在进行ORB源码编译时，运行到./build.sh这一语句，会报错甚至卡死</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/kfeRQS5bWBpPYyo.jpg" alt="c74.jpg" width="496" data-align="center"></p>
+<p>在把build.sh里边的make -j的-j删掉后可以继续编译，但是最终在启动实例时仍不成功，宣告着这一示例代码的失败</p>
+<h2 id="Week10"><a href="#Week10" class="headerlink" title="Week10"></a>Week10</h2><p><img src="https://s2.loli.net/2022/10/13/ye9PCT7jnFfRbm6.png" alt="c75.png"></p>
+<h3 id="Theory-Class-9"><a href="#Theory-Class-9" class="headerlink" title="Theory Class"></a>Theory Class</h3><h5 id="一、自动导航系统"><a href="#一、自动导航系统" class="headerlink" title="一、自动导航系统"></a>一、自动导航系统</h5><p>包含了定位和地图创建（SLAM）与路径规划和运动控制两大部分，下图为图形表示：</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/Z3kWb5zF4aq96UG.jpg" alt="c76.jpg" width="310" data-align="center"></p>
+<h5 id="二、局部路径规划器"><a href="#二、局部路径规划器" class="headerlink" title="二、局部路径规划器"></a>二、局部路径规划器</h5><p>base_local_planner是move_base默认的局部规划包，实现了Trajectory Rollout和DWA两种局部规划算法。 该软件包提供了对平面上本地机器人导航的轨迹展开和动态窗口方法的实现。根据计划遵循和成本图，控制器生成速度命令以发送到移动基站，在给定机器人的加速度极限的情况下，在整个前向模拟周期内从可实现的速度集合中进行采样。<br>而对于移动机器人在运动过程中贴着墙或者障碍物这一问题，在查找了base_local_planner的官方参数文档后发现了可以解决该问题的参数——occdist_scale：定义控制器躲避障碍物的程度，将该参数增大，就会使得机器人在路径规划的评价中远离障碍物的比重较高，可以解决上述的问题。</p>
+<p><img src="https://s2.loli.net/2022/10/13/jvQICW4XDKAZ21q.png" alt="c77.png"></p>
+<p>其他参数含义：<br> <a href="https://www.corvin.cn/858.html">https://www.corvin.cn/858.html</a><br> <a href="http://wiki.ros.org/base_local_planner#Parameters">http://wiki.ros.org/base_local_planner#Parameters</a></p>
+<h3 id="Lab-Class-9"><a href="#Lab-Class-9" class="headerlink" title="Lab Class"></a>Lab Class</h3><h5 id="实现spark建地图后的2D导航"><a href="#实现spark建地图后的2D导航" class="headerlink" title="实现spark建地图后的2D导航"></a>实现spark建地图后的2D导航</h5><p>以下为具体步骤：<br>第一步为启动gmapping建图，运行代码如下：</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/pL39fgu6jwZ8DtH.png" alt="c78.png" width="501" data-align="center"></p>
+<p>之后控制机器人在空间中移动，识别地图，以下为中间过程图——通过左上控制机器人移动，左下通过机器人摄像头观察具体图像，右侧就是识别到的地图：</p>
+<p><img src="https://s2.loli.net/2022/10/13/yeHJwILft1x83KS.png" alt="c79.png"></p>
+<p>第二步为保存地图：将建立好的地图保存下来，生成两个文件，位置位于spark_noetic/src/spark_app/spark_slam/scripts：</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/Wanvm6sjd4b7u5z.png" alt="c80.png" width="447" data-align="center"></p>
+<p>下图为具体的地图：</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/xbX8DeR1d9oYCyO.png" alt="c81.png" width="486" data-align="center"></p>
+<p>第三步为读取之前保存的地图，并运行spark 2d导航：<br>在提供的文档中可以通过spark_map_load.launch这一文件读取之前保存下来的地图，但是根据代码显示，它读取的yaml文件并不是之前所保存的，所以这一步可以不进行。</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/aSVRe4wvN6UBJqh.png" alt="c82.png" width="499" data-align="center"></p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/TFxVD5gaHdpiLzY.png" alt="c83.png" width="502" data-align="center"></p>
+<p>只需运行amcl_demo_lidar_rviz.launch这一文件即可，它是读取之前所存的test_map.yaml文件：</p>
+<p><img title="" src="https://s2.loli.net/2022/10/13/VfLolT2kDbi945E.png" alt="c84.png" width="506" data-align="center"></p>
+<p>运行后对map进行话题订阅，实现效果如下：</p>
+<p><img src="https://s2.loli.net/2022/10/13/F7UtE8zVYpM1eKj.png" alt="c85.png"></p>
+<p>点击rviz上方的2D Nav Goal按键，然后左键选择目标位置，机器人就开始自动导航到指定位置。<br>至此全部实现完成。</p>
+]]></content>
+      <categories>
+        <category>课程作业</category>
+      </categories>
+      <tags>
+        <tag>大三春季学期</tag>
+        <tag>SDM375</tag>
+        <tag>ROS</tag>
+        <tag>中文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM375 Final Project—Supermarket picking robot</title>
+    <url>/2022/10/13/SDM375-Final-Project/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This project is the final project for SDM375, which let our group use ROS and Spark robot to  construct a supermarket picking robot.</p>
+<h2 id="Pre-PPT"><a href="#Pre-PPT" class="headerlink" title="Pre PPT"></a>Pre PPT</h2>
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a94413499114@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<p>The final demonstration video is as follows:</p>
+
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<iframe src="//player.bilibili.com/player.html?aid=219051974&bvid=BV1c8411s7b7&cid=860531351&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div>
+
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>大三春季学期</tag>
+        <tag>SDM375</tag>
+        <tag>ROS</tag>
+        <tag>Slam</tag>
+        <tag>中英</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM315 Weekly Study Note</title>
+    <url>/2022/10/14/SDM315-Weekly-Study-Note/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>该文档包含了在学习SDM315计算设计这门课程中的笔记与部分最终项目的发展记录</p>
+
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a97856121171@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+      </categories>
+      <tags>
+        <tag>大三春季学期</tag>
+        <tag>中文</tag>
+        <tag>SDM315</tag>
+        <tag>Rhino</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM202 Project EE Control Study Note</title>
+    <url>/2022/10/14/SDM242-Final-Project-Study-Note/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>该文档中记录了在SDM202大项目中对于电控部分的学习笔记，包括了基本原理的解释、代码的阐释以及发展过程踩到的坑等等</p>
+
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a98465163388@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>电控</category>
+      </categories>
+      <tags>
+        <tag>大二秋季学期</tag>
+        <tag>中文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM283 Knowledge Summary</title>
+    <url>/2022/10/14/SDM283-Knowledge-Summary/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>该文档中记录了SDM283设计力学的知识点总结，分为三部分：刚体动力学、材料力学、振动学</p>
+
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a90087154811@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>课程笔记</category>
+      </categories>
+      <tags>
+        <tag>大二春季学期</tag>
+        <tag>SDM283</tag>
+        <tag>中文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM101 Project EE Control Study Note</title>
+    <url>/2022/10/14/SDM101-Project-EE-Control-Study-Note/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>该文档中记录了在SDM101暑期项目中对于电控部分的学习笔记，包括了基本原理的解释、代码的阐释以及发展过程踩到的坑等等</p>
+
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a96383179220@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>电控</category>
+      </categories>
+      <tags>
+        <tag>大三暑期课程</tag>
+        <tag>中文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SDM374 Weekly Homework</title>
+    <url>/2022/10/14/SDM374-Weekly-Homework/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>该文档包含了在学习SDM374机器学习这门课程中的作业记录，包括了对于机器学习常见算法的学习与实践</p>
+<h2 id="Week2"><a href="#Week2" class="headerlink" title="Week2"></a>Week2</h2><p><img src="https://s2.loli.net/2022/10/14/9sZ4nGDNH7CU8Wa.png" alt="c86.png"></p>
+<h5 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h5><p>运行结果如下：</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/QC3XSrvtNuspjDV.png" alt="c87.png" width="443" data-align="center"></p>
+<p>下图为θ的取值</p>
+<p><img src="https://s2.loli.net/2022/10/14/LE4dsvC9e6ji3qu.png" title="" alt="c88.png" data-align="center"></p>
+<p>使用该方法得到的拟合效果不错，使用R2方法得到的差值为0.73295；由所给示例的梯度下降得到的差值为0.73291。由此可见对于这些数据这两种方式拟合效果相差不大，根据得到的数据来看使用sklearn得到的拟合效果较好</p>
+<h5 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h5><p>使用梯度下降</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/drlnytLWZTG23u1.png" alt="c89.PNG" width="357" data-align="center"></p>
+<p>使用sklearn</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/tQwgsmWphukZRNV.png" alt="c90.PNG" width="373" data-align="center"></p>
+<p>由r2_sorce的数据看出使用scikit-learn的拟合效果较好，两者整体相差不大。</p>
+<h5 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h5><p>采用循环去一次性输出最优值以及画出迭代图</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/ISt24OXUgqyGlvm.png" alt="c91.PNG" width="394" data-align="center"></p>
+<p>如图所示第九阶为最优，拟合效果最好；下图为拟合结果图</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/h1OpSPTCJGomdRx.png" alt="c92.png" width="427" data-align="center"></p>
+<h5 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h5><p>选择T-DM为x，P-DM为y</p>
+<p>使用多项式拟合，如第三题</p>
+<p>依据下图得出一阶拟合效果最好  </p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/4snCFeXE8gRA1qZ.png" alt="c93.png" width="443" data-align="center"></p>
+<p>下图为散点图和拟合效果图</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/OQ9fdxlimGFMnr7.png" alt="c94.png" width="456" data-align="center"></p>
+<p>之后增加正则项实现正则化——通过输出均方误差去看正则化的效果，以此判断是否需要添加正则化</p>
+<p>Lasso回归</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/cDLPGk8aKQ5UbIn.png" alt="c95.PNG" width="516" data-align="center"></p>
+<p>Ridge回归</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/oNUeH653KIpm2EW.png" alt="c96.PNG" width="530" data-align="center"></p>
+<p>首先根据输出的与之前未加正则项的均方误差对比（第一行为原始的，第二行为加上正则项的），毫无疑问这两种方法使得拟合效果更差，因此不需加入正则项</p>
+<p>同时对比这两种方式得到的结果，不难看出对于这组数据来说，ridge的效果较好（均方误差更小，即预测值与真实值更接近）</p>
+<p>$λ$ 的影响：</p>
+<p>在 $λ$ 很小时，大部分系数不为零，随着 $λ$ 值的增加系数为零项越来越多。同时对于均方误差，随着 $λ$ 的增加，数值先是下降后增加，因此不是 $λ$ 越大越好，需要找到最合适的 $λ$ 值，只有这样才能让系数和均方误差大小处于最优的组合</p>
+<h5 id="第五题"><a href="#第五题" class="headerlink" title="第五题"></a>第五题</h5><p>选择了下图中标红的为读取数据，其中P-DM为y，其他均为x</p>
+<p><img src="https://s2.loli.net/2022/10/14/QeyrGJcPpxKVD9w.png" alt="c97.png"></p>
+<p>同样是采取训练集（80%）和测试集（20%）</p>
+<p>使用多项式拟合，首先去求得最佳的阶数：</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/xi49VpgneC5GBaF.png" alt="c98.png" width="435" data-align="center"></p>
+<p>即阶数等于2时为最优拟合，效果图如下：</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/zmPYOhapVDUouR9.png" alt="c99.png" width="436" data-align="center"></p>
+<p>之后讨论是否要加正则项，和第四题相同的方法</p>
+<p>Lasso回归</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/iDWnmxIza51UOQq.png" alt="c100.PNG" width="491" data-align="center"></p>
+<p>Ridge回归</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/g6lZIjyAakmCQBN.png" alt="c101.PNG" width="513" data-align="center"></p>
+<p>由输出的结果来看使用正则化后拟合效果变差，因此只需使用二阶模型去拟合以上数据，最终的系数为下图：</p>
+<p><img src="https://s2.loli.net/2022/10/14/EOZmHRwWsFSNBjx.png" alt="c102.png"></p>
+<h2 id="Week3"><a href="#Week3" class="headerlink" title="Week3"></a>Week3</h2><p><img src="https://s2.loli.net/2022/10/14/4BemL9AVQUfXy7G.png" alt="d1.png"></p>
+<h5 id="第一题-1"><a href="#第一题-1" class="headerlink" title="第一题"></a>第一题</h5><p>使用梯度下降</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/hdQ2rjfbJUsl3iH.png" alt="d8.PNG" width="465" data-align="center"></p>
+<p>调用sklearn中的LogisticRegression</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/3M8DVkvbcJCTAp9.png" alt="d3.PNG" width="498" data-align="center"></p>
+<p>同时可以在上述方法的基础上增加多项式正则化<br>多项式的实现是使用pipeline方式组合三个步骤<br>设置一个比较小的损失函数的权重参数C，相当于让模型正则化的项起到更大的作用，让分类准确度损失函数起到小一点的作用</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/kVTt4mW9djXCghr.png" alt="d7.PNG" width="502" data-align="center"></p>
+<p>SVM算法</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/avQVfuXmZyiEBbF.png" alt="d4.PNG" width="478" data-align="center"></p>
+<p>KNN算法</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/N8HPb91FzB2pAiw.png" alt="d5.PNG" width="509" data-align="center"></p>
+<p>首先需要得到最优的K值</p>
+<p>不难看出k = 14时error最小</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/JkPgOH1jxurGAT5.png" alt="d6.PNG" width="514" data-align="center"></p>
+<p>共采用了五种分类形式，对比评价指标来看——梯度下降（未加正则）分类效果最差，然后是LogisticRegression和KNN基本一致，对比更为具体的指标，KNN只是稍稍更好一些，两者基本一致；然后是SVM，各个指标基本都比较高；最优的是多项式拟合加正则，准确率可达到87.5%</p>
+<h5 id="第二题-1"><a href="#第二题-1" class="headerlink" title="第二题"></a>第二题</h5><p>首先看到特征过多，所以通过代码去选择十个与是否患病相关性最大的特征</p>
+<p><img src="https://s2.loli.net/2022/10/14/pKhZ89on7fjyTSE.png" alt="d15.png"></p>
+<p>即下图中标红的特征</p>
+<p><img src="https://s2.loli.net/2022/10/14/DglvcmRIEXqf7OQ.png" alt="d9.png"></p>
+<p>下面进行具体操作<br>使用梯度下降<br><img title="" src="https://s2.loli.net/2022/10/14/n71SQRGF5K3MkIh.png" alt="d10.png" width="459" data-align="center"></p>
+<p>调用sklearn中的LogisticRegression</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/nRLNpbXwyIdQuES.png" alt="d11.png" width="470" data-align="center"></p>
+<p>增加正则化</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/7wSrHNj6AnocRap.png" alt="d14.png" width="480" data-align="center"></p>
+<p>SVM算法<br><img title="" src="https://s2.loli.net/2022/10/14/vsaBOPpWTzjYyQG.png" alt="d12.png" width="500" data-align="center"></p>
+<p>KNN算法</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/I4XJxDKnkFzlETu.png" alt="d13.png" width="488" data-align="center"></p>
+<p>共采用了五种分类形式，对比评价指标来看——梯度下降（未加正则）和LogisticRegression分类效果最差，两者完全一致；然后是SVM算法；然后是KNN；最优的是逻辑回归增加多项式正则化的算法</p>
+<h5 id="第三题-1"><a href="#第三题-1" class="headerlink" title="第三题"></a>第三题</h5><p>首先看到特征过多，所以通过代码去选择十个与是否患病相关性最大的特征</p>
+<p><img src="https://s2.loli.net/2022/10/14/yfx1PCbkpnVGYUB.png" alt="d17.png"></p>
+<p>即下图中标红的特征</p>
+<p><img src="https://s2.loli.net/2022/10/14/UrWeg1yiMFdVpo8.png" alt="d18.png"></p>
+<p>下面进行具体操作<br>使用梯度下降<br><img title="" src="https://s2.loli.net/2022/10/14/bdvsCp6XYDV12Sf.png" alt="d19.png" width="482" data-align="center"></p>
+<p>调用sklearn中的LogisticRegression<br><img title="" src="https://s2.loli.net/2022/10/14/7Q6GVIPdARLirae.png" alt="d20.png" width="473" data-align="center"></p>
+<p>增加正则化</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/HT3Ui274LXJoM6q.png" alt="d23.png" width="458" data-align="center"></p>
+<p>SVM算法<br><img title="" src="https://s2.loli.net/2022/10/14/YCoFK6EUPrGwqcx.png" alt="d21.PNG" width="462" data-align="center"></p>
+<p>KNN算法</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/wjyzOU5LTRcWg1N.png" alt="d22.png" width="471" data-align="center"></p>
+<p>共采用了五种分类形式，对比评价指标来看——梯度下降（未加正则）分类效果最差；然后是SVM算法；然后是KNN；最优的分类形式是LogisticRegression</p>
+<h5 id="第四题-1"><a href="#第四题-1" class="headerlink" title="第四题"></a>第四题</h5><p>这种现象是叫类别样本不均衡，样本不均衡将导致样本量小的分类所包含的特征过少，并很难从中提取规律；即使得到分类模型，也容易产生过度依赖于有限的数据样本而导致过拟合的问题（不难看出，1.3的准确率比1.2的准确率都更高，但是召回率会较低）；而当模型应用到新的数据上时，模型的准确性会很差。</p>
+<h5 id="第五题-1"><a href="#第五题-1" class="headerlink" title="第五题"></a>第五题</h5><p>读取图像RGB中的某一个作为vector</p>
+<p><img src="https://s2.loli.net/2022/10/14/USXZr4hyQPqa98T.png" alt="d24.png"></p>
+<p>在尝试过分别读取R\G\B的值发现预测结果完全一致，这是因为图像是黑白的，导致R\G\B三个的值完全相同，更多的均值等操作没有意义，只需读取一个即可<br>但是如果对于彩色图片，完全可以转化为灰度图片然后采用上述方法，更为简便，不需要同时读取R\G\B三个值<br>调用sklearn中的LogisticRegression<br><img title="" src="https://s2.loli.net/2022/10/14/mNp1TeOSP85sgLJ.png" alt="d25.png" width="463" data-align="center"></p>
+<p>增加正则化</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/NHJTilMSszIBetq.png" alt="d29.png" width="480" data-align="center"></p>
+<p>SVM算法<br><img title="" src="https://s2.loli.net/2022/10/14/qEPRwk3opV8WiyD.png" alt="d26.png" width="475" data-align="center"></p>
+<p>KNN算法<br>首先得到最优的k值</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/ua1zjOenbIZCQMv.png" alt="d27.png" width="462" data-align="center"></p>
+<p>选取k=1<br><img title="" src="https://s2.loli.net/2022/10/14/VQul7MzqAa45Yw6.png" alt="d28.png" width="510" data-align="center"></p>
+<p> 共采用了四种分类形式，对比评价指标来看——最差的是SVM和逻辑回归增加多项式正则化，两者各项指标基本一致，然后是KNN，最优的是LogisticRegression</p>
+<p>总的来说，本次作业共采用了五种分类形式，结合题目输出的结果来看各个方法都有其特点，同时预测的准确度高低是与数据本身有关，不存在某一个完全优于其他的现象（只能说加了多项式正则后大部分情况下明显是比其他算法更优的）<br>经过以上题目的练习，我掌握了这五种方法，可以灵活地适应不同的实际情况；同时还有其他的算法也进行了相关学习，但是没有应用到实际解题中</p>
+<h2 id="Week4"><a href="#Week4" class="headerlink" title="Week4"></a>Week4</h2><p><img src="https://s2.loli.net/2022/10/14/3MnOLvqtcWGDITS.png" alt="d30.png"></p>
+<h5 id="第一题-2"><a href="#第一题-2" class="headerlink" title="第一题"></a>第一题</h5><h6 id="调包"><a href="#调包" class="headerlink" title="调包"></a>调包</h6><p><img title="" src="https://s2.loli.net/2022/10/14/y8DL7eNn2sQUTAh.png" alt="d31.png" width="513" data-align="center"></p>
+<p>得到的指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/bhrosXeO52Gpatg.png" alt="d32.png" width="522" data-align="center"></p>
+<p>发现本题中改变迭代次数（max_iter）不影响最终的结果；而且在学习率大致上大于或等于0.0365时，增加学习率对于分类结果没有影响，一致保持上述的值；但是一旦学习率下降到0.0365以下，那么分类结果会发生变化</p>
+<h6 id="手写单层感知机"><a href="#手写单层感知机" class="headerlink" title="手写单层感知机"></a>手写单层感知机</h6><p>定义参数——ω定义为None，而不能直接=0（因为ω是个矩阵，ndarray；而不是个数，保证规范性）</p>
+<p><img src="https://s2.loli.net/2022/10/14/4BJF9T6KYEfxkDG.png" title="" alt="d33.png" data-align="center"></p>
+<p>之后定义用来训练的函数（读取X_train、y_train，给定迭代次数和学习率），其中迭代次数不能大于123（X_train的行数-1），之后会讨论迭代次数和学习率对于模型预测效果的影响</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/n9ZLf5iJCOvbtyX.png" alt="d34.png" width="552" data-align="center"></p>
+<p>优化参数</p>
+<p><img src="https://s2.loli.net/2022/10/14/sRWKwfn6DAp5HYq.png" title="" alt="d35.png" data-align="center"></p>
+<p>最后是进行预测的函数（读取X_test，使用train函数返回的参数值）</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/MicFDq3BOTWXr7P.png" alt="d36.png" width="527" data-align="center"></p>
+<p>以上便是代码的主体部分，后面只是准备数据和实际进行预测<br>之后改变迭代次数和学习率得到了以下指标和结论<br>在保持迭代次数不变时，改变学习率不会影响预测结果，而且在迭代次数过小或过大时会出现上述的报错（即某一类预测数为0）<br>又去增加了一个循环去找出规律（但是有缺陷，即只能最终找到最大的准确率，不能实现输出所有的变化过程，不过通过print可以最终找到所有的变化过程）</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/zJElVWIqkOfiXw1.png" alt="d37.png" width="499" data-align="center"></p>
+<p>以下是最终得到的结果：学习率全部为0.001，只是改变迭代次数得到的指标</p>
+<p>迭代次数=6：70</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/sVnpMhLIPFzJ4fC.png" alt="d38.png" width="510" data-align="center"></p>
+<p>经过对比，由此得出结论：当迭代次数处于[6,70]区间时预测的效果最好，且优于直接调包的效果</p>
+<h5 id="第二题-2"><a href="#第二题-2" class="headerlink" title="第二题"></a>第二题</h5><h6 id="调包-1"><a href="#调包-1" class="headerlink" title="调包"></a>调包</h6><p>同样的迭代次数不影响分类效果，改变学习率会影响分类效果<br>当学习率0.0152—0.0178时分类效果最好</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/HjLdZKkaVixJQpt.png" alt="d39.png" width="494" data-align="center"></p>
+<h6 id="手写单层感知机-1"><a href="#手写单层感知机-1" class="headerlink" title="手写单层感知机"></a>手写单层感知机</h6><p>之后改变迭代次数和学习率得到了以下指标和结论<br>在保持迭代次数不变时，改变学习率不会影响预测结果，而且在迭代次数过小或过大时会出现上述的报错（即某一类预测数为0）<br>又去增加了一个循环去找出规律（但是有缺陷，即只能最终找到最大的准确率，不能实现输出所有的变化过程，不过通过print可以最终找到所有的变化过程）<br>以下是最终得到的结果：学习率全部为0.001，只是改变迭代次数得到的指标</p>
+<p>迭代次数=136：137</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/14fBY5NMUyslLXd.png" alt="d40.png" width="481" data-align="center"></p>
+<p>通过结果对比，由此得出结论：当迭代次数处于[136,137]区间时预测的效果最好，且优于直接调包的效果</p>
+<p>结合前两题不难看出迭代次数和学习率会对于预测结果有影响，但不存在什么明显的规律，且不同的数据会有不同的影响效果</p>
+<h5 id="第三题-2"><a href="#第三题-2" class="headerlink" title="第三题"></a>第三题</h5><p>由于之前手写的是单层感知机，因此去尝试实现多层感知机，即神经网络</p>
+<h6 id="调包MLPClassifier"><a href="#调包MLPClassifier" class="headerlink" title="调包MLPClassifier"></a>调包MLPClassifier</h6><ol>
+<li>第一题的数据 </li>
+</ol>
+<p>首先去得到最优的求解器</p>
+<p><img src="https://s2.loli.net/2022/10/14/C9aui4IpjlYq7Lc.png" alt="d41.png"></p>
+<p>因此使用lbfgs，这和理论相同：lbfgs适用于较小的数据集<br>而且由于这是二分类问题，只能使用logistic，即sigmoid函数<br>之后去决定层数和各层的神经元个数<br>通过经验公式和一些原则决定层数取值区间为[1,5]，神经元个数取值区间为[1,10]<br>决定层数</p>
+<p><img src="https://s2.loli.net/2022/10/14/tCB2Q6SbUMds3Dg.png" alt="d42.png"></p>
+<p>决定神经元个数</p>
+<p><img src="https://s2.loli.net/2022/10/14/OYMvkEdafGyBeQh.png" alt="d43.png"></p>
+<p>在经过比较后发现超过一定层数（4）时，增加神经元个数不会增加预测准确率<br>最终对比下来当层数为2，神经元个数为8时效果最好<br>最终得到的指标</p>
+<p><img src="https://s2.loli.net/2022/10/14/Cc2WVJexz7ZKRan.png" alt="d44.png"></p>
+<p>对比之前的单层感知机，多层感知机的预测效果明显更好</p>
+<p>第二题的数据<br>首先去得到最优的求解器</p>
+<p><img src="https://s2.loli.net/2022/10/14/ICyGmeZrqxF5cdk.png" alt="d45.png"></p>
+<p>因此使用lbfgs，这和理论相同：lbfgs适用于较小的数据集<br>而且由于这是二分类问题，只能使用logistic，即sigmoid函数<br>之后去决定层数和各层的神经元个数<br>通过经验公式和一些原则决定层数取值区间为[1,5]，神经元个数取值区间为[1,20]<br>最终对比下来当层数为3，神经元个数为20时效果最好<br>得到的指标</p>
+<p><img src="https://s2.loli.net/2022/10/14/T5mlKFtC3dnkh69.png" alt="d46.png"></p>
+<p>对比之前的单层感知机，多层感知机的预测效果明显更好</p>
+<p>其实再增加隐藏层层数还可以继续增加预测效果，但是其实这样意义不大，不仅会导致运算速度变慢，还可能会造成过拟合</p>
+<h6 id="手写多层感知机（神经网络）"><a href="#手写多层感知机（神经网络）" class="headerlink" title="手写多层感知机（神经网络）"></a>手写多层感知机（神经网络）</h6><p>主要是去通过学习如何手写再去理解多层感知机的逻辑思路，真正做到掌握，没有去实现过多隐藏层与过多单层神经元这种复杂的形式，而去实现了最为基本的简单形式；如果之后需要更加复杂的仅需按照简单的一步步添加即可，不需要额外的逻辑思考 </p>
+<p>第一题的数据</p>
+<p>最终实现：隐藏层数为1，单层神经元为2，输入层单元为5，输出层单元为1 </p>
+<p>代码主体框架与逻辑阐述： </p>
+<p>输入层到隐藏层的激活函数，仍采用sigmoid函数;以及对其进行求导的函数，为之后的反向传播奠定基础</p>
+<p><img src="https://s2.loli.net/2022/10/14/Jl52E8zGewbZLIc.png" title="" alt="d47.PNG" data-align="center"></p>
+<p>损失函数，仍使用最为常用的函数——方差平均值</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/2zWEt3YpkLHCVfU.png" alt="d48.png" width="530" data-align="center"></p>
+<p>之后定义神经网络类，内部是代码的主体函数部分——训练和测试</p>
+<p><img src="https://s2.loli.net/2022/10/14/w6DpKA95M1GJeQk.png" title="" alt="d50.png" data-align="center"></p>
+<p>定义网络</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/tB2KD1A5RMLxbEO.png" alt="d51.png" width="374" data-align="center"></p>
+<p>定义训练函数</p>
+<p><img src="https://s2.loli.net/2022/10/14/KcadW8iP5VQ6MU7.png" alt="d52.png"></p>
+<p>使用反向传播算法和随机梯度下降去得到最优的参数，使得损失最小</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/gaITi9ljdZ2qbcH.png" alt="d53.png" width="526" data-align="center"></p>
+<p>梯度下降</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/iWO2GTuJ3tqmSKN.png" alt="d54.png" width="489" data-align="center"></p>
+<p>预测函数——向前传播学习</p>
+<p><img src="https://s2.loli.net/2022/10/14/aj2O461rCgxwA58.png" alt="d55.png"></p>
+<p>准备数据</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/lgFXx3WCh8JqvSy.png" alt="d56.png" width="471" data-align="center"></p>
+<p>进行训练得到参数，并进行预测</p>
+<p><img src="https://s2.loli.net/2022/10/14/cyx2hlVizNC4DmM.png" title="" alt="d57.png" data-align="center"></p>
+<p>输出指标</p>
+<p><img src="https://s2.loli.net/2022/10/14/hxF7uvtqQpeac25.png" alt="d58.png"></p>
+<p>得到的指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/cH1K9QUCv4IS8Fl.png" alt="d59.png" width="506" data-align="center"></p>
+<p>很完美，准确率为100%<br>代码写的过程中的几个需要注意的点：<br>一定要注意输入层的神经元个数和代码中的定义相同，不然会造成浪费或是不存在索引的情况出现；输入的X（features）一定要进行np.array和转置操作（保证矩阵维度的正确性，保证运算的合法性），不然会报错；要对预测函数输出的y进行处理，因为它输出的不是0或1，而是小数（有正有负），将其处理成y_test样式的才行，这样才能去输出指标</p>
+<ol>
+<li>第二题的数据</li>
+</ol>
+<p>由于需要提供的features过多，导致如果全部添加的话需要增加很多输入层，在代码中需要添加很多行（都是基本相同，没有太多意义），因此也是只读取5个features（前五个），实现功能即可<br>最终实现：隐藏层数为1，单层神经元为2，输入层单元为5，输出层单元为1<br>得到的指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/lx8mi4npaHJuwgC.png" alt="d60.png" width="503" data-align="center"></p>
+<p>很完美，准确率为100%</p>
+<p>总的来说，手写的实现效果比调包更好，而且手写的隐藏层还比调包实现的更加简单，更加证明了MPL可以有效提高二分类问题的预测效果</p>
+<h5 id="第四题-2"><a href="#第四题-2" class="headerlink" title="第四题"></a>第四题</h5><p>首先是读取图片将其转化为vector，这次改为了使用给的示例的读取方式，更加简单<br>只需要读取RGB中的一个即可</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/U4zFqyBi5JRdsTQ.png" alt="d61.PNG" width="392" data-align="center"></p>
+<p>之后将其转存为csv进行二次读取</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/LSrdgNmTIEz6oYU.png" alt="d62.png" width="405" data-align="center"></p>
+<p>之后定义2层神经网络模型（类）<br>初始化一些参数<br>使用矩阵简明地表示权重：此时的wih/who（链接权重矩阵）已经是w的转置形式，可与输入的x直接相乘——二者的设置是使用了较为复杂的正态分布形式（中心为0.0），表示节点数目的-0.5次方，即与下一层中节点的标准方差相关</p>
+<p>定义激活函数，使用了scipy中自带的函数</p>
+<p><img src="https://s2.loli.net/2022/10/14/dXHLNlGkhYU1TVi.png" alt="d63.png"></p>
+<p>定义进行最终输出的函数query()，主要实现的是计算隐藏层信号和输出层信号</p>
+<p><img src="https://s2.loli.net/2022/10/14/CgSXBnH2Rt5dvZr.png" alt="d64.png"></p>
+<p>定义用来训练网络的函数train()，主要有两部分：针对给定的训练样本计算输出，query()函数已经实现了；之后将计算得到的输出与所需输出对比，使用差值来指导网络权重的更新<br>多出了一个targets_list作为目标答案的训练样本来训练网络<br>最为重要的就是计算误差，为每个隐藏层节点重组这些误差：</p>
+<script type="math/tex; mode=display">
+errors_{hidden}=weights_{hidden\_output}^T*errors_{output}</script><p><img src="https://s2.loli.net/2022/10/14/386fHPANOg7FIMJ.png" alt="d65.png"></p>
+<p>之后定义出神经网络的具体信息——层数、神经元个数，并建立神经网络类<br>输入的神经元个数是依据图片的vecotor个数来定的(28*28)；输出的神经元个数为5（要将图片分为五类），中间的单层隐藏层的神经元个数为(5*10)</p>
+<p><img src="https://s2.loli.net/2022/10/14/wpWmtKI8lRC9oDg.png" alt="d66.png"></p>
+<p>同时要对输入的数据进行相应处理：神经网络生成0和1的输出，对于激活函数而言是不可能的，这会导致大的权重和饱和网络，因此需要重新调整这些数字——我们将使用值0.01和0.99来代替0和1</p>
+<p><img src="https://s2.loli.net/2022/10/14/Nts2zhXAOeVDCZx.png" alt="d67.png"></p>
+<p>进行训练和预测</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/GmLh2U5Q4ErskaD.png" alt="d68.PNG" width="354" data-align="center"></p>
+<p>得到的指标</p>
+<p><img src="https://s2.loli.net/2022/10/14/1dQRVySYzXThqF7.png" alt="d69.png"></p>
+<p>以上是实现了一个较为简单的MPL，但是针对以上数据准确率已经比较高了</p>
+<p>总体上掌握了神经网络的逻辑和内部机理，收获不小</p>
+<h5 id="Week5"><a href="#Week5" class="headerlink" title="Week5"></a>Week5</h5><p><img src="https://s2.loli.net/2022/10/14/SCavXgpihT7cJrF.png" alt="d70.png"></p>
+<h5 id="第一题-3"><a href="#第一题-3" class="headerlink" title="第一题"></a>第一题</h5><h6 id="调包-2"><a href="#调包-2" class="headerlink" title="调包"></a>调包</h6><p>相较于之前的模型选取了更适用于大数据集的solver：adam，且建立了三层隐藏层（每层的神经元个数为10*10个）以得到更好的预测效果</p>
+<p>建立的模型</p>
+<p><img src="https://s2.loli.net/2022/10/14/iDYLMAyJkHNTK87.png" alt="d71.png"></p>
+<p>输出的指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/QIMT6j8HL4d53Yp.png" alt="d72.png" width="427" data-align="center"></p>
+<h6 id="使用之前定义好的单层隐藏层的神经网络"><a href="#使用之前定义好的单层隐藏层的神经网络" class="headerlink" title="使用之前定义好的单层隐藏层的神经网络"></a>使用之前定义好的单层隐藏层的神经网络</h6><p>主要是要更改输出的神经元个数为10（分了10类），增加了隐藏层神经元的个数，减小学习率；通过以上参数的改变实现了预测</p>
+<p><img src="https://s2.loli.net/2022/10/14/ZFtblABrpuk2OE6.png" alt="d74.png"></p>
+<p>输出的指标</p>
+<p><img src="https://s2.loli.net/2022/10/14/tC8LWn3wqTEA2Dz.png" title="" alt="d75.png" data-align="center"></p>
+<p>果然太过简单的神经网络无法达到极高准确率的要求<br>之后进行了算法的优化以便增加隐藏层的层数<br>定义网络——一共6层——输入1层（神经元个数为28*28），隐藏层3层（每层神经元个数都为20），输出1层（神经元个数为10）</p>
+<p>输出指标</p>
+<p><img src="https://s2.loli.net/2022/10/14/NxgWiUzsLn2d3Ek.png" title="" alt="d73.png" data-align="center"></p>
+<p>预测效果很好，实现了要求</p>
+<h6 id="使用pytorch"><a href="#使用pytorch" class="headerlink" title="使用pytorch"></a>使用pytorch</h6><p>读取数据——与之前相同</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/7u3kxBiXWqmrh6C.png" alt="d77.png" width="427" data-align="center"></p>
+<p>增加了一步数据的数据形式的改变——否则会报错：依据损失函数的不同而不同</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/nLUMR87HuavlfSI.png" alt="d76.png" width="520" data-align="center"></p>
+<p>定义神经网络<br>共6层——输入1层（神经元个数为28*28），隐藏层4层（每层神经元个数都为200），输出1层（神经元个数为10）<br>对于激活函数——通过5个相同的全连接层来实现这一点，除了最后一个——不是ReLU激活函数而是返回一个log_softmax</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/shR6CuG7zOtWjf8.png" alt="d78.png" width="424" data-align="center"></p>
+<p>之后定义一个优化器（optimizer）和一个损失准则（loss criterion）——而损失函数的选择就会改变输入x,y的数据类型——此处选取的是NLLLoss-负对数似然损失函数，数据类型必须是x为float，y为long</p>
+<p><img src="https://s2.loli.net/2022/10/14/DBvmUOHVkgd4KSC.png" alt="d79.png"></p>
+<p>模型进行训练——放入循环中，每次最后会将参数归零为之后的反向传播做准备</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/fwzONkBHYG9XLu1.png" alt="d80.png" width="427" data-align="center"></p>
+<p>进行预测与输出指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/GfYL6szTKaoOykM.png" alt="d81.png" width="500" data-align="center"></p>
+<p>输出指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/VWSo3PcDENYZitj.png" alt="d82.png" data-align="inline"></p>
+<p>预测效果很好，实现了目标</p>
+<h5 id="第二题-3"><a href="#第二题-3" class="headerlink" title="第二题"></a>第二题</h5><h6 id="调包-3"><a href="#调包-3" class="headerlink" title="调包"></a>调包</h6><p>相较于之前的模型选取了更适用于大数据集的solver：adam，选择了relu函数作为激活函数，且建立了三层隐藏层（每层的神经元个数为20*10个）以得到更好的预测效果</p>
+<p>建立的模型</p>
+<p><img src="https://s2.loli.net/2022/10/14/iSrVdlob6Mx2vF1.png" alt="d83.png"></p>
+<p>输出的指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/LaQ1PFIjfKixTpk.png" alt="d84.png" width="460" data-align="center"></p>
+<h6 id="使用之前定义好的单层隐藏层的神经网络-1"><a href="#使用之前定义好的单层隐藏层的神经网络-1" class="headerlink" title="使用之前定义好的单层隐藏层的神经网络"></a>使用之前定义好的单层隐藏层的神经网络</h6><p>主要是要更改输出的神经元个数为10（分了10类），增加了隐藏层神经元的个数，减小学习率；通过以上参数的改变实现了预测</p>
+<p><img src="https://s2.loli.net/2022/10/14/QNZqEeYk5tfg3hy.png" alt="d85.png"></p>
+<p>输出的指标</p>
+<p><img src="https://s2.loli.net/2022/10/14/MimOwdLIEaPHTlu.png" title="" alt="d86.png" data-align="center"></p>
+<p>准确率过低，且如果隐藏层限制在一层改变其他的参数并不能提高准确率，还是需要增加隐藏层层数</p>
+<p>优化后的多个隐藏层——隐藏层为4，单层神经元个数为50</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/2ONTJmvwtjs43Iy.png" alt="d87.png" width="486" data-align="center"></p>
+<p>输出指标</p>
+<p><img src="https://s2.loli.net/2022/10/14/DwBC6bpEQrcGv2y.png" title="" alt="d88.png" data-align="center"></p>
+<h6 id="使用pytorch-1"><a href="#使用pytorch-1" class="headerlink" title="使用pytorch"></a>使用pytorch</h6><p>读取数据仍采用了之前的方式 </p>
+<p>构建的网络——共6层：其中四层隐藏层，每层神经元个数为300，激活函数仍是除了输出层的为log_softmax外其余都为relu</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/BfHR1CtlFzGpKuV.png" alt="d89.png" width="370" data-align="center"></p>
+<p>优化器和一个损失函数形式没有改变，循环次数是20</p>
+<p><img src="https://s2.loli.net/2022/10/14/b4NcyOZaH2soFzU.png" alt="d90.png"></p>
+<p>输出指标</p>
+<p><img src="https://s2.loli.net/2022/10/14/g689rDpaYWUtjfq.png" alt="d91.png"></p>
+<p>预测效果良好，达到要求</p>
+<h5 id="第三题-3"><a href="#第三题-3" class="headerlink" title="第三题"></a>第三题</h5><p>首先需要将mnist和syn中的图片统一读取当作数据集——只需多去增加一个循环即可<br>输出的数据集的shape</p>
+<p><img src="https://s2.loli.net/2022/10/14/m9r2In4eGUvBMgD.png" alt="d92.png"></p>
+<p>基于keras，采用10-fold交叉验证方式去处理数据集<br>将数据集分成k份，每一轮用其中(k-1)份做训练而剩余1份做验证，以这种方式执行k轮，得到k个模型．将k次的性能取平均，作为该算法的整体性能．k一般取值为5或者10<br>sklearn.model_selection提供了KFold方法，使用的StratifiedKFold采用的是分层抽样，它保证各类别的样本在切割后每一份小数据集中的比例都与原数据集中的比例相同<br>代码主体<br>首先将数据进行再次处理——改变维度，变成张量，为之后的读取做准备</p>
+<p><img src="https://s2.loli.net/2022/10/14/OGWx32cAHNnFoyd.png" title="" alt="d93.png" data-align="center"></p>
+<p>之后进行读取</p>
+<p><img src="https://s2.loli.net/2022/10/14/ByjuqTUOrfeNSQw.png" alt="d94.png"></p>
+<p>数据处理</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/vc83iNZMkOdlrUn.png" alt="d95.png" width="493" data-align="center"></p>
+<p>建立网络——一共6层，包括一层输入层，四层隐藏层，一层输出层</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/1bJgkLGI5xioUXn.png" alt="d96.png" width="478" data-align="center"></p>
+<p>开始训练</p>
+<p><img src="https://s2.loli.net/2022/10/14/gPHqLNBUkl1G89Y.png" alt="d97.png"></p>
+<p>在这里的validation_data更好的是用验证集，但是添加了之后会报错且没有解决，因此采取折中的办法用自己去验证自己<br>进行预测并输出</p>
+<p><img src="https://s2.loli.net/2022/10/14/9KbpGM6h3eiHJNU.png" title="" alt="d98.png" data-align="center"></p>
+<p>输出指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/Bprc9JqwuGSsUL6.png" alt="d99.png" width="537" data-align="center"></p>
+<p>最终损失减小到了1.2684，准确率达到了0.5371，预测效果可以接受</p>
+<h5 id="第四题-3"><a href="#第四题-3" class="headerlink" title="第四题"></a>第四题</h5><p>首先该数据集是没有区分训练集和测试集的，因此可以将训练集看成测试集，测试集看成训练集，只需一个循环读取数据即可<br>而且由于不是黑白图片，为了提高准确率读取RGB，之后的一些语句随之改变</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/seroFYh3GxMKBJU.png" alt="e1.png" width="422" data-align="center"></p>
+<p>关于正则项的添加主要是在建立网络的第一层中进行添加</p>
+<p><img src="https://s2.loli.net/2022/10/14/ObZupqe9gzPxJcj.png" alt="e2.png"></p>
+<p>而关于网络结构则是主要体现在隐藏层层数和神经元个数，再包括激活函数、学习率等会造成预测效果变化的参数<br>（1）使用上面构建的网络，正则化类别全部选择L1<br>loss的收敛曲线</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/j7B123F9cNyVGWI.png" alt="e3.png" width="412" data-align="center"></p>
+<p>准确率的变化曲线</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/Biyrex6FX1ANuC9.png" alt="e4.png" width="404" data-align="center"></p>
+<p>准确率最高的是epochs=7时的33.8%<br>明显来看预测准确率较低，需要调整网络结构和正则项<br>（2）正则项的类别选择<br>如果全部改为L2，准确率会降低<br>如果全部改为L1_L2，准确率整体会提高，大概10%左右<br>如果使用dropout，准确率会降低，且需要在输入和隐藏层都要添加，且参数（舍弃率）同样需要选择<br>（3）正则项的大小选择<br>主要是在0.01-1的区间中选择，最终选择了0.05（虽然中间会有准确率较低的情况，但是最大的准确率较高）<br>最终正则项的添加——没有考虑添加的位置的变化，只是在输入层进行了添加</p>
+<p><img src="https://s2.loli.net/2022/10/14/zBlZDy7hYvQgcsT.png" alt="e5.png"></p>
+<p>（4）网络结构<br>首先是隐藏层的层数——在经过实验后发现并不是越多越好，最终确定为4层（每层神经元个数=65*10=650）；激活函数同样保持除了输出层是softmax，其余都是relu；学习率=1e-3</p>
+<p><img src="https://s2.loli.net/2022/10/14/IY5sH2R1k6vOFBf.png" alt="e6.png"></p>
+<p>（5）最终的输出指标<br>Loss的收敛曲线</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/JinLdEehj8l1539.png" alt="e7.png" width="334" data-align="center"></p>
+<p>准确率的变化</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/g8BCJ7DU2Hl14MG.png" alt="e8.png" width="387" data-align="center"></p>
+<p>准确率最高的是epochs=9时的47.4%</p>
+<h5 id="第五题-2"><a href="#第五题-2" class="headerlink" title="第五题"></a>第五题</h5><p>选择过程不做额外的阐述，与第四题基本一致<br>最终的网络模型</p>
+<p><img src="https://s2.loli.net/2022/10/14/QIOw7deU2Va4XKN.png" alt="e9.png"></p>
+<p>Loss的收敛曲线</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/wS7Ur32ORy9QZ6z.png" alt="e10.png" width="408" data-align="center"></p>
+<p>准确率变化</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/jRKzoJWxMFDQ3qs.png" alt="e11.png" width="380" data-align="center"></p>
+<h2 id="Week6"><a href="#Week6" class="headerlink" title="Week6"></a>Week6</h2><p><img src="https://s2.loli.net/2022/10/14/TAfaPIy6m4Yo1Qt.png" alt="e12.png"></p>
+<h5 id="第一题-4"><a href="#第一题-4" class="headerlink" title="第一题"></a>第一题</h5><h6 id="调包实现SVM"><a href="#调包实现SVM" class="headerlink" title="调包实现SVM"></a>调包实现SVM</h6><p>代码主体</p>
+<p><img src="https://s2.loli.net/2022/10/14/QR2oHe79FjbSVAM.png" alt="e13.png"></p>
+<p>对于上面的四个参数中的前三个都需要进行选取，使用GridSearchCV方法去实现——由于搜索速度较慢，因此参数列举的不多</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/rYmsfnDF5SPClHa.png" alt="e14.png" width="472" data-align="center"></p>
+<p>尽管输出的最优参数是上面的，但是尝试过后发现还是不够优<br>最终代码与输出指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/ATQULsnNpBrW4f7.png" alt="e15.png" width="470" data-align="center"></p>
+<h6 id="手写实现SVM"><a href="#手写实现SVM" class="headerlink" title="手写实现SVM"></a>手写实现SVM</h6><p>将线性核和多项式核一起写在同一个代码中，而高斯核则单独去写，因为其多了一个参数$\sigma$ （1）线性核和多项式核 </p>
+<p>读取数据集——定义了一个函数</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/Kd8FZzw1ASOTMIH.png" alt="e16.png" width="411" data-align="center"></p>
+<p>定义参数<br>在kernel处可以进行核函数的更改；C则是直接去赋值即可</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/jBhZcwbu1oIN54m.png" alt="e17.png" width="422" data-align="center"></p>
+<p>KKT条件判断，为SMO优化作基础</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/4BYMpcTRZJLQdA2.png" alt="e18.png" width="475" data-align="center"></p>
+<p>其中的_g函数是得到预测值</p>
+<p><img src="https://s2.loli.net/2022/10/14/JrdKfvBML81jwNz.png" alt="e27.png"></p>
+<p>线性核函数和多项式核函数</p>
+<p>可通过改变a的值去更改多项式次数</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/U3CiuQbNpSFl78Y.png" alt="e19.PNG" width="469" data-align="center"></p>
+<p>误差函数——预测值和真实值的差值</p>
+<p><img src="https://s2.loli.net/2022/10/14/zAhis4RWSfVjHE6.png" title="" alt="e20.png" data-align="center"></p>
+<p>进行SMO，实现参数的最优化，得到两个 $α$</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/IrFe3BHj27WyQk1.png" alt="e21.PNG" width="364" data-align="center"></p>
+<p>进行训练，得到参数并进行最优化</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/Tmut1XPHZv6eD9j.png" alt="e22.PNG" width="470" data-align="center"></p>
+<p>最优化更新</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/chlryKN3e9OdFC1.png" alt="e23.png" width="332" data-align="center"></p>
+<p>预测函数</p>
+<p><img src="https://s2.loli.net/2022/10/14/pfnD7HUu9EZlJ6x.png" alt="e24.png"></p>
+<p>输出准确率</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/cu4F1eZVrnWhds2.png" alt="e25.png" width="384" data-align="center"></p>
+<p>代入数据集运行并输出指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/rRZN8MbylLHgU6z.png" alt="e26.PNG" width="452" data-align="center"></p>
+<p>（2）高斯核函数<br>读取数据方式一致<br>定义参数——新增了一个 $\sigma$</p>
+<p><img src="https://s2.loli.net/2022/10/14/BzAyNV7wpC92OZb.png" alt="e28.png"></p>
+<p>计算高斯核函数</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/v3EJAZmhRG1wqlO.png" alt="e29.png" width="454" data-align="center"></p>
+<p>之后也是求预测值_g和判断KKT条件<br>之后是SMO，逻辑完全一致，但是返回的不同——为支持向量的下标，之后会用</p>
+<p><img src="https://s2.loli.net/2022/10/14/p7bP2DJzahQY6EA.png" alt="e30.png"></p>
+<p>计算单个核函数</p>
+<p><img src="https://s2.loli.net/2022/10/14/FS5GPIKR7MUeNJl.png" alt="e31.png"></p>
+<p>预测函数</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/CprqN8uXOfljIg5.png" alt="e32.png" width="435" data-align="center"></p>
+<p>测试函数，输出指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/FaBGqturUjiYRDC.png" alt="e33.png" width="419" data-align="center"></p>
+<p>代入数据集运行，并输出指标</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/SlVcUBWyQ1mdIjw.png" alt="e34.png" width="464" data-align="center"></p>
+<h5 id="第二题-4"><a href="#第二题-4" class="headerlink" title="第二题"></a>第二题</h5><h6 id="调包实现SVM-1"><a href="#调包实现SVM-1" class="headerlink" title="调包实现SVM"></a>调包实现SVM</h6><p>同样进行了参数选择</p>
+<p><img src="https://s2.loli.net/2022/10/14/BXQqJEh8gOjpmcU.png" alt="e35.png"></p>
+<p>尽管输出的最优参数是上面的，但是尝试过后发现还是不够优<br>最终代码与输出指标</p>
+<p><img src="https://s2.loli.net/2022/10/14/OpxXJnZILcqWhA9.png" alt="e36.png"></p>
+<h6 id="手写实现SVM-1"><a href="#手写实现SVM-1" class="headerlink" title="手写实现SVM"></a>手写实现SVM</h6><p>读取数据集</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/PG57iJkxQ6YjqUu.png" alt="e37.png" width="460" data-align="center"></p>
+<p>（1）线性核和多项式核<br>选择多项式核，C=1（与调包的参数保持一致）</p>
+<p><img src="https://s2.loli.net/2022/10/14/NBY86UgrPMmq7Zw.png" alt="e38.png"></p>
+<p>（2）高斯核（与调包的参数保持一致）</p>
+<p><img src="https://s2.loli.net/2022/10/14/Hc8Po6BdE7paSKl.png" alt="e39.png"></p>
+<p>这证明在相同参数下，手写的明显不如直接调包的准确率高</p>
+<h5 id="第三题-4"><a href="#第三题-4" class="headerlink" title="第三题"></a>第三题</h5><p>（1）首先探讨C值对于分类结果的影响——代码使用手写的</p>
+<p><img src="https://s2.loli.net/2022/10/14/iOjLPdQw7HS9D5e.png" alt="e40.png"></p>
+<p>第一题数据<br>线性核</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/m67VTwk1ElNBMRZ.png" alt="e41.png" width="376" data-align="center"></p>
+<p>多项式核</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/2hxscijF5PvTEJz.png" alt="e42.png" width="372" data-align="center"></p>
+<p>高斯核</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/QhpcilrdI5jew79.png" alt="e43.png" width="393" data-align="center"></p>
+<p>第二题数据<br>线性核</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/DEjhvsWVIdCRZ4t.png" alt="e44.png" width="389" data-align="center"></p>
+<p>多项式核</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/VLwMuKFEsNYADjG.png" alt="e45.png" width="402" data-align="center"></p>
+<p>高斯核</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/ep3v51IuqBG8Zso.png" alt="e46.png" width="400" data-align="center"></p>
+<p>结合以上六幅图来看——总体上当C值较小时（C=1），准确率还算可以；之后随着C值的增大，准确率会有一定的减小，但是整体呈增加的趋势；之后则是当C过大时会出现过拟合的情况，大部分情况下并不是C越大准确率越大<br>同时有一个比较有趣的点是对于多项式核来说，当C增大到一定值后继续增大不会影响预测的准确率了<br>总的来说，惩罚因子C的取值权衡了经验风险和结构风险：C越大，经验风险越小，结构风险越大，容易出现过拟合；C越小，模型复杂度越低，容易出现欠拟合<br>（2）之后讨论不同核函数对于分类的影响</p>
+<p><img src="https://s2.loli.net/2022/10/14/P6C8nmYBTfbiypU.png" alt="e47.png"></p>
+<p>总的来说，“linear”对于线性超平面是有用的，“rbf”和“poly”对于非线性超平面是有用的<br>从上面的六幅图来看，对于1.1、1.2来说由于数据集是线性可分的，所以整体来说“linear”的效果是不错的；同时对于高斯核来说如果选择了合适的sigma来说应该是较优的核函数</p>
+<h5 id="第四题-4"><a href="#第四题-4" class="headerlink" title="第四题"></a>第四题</h5><p>（1）调包实现SVM<br>读取数据集的方式同样采取之前的方式<br>同样进行了参数选择</p>
+<p><img src="https://s2.loli.net/2022/10/14/daXS4npEhJYrytN.png" alt="e48.png"></p>
+<p>使用上面的参数进行预测，最终代码与输出指标</p>
+<p><img src="https://s2.loli.net/2022/10/14/KwuRhp3zNvtgZPJ.png" alt="e49.png"></p>
+<p>（2）手写实现SVM<br>线性核和多项式核<br>选择线性核，C=1（与调包的参数保持一致）</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/wXFmp56QRfrDZuN.png" alt="e50.PNG" width="481" data-align="center"></p>
+<p>选择多项式核</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/PRWmekAIGOBnqaj.png" alt="e51.PNG" width="458" data-align="center"></p>
+<p>高斯核，C=1，sigma=0.1（与调包的参数保持一致）</p>
+<p><img src="https://s2.loli.net/2022/10/14/5WGCwczptjhg1BQ.png" alt="e52.png"></p>
+<p>这证明在相同参数下，手写的明显不如直接调包的准确率高</p>
+<h5 id="第五题-3"><a href="#第五题-3" class="headerlink" title="第五题"></a>第五题</h5><p>（1）调包实现SVM<br>同样进行了参数选择</p>
+<p><img src="https://s2.loli.net/2022/10/14/Tek9azRFJWA3SoI.png" alt="e53.png"></p>
+<p>使用上面的参数进行预测</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/kgSHwEUXLcdfsbR.png" alt="e54.PNG" width="428" data-align="center"></p>
+<p>最终代码与输出指标</p>
+<p>（2）手写实现SVM<br>线性核和多项式核<br>选择线性核，C=1</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/atqmioYkW7BJ3UQ.png" alt="e55.PNG" width="475" data-align="center"></p>
+<p>选择多项式核，C=1（与调包的参数保持一致）</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/TOmQ6kBLFbpXseH.png" alt="e56.PNG" width="485" data-align="center"></p>
+<p>高斯核，C=1，sigma=0.1</p>
+<p><img title="" src="https://s2.loli.net/2022/10/14/3cu7XK8kFYEqVOr.png" alt="e57.PNG" width="496" data-align="center"></p>
+<h2 id="Week7"><a href="#Week7" class="headerlink" title="Week7"></a>Week7</h2><p><img src="https://s2.loli.net/2022/10/14/CrB9vjW1HQO6AhU.png" alt="e59.png"></p>
+
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a97792531959@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Week8"><a href="#Week8" class="headerlink" title="Week8"></a>Week8</h2><p><img src="https://s2.loli.net/2022/10/14/eEGBy3OATDWnwXs.png" alt="e60.png"></p>
+
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a94585533177@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Week9"><a href="#Week9" class="headerlink" title="Week9"></a>Week9</h2><p><img title="" src="https://s2.loli.net/2022/10/14/ERbD1mUSyjf7ag6.png" alt="e61.PNG" width="403" data-align="center"></p>
+
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a89277536759@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<h2 id="Week10"><a href="#Week10" class="headerlink" title="Week10"></a>Week10</h2><p><img title="" src="https://s2.loli.net/2022/10/14/xvEM9hP4LNmIZpk.png" alt="e62.png" width="505" data-align="center"></p>
+
+
+	<div class="row">
+    <embed src="https://maiimg.com/dec/a98334537259@pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+]]></content>
+      <categories>
+        <category>课程作业</category>
+      </categories>
+      <tags>
+        <tag>大三秋季学期</tag>
+        <tag>SDM374</tag>
+        <tag>中文</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
 </search>
